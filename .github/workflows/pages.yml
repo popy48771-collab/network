@@ -1,0 +1,68 @@
+name: pages
+
+# out/ を GitHub Pages に公開する。ブックマークできるURLを1つにするため。
+#   https://popy48771-collab.github.io/network/            入口
+#   https://popy48771-collab.github.io/network/network.html   図
+#   https://popy48771-collab.github.io/network/articles.html  記事一覧
+#
+# なぜ push トリガーではないか:
+#   collect / analyze は GITHUB_TOKEN で out/ を push するが、その push は
+#   別のワークフローを起動しない（GitHub の仕様。docs/handoff.md §4-④）。
+#   だから「collect / analyze が終わったら」を起点にする。workflow_run は
+#   デフォルトブランチの実行にだけ反応する。
+
+on:
+  workflow_run:
+    workflows: [collect, analyze]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 公開は最新の1本だけでよい（途中の版を公開しても意味がない）
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # enablement: true で Pages 自体を有効化する（設定画面を触らずに済む）
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: 公開するファイルを集める
+        run: |
+          mkdir -p _site
+          # out/ の中身をサイト直下に置く（URL を短くするため）。demo は公開しない
+          cp out/*.html out/*.csv out/*.json out/*.gexf out/report.md _site/
+          # 入口ページ。図と記事一覧への導線と、graph.json から読む現況
+          cp .github/pages/index.html _site/index.html
+          ls -la _site
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deploy
+        uses: actions/deploy-pages@v4
+
+      - name: 公開先をサマリに出す
+        run: |
+          {
+            echo "## 公開しました"
+            echo
+            echo "- 入口: ${{ steps.deploy.outputs.page_url }}"
+            echo "- 図: ${{ steps.deploy.outputs.page_url }}network.html"
+            echo "- 記事一覧: ${{ steps.deploy.outputs.page_url }}articles.html"
+          } >> "$GITHUB_STEP_SUMMARY"

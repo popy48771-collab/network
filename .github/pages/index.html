@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>文化政策ニュース 共起ネットワーク</title>
+<style>
+  /* 配色は pipeline/style.py と同じ考え方。色を持つのは施設（青）と政策（橙）だけ */
+  :root {
+    color-scheme: light;
+    --surface-1: #fcfcfb; --page: #f9f9f7;
+    --text-primary: #0b0b0b; --text-secondary: #52514e; --muted: #898781;
+    --border: rgba(11,11,11,0.10); --grid: #e1e0d9;
+    --facility: #2a78d6; --policy: #eb6834;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --surface-1: #1a1a19; --page: #0d0d0d;
+      --text-primary: #ffffff; --text-secondary: #c3c2b7; --muted: #898781;
+      --border: rgba(255,255,255,0.10); --grid: #2c2c2a;
+      --facility: #3987e5; --policy: #d95926;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --surface-1: #1a1a19; --page: #0d0d0d;
+    --text-primary: #ffffff; --text-secondary: #c3c2b7; --muted: #898781;
+    --border: rgba(255,255,255,0.10); --grid: #2c2c2a;
+    --facility: #3987e5; --policy: #d95926;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--page); color: var(--text-primary);
+    font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif;
+    font-size: 15px; line-height: 1.6;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 44px 20px 40px; }
+  h1 { font-size: 22px; font-weight: 650; margin: 0 0 6px; letter-spacing: .01em; }
+  .lede { color: var(--text-secondary); margin: 0 0 4px; }
+  .stats { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; margin-top: 10px; }
+
+  .cards { display: grid; gap: 14px; grid-template-columns: 1fr 1fr; margin: 28px 0 22px; }
+  @media (max-width: 620px) { .cards { grid-template-columns: 1fr; } }
+  a.card {
+    display: block; padding: 18px 18px 16px; text-decoration: none; color: inherit;
+    background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px;
+  }
+  a.card:hover { border-color: var(--facility); }
+  a.card h2 { font-size: 15px; margin: 0 0 4px; font-weight: 650; }
+  a.card p { margin: 0; font-size: 13px; color: var(--text-secondary); }
+  a.card .mark { font-size: 12px; color: var(--facility); margin-top: 8px; display: block; }
+
+  h3 { font-size: 13px; color: var(--text-secondary); margin: 26px 0 8px; font-weight: 650; }
+  ul { margin: 0; padding-left: 1.1em; }
+  li { margin: 4px 0; font-size: 14px; }
+  a { color: var(--facility); }
+  .note {
+    margin-top: 26px; padding-top: 14px; border-top: 1px solid var(--border);
+    font-size: 12.5px; color: var(--muted);
+  }
+  code { font-size: 12.5px; background: var(--grid); padding: 1px 5px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>文化政策ニュース 共起ネットワーク</h1>
+  <p class="lede">日本の文化政策に関するニュースと官公庁の公表資料を毎朝集め、語と語の共起ネットワークを作り直しています。</p>
+  <div class="stats" id="stats"></div>
+
+  <div class="cards">
+    <a class="card" href="network.html">
+      <h2>ネットワーク図</h2>
+      <p>語のつながりを見る。ノードを選ぶと共起相手と、その語が出た記事が並びます。</p>
+      <span class="mark">開く →</span>
+    </a>
+    <a class="card" href="articles.html">
+      <h2>記事一覧</h2>
+      <p>集めた記事そのものを読む。検索・出典・期間で絞り込め、語から図に戻れます。</p>
+      <span class="mark">開く →</span>
+    </a>
+  </div>
+
+  <h3>そのほかの出力</h3>
+  <ul>
+    <li><a href="report.md">report.md</a> — 頻出語・強い共起・急に強まった結びつき・最近の記事</li>
+    <li><a href="https://lite.gephi.org/?file=https://popy48771-collab.github.io/network/network.gexf">Gephi Lite で開く</a>（<a href="network.gexf">network.gexf</a>）— レイアウトやフィルタをやり直したいとき</li>
+    <li><a href="nodes.csv">nodes.csv</a> / <a href="edges.csv">edges.csv</a> / <a href="articles.csv">articles.csv</a> — 表計算ソフト用</li>
+  </ul>
+
+  <div class="note">
+    共起は相関であって因果ではありません。頻度は収集したソースの偏りをそのまま反映します。
+    報道記事は見出しとフィードの要約のみを保存し、本文は保存していません（官公庁の公表資料は本文まで）。
+    ソースコードと記事データは <a href="https://github.com/popy48771-collab/network">GitHub</a> にあります。
+  </div>
+</div>
+
+<script>
+/* 数字は graph.json から読む（同じディレクトリに置かれている）。
+   取れなければ何も出さない — 古い数字を出すよりは出さないほうがよい。 */
+fetch('graph.json')
+  .then(r => r.ok ? r.json() : Promise.reject())
+  .then(data => {
+    const m = data.meta || {};
+    document.getElementById('stats').textContent =
+      `記事 ${m.n_docs} 件 ／ 期間 ${m.period} ／ ノード ${m.n_nodes} ／ エッジ ${m.n_edges} ／ 更新 ${m.generated_at}`;
+  })
+  .catch(() => {});
+</script>
+</body>
+</html>
