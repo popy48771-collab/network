@@ -97,6 +97,7 @@ make review  # 辞書に追加する候補を頻度順に出す
 ## ドキュメント
 
 - [docs/proposal.md](docs/proposal.md) — 全体設計。自動収集・多言語展開を含む将来像とロードマップ
+- [docs/ingestion.md](docs/ingestion.md) — **記事の投入口の設計**。RSS 自動収集 / Issue 投函 / CSV 一括
 - [CLAUDE.md](CLAUDE.md) — 開発規約。触る前に読むこと
 - [articles/README.md](articles/README.md) — 記事の置き方と著作権の扱い
 
