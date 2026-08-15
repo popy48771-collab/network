@@ -29,10 +29,18 @@
 
 見る:
 
+- **GitHub Pages … <https://popy48771-collab.github.io/network/>**（図・記事一覧の入口。ブックマークするならここ）
+  - 公開は `.github/workflows/pages.yml` が collect / analyze の完了後に自動でやる
+  - **最初の1回だけ** Settings → Pages → Source を `GitHub Actions` にする必要がある。
+    GITHUB_TOKEN には Pages サイトを新規作成する権限が無く、`configure-pages` の
+    `enablement: true` は "Resource not accessible by integration" で落ちる
 - Gephi Lite … <https://lite.gephi.org/?file=https://raw.githubusercontent.com/popy48771-collab/network/main/out/network.gexf>
 - 図（単体HTML）… `out/network.html` をブラウザで開く（外部依存なし）
-- **記事一覧 … `out/articles.html`**（検索・出典・期間で絞り込める。図と相互に行き来できる）
+- 記事一覧 … `out/articles.html`（検索・出典・期間で絞り込める。図と相互に行き来できる）
 - レポート … `out/report.md`
+
+**GitHub 上では `*.html` はレンダリングされない**（raw はプレーンテキストで返る）。
+だから Pages が要る。
 
 ---
 

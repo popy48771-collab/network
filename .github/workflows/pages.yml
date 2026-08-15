@@ -10,6 +10,13 @@ name: pages
 #   別のワークフローを起動しない（GitHub の仕様。docs/handoff.md §4-④）。
 #   だから「collect / analyze が終わったら」を起点にする。workflow_run は
 #   デフォルトブランチの実行にだけ反応する。
+#
+# 最初の1回だけ人手が要る:
+#   Settings → Pages → Source を "GitHub Actions" にする。
+#   GITHUB_TOKEN には Pages サイトを**新規作成**する権限が無く、
+#   configure-pages の enablement: true は
+#   「Create Pages site failed: Resource not accessible by integration」で落ちる。
+#   一度作られていれば、以降はこのワークフローが自動で更新する。
 
 on:
   workflow_run:

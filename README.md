@@ -63,6 +63,19 @@ Actions のサマリにレポート全文と Gephi Lite へのリンクが出ま
 **単体 HTML** で開く場合は `out/network.html` をブラウザにドロップするだけです
 （外部 CDN を一切参照しないので、オフラインでも開けます）。
 
+**GitHub Pages** に公開すると、ブックマークできる URL になります。
+
+| | URL |
+|---|---|
+| 入口 | <https://popy48771-collab.github.io/network/> |
+| 図 | <https://popy48771-collab.github.io/network/network.html> |
+| 記事一覧 | <https://popy48771-collab.github.io/network/articles.html> |
+
+公開は `.github/workflows/pages.yml` が collect / analyze の完了後に自動で行います。
+**最初の1回だけ設定が要ります**: Settings → Pages → Source を `GitHub Actions` に変更。
+GITHUB_TOKEN には Pages サイトを新規作成する権限が無いため、ここだけ人手が要ります
+（一度作られれば以降は自動）。
+
 ### 4. 記事そのものを読む
 
 `out/articles.html` を開くと、集めた記事が新しい順に並びます。見出し・出典・日付・抜粋と、
