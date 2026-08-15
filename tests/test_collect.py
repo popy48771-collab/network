@@ -134,3 +134,17 @@ def test_shipped_sources_are_valid():
 def test_template_is_not_loaded_as_a_source():
     ids = {s.id for s in collect.load_sources(ROOT / "sources")}
     assert "my_source" not in ids
+
+
+# ---- 見出しの重複 ----
+
+
+def test_same_headline_from_another_outlet_is_skipped(tmp_path):
+    """同じ記事が複数媒体に配信されると URL は違う。見出しで落とせること。"""
+    a = "学芸員になりきって展示資料PR　延岡城・内藤記念博物館で体験イベント"
+    b = "学芸員になりきって展示資料PR 延岡城・内藤記念博物館で体験イベント"
+    assert collect.title_key(a) == collect.title_key(b)
+
+
+def test_different_headlines_keep_different_keys():
+    assert collect.title_key("文化庁が補助を拡充") != collect.title_key("文化庁が補助を縮小")

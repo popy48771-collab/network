@@ -302,7 +302,17 @@ def write_article(item: Item, source: Source, articles_dir: Path) -> Path:
 # ---- 実行 -----------------------------------------------------------------
 
 
-def collect_source(source: Source, articles_dir: Path, seen: set[str], dry_run: bool) -> Result:
+def title_key(title: str) -> str:
+    """見出しの同一性を見るためのキー。記号と空白の違いは無視する。
+
+    同じ記事が複数媒体に配信されると、URL が違うので doc_id では重複を落とせない。
+    """
+    return re.sub(r"[\s　【】「」『』（）()\[\]・:：\-–—|｜/／]+", "", title)
+
+
+def collect_source(
+    source: Source, articles_dir: Path, seen: set[str], seen_titles: set[str], dry_run: bool
+) -> Result:
     result = Result(source=source)
     if source.kind != "rss":
         result.error = f"kind={source.kind} は未実装（今は rss のみ）"
@@ -315,10 +325,12 @@ def collect_source(source: Source, articles_dir: Path, seen: set[str], dry_run: 
 
     result.fetched = len(items)
     for item in items:
-        if item.doc_id in seen:
+        key = title_key(item.title)
+        if item.doc_id in seen or key in seen_titles:
             result.skipped += 1
             continue
         seen.add(item.doc_id)
+        seen_titles.add(key)
         if _should_fetch_body(source):
             try:
                 item.body = fetch_body(item.url)
@@ -354,7 +366,8 @@ def main(argv: list[str] | None = None) -> int:
     print(f"既存の記事 {len(seen)} 件 / ソース {len(sources)} 件"
           + ("（dry-run）" if args.dry_run else ""))
 
-    results = [collect_source(s, articles_dir, seen, args.dry_run) for s in sources]
+    seen_titles: set[str] = set()
+    results = [collect_source(s, articles_dir, seen, seen_titles, args.dry_run) for s in sources]
 
     print()
     print("| ソース | 取得 | 新規 | 既出 | 状態 |")
