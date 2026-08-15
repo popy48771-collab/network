@@ -8,9 +8,9 @@
 id: gnews_bunkaseisaku
 name: Googleニュース「文化政策」
 kind: rss
-url: https://news.google.com/rss/search?q=%E6%96%87%E5%8C%96%E6%94%BF%E7%AD%96&hl=ja&gl=JP&ceid=JP:ja
+url: https://news.google.com/rss/search?q=%E6%96%87%E5%8C%96%E6%94%BF%E7%AD%96%20-%E7%B7%8F%E5%90%88%E6%96%87%E5%8C%96%E6%94%BF%E7%AD%96%E5%AD%A6%E9%83%A8%20-%E5%AD%A6%E9%83%A8%E7%94%9F%20-%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9&hl=ja&gl=JP&ceid=JP:ja
 # query は人間が読むための控え。実際に使われるのは上の url
-query: "文化政策"
+query: "文化政策 -総合文化政策学部 -学部生 -オープンキャンパス"
 tier: secondary
 country: JP
 lang: ja
