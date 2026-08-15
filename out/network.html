@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>共起ネットワーク</title>
+<style>
+  :root {
+    color-scheme: light;
+    --surface-1: #fcfcfb;
+    --page: #f9f9f7;
+    --text-primary: #0b0b0b;
+    --text-secondary: #52514e;
+    --muted: #898781;
+    --grid: #e1e0d9;
+    --axis: #c3c2b7;
+    --border: rgba(11,11,11,0.10);
+    --term: #898781;
+    --facility: #2a78d6;
+    --policy: #eb6834;
+    --edge: rgba(11,11,11,0.16);
+    --edge-strong: rgba(11,11,11,0.42);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --surface-1: #1a1a19;
+      --page: #0d0d0d;
+      --text-primary: #ffffff;
+      --text-secondary: #c3c2b7;
+      --muted: #898781;
+      --grid: #2c2c2a;
+      --axis: #383835;
+      --border: rgba(255,255,255,0.10);
+      --term: #898781;
+      --facility: #3987e5;
+      --policy: #d95926;
+      --edge: rgba(255,255,255,0.16);
+      --edge-strong: rgba(255,255,255,0.46);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --surface-1: #1a1a19;
+    --page: #0d0d0d;
+    --text-primary: #ffffff;
+    --text-secondary: #c3c2b7;
+    --muted: #898781;
+    --grid: #2c2c2a;
+    --axis: #383835;
+    --border: rgba(255,255,255,0.10);
+    --term: #898781;
+    --facility: #3987e5;
+    --policy: #d95926;
+    --edge: rgba(255,255,255,0.16);
+    --edge-strong: rgba(255,255,255,0.46);
+  }
+
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--text-primary);
+    font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+  }
+  header { padding: 16px 20px 10px; }
+  h1 { margin: 0; font-size: 17px; font-weight: 650; letter-spacing: .01em; }
+  .meta { color: var(--text-secondary); font-size: 12px; margin-top: 4px; }
+
+  /* フィルタは1行にまとめて、スコープする対象すべての上に置く */
+  .filters {
+    display: flex; flex-wrap: wrap; gap: 14px 20px; align-items: center;
+    padding: 10px 20px; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+    background: var(--surface-1);
+  }
+  .filters label { font-size: 12px; color: var(--text-secondary); display: flex; align-items: center; gap: 7px; }
+  .filters input[type=range] { width: 132px; accent-color: var(--facility); }
+  .filters input[type=search] {
+    font: inherit; font-size: 13px; padding: 5px 9px; min-width: 170px;
+    border: 1px solid var(--axis); border-radius: 6px;
+    background: var(--surface-1); color: var(--text-primary);
+  }
+  .filters .val { color: var(--text-primary); font-variant-numeric: tabular-nums; min-width: 34px; }
+  button {
+    font: inherit; font-size: 12px; padding: 5px 11px; border-radius: 6px;
+    border: 1px solid var(--axis); background: var(--surface-1); color: var(--text-primary); cursor: pointer;
+  }
+  button:hover { background: var(--page); }
+  button[aria-pressed="true"] { border-color: var(--facility); color: var(--facility); }
+
+  main { flex: 1; display: flex; min-height: 0; }
+  .canvas-wrap { flex: 1; position: relative; min-width: 0; background: var(--surface-1); }
+  canvas { display: block; width: 100%; height: 100%; cursor: grab; }
+  canvas.dragging { cursor: grabbing; }
+
+  .legend {
+    position: absolute; left: 14px; bottom: 14px;
+    background: var(--surface-1); border: 1px solid var(--border); border-radius: 8px;
+    padding: 9px 12px; font-size: 12px; color: var(--text-secondary);
+    display: flex; flex-direction: column; gap: 5px;
+  }
+  .legend .row { display: flex; align-items: center; gap: 8px; }
+  .legend svg { flex: none; }
+  .legend .note { color: var(--muted); font-size: 11px; margin-top: 2px; }
+
+  aside {
+    width: 340px; flex: none; border-left: 1px solid var(--border);
+    background: var(--surface-1); overflow-y: auto; padding: 14px 16px 24px;
+  }
+  aside h2 { font-size: 13px; margin: 0 0 8px; font-weight: 650; }
+  aside h3 { font-size: 12px; margin: 18px 0 6px; font-weight: 650; color: var(--text-secondary); }
+  table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  th, td { text-align: left; padding: 4px 6px; border-bottom: 1px solid var(--grid); }
+  th { color: var(--text-secondary); font-weight: 600; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .empty { color: var(--muted); font-size: 12px; }
+  .swatch { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 5px; }
+
+  #tooltip {
+    position: fixed; pointer-events: none; z-index: 10; max-width: 260px;
+    background: var(--surface-1); border: 1px solid var(--border); border-radius: 7px;
+    padding: 8px 10px; font-size: 12px; color: var(--text-primary);
+    box-shadow: 0 3px 14px rgba(0,0,0,.14); opacity: 0; transition: opacity .08s;
+  }
+  #tooltip .t-label { font-weight: 650; }
+  #tooltip .t-sub { color: var(--text-secondary); margin-top: 2px; }
+
+  footer { padding: 10px 20px 16px; font-size: 11px; color: var(--muted); }
+  @media (max-width: 860px) {
+    main { flex-direction: column; }
+    aside { width: auto; border-left: none; border-top: 1px solid var(--border); max-height: 42vh; }
+    .canvas-wrap { min-height: 46vh; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>文化政策ニュース 共起ネットワーク</h1>
+  <div class="meta" id="meta"></div>
+</header>
+
+<div class="filters">
+  <label>NPMI 下限 <input type="range" id="npmi" min="0" max="0.9" step="0.02"><span class="val" id="npmiVal"></span></label>
+  <label>ラベル表示数 <input type="range" id="labels" min="0" max="200" step="5" value="45"><span class="val" id="labelsVal">45</span></label>
+  <label><input type="checkbox" id="kFacility" checked> 文化施設</label>
+  <label><input type="checkbox" id="kPolicy" checked> 政策・制度</label>
+  <label><input type="checkbox" id="kOther" checked> 組織・地域</label>
+  <label><input type="search" id="search" placeholder="語を検索" autocomplete="off"></label>
+  <button id="clusterBtn" aria-pressed="false">クラスタ名を重ねる</button>
+  <button id="resetBtn">表示リセット</button>
+</div>
+
+<main>
+  <div class="canvas-wrap">
+    <canvas id="cv"></canvas>
+    <div class="legend" id="legend">
+      <div class="row"><svg width="14" height="14"><circle cx="7" cy="7" r="4.5" fill="var(--term)"></circle></svg>語</div>
+      <div class="row"><svg width="14" height="14"><rect x="3" y="3" width="8" height="8" fill="var(--facility)"></rect></svg>文化施設</div>
+      <div class="row"><svg width="14" height="14"><path d="M7 2 L12 7 L7 12 L2 7 Z" fill="var(--policy)"></path></svg>政策・制度・法令</div>
+      <div class="row"><svg width="14" height="14"><path d="M7 2.5 L12 11.5 L2 11.5 Z" fill="var(--term)"></path></svg>組織・地域・人物</div>
+      <div class="note">大きさ = 出現文数 / 線の太さ = NPMI</div>
+    </div>
+  </div>
+  <aside>
+    <h2 id="panelTitle">ノードを選択</h2>
+    <div id="panelBody" class="empty">図の中のノードをクリックすると、結びつきの強い相手が表で出ます。</div>
+    <h3>結びつきの強いペア（NPMI 上位）</h3>
+    <table id="topTable">
+      <thead><tr><th>ペア</th><th class="num">NPMI</th><th class="num">共起</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </aside>
+</main>
+
+<div id="tooltip" role="status" aria-live="polite"></div>
+<footer>
+  共起は相関であって因果ではありません。頻度は収集したソースの偏りをそのまま反映します。
+  同じ内容は <code>nodes.csv</code> / <code>edges.csv</code> / <code>report.md</code> にも出力されています。
+</footer>
+
+<script>
+const DATA = {"nodes": [{"id": "policy:juyo_bunkazai", "label": "重要文化財", "kind": "program", "group": "policy", "df": 2, "degree": 4, "strength": 3.0912, "betweenness": 0.0, "community": 1, "x": -166.11, "y": 204.39, "size": 15.38}, {"id": "policy:kokuho", "label": "国宝", "kind": "program", "group": "policy", "df": 2, "degree": 4, "strength": 3.0912, "betweenness": 0.0, "community": 1, "x": -179.43, "y": 191.4, "size": 15.38}, {"id": "t:修理", "label": "修理", "kind": "term", "group": "term", "df": 2, "degree": 1, "strength": 1.0, "betweenness": 0.0, "community": 8, "x": 350.88, "y": 565.85, "size": 15.38}, {"id": "t:費用", "label": "費用", "kind": "term", "group": "term", "df": 2, "degree": 1, "strength": 1.0, "betweenness": 0.0, "community": 8, "x": 123.49, "y": 789.81, "size": 15.38}, {"id": "policy:hakubutsukan_toroku", "label": "博物館登録制度", "kind": "program", "group": "policy", "df": 2, "degree": 3, "strength": 2.8808, "betweenness": 0.0, "community": 4, "x": 935.84, "y": -66.13, "size": 15.38}, {"id": "t:制度", "label": "制度", "kind": "term", "group": "term", "df": 2, "degree": 3, "strength": 2.8808, "betweenness": 0.0, "community": 4, "x": 1000.0, "y": 8.53, "size": 15.38}, {"id": "t:運用", "label": "運用", "kind": "term", "group": "term", "df": 2, "degree": 3, "strength": 2.8808, "betweenness": 0.0, "community": 4, "x": 926.75, "y": 74.31, "size": 15.38}, {"id": "org:nich", "label": "国立文化財機構", "kind": "org", "group": "other", "df": 2, "degree": 3, "strength": 2.5924, "betweenness": 0.0, "community": 1, "x": -276.32, "y": 240.53, "size": 15.38}, {"id": "t:収蔵品", "label": "収蔵品", "kind": "term", "group": "term", "df": 2, "degree": 3, "strength": 2.5924, "betweenness": 0.0, "community": 1, "x": -262.89, "y": 265.19, "size": 15.38}, {"id": "t:人材育成", "label": "人材育成", "kind": "term", "group": "term", "df": 2, "degree": 4, "strength": 3.295, "betweenness": 0.0, "community": 3, "x": -74.52, "y": 190.38, "size": 15.38}, {"id": "t:概算要求", "label": "概算要求", "kind": "term", "group": "term", "df": 2, "degree": 4, "strength": 3.295, "betweenness": 0.0, "community": 3, "x": -62.31, "y": 170.47, "size": 15.38}, {"id": "t:重点", "label": "重点", "kind": "term", "group": "term", "df": 2, "degree": 4, "strength": 3.295, "betweenness": 0.0, "community": 3, "x": -45.08, "y": 180.94, "size": 15.38}, {"id": "policy:nihon_isan", "label": "日本遺産", "kind": "program", "group": "policy", "df": 2, "degree": 6, "strength": 4.988, "betweenness": 0.0, "community": 0, "x": -128.58, "y": -167.08, "size": 15.38}, {"id": "t:苦慮", "label": "苦慮", "kind": "term", "group": "term", "df": 2, "degree": 6, "strength": 4.988, "betweenness": 0.0, "community": 0, "x": -111.89, "y": -171.74, "size": 15.38}, {"id": "t:観光振興", "label": "観光振興", "kind": "term", "group": "term", "df": 2, "degree": 6, "strength": 4.988, "betweenness": 0.0, "community": 0, "x": -129.06, "y": -189.06, "size": 15.38}, {"id": "t:待遇改善", "label": "待遇改善", "kind": "term", "group": "term", "df": 2, "degree": 3, "strength": 2.5268, "betweenness": 0.0, "community": 5, "x": 334.62, "y": -213.73, "size": 15.38}, {"id": "t:要望書", "label": "要望書", "kind": "term", "group": "term", "df": 2, "degree": 3, "strength": 2.5268, "betweenness": 0.0, "community": 5, "x": 320.46, "y": -234.31, "size": 15.38}, {"id": "t:地域枠", "label": "地域枠", "kind": "term", "group": "term", "df": 2, "degree": 3, "strength": 2.5924, "betweenness": 0.0, "community": 6, "x": 765.17, "y": 401.43, "size": 15.38}, {"id": "t:新設", "label": "新設", "kind": "term", "group": "term", "df": 2, "degree": 3, "strength": 2.5924, "betweenness": 0.0, "community": 6, "x": 789.33, "y": 487.65, "size": 15.38}, {"id": "t:両立", "label": "両立", "kind": "term", "group": "term", "df": 4, "degree": 6, "strength": 4.3598, "betweenness": 0.0, "community": 0, "x": -111.74, "y": -195.54, "size": 19.27}, {"id": "t:保存", "label": "保存", "kind": "term", "group": "term", "df": 5, "degree": 8, "strength": 5.2236, "betweenness": 0.07407, "community": 0, "x": -74.63, "y": -177.78, "size": 20.83}, {"id": "org:bunka_shingikai", "label": "文化審議会", "kind": "org", "group": "other", "df": 3, "degree": 4, "strength": 3.5232, "betweenness": 0.0021, "community": 4, "x": 826.2, "y": -2.71, "size": 17.49}, {"id": "t:部会", "label": "部会", "kind": "term", "group": "term", "df": 2, "degree": 1, "strength": 0.8808, "betweenness": 0.0, "community": 4, "x": 651.49, "y": -14.01, "size": 15.38}, {"id": "policy:bunka_kanko_suishinho", "label": "文化観光推進法", "kind": "law", "group": "policy", "df": 3, "degree": 3, "strength": 1.8718, "betweenness": 0.09574, "community": 0, "x": -130.52, "y": -14.25, "size": 17.49}, {"id": "t:拠点計画", "label": "拠点計画", "kind": "term", "group": "term", "df": 2, "degree": 2, "strength": 1.6114, "betweenness": 0.0, "community": 0, "x": -148.59, "y": -67.39, "size": 15.38}, {"id": "t:事業費", "label": "事業費", "kind": "term", "group": "term", "df": 3, "degree": 3, "strength": 1.9308, "betweenness": 0.0, "community": 2, "x": 97.61, "y": -132.14, "size": 17.49}, {"id": "t:縮小", "label": "縮小", "kind": "term", "group": "term", "df": 2, "degree": 3, "strength": 2.1692, "betweenness": 0.0, "community": 2, "x": 107.59, "y": -151.29, "size": 15.38}, {"id": "t:ガイドライン", "label": "ガイドライン", "kind": "term", "group": "term", "df": 2, "degree": 2, "strength": 1.677, "betweenness": 0.0, "community": 3, "x": -31.85, "y": 265.71, "size": 15.38}, {"id": "t:改訂", "label": "改訂", "kind": "term", "group": "term", "df": 3, "degree": 3, "strength": 1.9374, "betweenness": 0.01153, "community": 3, "x": -61.31, "y": 240.45, "size": 17.49}, {"id": "t:拡充", "label": "拡充", "kind": "term", "group": "term", "df": 4, "degree": 7, "strength": 4.6646, "betweenness": 0.07338, "community": 1, "x": -219.25, "y": 224.85, "size": 19.27}, {"id": "t:補助", "label": "補助", "kind": "term", "group": "term", "df": 4, "degree": 5, "strength": 3.276, "betweenness": 0.02586, "community": 1, "x": -174.65, "y": 236.25, "size": 19.27}, {"id": "policy:bunkazai_hogoho", "label": "文化財保護法", "kind": "law", "group": "policy", "df": 2, "degree": 1, "strength": 0.7962, "betweenness": 0.0, "community": 1, "x": -187.73, "y": 299.37, "size": 15.38}, {"id": "policy:dejitaru_archive", "label": "デジタルアーカイブ", "kind": "policy", "group": "policy", "df": 4, "degree": 3, "strength": 2.1848, "betweenness": 0.0, "community": 1, "x": -287.95, "y": 264.01, "size": 19.27}, {"id": "policy:bunkazai_bosai", "label": "文化財防災", "kind": "policy", "group": "policy", "df": 4, "degree": 6, "strength": 4.3321, "betweenness": 0.01468, "community": 3, "x": -52.48, "y": 212.09, "size": 19.27}, {"id": "t:求める", "label": "求める", "kind": "term", "group": "term", "df": 4, "degree": 4, "strength": 2.4732, "betweenness": 0.09504, "community": 5, "x": 284.07, "y": -192.21, "size": 19.27}, {"id": "t:公立劇場", "label": "公立劇場", "kind": "term", "group": "term", "df": 4, "degree": 4, "strength": 2.8618, "betweenness": 0.0021, "community": 6, "x": 685.04, "y": 546.07, "size": 19.27}, {"id": "t:助成", "label": "助成", "kind": "term", "group": "term", "df": 4, "degree": 3, "strength": 2.1848, "betweenness": 0.0, "community": 6, "x": 667.79, "y": 412.27, "size": 19.27}, {"id": "t:専門人材", "label": "専門人材", "kind": "term", "group": "term", "df": 4, "degree": 2, "strength": 1.4105, "betweenness": 0.0, "community": 7, "x": 329.7, "y": -8.49, "size": 19.27}, {"id": "t:育成", "label": "育成", "kind": "term", "group": "term", "df": 5, "degree": 3, "strength": 1.6333, "betweenness": 0.05031, "community": 7, "x": 283.75, "y": -40.94, "size": 20.83}, {"id": "t:認定", "label": "認定", "kind": "term", "group": "term", "df": 5, "degree": 8, "strength": 5.1808, "betweenness": 0.08665, "community": 0, "x": -129.38, "y": -127.61, "size": 20.83}, {"id": "t:多言語解説", "label": "多言語解説", "kind": "term", "group": "term", "df": 2, "degree": 1, "strength": 0.7306, "betweenness": 0.0, "community": 9, "x": -273.5, "y": 812.11, "size": 15.38}, {"id": "t:整備", "label": "整備", "kind": "term", "group": "term", "df": 5, "degree": 1, "strength": 0.7306, "betweenness": 0.0, "community": 9, "x": -46.1, "y": 588.15, "size": 20.83}, {"id": "t:予算", "label": "予算", "kind": "term", "group": "term", "df": 5, "degree": 5, "strength": 2.8222, "betweenness": 0.08106, "community": 2, "x": 44.08, "y": -159.16, "size": 20.83}, {"id": "t:資料", "label": "資料", "kind": "term", "group": "term", "df": 2, "degree": 2, "strength": 1.4612, "betweenness": 0.0, "community": 2, "x": -10.55, "y": -189.92, "size": 15.38}, {"id": "t:地域", "label": "地域", "kind": "term", "group": "term", "df": 5, "degree": 6, "strength": 3.8388, "betweenness": 0.0, "community": 0, "x": -146.81, "y": -180.08, "size": 20.83}, {"id": "t:学芸員", "label": "学芸員", "kind": "term", "group": "term", "df": 5, "degree": 4, "strength": 2.5994, "betweenness": 0.02586, "community": 5, "x": 355.86, "y": -242.28, "size": 20.83}, {"id": "policy:shitei_kanrisha", "label": "指定管理者制度", "kind": "program", "group": "policy", "df": 3, "degree": 2, "strength": 1.2884, "betweenness": 0.0, "community": 7, "x": 346.92, "y": -30.24, "size": 17.49}, {"id": "policy:gekijoho", "label": "劇場法", "kind": "law", "group": "policy", "df": 3, "degree": 1, "strength": 0.677, "betweenness": 0.0, "community": 6, "x": 604.02, "y": 703.73, "size": 17.49}, {"id": "policy:bunka_shigen", "label": "文化資源", "kind": "policy", "group": "policy", "df": 3, "degree": 1, "strength": 0.6114, "betweenness": 0.0, "community": 10, "x": -621.49, "y": 619.78, "size": 17.49}, {"id": "t:活用", "label": "活用", "kind": "term", "group": "term", "df": 5, "degree": 1, "strength": 0.6114, "betweenness": 0.0, "community": 10, "x": -394.1, "y": 395.81, "size": 20.83}, {"id": "t:修理技術者", "label": "修理技術者", "kind": "term", "group": "term", "df": 3, "degree": 1, "strength": 0.6114, "betweenness": 0.0, "community": 5, "x": 410.83, "y": -279.95, "size": 17.49}, {"id": "t:地方公共団体", "label": "地方公共団体", "kind": "term", "group": "term", "df": 9, "degree": 7, "strength": 2.9236, "betweenness": 0.24109, "community": 2, "x": 151.3, "y": -95.02, "size": 25.9}, {"id": "t:連携", "label": "連携", "kind": "term", "group": "term", "df": 2, "degree": 1, "strength": 0.5578, "betweenness": 0.0, "community": 2, "x": 203.94, "y": -98.56, "size": 15.38}, {"id": "org:bunkacho", "label": "文化庁", "kind": "org", "group": "other", "df": 11, "degree": 11, "strength": 4.6931, "betweenness": 0.28442, "community": 3, "x": -101.63, "y": 147.18, "size": 28.0}, {"id": "t:支援", "label": "支援", "kind": "term", "group": "term", "df": 3, "degree": 2, "strength": 0.8182, "betweenness": 0.15269, "community": 2, "x": 34.53, "y": 25.56, "size": 17.49}], "edges": [{"source": "policy:juyo_bunkazai", "target": "policy:kokuho", "npmi": 1.0, "cooc": 2, "jaccard": 1.0, "surprise": -1.0, "is_new": false}, {"source": "policy:juyo_bunkazai", "target": "t:拡充", "npmi": 0.7962, "cooc": 2, "jaccard": 0.5, "surprise": -1.0, "is_new": false}, {"source": "policy:juyo_bunkazai", "target": "t:補助", "npmi": 0.7962, "cooc": 2, "jaccard": 0.5, "surprise": -0.8155, "is_new": false}, {"source": "policy:juyo_bunkazai", "target": "org:bunkacho", "npmi": 0.4988, "cooc": 2, "jaccard": 0.1818, "surprise": -0.6845, "is_new": false}, {"source": "policy:kokuho", "target": "t:拡充", "npmi": 0.7962, "cooc": 2, "jaccard": 0.5, "surprise": -1.0, "is_new": false}, {"source": "policy:kokuho", "target": "t:補助", "npmi": 0.7962, "cooc": 2, "jaccard": 0.5, "surprise": -0.8155, "is_new": false}, {"source": "policy:kokuho", "target": "org:bunkacho", "npmi": 0.4988, "cooc": 2, "jaccard": 0.1818, "surprise": -0.6845, "is_new": false}, {"source": "t:修理", "target": "t:費用", "npmi": 1.0, "cooc": 2, "jaccard": 1.0, "surprise": -1.0, "is_new": false}, {"source": "policy:hakubutsukan_toroku", "target": "t:制度", "npmi": 1.0, "cooc": 2, "jaccard": 1.0, "surprise": -1.0, "is_new": false}, {"source": "policy:hakubutsukan_toroku", "target": "t:運用", "npmi": 1.0, "cooc": 2, "jaccard": 1.0, "surprise": -1.0, "is_new": false}, {"source": "policy:hakubutsukan_toroku", "target": "org:bunka_shingikai", "npmi": 0.8808, "cooc": 2, "jaccard": 0.6667, "surprise": -0.8155, "is_new": false}, {"source": "t:制度", "target": "t:運用", "npmi": 1.0, "cooc": 2, "jaccard": 1.0, "surprise": -1.0, "is_new": false}, {"source": "t:制度", "target": "org:bunka_shingikai", "npmi": 0.8808, "cooc": 2, "jaccard": 0.6667, "surprise": -0.8155, "is_new": false}, {"source": "t:運用", "target": "org:bunka_shingikai", "npmi": 0.8808, "cooc": 2, "jaccard": 0.6667, "surprise": -0.8155, "is_new": false}, {"source": "org:nich", "target": "t:収蔵品", "npmi": 1.0, "cooc": 2, "jaccard": 1.0, "surprise": 1.0, "is_new": true}, {"source": "org:nich", "target": "policy:dejitaru_archive", "npmi": 0.7962, "cooc": 2, "jaccard": 0.5, "surprise": 0.8668, "is_new": true}, {"source": "org:nich", "target": "t:拡充", "npmi": 0.7962, "cooc": 2, "jaccard": 0.5, "surprise": 1.0, "is_new": true}, {"source": "t:収蔵品", "target": "policy:dejitaru_archive", "npmi": 0.7962, "cooc": 2, "jaccard": 0.5, "surprise": 0.8668, "is_new": true}, {"source": "t:収蔵品", "target": "t:拡充", "npmi": 0.7962, "cooc": 2, "jaccard": 0.5, "surprise": 1.0, "is_new": true}, {"source": "t:人材育成", "target": "t:概算要求", "npmi": 1.0, "cooc": 2, "jaccard": 1.0, "surprise": 1.0, "is_new": true}, {"source": "t:人材育成", "target": "t:重点", "npmi": 1.0, "cooc": 2, "jaccard": 1.0, "surprise": 1.0, "is_new": true}, {"source": "t:人材育成", "target": "policy:bunkazai_bosai", "npmi": 0.7962, "cooc": 2, "jaccard": 0.5, "surprise": 0.7723, "is_new": true}, {"source": "t:人材育成", "target": "org:bunkacho", "npmi": 0.4988, "cooc": 2, "jaccard": 0.1818, "surprise": 0.5885, "is_new": true}, {"source": "t:概算要求", "target": "t:重点", "npmi": 1.0, "cooc": 2, "jaccard": 1.0, "surprise": 1.0, "is_new": true}, {"source": "t:概算要求", "target": "policy:bunkazai_bosai", "npmi": 0.7962, "cooc": 2, "jaccard": 0.5, "surprise": 0.7723, "is_new": true}, {"source": "t:概算要求", "target": "org:bunkacho", "npmi": 0.4988, "cooc": 2, "jaccard": 0.1818, "surprise": 0.5885, "is_new": true}, {"source": "t:重点", "target": "policy:bunkazai_bosai", "npmi": 0.7962, "cooc": 2, "jaccard": 0.5, "surprise": 0.7723, "is_new": true}, {"source": "t:重点", "target": "org:bunkacho", "npmi": 0.4988, "cooc": 2, "jaccard": 0.1818, "surprise": 0.5885, "is_new": true}, {"source": "policy:nihon_isan", "target": "t:苦慮", "npmi": 1.0, "cooc": 2, "jaccard": 1.0, "surprise": 1.0, "is_new": true}, {"source": "policy:nihon_isan", "target": "t:観光振興", "npmi": 1.0, "cooc": 2, "jaccard": 1.0, "surprise": 1.0, "is_new": true}, {"source": "policy:nihon_isan", "target": "t:両立", "npmi": 0.7962, "cooc": 2, "jaccard": 0.5, "surprise": 1.0, "is_new": true}, {"source": "policy:nihon_isan", "target": "t:保存", "npmi": 0.7306, "cooc": 2, "jaccard": 0.4, "surprise": 0.8668, "is_new": true}, {"source": "policy:nihon_isan", "target": "t:地域", "npmi": 0.7306, "cooc": 2, "jaccard": 0.4, "surprise": 0.7723, "is_new": true}, {"source": "policy:nihon_isan", "target": "t:認定", "npmi": 0.7306, "cooc": 2, "jaccard": 0.4, "surprise": 1.0, "is_new": true}, {"source": "t:苦慮", "target": "t:観光振興", "npmi": 1.0, "cooc": 2, "jaccard": 1.0, "surprise": 1.0, "is_new": true}, {"source": "t:苦慮", "target": "t:両立", "npmi": 0.7962, "cooc": 2, "jaccard": 0.5, "surprise": 1.0, "is_new": true}, {"source": "t:苦慮", "target": "t:保存", "npmi": 0.7306, "cooc": 2, "jaccard": 0.4, "surprise": 0.8668, "is_new": true}, {"source": "t:苦慮", "target": "t:地域", "npmi": 0.7306, "cooc": 2, "jaccard": 0.4, "surprise": 0.7723, "is_new": true}, {"source": "t:苦慮", "target": "t:認定", "npmi": 0.7306, "cooc": 2, "jaccard": 0.4, "surprise": 1.0, "is_new": true}, {"source": "t:観光振興", "target": "t:両立", "npmi": 0.7962, "cooc": 2, "jaccard": 0.5, "surprise": 1.0, "is_new": true}, {"source": "t:観光振興", "target": "t:保存", "npmi": 0.7306, "cooc": 2, "jaccard": 0.4, "surprise": 0.8668, "is_new": true}, {"source": "t:観光振興", "target": "t:地域", "npmi": 0.7306, "cooc": 2, "jaccard": 0.4, "surprise": 0.7723, "is_new": true}, {"source": "t:観光振興", "target": "t:認定", "npmi": 0.7306, "cooc": 2, "jaccard": 0.4, "surprise": 1.0, "is_new": true}, {"source": "t:待遇改善", "target": "t:要望書", "npmi": 1.0, "cooc": 2, "jaccard": 1.0, "surprise": 1.0, "is_new": true}, {"source": "t:待遇改善", "target": "t:求める", "npmi": 0.7962, "cooc": 2, "jaccard": 0.5, "surprise": 0.8668, "is_new": true}, {"source": "t:待遇改善", "target": "t:学芸員", "npmi": 0.7306, "cooc": 2, "jaccard": 0.4, "surprise": 0.7723, "is_new": true}, {"source": "t:要望書", "target": "t:求める", "npmi": 0.7962, "cooc": 2, "jaccard": 0.5, "surprise": 0.8668, "is_new": true}, {"source": "t:要望書", "target": "t:学芸員", "npmi": 0.7306, "cooc": 2, "jaccard": 0.4, "surprise": 0.7723, "is_new": true}, {"source": "t:地域枠", "target": "t:新設", "npmi": 1.0, "cooc": 2, "jaccard": 1.0, "surprise": 1.0, "is_new": true}, {"source": "t:地域枠", "target": "t:公立劇場", "npmi": 0.7962, "cooc": 2, "jaccard": 0.5, "surprise": 0.7723, "is_new": true}, {"source": "t:地域枠", "target": "t:助成", "npmi": 0.7962, "cooc": 2, "jaccard": 0.5, "surprise": 0.7723, "is_new": true}, {"source": "t:新設", "target": "t:公立劇場", "npmi": 0.7962, "cooc": 2, "jaccard": 0.5, "surprise": 0.7723, "is_new": true}, {"source": "t:新設", "target": "t:助成", "npmi": 0.7962, "cooc": 2, "jaccard": 0.5, "surprise": 0.7723, "is_new": true}, {"source": "t:両立", "target": "t:保存", "npmi": 0.9176, "cooc": 4, "jaccard": 0.8, "surprise": -0.1332, "is_new": false}, {"source": "t:両立", "target": "t:地域", "npmi": 0.5268, "cooc": 2, "jaccard": 0.2857, "surprise": 0.7723, "is_new": true}, {"source": "t:両立", "target": "t:認定", "npmi": 0.5268, "cooc": 2, "jaccard": 0.2857, "surprise": 1.0, "is_new": true}, {"source": "t:保存", "target": "t:資料", "npmi": 0.7306, "cooc": 2, "jaccard": 0.4, "surprise": -0.0541, "is_new": false}, {"source": "t:保存", "target": "t:予算", "npmi": 0.4612, "cooc": 2, "jaccard": 0.25, "surprise": -0.425, "is_new": false}, {"source": "t:保存", "target": "t:地域", "npmi": 0.4612, "cooc": 2, "jaccard": 0.25, "surprise": 0.6392, "is_new": true}, {"source": "t:保存", "target": "t:認定", "npmi": 0.4612, "cooc": 2, "jaccard": 0.25, "surprise": 0.8668, "is_new": true}, {"source": "org:bunka_shingikai", "target": "t:部会", "npmi": 0.8808, "cooc": 2, "jaccard": 0.6667, "surprise": -0.8155, "is_new": false}, {"source": "policy:bunka_kanko_suishinho", "target": "t:拠点計画", "npmi": 0.8808, "cooc": 2, "jaccard": 0.6667, "surprise": -1.0, "is_new": false}, {"source": "policy:bunka_kanko_suishinho", "target": "t:認定", "npmi": 0.6114, "cooc": 2, "jaccard": 0.3333, "surprise": -0.8155, "is_new": false}, {"source": "policy:bunka_kanko_suishinho", "target": "org:bunkacho", "npmi": 0.3796, "cooc": 2, "jaccard": 0.1667, "surprise": 0.1988, "is_new": false}, {"source": "t:拠点計画", "target": "t:認定", "npmi": 0.7306, "cooc": 2, "jaccard": 0.4, "surprise": -0.8155, "is_new": false}, {"source": "t:事業費", "target": "t:縮小", "npmi": 0.8808, "cooc": 2, "jaccard": 0.6667, "surprise": 0.8668, "is_new": true}, {"source": "t:事業費", "target": "t:予算", "npmi": 0.6114, "cooc": 2, "jaccard": 0.3333, "surprise": 0.6392, "is_new": true}, {"source": "t:事業費", "target": "t:地方公共団体", "npmi": 0.4386, "cooc": 2, "jaccard": 0.2, "surprise": 0.506, "is_new": true}, {"source": "t:縮小", "target": "t:予算", "npmi": 0.7306, "cooc": 2, "jaccard": 0.4, "surprise": 0.7723, "is_new": true}, {"source": "t:縮小", "target": "t:地方公共団体", "npmi": 0.5578, "cooc": 2, "jaccard": 0.2222, "surprise": 0.6392, "is_new": true}, {"source": "t:ガイドライン", "target": "t:改訂", "npmi": 0.8808, "cooc": 2, "jaccard": 0.6667, "surprise": 1.0, "is_new": true}, {"source": "t:ガイドライン", "target": "policy:bunkazai_bosai", "npmi": 0.7962, "cooc": 2, "jaccard": 0.5, "surprise": 0.7723, "is_new": true}, {"source": "t:改訂", "target": "policy:bunkazai_bosai", "npmi": 0.677, "cooc": 2, "jaccard": 0.4, "surprise": 0.7723, "is_new": true}, {"source": "t:改訂", "target": "org:bunkacho", "npmi": 0.3796, "cooc": 2, "jaccard": 0.1667, "surprise": -0.2264, "is_new": false}, {"source": "t:拡充", "target": "t:補助", "npmi": 0.5924, "cooc": 2, "jaccard": 0.3333, "surprise": -0.8155, "is_new": false}, {"source": "t:拡充", "target": "policy:dejitaru_archive", "npmi": 0.5924, "cooc": 2, "jaccard": 0.3333, "surprise": 0.8668, "is_new": true}, {"source": "t:拡充", "target": "org:bunkacho", "npmi": 0.295, "cooc": 2, "jaccard": 0.1538, "surprise": -0.6845, "is_new": false}, {"source": "t:補助", "target": "policy:bunkazai_hogoho", "npmi": 0.7962, "cooc": 2, "jaccard": 0.5, "surprise": 0.3801, "is_new": false}, {"source": "t:補助", "target": "org:bunkacho", "npmi": 0.295, "cooc": 2, "jaccard": 0.1538, "surprise": -0.5, "is_new": false}, {"source": "policy:bunkazai_bosai", "target": "org:bunkacho", "npmi": 0.4703, "cooc": 3, "jaccard": 0.25, "surprise": 0.5699, "is_new": true}, {"source": "t:求める", "target": "t:学芸員", "npmi": 0.5268, "cooc": 2, "jaccard": 0.2857, "surprise": 0.6392, "is_new": true}, {"source": "t:求める", "target": "t:地方公共団体", "npmi": 0.354, "cooc": 2, "jaccard": 0.1818, "surprise": -0.3932, "is_new": false}, {"source": "t:公立劇場", "target": "policy:gekijoho", "npmi": 0.677, "cooc": 2, "jaccard": 0.4, "surprise": 0.6392, "is_new": true}, {"source": "t:公立劇場", "target": "t:助成", "npmi": 0.5924, "cooc": 2, "jaccard": 0.3333, "surprise": 0.5447, "is_new": true}, {"source": "t:専門人材", "target": "t:育成", "npmi": 0.7335, "cooc": 3, "jaccard": 0.5, "surprise": -0.0265, "is_new": false}, {"source": "t:専門人材", "target": "policy:shitei_kanrisha", "npmi": 0.677, "cooc": 2, "jaccard": 0.4, "surprise": -0.4794, "is_new": false}, {"source": "t:育成", "target": "policy:shitei_kanrisha", "npmi": 0.6114, "cooc": 2, "jaccard": 0.3333, "surprise": -0.2396, "is_new": false}, {"source": "t:育成", "target": "t:地方公共団体", "npmi": 0.2884, "cooc": 2, "jaccard": 0.1667, "surprise": -0.1534, "is_new": false}, {"source": "t:認定", "target": "t:地域", "npmi": 0.659, "cooc": 3, "jaccard": 0.4286, "surprise": 0.1524, "is_new": false}, {"source": "t:多言語解説", "target": "t:整備", "npmi": 0.7306, "cooc": 2, "jaccard": 0.4, "surprise": -0.3709, "is_new": false}, {"source": "t:予算", "target": "t:資料", "npmi": 0.7306, "cooc": 2, "jaccard": 0.4, "surprise": -0.3709, "is_new": false}, {"source": "t:予算", "target": "t:地方公共団体", "npmi": 0.2884, "cooc": 2, "jaccard": 0.1667, "surprise": 0.4115, "is_new": true}, {"source": "t:学芸員", "target": "t:修理技術者", "npmi": 0.6114, "cooc": 2, "jaccard": 0.3333, "surprise": 0.7723, "is_new": true}, {"source": "policy:bunka_shigen", "target": "t:活用", "npmi": 0.6114, "cooc": 2, "jaccard": 0.3333, "surprise": 0.7723, "is_new": true}, {"source": "t:地方公共団体", "target": "t:連携", "npmi": 0.5578, "cooc": 2, "jaccard": 0.2222, "surprise": 0.6392, "is_new": true}, {"source": "t:地方公共団体", "target": "t:支援", "npmi": 0.4386, "cooc": 2, "jaccard": 0.2, "surprise": -0.2847, "is_new": false}, {"source": "org:bunkacho", "target": "t:支援", "npmi": 0.3796, "cooc": 2, "jaccard": 0.1667, "surprise": 0.5885, "is_new": true}], "meta": {"generated_at": "2026-08-15T08:53:52+00:00", "n_docs": 10, "n_units": 60, "n_nodes": 55, "n_edges": 97, "period": "2026-07-21 〜 2026-08-13", "has_trend": true}};
+
+const css = getComputedStyle(document.documentElement);
+const tokens = () => ({
+  surface: css.getPropertyValue('--surface-1').trim(),
+  text: css.getPropertyValue('--text-primary').trim(),
+  secondary: css.getPropertyValue('--text-secondary').trim(),
+  muted: css.getPropertyValue('--muted').trim(),
+  edge: css.getPropertyValue('--edge').trim(),
+  edgeStrong: css.getPropertyValue('--edge-strong').trim(),
+  term: css.getPropertyValue('--term').trim(),
+  facility: css.getPropertyValue('--facility').trim(),
+  policy: css.getPropertyValue('--policy').trim(),
+});
+const colorOf = (group, t) =>
+  group === 'facility' ? t.facility : group === 'policy' ? t.policy : t.term;
+
+const cv = document.getElementById('cv');
+const ctx = cv.getContext('2d');
+const tip = document.getElementById('tooltip');
+
+const nodes = DATA.nodes.map(n => ({...n}));
+const byId = new Map(nodes.map(n => [n.id, n]));
+const edges = DATA.edges
+  .map(e => ({...e, s: byId.get(e.source), t: byId.get(e.target)}))
+  .filter(e => e.s && e.t);
+const adjacency = new Map(nodes.map(n => [n.id, []]));
+edges.forEach(e => { adjacency.get(e.source).push(e); adjacency.get(e.target).push(e); });
+
+const maxNpmi = edges.reduce((m, e) => Math.max(m, e.npmi), 0.01);
+const minNpmi = edges.reduce((m, e) => Math.min(m, e.npmi), 1);
+
+/* クラスタの重心と代表語（色ではなく位置とラベルでかたまりを示す） */
+const clusters = (() => {
+  const acc = new Map();
+  nodes.forEach(n => {
+    const c = acc.get(n.community) || {x: 0, y: 0, n: 0, members: []};
+    c.x += n.x; c.y += n.y; c.n++; c.members.push(n);
+    acc.set(n.community, c);
+  });
+  return [...acc.entries()]
+    .filter(([, c]) => c.n >= 4)
+    .map(([id, c]) => {
+      const top = c.members.sort((a, b) => b.strength - a.strength).slice(0, 3).map(n => n.label);
+      return {id, x: c.x / c.n, y: c.y / c.n, size: c.n, label: top.join('・')};
+    });
+})();
+
+const view = {scale: 1, tx: 0, ty: 0};
+const state = {
+  threshold: Math.max(0, +minNpmi.toFixed(2)),
+  labelCount: 45,
+  kinds: {facility: true, policy: true, other: true},
+  query: '',
+  hover: null,
+  selected: null,
+  showClusters: false,
+};
+
+let visibleNodes = [], visibleEdges = [];
+
+function nodeVisible(n) {
+  if (n.group !== 'term' && !state.kinds[n.group]) return false;
+  return true;
+}
+
+function recompute() {
+  visibleEdges = edges.filter(e =>
+    e.npmi >= state.threshold && nodeVisible(e.s) && nodeVisible(e.t));
+  const keep = new Set();
+  visibleEdges.forEach(e => { keep.add(e.source); keep.add(e.target); });
+  visibleNodes = nodes.filter(n => keep.has(n.id));
+  draw();
+}
+
+/* ---- 座標変換 ---- */
+function fit() {
+  const w = cv.clientWidth, h = cv.clientHeight;
+  if (!nodes.length || !w || !h) return;
+  const xs = nodes.map(n => n.x), ys = nodes.map(n => n.y);
+  const minX = Math.min(...xs), maxX = Math.max(...xs);
+  const minY = Math.min(...ys), maxY = Math.max(...ys);
+  const pad = 70;
+  const scale = Math.min((w - pad * 2) / (maxX - minX || 1), (h - pad * 2) / (maxY - minY || 1));
+  view.scale = scale;
+  view.tx = w / 2 - ((minX + maxX) / 2) * scale;
+  view.ty = h / 2 - ((minY + maxY) / 2) * scale;
+}
+const sx = x => x * view.scale + view.tx;
+const sy = y => y * view.scale + view.ty;
+const radius = n => Math.max(3, n.size * 0.5 * Math.min(1.6, Math.max(0.55, view.scale * 0.6)));
+
+/* ---- 描画 ---- */
+function shape(path, group, x, y, r) {
+  if (group === 'facility') { path.rect(x - r, y - r, r * 2, r * 2); return; }
+  if (group === 'policy') {
+    path.moveTo(x, y - r * 1.25); path.lineTo(x + r * 1.25, y);
+    path.lineTo(x, y + r * 1.25); path.lineTo(x - r * 1.25, y); path.closePath(); return;
+  }
+  if (group === 'other') {
+    path.moveTo(x, y - r * 1.2); path.lineTo(x + r * 1.1, y + r * 0.85);
+    path.lineTo(x - r * 1.1, y + r * 0.85); path.closePath(); return;
+  }
+  path.moveTo(x + r, y); path.arc(x, y, r, 0, Math.PI * 2);
+}
+
+function draw() {
+  const t = tokens();
+  const dpr = window.devicePixelRatio || 1;
+  const w = cv.clientWidth, h = cv.clientHeight;
+  cv.width = w * dpr; cv.height = h * dpr;
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, w, h);
+
+  const focus = state.selected || state.hover;
+  const focusIds = new Set();
+  if (focus) {
+    focusIds.add(focus.id);
+    (adjacency.get(focus.id) || []).forEach(e => {
+      if (e.npmi >= state.threshold) { focusIds.add(e.source); focusIds.add(e.target); }
+    });
+  }
+
+  /* クラスタ名は色ではなく、薄い大きめのラベルで示す */
+  if (state.showClusters && !focus) {
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    clusters.forEach(c => {
+      ctx.fillStyle = t.muted;
+      ctx.globalAlpha = 0.22;
+      ctx.font = `600 ${Math.min(22, 13 + c.size * 0.35)}px system-ui, sans-serif`;
+      ctx.fillText(c.label, sx(c.x), sy(c.y));
+      ctx.globalAlpha = 1;
+    });
+  }
+
+  /* エッジ: 細いヘアライン。太さは NPMI に比例 */
+  visibleEdges.forEach(e => {
+    const inFocus = focus && focusIds.has(e.source) && focusIds.has(e.target);
+    if (focus && !inFocus) { ctx.globalAlpha = 0.10; } else { ctx.globalAlpha = 1; }
+    ctx.strokeStyle = inFocus ? t.edgeStrong : t.edge;
+    ctx.lineWidth = 0.5 + 2.0 * ((e.npmi - minNpmi) / (maxNpmi - minNpmi || 1));
+    ctx.beginPath();
+    ctx.moveTo(sx(e.s.x), sy(e.s.y));
+    ctx.lineTo(sx(e.t.x), sy(e.t.y));
+    ctx.stroke();
+  });
+  ctx.globalAlpha = 1;
+
+  /* ノード: 重なりは2pxのサーフェス色リングで分離する */
+  const q = state.query.trim();
+  visibleNodes.forEach(n => {
+    const dim = (focus && !focusIds.has(n.id)) || (q && !n.label.includes(q));
+    ctx.globalAlpha = dim ? 0.18 : 1;
+    const r = radius(n);
+    const p = new Path2D();
+    shape(p, n.group, sx(n.x), sy(n.y), r);
+    ctx.fillStyle = colorOf(n.group, t);
+    ctx.fill(p);
+    ctx.lineWidth = 2; ctx.strokeStyle = t.surface;
+    ctx.stroke(p);
+    if (q && n.label.includes(q) && !dim) {
+      ctx.lineWidth = 2; ctx.strokeStyle = t.text;
+      const ring = new Path2D();
+      shape(ring, n.group, sx(n.x), sy(n.y), r + 3.5);
+      ctx.stroke(ring);
+    }
+  });
+  ctx.globalAlpha = 1;
+
+  /* ラベルは選択的に。上位 N + エンティティ + 注目中のノードだけ。
+     重なったものは描かない（読めない字を重ねるより、出さない方がよい） */
+  const topIds = new Set(
+    [...visibleNodes].sort((a, b) => b.strength - a.strength)
+      .slice(0, state.labelCount).map(n => n.id)
+  );
+  const candidates = visibleNodes.filter(n => {
+    if (focus) return focusIds.has(n.id);
+    if (q && n.label.includes(q)) return true;
+    return topIds.has(n.id) || n.group !== 'term';
+  });
+  // 重要なものから先に場所を取る
+  candidates.sort((a, b) => (b.group !== 'term') - (a.group !== 'term') || b.strength - a.strength);
+
+  const boxes = [];
+  const overlaps = (b) => boxes.some(o =>
+    !(b.x1 < o.x0 || b.x0 > o.x1 || b.y1 < o.y0 || b.y0 > o.y1));
+
+  ctx.textAlign = 'center'; ctx.textBaseline = 'top';
+  candidates.forEach(n => {
+    const isEntity = n.group !== 'term';
+    ctx.font = `${isEntity ? 650 : 500} ${isEntity ? 13 : 12}px system-ui, sans-serif`;
+    const w = ctx.measureText(n.label).width, h = isEntity ? 15 : 14;
+    const r = radius(n);
+    const x = sx(n.x), y = sy(n.y) + r + 3;
+    const box = {x0: x - w / 2 - 2, x1: x + w / 2 + 2, y0: y - 1, y1: y + h + 1};
+    const forced = focus && (n === focus || (q && n.label.includes(q)));
+    if (!forced && overlaps(box)) return;
+    boxes.push(box);
+    ctx.lineWidth = 3.5; ctx.strokeStyle = t.surface;
+    ctx.strokeText(n.label, x, y);
+    ctx.fillStyle = isEntity ? t.text : t.secondary;
+    ctx.fillText(n.label, x, y);
+  });
+}
+
+/* ---- 当たり判定（最小24px相当のヒットエリア） ---- */
+function pick(px, py) {
+  let best = null, bestDist = Infinity;
+  for (const n of visibleNodes) {
+    const dx = px - sx(n.x), dy = py - sy(n.y);
+    const d = Math.hypot(dx, dy);
+    const hit = Math.max(12, radius(n) + 6);
+    if (d < hit && d < bestDist) { best = n; bestDist = d; }
+  }
+  return best;
+}
+
+/* ---- サイドパネル（＝表ビュー。ツールチップだけに頼らせない） ---- */
+const panelTitle = document.getElementById('panelTitle');
+const panelBody = document.getElementById('panelBody');
+
+function neighborRows(node) {
+  return (adjacency.get(node.id) || [])
+    .filter(e => e.npmi >= state.threshold)
+    .sort((a, b) => b.npmi - a.npmi)
+    .slice(0, 20)
+    .map(e => {
+      const other = e.source === node.id ? e.t : e.s;
+      return `<tr><td><span class="swatch" style="background:${'var(--' + (other.group === 'facility' ? 'facility' : other.group === 'policy' ? 'policy' : 'term') + ')'}"></span>${esc(other.label)}</td>` +
+             `<td class="num">${e.npmi.toFixed(3)}</td><td class="num">${e.cooc}</td></tr>`;
+    }).join('');
+}
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+function showNode(node) {
+  state.selected = node;
+  if (!node) {
+    panelTitle.textContent = 'ノードを選択';
+    panelBody.className = 'empty';
+    panelBody.textContent = '図の中のノードをクリックすると、結びつきの強い相手が表で出ます。';
+    draw(); return;
+  }
+  const kindLabel = {term: '語', facility: '文化施設', policy: '政策・制度・法令', other: '組織・地域・人物'}[node.group];
+  panelTitle.textContent = node.label;
+  panelBody.className = '';
+  panelBody.innerHTML =
+    `<div style="color:var(--text-secondary);font-size:12px;margin-bottom:8px">` +
+    `${kindLabel} ／ 出現 ${node.df} 文 ／ 次数 ${node.degree} ／ 媒介 ${node.betweenness.toFixed(4)}</div>` +
+    `<table><thead><tr><th>共起相手</th><th class="num">NPMI</th><th class="num">共起</th></tr></thead>` +
+    `<tbody>${neighborRows(node)}</tbody></table>`;
+  draw();
+}
+
+function fillTopTable() {
+  const rows = [...edges].sort((a, b) => b.npmi - a.npmi).slice(0, 40).map(e =>
+    `<tr><td>${esc(e.s.label)} — ${esc(e.t.label)}</td>` +
+    `<td class="num">${e.npmi.toFixed(3)}</td><td class="num">${e.cooc}</td></tr>`).join('');
+  document.querySelector('#topTable tbody').innerHTML = rows || '<tr><td colspan="3" class="empty">なし</td></tr>';
+}
+
+/* ---- 操作 ---- */
+let dragging = false, dragMoved = false, lastX = 0, lastY = 0;
+cv.addEventListener('mousedown', e => {
+  dragging = true; dragMoved = false; lastX = e.clientX; lastY = e.clientY;
+  cv.classList.add('dragging');
+});
+window.addEventListener('mouseup', e => {
+  if (dragging && !dragMoved) {
+    const r = cv.getBoundingClientRect();
+    showNode(pick(e.clientX - r.left, e.clientY - r.top));
+  }
+  dragging = false; cv.classList.remove('dragging');
+});
+window.addEventListener('mousemove', e => {
+  if (dragging) {
+    if (Math.abs(e.clientX - lastX) + Math.abs(e.clientY - lastY) > 3) dragMoved = true;
+    view.tx += e.clientX - lastX; view.ty += e.clientY - lastY;
+    lastX = e.clientX; lastY = e.clientY;
+    draw();
+    return;
+  }
+  const r = cv.getBoundingClientRect();
+  if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) return;
+  const hit = pick(e.clientX - r.left, e.clientY - r.top);
+  if (hit !== state.hover) { state.hover = hit; draw(); }
+  if (hit) {
+    const kindLabel = {term: '語', facility: '文化施設', policy: '政策・制度・法令', other: '組織・地域・人物'}[hit.group];
+    tip.innerHTML = `<div class="t-label">${esc(hit.label)}</div>` +
+      `<div class="t-sub">${kindLabel} ／ 出現 ${hit.df} 文 ／ つながり ${hit.degree}</div>`;
+    tip.style.opacity = '1';
+    tip.style.left = Math.min(e.clientX + 14, window.innerWidth - 270) + 'px';
+    tip.style.top = (e.clientY + 16) + 'px';
+  } else {
+    tip.style.opacity = '0';
+  }
+});
+cv.addEventListener('wheel', e => {
+  e.preventDefault();
+  const r = cv.getBoundingClientRect();
+  const mx = e.clientX - r.left, my = e.clientY - r.top;
+  const k = Math.exp(-e.deltaY * 0.0016);
+  view.tx = mx - (mx - view.tx) * k;
+  view.ty = my - (my - view.ty) * k;
+  view.scale *= k;
+  draw();
+}, {passive: false});
+
+const npmiInput = document.getElementById('npmi');
+const npmiVal = document.getElementById('npmiVal');
+npmiInput.min = String(Math.max(0, Math.floor(minNpmi * 50) / 50));
+npmiInput.value = String(state.threshold);
+npmiVal.textContent = state.threshold.toFixed(2);
+npmiInput.addEventListener('input', () => {
+  state.threshold = +npmiInput.value;
+  npmiVal.textContent = state.threshold.toFixed(2);
+  if (state.selected) showNode(state.selected); else recompute();
+  recompute();
+});
+const labelsInput = document.getElementById('labels');
+labelsInput.addEventListener('input', () => {
+  state.labelCount = +labelsInput.value;
+  document.getElementById('labelsVal').textContent = labelsInput.value;
+  draw();
+});
+for (const [id, key] of [['kFacility', 'facility'], ['kPolicy', 'policy'], ['kOther', 'other']]) {
+  document.getElementById(id).addEventListener('change', ev => {
+    state.kinds[key] = ev.target.checked;
+    recompute();
+  });
+}
+document.getElementById('search').addEventListener('input', ev => {
+  state.query = ev.target.value; draw();
+});
+const clusterBtn = document.getElementById('clusterBtn');
+clusterBtn.addEventListener('click', () => {
+  state.showClusters = !state.showClusters;
+  clusterBtn.setAttribute('aria-pressed', String(state.showClusters));
+  draw();
+});
+document.getElementById('resetBtn').addEventListener('click', () => {
+  showNode(null); state.query = ''; document.getElementById('search').value = '';
+  fit(); draw();
+});
+window.addEventListener('resize', () => { draw(); });
+
+document.getElementById('meta').textContent =
+  `記事 ${DATA.meta.n_docs} 件 ／ 期間 ${DATA.meta.period} ／ 文 ${DATA.meta.n_units} ／ ` +
+  `ノード ${DATA.meta.n_nodes} ／ エッジ ${DATA.meta.n_edges} ／ 生成 ${DATA.meta.generated_at}`;
+
+fillTopTable();
+fit();
+recompute();
+</script>
+</body>
+</html>
