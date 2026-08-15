@@ -187,3 +187,19 @@
 - id: policy:bunkazai_katsuyo
   label: 文化財活用
   etype: policy
+
+- id: policy:bunkazai_hozon_katsuyo_chiiki_keikaku
+  label: 文化財保存活用地域計画
+  etype: program
+  aliases: [文化財保存活用大綱]
+  note: 2018年の文化財保護法改正で創設。市町村が作り、文化庁が認定する
+
+- id: policy:bunka_kanko_kyoten
+  label: 文化観光拠点施設
+  etype: program
+  aliases: [文化観光拠点]
+
+- id: policy:tsumugu
+  label: 紡ぐプロジェクト
+  etype: program
+  note: 文化庁・読売新聞社などによる文化財活用の事業
