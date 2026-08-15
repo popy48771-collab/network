@@ -421,7 +421,8 @@ def fetch_body(url: str, retries: int = 1) -> str:
 # これは閾値では直らない（どのページにも必ず出るので df も NPMI も高い）。
 # **本文でないものを保存しない**のが正しい直し方。
 _BOILERPLATE = re.compile(
-    r"Adobe|Acrobat|Reader|rights reserved|Copyright|PDF形式|ダウンロード"
+    r"メニュー開閉|メニューを開く|メニューを閉じる|ここから本文|本文へ移動"
+    r"|Adobe|Acrobat|Reader|rights reserved|Copyright|PDF形式|ダウンロード"
     r"|傍聴|お問(い)?合(わ)?せ|問い合わせ先|電話番号|電話:|内線|FAX"
     r"|サイトマップ|プライバシーポリシー|ウェブアクセシビリティ|免責事項"
     r"|このページ|ページの先頭|前のページに戻る|関連リンク|新着情報一覧"

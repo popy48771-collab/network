@@ -306,3 +306,19 @@ def test_same_headline_from_another_outlet_is_skipped(tmp_path):
 
 def test_different_headlines_keep_different_keys():
     assert collect.title_key("文化庁が補助を拡充") != collect.title_key("文化庁が補助を縮小")
+
+
+def test_navigation_blocks_are_not_body(monkeypatch):
+    """サイト共通のナビ・ヘッダ・フッタは本文ではない。
+
+    実データで踏んだ: 頻出語の上位30語の半分をナビが占めた
+    （「お知らせメニュー開閉」「食文化推進本部」「白書」「統計」…）。
+    これを stopwords で消すと、ナビに含まれる「障害者差別解消」のような語まで
+    消えて、障害者文化芸術が記事本文に出たときに見えなくなる。構造で落とすこと。
+    """
+    html = (PAGES / "bunka_release.html").read_bytes()
+    monkeypatch.setattr(collect, "fetch", lambda url, retries=3: html)
+    body = collect.fetch_body("https://www.example.go.jp/hodohappyo/1.html")
+    for junk in ("メニュー開閉", "食文化推進本部", "白書", "相談窓口", "職員採用", "対応要領"):
+        assert junk not in body, f"ナビ・フッタが本文に混ざっている: {junk}"
+    assert "登録博物館制度の運用状況" in body

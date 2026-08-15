@@ -69,9 +69,19 @@ class Doc:
 
 
 class _TextExtractor(HTMLParser):
-    """依存を増やさないための最小 HTML → テキスト変換。"""
+    """依存を増やさないための最小 HTML → テキスト変換。
 
-    _SKIP = {"script", "style", "noscript", "svg", "head"}
+    nav / header / footer を捨てるのは、実データで踏んだため。文化庁の報道発表を
+    取り込んだら、頻出語の上位30語の半分をサイト共通のナビが占めた
+    （「お知らせメニュー開閉」「食文化推進本部」「白書」「統計」…）。
+    どのページにも出るので df も NPMI も高く、閾値では落ちない。
+
+    **これを stopwords で消してはいけない。** ナビには「障害を理由とする差別の解消」の
+    ような語も含まれるが、障害者文化芸術は実在の政策領域で、記事本文に出たときは
+    見えないと困る。「本文でないもの」は構造で落とす。
+    """
+
+    _SKIP = {"script", "style", "noscript", "svg", "head", "nav", "header", "footer"}
     _BLOCK = {"p", "div", "br", "li", "tr", "h1", "h2", "h3", "h4", "h5", "h6", "section", "article"}
 
     def __init__(self) -> None:
