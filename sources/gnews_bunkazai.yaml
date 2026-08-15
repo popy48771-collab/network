@@ -1,0 +1,18 @@
+# Googleニュースの検索結果を RSS として受け取る。
+# アカウント登録も認証も不要で、URL を組み立てるだけで監視対象を増やせる。
+#   https://news.google.com/rss/search?q=<検索語>&hl=ja&gl=JP&ceid=JP:ja
+# 検索語は URL エンコードする。hl / gl / ceid は3つセットで揃えること（食い違うと空になる）。
+#
+# tier: secondary なので、見出しとフィードの要約・URL しか保存しない（本文は取りに行かない）。
+
+id: gnews_bunkazai
+name: Googleニュース「文化財 保存/修理」
+kind: rss
+url: https://news.google.com/rss/search?q=%22%E6%96%87%E5%8C%96%E8%B2%A1%22%20%28%E4%BF%9D%E5%AD%98%20OR%20%E4%BF%AE%E7%90%86%20OR%20%E9%98%B2%E7%81%BD%29&hl=ja&gl=JP&ceid=JP:ja
+# query は人間が読むための控え。実際に使われるのは上の url
+query: '"文化財" (保存 OR 修理 OR 防災)'
+tier: secondary
+country: JP
+lang: ja
+enabled: true
+max_items: 60

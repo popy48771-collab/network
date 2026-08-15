@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>"文化庁" - Google ニュース</title>
+  <item>
+    <title>文化財修理の補助拡充へ 文化庁が方針 - サンプル新聞</title>
+    <link>https://news.example.com/articles/12345?utm_source=google&amp;utm_medium=rss&amp;id=7</link>
+    <pubDate>Fri, 14 Aug 2026 22:10:00 GMT</pubDate>
+    <description>&lt;a href="https://news.example.com/articles/12345"&gt;文化財修理の補助拡充へ 文化庁が方針&lt;/a&gt;</description>
+    <source url="https://news.example.com">サンプル新聞</source>
+  </item>
+  <item>
+    <title>登録博物館制度の運用見直し 学芸員の配置要件が焦点 - 架空タイムス</title>
+    <link>https://news.example.org/2026/08/13/hakubutsukan</link>
+    <pubDate>Wed, 13 Aug 2026 01:00:00 GMT</pubDate>
+    <description>文化審議会の博物館部会は、登録博物館制度の運用について議論した。学芸員の配置要件をめぐり意見が分かれた。</description>
+    <source url="https://news.example.org">架空タイムス</source>
+  </item>
+</channel>
+</rss>

@@ -1,0 +1,18 @@
+# Googleニュースの検索結果を RSS として受け取る。
+# アカウント登録も認証も不要で、URL を組み立てるだけで監視対象を増やせる。
+#   https://news.google.com/rss/search?q=<検索語>&hl=ja&gl=JP&ceid=JP:ja
+# 検索語は URL エンコードする。hl / gl / ceid は3つセットで揃えること（食い違うと空になる）。
+#
+# tier: secondary なので、見出しとフィードの要約・URL しか保存しない（本文は取りに行かない）。
+
+id: gnews_horei
+name: Googleニュース「文化関連法令」
+kind: rss
+url: https://news.google.com/rss/search?q=%E6%96%87%E5%8C%96%E8%8A%B8%E8%A1%93%E5%9F%BA%E6%9C%AC%E6%B3%95%20OR%20%E5%8D%9A%E7%89%A9%E9%A4%A8%E6%B3%95%20OR%20%E5%8A%87%E5%A0%B4%E6%B3%95%20OR%20%E6%96%87%E5%8C%96%E8%A6%B3%E5%85%89%E6%8E%A8%E9%80%B2%E6%B3%95&hl=ja&gl=JP&ceid=JP:ja
+# query は人間が読むための控え。実際に使われるのは上の url
+query: "文化芸術基本法 OR 博物館法 OR 劇場法 OR 文化観光推進法"
+tier: secondary
+country: JP
+lang: ja
+enabled: true
+max_items: 60

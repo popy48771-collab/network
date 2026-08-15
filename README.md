@@ -6,7 +6,8 @@ Gephi Lite でそのまま開ける GEXF と、ブラウザで開くだけの単
 対象はまず**日本の文化政策**。
 
 ```
-articles/ に記事を置いて push
+毎朝 06:00 JST  sources/*.yaml のフィードを取得 → articles/ に記事を追加
+   （手で置きたいときは articles/ に直接ファイルを置いて push でもよい）
         ↓  GitHub Actions
 辞書マッチ → 形態素解析 → 複合語結合 → 共起（文単位）→ NPMI → コミュニティ検出
         ↓
@@ -64,11 +65,13 @@ Actions のサマリにレポート全文と Gephi Lite へのリンクが出ま
 ## 手元で動かす
 
 ```bash
-make setup   # uv sync
-make demo    # 架空のサンプル記事で動作確認 → out/demo/
-make run     # articles/ を分析 → out/
-make test    # pytest
-make review  # 辞書に追加する候補を頻度順に出す
+make setup        # uv sync
+make collect      # sources/ のフィードを取得 → articles/ に追加
+make collect-dry  # 取得せず件数だけ確認
+make demo         # 架空のサンプル記事で動作確認 → out/demo/
+make run          # articles/ を分析 → out/
+make test         # pytest
+make review       # 辞書に追加する候補を頻度順に出す
 ```
 
 ## 図が思ったようにならないとき
@@ -101,9 +104,29 @@ make review  # 辞書に追加する候補を頻度順に出す
 - [CLAUDE.md](CLAUDE.md) — 開発規約。触る前に読むこと
 - [articles/README.md](articles/README.md) — 記事の置き方と著作権の扱い
 
+## 収集する対象を変える
+
+`sources/*.yaml` を足すだけです。コードは触りません。
+
+Googleニュースの検索結果は**アカウント登録も認証も不要**で RSS として受け取れます。
+`sources/_template.yaml` をコピーして、URL の検索語を差し替えるだけで監視対象が増えます。
+
+```
+https://news.google.com/rss/search?q=<検索語をURLエンコード>&hl=ja&gl=JP&ceid=JP:ja
+```
+
+要約が欲しい場合は [Googleアラート](https://www.google.com/alerts) の RSS 配信も同じ
+`kind: rss` で読めます（歯車アイコンから「ダイジェスト」を外さないと RSS を選べません）。
+
+`tier` で本文を保存するかどうかが決まります。`secondary`（報道）は見出しと要約と URL しか
+保存せず、`fetch_body: true` と書いても収集コード側で無視されます。
+
 ## 現状
 
-- ✅ 記事の投入（手動）→ 解析 → GEXF / HTML / CSV / レポート の自動出力
+- ✅ 記事の自動収集（Googleニュース RSS 7本）— 毎朝 06:00 JST
+- ✅ 解析 → GEXF / HTML / CSV / レポート の自動出力
 - ✅ 政策・施設辞書（80件）、複合語結合、NPMI、Louvain、時系列 surprise
-- ⬜ ニュースの自動収集（RSS / GDELT）— `docs/proposal.md` のフェーズ1
+- ⬜ 文化庁の HTML スクレイプ（`kind: html_list` が未実装）
+- ⬜ 文部科学省 RSS（フィードURLが未確認）
+- ⬜ GDELT による多言語収集 — `docs/proposal.md` のフェーズ3
 - ⬜ LLM による日次ブリーフ生成 — 同フェーズ2

@@ -1,0 +1,14 @@
+# 文化庁「広報・報道・お知らせ」。RSS配信が見当たらないため一覧ページの差分を取る。
+#
+# TODO: kind: html_list のパーサが未実装。実装後に enabled: true にする。
+#       セレクタは実際のHTMLを見てから決めること（fixtures/ に固定HTMLを置いて回帰テストを付ける）。
+id: bunka_hodo
+name: 文化庁 広報・報道・お知らせ
+kind: html_list
+url: https://www.bunka.go.jp/koho_hodo_oshirase/
+tier: primary
+country: JP
+lang: ja
+enabled: false
+fetch_body: true
+rate_limit_sec: 3
