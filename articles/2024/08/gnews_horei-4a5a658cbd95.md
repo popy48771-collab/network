@@ -1,0 +1,12 @@
+---
+title: "岩見銀山、香川県立ミュージアムを認定 文化観光推進法の地域・拠点計画2件"
+date: 2024-08-21
+source: "観光経済新聞"
+url: "https://news.google.com/rss/articles/CBMiywJBVV95cUxPN3Y0REhKcmRjTUNxS2VHOTgybDBBNTd3ZXlnMDVHNzVwZS1wS05kN29ZalVxa3VPRGxGd0ZMU3hGTmhPazJsa1FYUjI5NGpiRGFFd3lXanJVSXZQT3NkOXFJZ2gtREtUbkYxN01VUnFXWU9wbFZoRnBjVWhPZmNFVU5rVjBxeGVMTHJEblhPVGFRMEVnUFlrWmQ3UDFmWW1BUG9wQ0tRVWJRRll5WnpnQlpBUEwxemhRaXp6X0hxQVpRUGw4c3NSaGdCbVNEazc3UHR3MFhRem4wYmhOemZRUmFSR0lvS29jQmtLVlZRejlPSnNmSUkxZ3Z1NGRKT1NlcG9SRHZhYWVUOUxTaWtRMEV6M1FndDE0VVFjQzNQd0g3LUdZdWV4anctNl9DUnJZTjZCekk3ejViZTVDNTNjSTN4VkNCZGg4Zk5n?oc=5"
+collected_by: gnews_horei
+tier: secondary
+lang: ja
+country: JP
+---
+
+岩見銀山、香川県立ミュージアムを認定 文化観光推進法の地域・拠点計画2件。

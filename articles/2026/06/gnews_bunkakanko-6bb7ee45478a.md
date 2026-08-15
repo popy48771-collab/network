@@ -1,0 +1,12 @@
+---
+title: "【公開講座】「九州沖縄日本遺産フォーラム ー別府大学が拓く地域連携と人材育成ー」を開催します(7/25~7/26)"
+date: 2026-06-16
+source: "別府大学"
+url: "https://news.google.com/rss/articles/CBMi0gJBVV95cUxOMW54djY4X091elk1X21wd09NcFNkaDE4dnVfbmUzUElrOGl2dzJIbUcwVzhxd1FfRzROcUpDajZSS2JNRm02WUlST0JSWlp3T0FqcXNuLTF3ajdSS2NhZkxId2d0U2dIRnNsQ3o0YzBIVnJtUG4ydDM0dTMwWFRXZW96aFh5OEZ1NnRMV2YxdVBVME9CNXV3THJTVzRId3MtdEhYdV82d3E0TDBKTUhValQzQW5HUENDd3VOTmU3Y19YMTQzd3JYYXUtdFpudjBEbVFyUUdXTTFGSjRTRWpyT0IzOU96ZDRQVFhLaFgxeVZ6bDlnMk1PS2l5alAxNlhQMGh1X2hmN2wyS05ROFBFNWszRTdNbmQtMEhhT0gydHlXajFiSF9nUkJzSGRRY0RvM1NpOTJCc3BrUXZCUnEzejNCMG9sczk1MXM0aTlSbzJjUQ?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+【公開講座】「九州沖縄日本遺産フォーラム ー別府大学が拓く地域連携と人材育成ー」を開催します(7/25~7/26)。

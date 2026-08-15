@@ -1,0 +1,12 @@
+---
+title: "奈良県立民族博物館の収蔵庫パンク報道で注目 廃棄予定の資料はなぜ売れない? 考えられる解決策"
+date: 2026-08-04
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMihAFBVV95cUxPS3I1dXJ4QUN4SU42V1FYZWo2S1FNNDFQbVpyaEQ4TUxHb1d5bDNuVktmaW0tRnpKT3VuUU92N2lva1p0a3pQUVRuSkpDWHZ5dVp4RUlXdUdKQV9jWElPaVJBUWVZVVRuQ2QwNDAzYmR6ZkhpeEFzT0lBRGtpYldMUjRuOETSAYoBQVVfeXFMT0lXVy1wb2sxTXJDNzhlTFhJZU43S3hwSDRWRTh6WlNqdjNfZmozSTgxYkFEaURuYTAycFVyM3BvaTBCNWFmV2ZySWZoWExaUWExYzVkUUdFYzZkS19GMmtubmJ2V09qSTU0VGcyTkctZGd2V2ZuRENKSnRtaVc4d3FsX1JHU0ZsLUdR?oc=5"
+collected_by: gnews_hakubutsukan
+tier: secondary
+lang: ja
+country: JP
+---
+
+奈良県立民族博物館の収蔵庫パンク報道で注目 廃棄予定の資料はなぜ売れない? 考えられる解決策。

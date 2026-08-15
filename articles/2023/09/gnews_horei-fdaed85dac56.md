@@ -1,0 +1,12 @@
+---
+title: "文化観光推進法で6件認定、北海道立総合博物館や石ノ森萬画館など"
+date: 2023-09-05
+source: "観光経済新聞"
+url: "https://news.google.com/rss/articles/CBMizAJBVV95cUxPa2ZZUVN3YU1PeTduR2VrbTBjYTVzV2NnOTRVOTdYR3A5TUxNZWU1b3JYakJnYlRhQTFLaUh3anJCSlBYa1kzeGdrdkw1MHpCRU1GbkJTMnlELWtnZUo3ZERPNGVRYTJtQ0k3dWdlSmNNZ3UwdkxIeVRTTnNYLXlSZUc3TTJ2aUdyVkJUWnNfVVB2NGdCZWloUXhvSTVEVDlTS1M5SEo5VllsRk9UNkJrZF80ME16SjljWkhxNi1XdzNPMHZsWmNqWHU3ajdla1U1TjR3R2E1S2lkRFVsODFrSlNmRzA2TmV0MzlSejRYb0puNXZtaGZlSlZSQVFqaFE0T2xkZ1BTdVBjdjQxNmlTbWNHQ3JTZXowbXJGcGppdTdXcXVhQ1RNWTNfT25qN1hfSDdFNHc5c0JOalp4UzBFOHd0djVoZUUzVUxZUg?oc=5"
+collected_by: gnews_horei
+tier: secondary
+lang: ja
+country: JP
+---
+
+文化観光推進法で6件認定、北海道立総合博物館や石ノ森萬画館など。

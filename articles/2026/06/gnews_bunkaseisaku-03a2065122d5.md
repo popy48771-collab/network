@@ -1,0 +1,12 @@
+---
+title: "文体部が文化政策金融公社を検討コンテンツ金融再編へ - CHOSUNBIZ"
+date: 2026-06-22
+source: "Chosunbiz"
+url: "https://news.google.com/rss/articles/CBMigAFBVV95cUxQNHRoSW5UVk95dUFHc1hKUmlTUVBGanVQWk00amlIbkNoRnJmSlFQWkFBOERxR2ZVcFVibWJ3bGE4dnNOSEEtcXFfby1NVUtzakh3UW5XTGV2SE9ESko2ZUwwSHRUR1NGYzZiczRuY1dxWnItOGVUQ1FjdmJWN3JnWtIBlAFBVV95cUxNNzlTYmh3T2E0dlVtcFNWampINnNwZVZiaTk4MFU2Tkk3SjdMUE4xTEhqSXpEbnRqUGppS0tXN2U5UzEwQUNwSmVSbkFuWUtCT1QwVGRtWXk2Wk93QUI1bVlENjBaelY0RUhRMU9SNVl0MDU1V24ydnBieFVhUHpiNE9SWHFhZjA2SFozdmRHQ3VLeXh5?oc=5"
+collected_by: gnews_bunkaseisaku
+tier: secondary
+lang: ja
+country: JP
+---
+
+文体部が文化政策金融公社を検討コンテンツ金融再編へ - CHOSUNBIZ。
