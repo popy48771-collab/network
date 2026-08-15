@@ -1,7 +1,9 @@
 # 文化政策ニュース 共起ネットワーク
 
-`articles/` に置かれた記事を解析し、共起ネットワークを `out/` に出力する。
-記事の収集は当面**人手**（GitHub に置く）。自動収集はフェーズ2以降（`docs/proposal.md`）。
+Googleニュース検索RSS から記事を毎朝集め、共起ネットワークを `out/` に出力する。
+
+**まず [docs/handoff.md](docs/handoff.md) を読むこと。** 現況・踏んだ地雷・未解決の課題が
+まとまっている。設定を変えたら [docs/decisions.md](docs/decisions.md) に記録すること。
 
 ## 絶対規則
 
@@ -10,46 +12,66 @@
 - **`dict/*.yaml` を自動更新しない。** 辞書が勝手に変わると時系列比較の基準が動き、
   過去の分析と繋がらなくなる。候補出しは `make review`、追加は人間が手で行う。
 - **`dict/*.yaml` の `id` は一度決めたら変えない。** ラベル（表示名）は変えてよい。
+- **`tier: secondary`（報道）の本文を取得・保存しない。** 見出し + フィードの要約 + URL のみ。
+  全文をリポジトリに置くと再配布にあたる。`collect._should_fetch_body` が設定ミスを握り潰す。
 - **`seed` を外さない。** レイアウトもコミュニティ検出も seed 固定で、同じ入力なら同じ図が出る。
   これが崩れると「昨日と比べて変わった」が言えなくなる。
 - **`out/network.html` に外部 CDN を参照させない。** オフラインでも開けることを維持する。
-- 記事本文の扱いは `articles/README.md` の著作権の項に従う（報道記事の全文はリポジトリに置かない）。
+- 記事本文の扱いは `articles/README.md` の著作権の項に従う。
 
 ## コマンド
 
 ```bash
-make setup    # uv sync
-make run      # articles/ を分析 → out/
-make demo     # サンプル記事（架空）で動作確認 → out/demo/
-make test     # pytest
-make review   # 辞書に追加する候補を頻度順に出す
+make setup        # uv sync
+make collect      # sources/ のフィードを取得 → articles/ に追加
+make collect-dry  # 取得せず件数だけ確認（新ソースの動作確認に使う）
+make run          # articles/ を分析 → out/
+make demo         # サンプル記事（架空）で動作確認 → out/demo/
+make test         # pytest
+make review       # 辞書に追加する候補を頻度順に出す
 ```
+
+この開発環境からは `news.google.com` などの外部サイトに接続できない。
+実フィードの確認は `collect.yml` を `dry_run: true` で手動実行する。
 
 ## 構成
 
 | パス | 役割 |
 |---|---|
-| `articles/` | 入力。人が記事を置く。形式は articles/README.md |
+| `sources/` | 何を集めるか。**検索語 = 問いそのもの**。増やすのは YAML だけ |
+| `articles/` | 入力。自動収集が書く。人が置いてもよい（形式は articles/README.md） |
 | `dict/` | 政策名・施設名・ストップワード。**人手管理** |
 | `config.yaml` | 閾値。図の密度が気に入らないときはまずここ |
+| `pipeline/collect.py` | フィード取得 → 記事ファイル。冪等 |
 | `pipeline/ingest.py` | ファイル → 記事レコード |
 | `pipeline/textproc.py` | 辞書マスク → 形態素解析 → 複合語結合 → 共起単位 |
 | `pipeline/cooccur.py` | NPMI・コミュニティ・中心性・レイアウト |
 | `pipeline/export.py` | GEXF / CSV / JSON / HTML / レポート |
+| `pipeline/style.py` | ノードの色と形（配色の根拠は docstring に） |
 | `pipeline/templates/viewer.html` | 単体HTMLビューア（外部依存なし） |
-| `fixtures/sample_articles/` | 架空のサンプル。回帰テストの入力でもある |
+| `.github/workflows/collect.yml` | 毎朝の収集 → 分析 → コミット |
+| `.github/workflows/analyze.yml` | push 起点の分析 → コミット |
+| `.github/scripts/commit-and-push.sh` | 生成物の書き戻し（衝突しない方式） |
+| `fixtures/` | 回帰テストの入力（架空のサンプル記事とフィード） |
 
-## 解析まわりで踏んではいけない地雷
+## 踏んではいけない地雷（詳細は docs/handoff.md §4）
 
 - **SudachiPy は Mode C でも「文化芸術基本法」を 文化/芸術/基本法 に割る。**
   だから `textproc.py` は「辞書エンティティを先に表層一致で拾い、その範囲をマスクしてから
-  形態素解析する」順序になっている。この順序を入れ替えると政策名が壊れる。
+  形態素解析する」順序になっている。入れ替えると政策名が壊れる。
   `tests/test_pipeline.py::test_policy_name_is_not_split` が番人。
+- **ElementTree の Element は子を持たないと偽になる。** `node.find("a") or node.find("b")` と
+  書くと中身のある要素が握り潰される。`collect._find` を使う。
+- **辞書のエイリアスは長い順に当てる。** 「国立劇場おきなわ」が「国立劇場」に食われないため。
+  短くて汎用的なエイリアス（例:「基本法」）は登録しない。
 - **複合語の結合はコーパス全体の頻度を見てから決める**（2周なめる）。
   1周で貪欲に結合すると、たまたま隣接しただけの名詞が語になる。
 - **共起の重みは NPMI。** 生の共起回数を重みにすると「文化庁」が全ノードと繋がって毛玉になる。
-- **辞書のエイリアスは長い順に当てる。** 「国立劇場おきなわ」が「国立劇場」に食われないようにするため。
-  短くて汎用的なエイリアス（例:「基本法」）は登録しない。
+- **`min_df` を下げすぎない。** 1本の記事にしか出ない2語は必ず NPMI = 1.0 になり、上位を占める。
+- **生成物の書き戻しで rebase しない。** `out/` は `articles/` から作り直せるので、
+  `commit-and-push.sh` の方式（リモートに合わせ直してから載せ直す）を使う。
+- **GITHUB_TOKEN による push は別のワークフローを起動しない。** だから collect.yml は
+  分析まで自分で担当している。
 
 ## 出力の見方
 
