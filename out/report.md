@@ -1,6 +1,6 @@
 # 共起ネットワーク 分析レポート
 
-生成: 2026-08-15T14:30:19+00:00
+生成: 2026-08-15T14:31:11+00:00
 
 | 項目 | 値 |
 |---|---|
@@ -9,6 +9,8 @@
 | 共起単位数（文） | 782 |
 | ノード数 | 144（絞り込み前 2183） |
 | エッジ数 | 234（絞り込み前 14954） |
+
+[Gephi Lite で開く](https://lite.gephi.org/?file=https://raw.githubusercontent.com/popy48771-collab/network/claude/repository-overview-2jqcsx/out/network.gexf)
 
 記事そのものは `articles.html`（ブラウザで開く）／`articles.csv` で読める。
 
