@@ -16,16 +16,14 @@
 
 | 項目 | 現況（2026-08-15） |
 |---|---|
-| 記事 | 390件（Googleニュース検索RSS 7本から自動収集） |
+| 記事 | 463件（うち文化庁30件は**本文つき**。残りは報道の見出し + 要約） |
 | ソース | 有効9本。報道7本（`tier: secondary`）+ 一次情報2本（文化庁・文部科学省、`tier: primary`）|
-| 共起単位 | 426文 |
-| ネットワーク | 58ノード / 73エッジ（絞り込み前 1599 / 10335） |
-| 辞書 | 政策・制度 43件 / 施設・組織 40件 / 除外語 180語 |
-| テスト | 50件（`make test`） |
+| 共起単位 | 797文 |
+| ネットワーク | 144ノード / 236エッジ（絞り込み前 2184 / 14958） |
+| 辞書 | 政策・制度 43件 / 施設・組織 40件 / 除外語 170語 |
+| テスト | 57件（`make test`） |
+| 公開 | GitHub Pages（`pages.yml` が collect / analyze の後に自動更新） |
 | リポジトリ | **public**（2026-08-15 に private から変更） |
-
-**一次情報2本は 2026-08-15 に有効にしたばかりで、まだ記事が入っていない。**
-次の収集から本文（1記事 = 数十文）が混ざるので、閾値の見直しが要る（§5-②）。
 
 見る:
 
@@ -41,6 +39,20 @@
 
 **GitHub 上では `*.html` はレンダリングされない**（raw はプレーンテキストで返る）。
 だから Pages が要る。
+
+### 直近で入った大きな変更（2026-08-15、2回目のセッション）
+
+1. **一次情報の本文取り込み** — `kind: html_list`（RSS の無いサイトの一覧ページから
+   リンクを拾う）を実装し、文化庁と文部科学省を有効化。`tier: primary` だけ本文を保存する
+2. **記事一覧ビュー** — `out/articles.html` / `articles.csv`。図のノードと記事が
+   相互参照できる（図 → その語が出た記事 → 一覧の絞り込み → 図に戻る）
+3. **本文から「本文でないもの」を落とす3段構え**（§4-⑪）。これが無いと
+   官公庁ページのナビが頻出語の上位を占める
+4. **`title_pattern`** — 省庁全体のような広すぎるフィードを見出しで絞る。
+   このとき `title_pattern` が検索語＝問いそのものになる
+5. **`--probe URL`** — 新しい監視対象の下見（フィードとして読めるか／フィードURLの候補）。
+   開発環境から外部に出られないので Actions から使う（§7）
+6. **GitHub Pages 公開** — `pages.yml`
 
 ---
 
@@ -68,16 +80,22 @@ articles.csv / graph.json / report.md
 
 **LLM はこの流れのどこにも入っていない。** 共起の計算は全て決定的な Python コード。
 
-### ワークフローは2つ
+### ワークフローは3つ
 
 | ファイル | いつ走るか | 何をするか |
 |---|---|---|
 | `.github/workflows/collect.yml` | 毎朝 06:00 JST / 手動 | 収集 → **分析まで** → `articles/` と `out/` をコミット |
 | `.github/workflows/analyze.yml` | `articles/` `dict/` `config.yaml` `pipeline/` への push | 分析 → `out/` をコミット |
+| `.github/workflows/pages.yml` | collect / analyze の**完了後**（`workflow_run`）/ 手動 | `out/` を GitHub Pages に公開 |
 
-collect が分析まで担当しているのは意図的（理由は §4-④）。
-両者は `concurrency: repo-write-*` を共有していて、同時には走らない。
+collect が分析まで担当しているのは意図的（理由は §4-④）。同じ理由で pages は
+push ではなく `workflow_run` を起点にしている（GITHUB_TOKEN の push はワークフローを
+起動しないので、push トリガーだと永遠に発火しない）。
+collect と analyze は `concurrency: repo-write-*` を共有していて、同時には走らない。
 書き戻しはどちらも `.github/scripts/commit-and-push.sh` を使う。
+
+公開の中身は `out/*` をサイト直下にコピーしたもの + 入口ページ
+（`.github/pages/index.html`。現況の数字は `graph.json` を fetch して出している）。
 
 ---
 
@@ -95,8 +113,16 @@ collect が分析まで担当しているのは意図的（理由は §4-④）�
 4. **`tier: secondary`（報道）の本文を取得・保存しない。** 設定に `fetch_body: true` と
    書かれていても `collect._should_fetch_body` が握り潰す。人間の注意力に頼らない。
    `tests/test_collect.py::test_secondary_tier_never_fetches_body` が番人。
-5. **`out/network.html` に外部CDNを参照させない。** オフラインで開けることを維持する。
+5. **`out/network.html` と `out/articles.html` に外部CDNを参照させない。**
+   オフラインで開けることを維持する。`tests/test_pipeline.py::test_articles_html_is_standalone` が番人。
 6. **辞書マッチ → 形態素解析の順序を入れ替えない。**（理由は §4-①）
+7. **「本文でないもの」は語ではなく構造で落とす。** ナビや定型行を `dict/stopwords.txt` で
+   消すと、同じ語が記事本文に出たときも消える（例: 障害者文化芸術）。落とすのは
+   `collect` の側（§4-⑪）。`dict/stopwords.txt` に入れてよいのは
+   **本文に書かれているが内容を持たない語**だけ。
+8. **図から記事に辿れる状態を保つ。** 記事一覧のチップは図に残ったノードだけを指す。
+   `tests/test_pipeline.py::test_articles_only_link_to_nodes_that_survived_the_filter` と
+   `::test_node_and_article_reference_each_other` が番人。
 
 ---
 
@@ -188,11 +214,16 @@ CSSセレクタを設定させる方式にしなかったのは、セレクタ�
 `reserved` `お知らせメニュー開閉` `食文化推進本部` `白書` `統計` `相談窓口` `対応要領`。
 どのページにも必ず出るので **df も NPMI も高く、閾値では絶対に落ちない**。
 
-直し方は2段構え。**(a)** `_TextExtractor` が nav / header / footer を捨てる（構造）。
+直し方は3段構え。**(a)** `_TextExtractor` が nav / header / footer を捨てる（構造）。
 **(b)** `collect._BOILERPLATE` が定型行（PDF閲覧案内・著作権表示・傍聴案内・
 問い合わせ先・添付ファイル名）を落とし、同じ行の繰り返しを1回にする。
-保存前に落とすので、`articles/` に部品が残らない。
-実測で本文が 26,904字 → 15,005字（55%）になった。**残り45%は本文ではなかった。**
+**(c)** `collect.drop_shared_lines` が「同じ取得回の複数ページに共通して出る行」を
+落とす（nav の外に置かれたサイドバー。**1ページだけ見ても本文と区別できないが、
+30ページを見比べれば分かる**）。保存前に落とすので `articles/` に部品が残らない。
+実測で本文が 26,904字 → 11,675字。**残り57%は本文ではなかった。**
+
+(c) は3ページ未満の取得回では判定しない（毎朝の差分は1〜2件）。その回の残りかすは
+df が小さいので `min_df` で自然に落ちる。**大量に取り込む初回だけが危ない。**
 
 **これを `dict/stopwords.txt` で消してはいけない。** ナビには
 「障害を理由とする差別の解消の推進に関する対応要領」のような語も入っているが、
@@ -261,12 +292,16 @@ Googleニュース検索は古い記事も返す。あいちトリエンナー�
 ### ③ 文化庁・文部科学省の収集は入ったが、実運用の観察はこれから
 
 `sources/bunka_hodo.yaml`（`kind: html_list`）と `sources/mext_hodo.yaml`（RDF）を
-有効にした。dry-run では文化庁30件・本文850〜1100字が取れている。
+有効にした。文化庁は30件・本文550〜1240字が実際に入っている。
 一覧ページはサイト改修で静かに壊れるので、**しばらくは毎朝の収集結果の件数と
 日付の範囲を見ること**（0件が続いていたら `link_pattern` かページ構造が変わっている）。
 
-回帰テストの入力は `fixtures/pages/bunka_list.html`（架空）。実ページのHTMLは
-置いていない（再配布になるため）。壊れたときは `--probe URL` で実ページを見に行く。
+文部科学省は**当たり日にしか入らない**。省庁全体のフィードを `title_pattern` で
+文化関連に絞っているため、2026-08-15 の21件は該当0件だった（＝正常）。
+何週間も0件が続くようなら `title_pattern` が狭すぎないか見直す。
+
+回帰テストの入力は `fixtures/pages/bunka_list.html` と `bunka_release.html`（どちらも架空）。
+実ページのHTMLは置いていない（再配布になるため）。壊れたときは `--probe URL` で実ページを見に行く。
 
 ### ④ `out/` をコミットしているのでブランチ間で衝突しやすい
 
@@ -317,12 +352,13 @@ make collect      # sources/ のフィードを取得 → articles/ に追加
 make collect-dry  # 取得せず件数だけ確認（新ソースの動作確認に使う）
 make run          # articles/ を分析 → out/
 make demo         # 架空のサンプル記事で動作確認 → out/demo/
-make test         # pytest（50件）
+make test         # pytest（57件）
 make review       # 辞書に追加する候補を頻度順に出す
 ```
 
 - 作業ブランチ: `claude/repository-overview-2jqcsx`（それ以前は `claude/culture-policy-cooccurrence-network-xxzzcl`）
-- `main` へは PR を作ってマージ（これまで #1〜#6）
+- `main` へは PR（#1〜#6）または fast-forward マージ。**`out/` は生成物なので
+  ブランチ間の衝突は「作り直した側」を採る**（`git rebase -X theirs` でよい。§5-④）
 - **テストは番人**。特に `test_policy_name_is_not_split`、`test_build_is_deterministic`、
   `test_secondary_tier_never_fetches_body` は、壊れたら設計が壊れている合図
 
@@ -364,3 +400,7 @@ make review       # 辞書に追加する候補を頻度順に出す
 | surprise | 直近の NPMI − それ以前の NPMI。「今日何が新しいか」を出す指標 |
 | tier | `primary`＝官公庁の公表資料（本文保存可） / `secondary`＝報道（見出しのみ） |
 | doc_id | 追跡パラメータを落とした正規化URLの sha256 先頭12桁。ファイル名に埋めてある |
+| kind | ソースの取り方。`rss`＝RSS/RDF/Atom / `html_list`＝一覧ページのリンクを拾う |
+| link_pattern | `html_list` で記事リンクとみなす href の正規表現。**必須**（無いとナビまで記事になる） |
+| title_pattern | 見出しがこれに一致するアイテムだけ採る。広すぎるフィード用で、**このとき検索語＝問いにあたる** |
+| ページの部品 | ナビ・共通フッタ・PDF閲覧案内など、本文でないもの。保存前に落とす（§4-⑪） |

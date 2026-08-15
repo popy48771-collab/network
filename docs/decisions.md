@@ -161,6 +161,20 @@ df も NPMI も高く、閾値を上げても残る（逆に本物の低頻度�
 
 出力を増やしただけで、母集団・辞書・閾値は変えていない。**図は1本の線も変わらない。**
 
+### GitHub Pages に公開することにした
+
+`network.html` と `articles.html` は GitHub 上ではレンダリングされない
+（raw はプレーンテキストで返る）。ブラウザで開けるURLが無いと、せっかく作った
+記事一覧を誰も読まない。<https://popy48771-collab.github.io/network/>
+
+公開は `pages.yml` が collect / analyze の**完了後**に自動で行う。push 起点にしなかったのは
+GITHUB_TOKEN の push がワークフローを起動しないため（handoff §4-④ と同じ理由）。
+
+**Pages サイトの新規作成だけは GITHUB_TOKEN の権限外**だった
+（`Create Pages site failed: Resource not accessible by integration`）。
+Settings → Pages → Source を `GitHub Actions` にする操作を人間が1回だけ行った。
+作られた後は自動で更新される。
+
 ---
 
 ## 記録すべき変更の種類

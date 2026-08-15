@@ -35,6 +35,13 @@ make test         # pytest
 make review       # 辞書に追加する候補を頻度順に出す
 ```
 
+収集コマンドの補助オプション（新しいソースを足すときに使う）:
+
+```bash
+uv run python -m pipeline.collect --probe <URL>   # そのURLが使えるかだけ確認する
+uv run python -m pipeline.collect --dry-run --show-all --only bunka_hodo
+```
+
 この開発環境からは `news.google.com` などの外部サイトに接続できない。
 実データの確認は `collect.yml` を手動実行する（入力: `dry_run` / `show_all` / `only` / `probe_url`）。
 `probe_url` は新しい監視対象の下見（フィードとして読めるか、フィードURLの候補は何か）。
@@ -57,10 +64,12 @@ collect と analyze は concurrency グループを共有しているので、**
 | `pipeline/style.py` | ノードの色と形（配色の根拠は docstring に） |
 | `pipeline/templates/viewer.html` | 図の単体HTMLビューア（外部依存なし） |
 | `pipeline/templates/articles.html` | 記事一覧の単体HTMLビューア（同上） |
-| `.github/workflows/collect.yml` | 毎朝の収集 → 分析 → コミット |
+| `.github/workflows/collect.yml` | 毎朝の収集 → 分析 → コミット。手動実行の入力は下記 |
 | `.github/workflows/analyze.yml` | push 起点の分析 → コミット |
+| `.github/workflows/pages.yml` | collect / analyze の完了後に `out/` を GitHub Pages へ公開 |
+| `.github/pages/index.html` | 公開サイトの入口ページ（図と記事一覧への導線） |
 | `.github/scripts/commit-and-push.sh` | 生成物の書き戻し（衝突しない方式） |
-| `fixtures/` | 回帰テストの入力（架空のサンプル記事とフィード） |
+| `fixtures/` | 回帰テストの入力（架空のサンプル記事・フィード・HTMLページ） |
 
 ## 踏んではいけない地雷（詳細は docs/handoff.md §4）
 
