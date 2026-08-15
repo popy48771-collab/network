@@ -14,7 +14,7 @@ link_pattern: "/koho_hodo_oshirase/hodohappyo/[^/]+\\.html$"
 tier: primary
 country: JP
 lang: ja
-enabled: false   # 実ページでのパース結果を Actions の dry-run で確認してから true にする
+enabled: true
 fetch_body: true
 max_items: 30
 rate_limit_sec: 3

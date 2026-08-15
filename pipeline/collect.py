@@ -499,7 +499,11 @@ def collect_source(
             write_article(item, source, articles_dir)
         result.written += 1
         if len(result.samples) < 3:
-            result.samples.append(item.title)
+            # 本文の字数まで出す。dry-run の目的は「ちゃんと取れているか」の確認なので、
+            # 件数だけ見えても本文が空だったことに気付けない
+            size = f"（本文 {len(item.body)}字）" if item.body else ""
+            date = item.published or "日付なし"
+            result.samples.append(f"[{date}] {item.title}{size}")
     return result
 
 
