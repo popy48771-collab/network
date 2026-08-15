@@ -26,6 +26,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+from collections import Counter
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
@@ -107,6 +108,7 @@ class Result:
     written: int = 0
     skipped: int = 0
     filtered: int = 0  # title_pattern に一致しなかった件数
+    template_lines: int = 0  # テンプレートとみなして本文から外した行の種類数
     error: str = ""
     samples: list[str] = field(default_factory=list)
     dates: list[str] = field(default_factory=list)  # 新規アイテムの日付（空文字＝日付なし）
@@ -430,6 +432,39 @@ _BOILERPLATE = re.compile(
 )
 
 
+# 同じソースの何ページに出たらテンプレートとみなすか。
+# nav / header / footer の外に置かれた共通ブロック（サイドバー・関連リンク）は
+# 構造では判別できない。1ページだけ見ても本文と区別できないが、束で見ると分かる。
+TEMPLATE_MIN_PAGES = 3
+TEMPLATE_MIN_RATIO = 0.4
+
+
+def drop_shared_lines(items: list[Item]) -> int:
+    """同じ取得回の複数ページに共通して出る行を本文から外す。落とした行数を返す。
+
+    実データ: 文化庁の報道発表30件は、nav を捨てた後も
+    「障害を理由とする差別の解消…」「相談窓口」「食文化推進本部」が全30ページに出た。
+    どのページにも出る＝その語の df がページ数ぶん底上げされ、閾値では落ちない。
+
+    少数ページしか取らなかった回（毎朝の差分は1〜2件）では判定しない。
+    その場合の残りかすは df が小さいので、`min_df` で自然に落ちる。
+    """
+    bodies = [item for item in items if item.body]
+    if len(bodies) < TEMPLATE_MIN_PAGES:
+        return 0
+    counts: Counter = Counter()
+    for item in bodies:
+        # 1ページ内の重複は数えない（何ページに出たかを数えたい）
+        counts.update(dict.fromkeys(item.body.splitlines()).keys())
+    limit = max(TEMPLATE_MIN_PAGES, int(len(bodies) * TEMPLATE_MIN_RATIO))
+    shared = {line for line, n in counts.items() if n >= limit}
+    if not shared:
+        return 0
+    for item in bodies:
+        item.body = "\n".join(l for l in item.body.splitlines() if l not in shared)
+    return len(shared)
+
+
 def _content_lines(text: str) -> list[str]:
     """本文らしい行だけ残す。短い行・ページの部品・繰り返しを落とす。
 
@@ -542,6 +577,7 @@ def collect_source(
         matched = [i for i in items if keep.search(i.title)]
         result.filtered = len(items) - len(matched)
         items = matched
+    fresh: list[Item] = []
     for item in items:
         key = title_key(item.title)
         if item.doc_id in seen or key in seen_titles:
@@ -549,12 +585,20 @@ def collect_source(
             continue
         seen.add(item.doc_id)
         seen_titles.add(key)
-        if _should_fetch_body(source):
+        fresh.append(item)
+
+    # 本文は全部取ってから書く。取得回の全ページを見比べないと、
+    # nav の外に置かれた共通ブロック（サイドバー・関連リンク）を判別できない
+    if _should_fetch_body(source):
+        for item in fresh:
             try:
                 item.body = fetch_body(item.url)
                 time.sleep(source.rate_limit_sec)
             except RuntimeError:
                 pass  # 本文が取れなくても見出しだけで登録する
+        result.template_lines = drop_shared_lines(fresh)
+
+    for item in fresh:
         if not dry_run:
             write_article(item, source, articles_dir)
         result.written += 1
@@ -653,6 +697,8 @@ def main(argv: list[str] | None = None) -> int:
               f"| {r.filtered} | {status} |")
     print()
     for r in results:
+        if r.template_lines:
+            print(f"  [{r.source.id}] 共通テンプレートとみなして落とした行: {r.template_lines} 種類")
         if r.dates:
             # 日付の範囲を出す。全件が同じ日付になっていたら日付の拾い方が壊れている合図
             known = sorted(d for d in r.dates if d)

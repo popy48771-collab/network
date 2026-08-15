@@ -322,3 +322,31 @@ def test_navigation_blocks_are_not_body(monkeypatch):
     for junk in ("メニュー開閉", "食文化推進本部", "白書", "相談窓口", "職員採用", "対応要領"):
         assert junk not in body, f"ナビ・フッタが本文に混ざっている: {junk}"
     assert "登録博物館制度の運用状況" in body
+
+
+def test_lines_shared_across_pages_are_dropped():
+    """nav の外にある共通ブロックは、束で見ないと本文と区別できない。
+
+    実データ: 文化庁の報道発表30件は、nav を捨てた後も
+    「障害を理由とする差別の解消…」「相談窓口」が全30ページに残った。
+    """
+    items = [
+        collect.Item(
+            title=f"見出し{i}", url=f"https://e.go.jp/{i}",
+            body=f"障害を理由とする差別の解消の推進に関する対応要領\nこの記事だけの本文です{i}",
+        )
+        for i in range(3)
+    ]
+    assert collect.drop_shared_lines(items) == 1
+    assert all("対応要領" not in item.body for item in items)
+    assert "この記事だけの本文です0" in items[0].body
+
+
+def test_two_pages_are_not_enough_to_call_something_a_template():
+    """毎朝の差分は1〜2件。少数ページで判定すると本文を消しかねない。"""
+    items = [
+        collect.Item(title=f"見出し{i}", url=f"https://e.go.jp/{i}", body="同じ行がここにあります")
+        for i in range(2)
+    ]
+    assert collect.drop_shared_lines(items) == 0
+    assert all(item.body for item in items)
