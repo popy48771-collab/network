@@ -1,0 +1,18 @@
+# Googleニュースの検索結果を RSS として受け取る。
+# アカウント登録も認証も不要で、URL を組み立てるだけで監視対象を増やせる。
+#   https://news.google.com/rss/search?q=<検索語>&hl=ja&gl=JP&ceid=JP:ja
+# 検索語は URL エンコードする。hl / gl / ceid は3つセットで揃えること（食い違うと空になる）。
+#
+# tier: secondary なので、見出しとフィードの要約・URL しか保存しない（本文は取りに行かない）。
+
+id: gnews_gekijo
+name: Googleニュース「劇場・助成」
+kind: rss
+url: https://news.google.com/rss/search?q=%28%E5%8A%87%E5%A0%B4%20OR%20%E9%9F%B3%E6%A5%BD%E5%A0%82%20OR%20%E7%BE%8E%E8%A1%93%E9%A4%A8%29%20%28%E5%8A%A9%E6%88%90%20OR%20%E8%A3%9C%E5%8A%A9%E9%87%91%20OR%20%E6%8C%87%E5%AE%9A%E7%AE%A1%E7%90%86%29&hl=ja&gl=JP&ceid=JP:ja
+# query は人間が読むための控え。実際に使われるのは上の url
+query: "(劇場 OR 音楽堂 OR 美術館) (助成 OR 補助金 OR 指定管理)"
+tier: secondary
+country: JP
+lang: ja
+enabled: true
+max_items: 60

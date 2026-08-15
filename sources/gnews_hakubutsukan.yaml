@@ -1,0 +1,18 @@
+# Googleニュースの検索結果を RSS として受け取る。
+# アカウント登録も認証も不要で、URL を組み立てるだけで監視対象を増やせる。
+#   https://news.google.com/rss/search?q=<検索語>&hl=ja&gl=JP&ceid=JP:ja
+# 検索語は URL エンコードする。hl / gl / ceid は3つセットで揃えること（食い違うと空になる）。
+#
+# tier: secondary なので、見出しとフィードの要約・URL しか保存しない（本文は取りに行かない）。
+
+id: gnews_hakubutsukan
+name: Googleニュース「博物館・学芸員」
+kind: rss
+url: https://news.google.com/rss/search?q=%E5%8D%9A%E7%89%A9%E9%A4%A8%20%28%E5%AD%A6%E8%8A%B8%E5%93%A1%20OR%20%E5%8D%9A%E7%89%A9%E9%A4%A8%E6%B3%95%20OR%20%E5%8F%8E%E8%94%B5%29&hl=ja&gl=JP&ceid=JP:ja
+# query は人間が読むための控え。実際に使われるのは上の url
+query: "博物館 (学芸員 OR 博物館法 OR 収蔵)"
+tier: secondary
+country: JP
+lang: ja
+enabled: true
+max_items: 60

@@ -1,9 +1,15 @@
-.PHONY: setup run demo test review clean
+.PHONY: setup collect run demo test review clean
 
 PY := uv run python
 
 setup:            ## 依存をインストール
 	uv sync
+
+collect:          ## sources/ のフィードを取得して articles/ に追加
+	$(PY) -m pipeline.collect
+
+collect-dry:      ## 取得せずに件数だけ確認
+	$(PY) -m pipeline.collect --dry-run
 
 run:              ## articles/ を分析して out/ に出力
 	$(PY) -m pipeline.run

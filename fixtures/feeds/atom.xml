@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>架空省 報道発表</title>
+  <entry>
+    <title>文化観光拠点計画を3件認定しました</title>
+    <link rel="alternate" href="https://www.example.go.jp/hodo/2026/08/1234.html"/>
+    <published>2026-08-11T09:00:00+09:00</published>
+    <summary>文化観光推進法に基づく拠点計画を新たに3件認定しました。</summary>
+  </entry>
+</feed>

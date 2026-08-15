@@ -1,0 +1,19 @@
+# ソース定義のテンプレート。_ 始まりのファイルは読み込まれない。
+# 新しい監視対象を足すときは、これをコピーして名前を変える。
+
+id: my_source              # 一意なID。ファイル名に使われるので変えないこと
+name: 表示名
+kind: rss                  # rss | html_list（html_list は未実装）
+url: https://example.com/feed.xml
+tier: secondary            # primary=官公庁の公表資料（本文保存可） / secondary=報道（見出しのみ）
+country: JP
+lang: ja
+enabled: true
+max_items: 60              # 1回の実行で見る最大件数
+fetch_body: false          # 本文を取りに行くか。tier: primary のときだけ有効
+
+# --- Google アラートを使う場合 ---
+# https://www.google.com/alerts でキーワードを登録し、配信先を「RSSフィード」にすると
+# フィードURLがもらえる。Googleニュース検索より要約が付きやすい代わりに、
+# 歯車アイコンから「ダイジェスト」を先に外さないとRSSを選べない。
+# もらったURL（https://www.google.com/alerts/feeds/.../...）を url に貼るだけで使える。
