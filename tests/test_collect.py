@@ -193,6 +193,31 @@ def test_primary_article_stores_the_body(tmp_path):
     assert "国庫補助の対象となる" in text
 
 
+def test_body_keeps_content_and_drops_page_furniture(monkeypatch):
+    """本文でないものを保存しないこと。
+
+    実データで踏んだ: 文化庁の報道発表を取り込んだら、頻出語の上位を
+    「傍聴登録」「御覧」「ダウンロード」「Adobe」「PDF形式」「rights」が占めた。
+    どのページにも必ず出るので df も NPMI も高く、閾値では直らない。
+    """
+    html = (PAGES / "bunka_release.html").read_bytes()
+    monkeypatch.setattr(collect, "fetch", lambda url, retries=3: html)
+    body = collect.fetch_body("https://www.example.go.jp/hodohappyo/1.html")
+
+    assert "登録博物館制度の運用状況" in body
+    assert "地方公共団体からの意見聴取" in body
+    for junk in ("Adobe", "rights reserved", "傍聴登録", "PDF形式", "別添", "内線", "サイトマップ"):
+        assert junk not in body, f"ページの部品が本文に混ざっている: {junk}"
+
+
+def test_repeated_headline_is_kept_once(monkeypatch):
+    """<title> と <h1> で見出しが繰り返されると、その語の df が水増しされる。"""
+    html = (PAGES / "bunka_release.html").read_bytes()
+    monkeypatch.setattr(collect, "fetch", lambda url, retries=3: html)
+    body = collect.fetch_body("https://www.example.go.jp/hodohappyo/1.html")
+    assert body.count("文化審議会博物館部会(第5回)を開催します") == 1
+
+
 def test_body_is_truncated(monkeypatch):
     """1記事が長すぎると共起単位を数百持って母集団を歪める。上限で切ること。"""
     monkeypatch.setattr(

@@ -412,9 +412,38 @@ def fetch_body(url: str, retries: int = 1) -> str:
     parser = _TextExtractor()
     parser.feed(_decode(fetch(url, retries=retries)))
     text = normalize_text(parser.text())
-    # ナビゲーションの短い行を落として、本文らしい塊だけ残す
-    lines = [line for line in text.splitlines() if len(line.strip()) >= 15]
-    return "\n".join(lines)[:BODY_MAX_CHARS]
+    return "\n".join(_content_lines(text))[:BODY_MAX_CHARS]
+
+
+# ページの「部品」。本文ではないので保存しない。
+# 実データで踏んだ: 文化庁の報道発表を取り込んだら、頻出語の上位を
+# 「傍聴登録」「御覧」「ダウンロード」「Adobe」「PDF形式」「rights」「reserved」が占めた。
+# これは閾値では直らない（どのページにも必ず出るので df も NPMI も高い）。
+# **本文でないものを保存しない**のが正しい直し方。
+_BOILERPLATE = re.compile(
+    r"Adobe|Acrobat|Reader|rights reserved|Copyright|PDF形式|ダウンロード"
+    r"|傍聴|お問(い)?合(わ)?せ|問い合わせ先|電話番号|電話:|内線|FAX"
+    r"|サイトマップ|プライバシーポリシー|ウェブアクセシビリティ|免責事項"
+    r"|このページ|ページの先頭|前のページに戻る|関連リンク|新着情報一覧"
+    r"|別添|担当:|\(担当\)|Copyright|https?://"
+)
+
+
+def _content_lines(text: str) -> list[str]:
+    """本文らしい行だけ残す。短い行・ページの部品・繰り返しを落とす。
+
+    見出しは HTML の <title> と <h1> で2〜3回繰り返されることが多い。
+    同じ行を何度も数えると、その語の df がページ数ぶん水増しされる。
+    """
+    seen: set[str] = set()
+    lines = []
+    for line in text.splitlines():
+        line = line.strip()
+        if len(line) < 15 or _BOILERPLATE.search(line) or line in seen:
+            continue
+        seen.add(line)
+        lines.append(line)
+    return lines
 
 
 # ---- 書き出し -------------------------------------------------------------
