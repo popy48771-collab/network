@@ -1,0 +1,76 @@
+name: analyze
+
+# articles/ に記事が push されたら共起ネットワークを作り直し、out/ に書き戻す。
+# out/ は paths に入れていないので、この job 自身の commit では再発火しない。
+on:
+  push:
+    paths:
+      - "articles/**"
+      - "dict/**"
+      - "config.yaml"
+      - "pipeline/**"
+      - ".github/workflows/analyze.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: analyze-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: 依存をインストール
+        run: uv sync --frozen || uv sync
+
+      - name: 共起ネットワークを構築
+        run: |
+          uv run python -m pipeline.run \
+            --gexf-url "https://lite.gephi.org/?file=https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/out/network.gexf"
+
+      - name: 結果を出力（Actions のサマリ）
+        run: |
+          {
+            echo "## 共起ネットワークを更新しました"
+            echo
+            echo "[Gephi Lite で開く](https://lite.gephi.org/?file=https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/out/network.gexf)"
+            echo
+            echo "<details><summary>レポート全文</summary>"
+            echo
+            cat out/report.md
+            echo
+            echo "</details>"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: 成果物をアップロード
+        uses: actions/upload-artifact@v4
+        with:
+          name: cooccurrence-network
+          path: out/
+          retention-days: 30
+
+      - name: out/ をコミット
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add out
+          if git diff --staged --quiet; then
+            echo "変更なし"
+            exit 0
+          fi
+          git commit -m "analyze: 共起ネットワークを更新 ($(date -u +%Y-%m-%dT%H:%MZ)) [skip ci]"
+          for attempt in 1 2 3 4; do
+            git pull --rebase origin "${{ github.ref_name }}" && git push origin HEAD:"${{ github.ref_name }}" && exit 0
+            echo "push 失敗。再試行 $attempt"
+            sleep $((2 ** attempt))
+          done
+          exit 1

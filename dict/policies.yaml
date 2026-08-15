@@ -1,0 +1,189 @@
+# 日本の文化政策の法令・計画・制度・事業。表層一致で拾う。
+#
+# 運用ルール:
+#   - このファイルは人手で管理する。LLM に自動更新させない。
+#     ここが勝手に変わると時系列比較の基準が動き、過去との比較が意味を失うため。
+#   - aliases には「それ単独で他の文脈に出ない表記」だけを書く。
+#     例: 「基本法」は他の基本法にも当たるので入れない。
+#   - id は変えない。ラベルは変えてよい（表示名だけが変わる）。
+#
+# etype: law（法令）/ plan（計画・戦略）/ program（事業・制度）/ policy（政策概念）
+
+# ---- 法令 ----
+- id: policy:bunka_geijutsu_kihonho
+  label: 文化芸術基本法
+  etype: law
+  aliases: [文化芸術振興基本法]
+  note: 2001年制定の「文化芸術振興基本法」が2017年に改正・改称
+
+- id: policy:bunkazai_hogoho
+  label: 文化財保護法
+  etype: law
+
+- id: policy:gekijoho
+  label: 劇場法
+  etype: law
+  aliases: [劇場、音楽堂等の活性化に関する法律, 劇場音楽堂等の活性化に関する法律]
+
+- id: policy:bunka_kanko_suishinho
+  label: 文化観光推進法
+  etype: law
+  aliases: [文化観光拠点施設を中核とした地域における文化観光の推進に関する法律]
+
+- id: policy:hakubutsukanho
+  label: 博物館法
+  etype: law
+
+- id: policy:toshokanho
+  label: 図書館法
+  etype: law
+
+- id: policy:shakai_kyoikuho
+  label: 社会教育法
+  etype: law
+
+- id: policy:shogaisha_bunka_geijutsuho
+  label: 障害者文化芸術推進法
+  etype: law
+  aliases: [障害者による文化芸術活動の推進に関する法律]
+
+- id: policy:ainu_sesaku_suishinho
+  label: アイヌ施策推進法
+  etype: law
+
+- id: policy:chosakukenho
+  label: 著作権法
+  etype: law
+
+- id: policy:bunka_geijutsu_suishin_kihon_keikaku
+  label: 文化芸術推進基本計画
+  etype: plan
+
+# ---- 計画・戦略 ----
+- id: policy:bunka_keizai_senryaku
+  label: 文化経済戦略
+  etype: plan
+
+- id: policy:cool_japan
+  label: クールジャパン戦略
+  etype: plan
+  aliases: [クールジャパン]
+
+- id: policy:bunkacho_kyoto_iten
+  label: 文化庁京都移転
+  etype: plan
+  aliases: [文化庁の京都移転, 京都移転]
+
+- id: policy:bunka_gdp
+  label: 文化GDP
+  etype: policy
+
+- id: policy:kasegu_bunka
+  label: 稼ぐ文化
+  etype: policy
+
+# ---- 制度・事業 ----
+- id: policy:nihon_isan
+  label: 日本遺産
+  etype: program
+
+- id: policy:sekai_bunka_isan
+  label: 世界文化遺産
+  etype: program
+  aliases: [世界遺産]
+
+- id: policy:mukei_bunka_isan
+  label: 無形文化遺産
+  etype: program
+
+- id: policy:kokuho
+  label: 国宝
+  etype: program
+
+- id: policy:juyo_bunkazai
+  label: 重要文化財
+  etype: program
+
+- id: policy:toroku_yukei_bunkazai
+  label: 登録有形文化財
+  etype: program
+
+- id: policy:juyo_mukei_bunkazai
+  label: 重要無形文化財
+  etype: program
+
+- id: policy:shiseki_meisho
+  label: 史跡名勝天然記念物
+  etype: program
+  aliases: [史跡名勝, 名勝天然記念物]
+
+- id: policy:ningen_kokuho
+  label: 人間国宝
+  etype: program
+  aliases: [重要無形文化財保持者]
+
+- id: policy:geijutsu_bunka_shinko_kikin
+  label: 芸術文化振興基金
+  etype: program
+
+- id: policy:bunka_koryushi
+  label: 文化交流使
+  etype: program
+  aliases: [文化庁文化交流使]
+
+- id: policy:geijutsusai
+  label: 芸術祭
+  etype: program
+  aliases: [文化庁芸術祭]
+
+- id: policy:media_geijutsusai
+  label: 文化庁メディア芸術祭
+  etype: program
+
+- id: policy:bunka_sozo_toshi
+  label: 文化芸術創造都市
+  etype: program
+  aliases: [創造都市]
+
+- id: policy:arts_council
+  label: アーツカウンシル
+  etype: program
+
+- id: policy:bunka_geijutsu_katsudo_keizoku
+  label: 文化芸術活動の継続支援事業
+  etype: program
+
+- id: policy:hakubutsukan_toroku
+  label: 博物館登録制度
+  etype: program
+  aliases: [登録博物館]
+
+- id: policy:shitei_kanrisha
+  label: 指定管理者制度
+  etype: program
+  aliases: [指定管理者]
+
+- id: policy:bunka_shigen
+  label: 文化資源
+  etype: policy
+
+- id: policy:bunka_kanko
+  label: 文化観光
+  etype: policy
+
+- id: policy:art_shijo
+  label: アート市場
+  etype: policy
+  aliases: [美術品市場]
+
+- id: policy:dejitaru_archive
+  label: デジタルアーカイブ
+  etype: policy
+
+- id: policy:bunkazai_bosai
+  label: 文化財防災
+  etype: policy
+
+- id: policy:bunkazai_katsuyo
+  label: 文化財活用
+  etype: policy

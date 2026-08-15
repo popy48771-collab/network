@@ -1,0 +1,19 @@
+[project]
+name = "culture-policy-network"
+version = "0.1.0"
+description = "文化政策ニュースの共起ネットワーク分析"
+requires-python = ">=3.10"
+dependencies = [
+    "sudachipy>=0.6.8",
+    "sudachidict-core>=20240109",
+    "networkx>=3.2",
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "pyyaml>=6.0",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
