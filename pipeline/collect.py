@@ -402,9 +402,15 @@ def _should_fetch_body(source: Source) -> bool:
     return source.fetch_body and source.tier == "primary"
 
 
-def fetch_body(url: str) -> str:
+def fetch_body(url: str, retries: int = 1) -> str:
+    """本文を取る。**再試行はしない**のが既定。
+
+    本文は取れなくても見出しで記事は登録できる（`collect_source` が握り潰す）。
+    一方で1ページあたり3回×30秒の再試行を積むと、相手が詰まっているときに
+    30件で45分かかる（実測で1回の収集が15分を超えた）。任意の取得に時間を使わない。
+    """
     parser = _TextExtractor()
-    parser.feed(_decode(fetch(url)))
+    parser.feed(_decode(fetch(url, retries=retries)))
     text = normalize_text(parser.text())
     # ナビゲーションの短い行を落として、本文らしい塊だけ残す
     lines = [line for line in text.splitlines() if len(line.strip()) >= 15]
