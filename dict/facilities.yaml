@@ -1,0 +1,188 @@
+# 文化施設・関係組織。表層一致で拾う。
+#
+# 運用ルール: policies.yaml と同じ（人手管理、id は変えない、曖昧なエイリアスは書かない）。
+# ここは日本全国を網羅していない。分析対象の記事に出てくる施設から順に足していくのが正しい育て方。
+# 追加候補は `make review` で頻度順に出せる。
+#
+# etype: facility（施設）/ org（組織）/ region（地域）
+
+# ---- 国立博物館・美術館 ----
+- id: facility:tokyo_national_museum
+  label: 東京国立博物館
+  etype: facility
+  aliases: [東博, トーハク]
+  operator: org:nich
+
+- id: facility:kyoto_national_museum
+  label: 京都国立博物館
+  etype: facility
+  operator: org:nich
+
+- id: facility:nara_national_museum
+  label: 奈良国立博物館
+  etype: facility
+  operator: org:nich
+
+- id: facility:kyushu_national_museum
+  label: 九州国立博物館
+  etype: facility
+  operator: org:nich
+
+- id: facility:nmwa
+  label: 国立西洋美術館
+  etype: facility
+  aliases: [西洋美術館]
+
+- id: facility:momat
+  label: 東京国立近代美術館
+  etype: facility
+
+- id: facility:momak
+  label: 京都国立近代美術館
+  etype: facility
+
+- id: facility:nact
+  label: 国立新美術館
+  etype: facility
+
+- id: facility:nmao
+  label: 国立国際美術館
+  etype: facility
+
+- id: facility:nfaj
+  label: 国立映画アーカイブ
+  etype: facility
+
+- id: facility:kahaku
+  label: 国立科学博物館
+  etype: facility
+  aliases: [科博]
+
+- id: facility:minpaku
+  label: 国立民族学博物館
+  etype: facility
+  aliases: [みんぱく]
+
+- id: facility:rekihaku
+  label: 国立歴史民俗博物館
+  etype: facility
+  aliases: [歴博]
+
+- id: facility:ndl
+  label: 国立国会図書館
+  etype: facility
+
+- id: facility:upopoy
+  label: ウポポイ
+  etype: facility
+  aliases: [民族共生象徴空間]
+
+# ---- 国立の劇場 ----
+- id: facility:national_theatre
+  label: 国立劇場
+  etype: facility
+
+- id: facility:new_national_theatre
+  label: 新国立劇場
+  etype: facility
+
+- id: facility:national_noh_theatre
+  label: 国立能楽堂
+  etype: facility
+
+- id: facility:national_bunraku_theatre
+  label: 国立文楽劇場
+  etype: facility
+
+- id: facility:national_engei_hall
+  label: 国立演芸場
+  etype: facility
+
+- id: facility:national_theatre_okinawa
+  label: 国立劇場おきなわ
+  etype: facility
+
+# ---- 地方の主要館（記事に出たものから足していく） ----
+- id: facility:kanazawa21
+  label: 金沢21世紀美術館
+  etype: facility
+
+- id: facility:mot
+  label: 東京都現代美術館
+  etype: facility
+
+- id: facility:tokyo_bunka_kaikan
+  label: 東京文化会館
+  etype: facility
+
+- id: facility:yokohama_museum
+  label: 横浜美術館
+  etype: facility
+
+- id: facility:hyogo_pac
+  label: 兵庫県立芸術文化センター
+  etype: facility
+
+- id: facility:aichi_arts_center
+  label: 愛知県芸術劇場
+  etype: facility
+
+- id: facility:setouchi
+  label: 瀬戸内国際芸術祭
+  etype: facility
+  aliases: [瀬戸芸]
+
+- id: facility:echigo_tsumari
+  label: 大地の芸術祭
+  etype: facility
+  aliases: [越後妻有アートトリエンナーレ]
+
+# ---- 組織 ----
+- id: org:bunkacho
+  label: 文化庁
+  etype: org
+
+- id: org:mext
+  label: 文部科学省
+  etype: org
+  aliases: [文科省]
+
+- id: org:bunka_shingikai
+  label: 文化審議会
+  etype: org
+
+- id: org:ntj
+  label: 日本芸術文化振興会
+  etype: org
+  aliases: [芸術文化振興会]
+
+- id: org:nich
+  label: 国立文化財機構
+  etype: org
+
+- id: org:jpf
+  label: 国際交流基金
+  etype: org
+  aliases: [ジャパンファウンデーション]
+
+- id: org:unesco
+  label: ユネスコ
+  etype: org
+  aliases: [国際連合教育科学文化機関]
+
+- id: org:icomos
+  label: イコモス
+  etype: org
+  aliases: [ICOMOS]
+
+- id: org:arts_council_tokyo
+  label: アーツカウンシル東京
+  etype: org
+
+- id: org:jma
+  label: 日本博物館協会
+  etype: org
+
+- id: org:kanko_cho
+  label: 観光庁
+  etype: org

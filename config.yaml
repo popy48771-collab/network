@@ -1,0 +1,26 @@
+# 共起ネットワークのパラメータ。ここを編集して push すれば再分析が走る。
+# 迷ったら min_npmi と min_df から触ること（図の密度に一番効く）。
+
+unit: sentence          # 共起を数える単位: sentence | paragraph | doc
+min_df: 3               # 語の最低出現単位数。これ未満の語はノードにしない
+min_cooc: 2             # ペアの最低共起回数
+min_npmi: 0.20          # エッジの最低 NPMI（-1..1）。上げるほど図が疎になる
+max_edges: 1200         # エッジ数の上限（NPMI 上位から採用）
+max_nodes: 600          # ノード数の上限（重み付き次数の上位から採用）
+
+compound_min_freq: 2    # 複合名詞として結合する最低出現回数
+compound_max_len: 4     # 複合名詞にまとめる最大形態素数
+
+min_term_len: 2         # これ未満の文字数の語は捨てる（1文字ノイズ除去）
+keep_pos:               # 採用する品詞（大分類）
+  - 名詞
+  - 動詞
+  - 形容詞
+
+layout_iterations: 200  # spring layout の反復回数
+betweenness_max_nodes: 1200  # ノードがこれを超えたら媒介中心性の計算を省く
+
+# 時系列: 記事に日付があり、期間が2日以上に渡る場合のみ有効
+trend:
+  enabled: true
+  recent_days: 7        # 「直近」とみなす日数
