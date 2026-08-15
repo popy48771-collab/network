@@ -18,6 +18,18 @@ on:
         description: "書き込まずに件数だけ確認する"
         type: boolean
         default: false
+      show_all:
+        description: "取れたアイテムを全件（日付付きで）出す"
+        type: boolean
+        default: false
+      only:
+        description: "このソースIDだけ取得する（例: bunka_hodo）"
+        type: string
+        default: ""
+      probe_url:
+        description: "収集せず、このURLが使えるかだけ確認する（フィードURLの下見）"
+        type: string
+        default: ""
 
 permissions:
   contents: write
@@ -42,23 +54,37 @@ jobs:
 
       - name: フィードを取得
         id: collect
+        # 入力は env 経由で渡す（run に直接埋め込むとコマンドとして解釈されうる）
+        env:
+          PROBE_URL: ${{ inputs.probe_url }}
+          ONLY: ${{ inputs.only }}
         run: |
-          uv run python -m pipeline.collect \
-            ${{ inputs.dry_run && '--dry-run' || '' }} | tee /tmp/collect.log
+          args=()
+          ${{ inputs.dry_run && 'args+=(--dry-run)' || 'true' }}
+          ${{ inputs.show_all && 'args+=(--show-all)' || 'true' }}
+          if [ -n "$ONLY" ]; then args+=(--only "$ONLY"); fi
+          if [ -n "$PROBE_URL" ]; then args+=(--probe "$PROBE_URL"); fi
+          uv run python -m pipeline.collect "${args[@]}" | tee /tmp/collect.log
           {
             echo "## 収集結果"
             echo
-            sed -n '/^| ソース/,$p' /tmp/collect.log
+            if [ -n "$PROBE_URL" ]; then
+              echo '```'
+              cat /tmp/collect.log
+              echo '```'
+            else
+              sed -n '/^| ソース/,$p' /tmp/collect.log
+            fi
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: 共起ネットワークを再構築
-        if: ${{ !inputs.dry_run }}
+        if: ${{ !inputs.dry_run && !inputs.probe_url }}
         run: |
           uv run python -m pipeline.run \
             --gexf-url "https://lite.gephi.org/?file=https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/out/network.gexf"
 
       - name: レポートをサマリに出す
-        if: ${{ !inputs.dry_run }}
+        if: ${{ !inputs.dry_run && !inputs.probe_url }}
         run: |
           {
             echo
@@ -70,7 +96,7 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: 成果物をアップロード
-        if: ${{ !inputs.dry_run }}
+        if: ${{ !inputs.dry_run && !inputs.probe_url }}
         uses: actions/upload-artifact@v4
         with:
           name: cooccurrence-network
@@ -78,7 +104,7 @@ jobs:
           retention-days: 30
 
       - name: articles/ と out/ をコミット
-        if: ${{ !inputs.dry_run }}
+        if: ${{ !inputs.dry_run && !inputs.probe_url }}
         run: |
           .github/scripts/commit-and-push.sh "${{ github.ref_name }}" \
             "collect: 記事を追加し、共起ネットワークを更新 ($(date -u +%Y-%m-%dT%H:%MZ)) [skip ci]" \

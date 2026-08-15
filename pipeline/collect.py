@@ -105,6 +105,7 @@ class Result:
     skipped: int = 0
     error: str = ""
     samples: list[str] = field(default_factory=list)
+    dates: list[str] = field(default_factory=list)  # 新規アイテムの日付（空文字＝日付なし）
 
 
 # ---- ソース定義 -----------------------------------------------------------
@@ -287,6 +288,8 @@ class _LinkList(HTMLParser):
         super().__init__(convert_charrefs=True)
         # (href, 見出し, 直前のテキスト, 直後のテキスト)
         self.links: list[list[str]] = []
+        # <link rel="alternate" type="application/rss+xml"> で告知されたフィード
+        self.feeds: list[str] = []
         self._skip_depth = 0
         self._depth = 0          # <a> のネスト深さ
         self._before = ""        # 直近に流れたテキスト（日付の文脈）
@@ -295,6 +298,11 @@ class _LinkList(HTMLParser):
     def handle_starttag(self, tag, attrs):
         if tag in self._SKIP:
             self._skip_depth += 1
+            return
+        if tag == "link":
+            attr = dict(attrs)
+            if "xml" in (attr.get("type") or "") and attr.get("href"):
+                self.feeds.append(attr["href"])
             return
         if tag != "a":
             return
@@ -472,7 +480,8 @@ def fetch_items(source: Source) -> list[Item]:
 
 
 def collect_source(
-    source: Source, articles_dir: Path, seen: set[str], seen_titles: set[str], dry_run: bool
+    source: Source, articles_dir: Path, seen: set[str], seen_titles: set[str], dry_run: bool,
+    show_all: bool = False,
 ) -> Result:
     result = Result(source=source)
     try:
@@ -498,7 +507,8 @@ def collect_source(
         if not dry_run:
             write_article(item, source, articles_dir)
         result.written += 1
-        if len(result.samples) < 3:
+        result.dates.append(item.published)
+        if show_all or len(result.samples) < 3:
             # 本文の字数まで出す。dry-run の目的は「ちゃんと取れているか」の確認なので、
             # 件数だけ見えても本文が空だったことに気付けない
             size = f"（本文 {len(item.body)}字）" if item.body else ""
@@ -507,13 +517,62 @@ def collect_source(
     return result
 
 
+def probe(url: str) -> int:
+    """URLが使えるソースかどうかだけ確認する。新しい監視対象を足す前の下見に使う。
+
+    開発環境から外部サイトに繋がらないので、これは Actions から実行する
+    （collect.yml の probe_url）。フィードなら件数、HTMLならフィードのURL候補を出す。
+    """
+    print(f"確認: {url}")
+    try:
+        payload = fetch(url)
+    except RuntimeError as exc:
+        print(f"⚠️ {exc}")
+        return 1
+    print(f"取得 {len(payload)} バイト")
+
+    try:
+        items = parse_feed(payload)
+    except ET.ParseError:
+        items = []
+    else:
+        print(f"フィードとして解析できました: {len(items)} 件")
+        for item in items[:5]:
+            print(f"  + [{item.published or '日付なし'}] {item.title}")
+            print(f"    {item.url}")
+        return 0 if items else 1
+
+    parser = _LinkList()
+    parser.feed(_decode(payload))
+    print("フィードとしては解析できませんでした。HTMLとして見ます。")
+    feeds = [urllib.parse.urljoin(url, href) for href in parser.feeds]
+    candidates = [
+        urllib.parse.urljoin(url, href)
+        for href, *_ in parser.links
+        if re.search(r"\.(xml|rdf|rss)$", href or "", re.I)
+    ]
+    for label, urls in (("告知されたフィード", feeds), ("フィードらしいリンク", candidates)):
+        print(f"{label}: {len(urls)} 件")
+        for found in dict.fromkeys(urls):
+            print(f"  - {found}")
+    print(f"ページ内のリンク {len(parser.links)} 件。先頭10件（link_pattern を決める材料）:")
+    for href, title, *_ in parser.links[:10]:
+        print(f"  - {urllib.parse.urljoin(url, href)}  「{title[:40]}」")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="フィードから記事を集めて articles/ に書き出す")
     parser.add_argument("--sources", default="sources")
     parser.add_argument("--articles", default="articles")
     parser.add_argument("--only", default="", help="このIDのソースだけ取得する")
     parser.add_argument("--dry-run", action="store_true", help="書き込まずに件数だけ見る")
+    parser.add_argument("--show-all", action="store_true", help="取れたアイテムを全件表示する")
+    parser.add_argument("--probe", default="", help="収集せず、このURLが使えるかだけ確認する")
     args = parser.parse_args(argv)
+
+    if args.probe:
+        return probe(args.probe)
 
     articles_dir = Path(args.articles)
     articles_dir.mkdir(parents=True, exist_ok=True)
@@ -529,7 +588,10 @@ def main(argv: list[str] | None = None) -> int:
           + ("（dry-run）" if args.dry_run else ""))
 
     seen_titles: set[str] = set()
-    results = [collect_source(s, articles_dir, seen, seen_titles, args.dry_run) for s in sources]
+    results = [
+        collect_source(s, articles_dir, seen, seen_titles, args.dry_run, args.show_all)
+        for s in sources
+    ]
 
     print()
     print("| ソース | 取得 | 新規 | 既出 | 状態 |")
@@ -539,6 +601,13 @@ def main(argv: list[str] | None = None) -> int:
         print(f"| {r.source.name} | {r.fetched} | {r.written} | {r.skipped} | {status} |")
     print()
     for r in results:
+        if r.dates:
+            # 日付の範囲を出す。全件が同じ日付になっていたら日付の拾い方が壊れている合図
+            known = sorted(d for d in r.dates if d)
+            span = f"{known[0]} 〜 {known[-1]}" if known else "なし"
+            missing = sum(1 for d in r.dates if not d)
+            print(f"  [{r.source.id}] 日付 {span}"
+                  + (f" / 日付なし {missing} 件" if missing else ""))
         for title in r.samples:
             print(f"  + [{r.source.id}] {title}")
 

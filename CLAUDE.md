@@ -46,9 +46,10 @@ make review       # 辞書に追加する候補を頻度順に出す
 | `pipeline/ingest.py` | ファイル → 記事レコード |
 | `pipeline/textproc.py` | 辞書マスク → 形態素解析 → 複合語結合 → 共起単位 |
 | `pipeline/cooccur.py` | NPMI・コミュニティ・中心性・レイアウト |
-| `pipeline/export.py` | GEXF / CSV / JSON / HTML / レポート |
+| `pipeline/export.py` | GEXF / CSV / JSON / HTML / 記事一覧 / レポート |
 | `pipeline/style.py` | ノードの色と形（配色の根拠は docstring に） |
-| `pipeline/templates/viewer.html` | 単体HTMLビューア（外部依存なし） |
+| `pipeline/templates/viewer.html` | 図の単体HTMLビューア（外部依存なし） |
+| `pipeline/templates/articles.html` | 記事一覧の単体HTMLビューア（同上） |
 | `.github/workflows/collect.yml` | 毎朝の収集 → 分析 → コミット |
 | `.github/workflows/analyze.yml` | push 起点の分析 → コミット |
 | `.github/scripts/commit-and-push.sh` | 生成物の書き戻し（衝突しない方式） |
@@ -77,8 +78,13 @@ make review       # 辞書に追加する候補を頻度順に出す
 
 - `out/network.gexf` … Gephi / Gephi Lite 用。`https://lite.gephi.org/?file=<GEXFのURL>` で直接開ける
 - `out/network.html` … ブラウザで開くだけのビューア
-- `out/report.md` … 頻出語・強い共起・急に強まった結びつき・施設/政策別の要約
-- `out/nodes.csv` `out/edges.csv` … 表計算ソフトや Gephi へのインポート用
+- `out/articles.html` … 集めた記事の一覧。図のノードと `#node=<id>` で相互に行き来できる
+- `out/report.md` … 頻出語・強い共起・急に強まった結びつき・施設/政策別の要約・最近の記事
+- `out/nodes.csv` `out/edges.csv` `out/articles.csv` … 表計算ソフトや Gephi へのインポート用
+
+図と一覧は同じ payload（`graph.json`）から作る。記事とノードの相互参照を payload に
+持たせてあるので、**図で見つけた語から記事本体に必ず辿れる**。この往復が切れると、
+共起の意味を取り違えたまま解釈することになる。
 
 ## 色の決まり（変更するときは根拠ごと）
 
