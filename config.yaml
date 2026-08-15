@@ -2,7 +2,7 @@
 # 迷ったら min_npmi と min_df から触ること（図の密度に一番効く）。
 
 unit: sentence          # 共起を数える単位: sentence | paragraph | doc
-min_df: 3               # 語の最低出現単位数。これ未満の語はノードにしない
+min_df: 2               # 記事が少ないうちは2。30本を超えたら3に戻す
 min_cooc: 2             # ペアの最低共起回数
 min_npmi: 0.20          # エッジの最低 NPMI（-1..1）。上げるほど図が疎になる
 max_edges: 1200         # エッジ数の上限（NPMI 上位から採用）

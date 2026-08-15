@@ -44,14 +44,19 @@ Actions のサマリにレポート全文と Gephi Lite へのリンクが出ま
 
 ### 3. 見る
 
-**Gephi Lite**（ブラウザ版 Gephi）で開く場合:
+**Gephi Lite**（ブラウザ版 Gephi）で開きます。GEXF には座標・色・サイズ・コミュニティ・
+中心性が入っているので、開いた直後から図になっています。Gephi Lite 側でレイアウトや
+色分けをやり直すこともできます。
 
-```
-https://lite.gephi.org/?file=https://raw.githubusercontent.com/<owner>/<repo>/<branch>/out/network.gexf
-```
-
-GEXF には座標・色・サイズ・コミュニティ・中心性が入っているので、開いた直後から図になっています。
-Gephi Lite 側でレイアウトや色分けをやり直すこともできます。
+- **このリポジトリが private の場合**（現状はこちら）:
+  GitHub から `out/network.gexf` をダウンロードし、[lite.gephi.org](https://lite.gephi.org/) の
+  画面にドラッグ&ドロップしてください。Gephi Lite は GitHub にログインできないので、
+  URL 指定では private リポジトリのファイルを読めません。
+- **public にした場合**: URL を渡すだけで直接開けます。
+  ```
+  https://lite.gephi.org/?file=https://raw.githubusercontent.com/<owner>/<repo>/<branch>/out/network.gexf
+  ```
+  この URL は Actions の実行サマリにも毎回出力されます。
 
 **単体 HTML** で開く場合は `out/network.html` をブラウザにドロップするだけです
 （外部 CDN を一切参照しないので、オフラインでも開けます）。
