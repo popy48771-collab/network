@@ -137,6 +137,28 @@ def test_shift_jis_page_is_decoded():
     assert items[0].title == "文化財の保存と活用について"
 
 
+def test_title_pattern_filters_a_too_wide_feed(tmp_path, monkeypatch):
+    """省庁全体の新着情報のようなフィードを、見出しで問いに寄せられること。"""
+    items = [
+        collect.Item(title="文化審議会の答申について", url="https://e.go.jp/1"),
+        collect.Item(title="H3ロケット9号機の打上げ成功について", url="https://e.go.jp/2"),
+        collect.Item(title="博物館ワーキンググループの開催について", url="https://e.go.jp/3"),
+    ]
+    monkeypatch.setattr(collect, "fetch_items", lambda source: items)
+    source = collect.Source(
+        id="s", name="n", url="https://e.go.jp/rss", title_pattern="文化|博物館"
+    )
+    result = collect.collect_source(source, tmp_path, set(), set(), dry_run=True)
+    assert result.written == 2
+    assert result.filtered == 1
+
+
+def test_broken_pattern_is_reported_before_fetching(tmp_path):
+    source = collect.Source(id="s", name="n", url="https://e.go.jp/rss", title_pattern="文化(")
+    result = collect.collect_source(source, tmp_path, set(), set(), dry_run=True)
+    assert "title_pattern" in result.error
+
+
 def test_unknown_kind_is_reported(tmp_path):
     source = collect.Source(id="s", name="n", url="https://e.com/", kind="scrape")
     result = collect.collect_source(source, tmp_path, set(), set(), dry_run=True)

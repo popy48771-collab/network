@@ -1,11 +1,18 @@
-# 文部科学省の報道発表。文化行政は文化庁だけでなく MEXT 側にも出る。
+# 文部科学省の新着情報。文化行政は文化庁だけでなく MEXT 側にも出る。
 #
 # フィードURLは https://www.mext.go.jp/rss.html から辿った新着情報の RDF。
 # 2026-08-15 に Actions の probe で確認した（/rss/rss.xml は 404 だった）。
+#
+# このフィードは**省庁全体**の新着で、ロケット・高専・教科書・大学財務が大半を占める。
+# そのまま入れると文化政策のコーパスが埋もれる（本文2万字の議事録が1本入るだけで
+# 共起単位が数百増える）。だから title_pattern で見出しを絞る。
+# **ここでの title_pattern が、Googleニュースの検索語と同じ役割＝問いそのもの。**
+# 変えたら docs/decisions.md に記録すること（母集団が変わる）。
 id: mext_hodo
-name: 文部科学省 報道発表
+name: 文部科学省 新着情報（文化関連のみ）
 kind: rss
 url: https://www.mext.go.jp/b_menu/news/index.rdf
+title_pattern: "文化|芸術|文化財|博物館|美術館|劇場|音楽|著作権|世界遺産|国語|日本語教育|生涯学習|社会教育"
 tier: primary
 country: JP
 lang: ja

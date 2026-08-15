@@ -72,6 +72,9 @@ class Source:
     rate_limit_sec: float = 2.0
     # kind: html_list のとき、記事リンクとみなす href の正規表現。必須
     link_pattern: str = ""
+    # 見出しがこの正規表現に一致するアイテムだけ採る。省庁全体の新着情報のように
+    # フィードが広すぎるときの絞り込み。この場合 **これが検索語＝問いにあたる**
+    title_pattern: str = ""
     note: str = ""
 
     @classmethod
@@ -103,6 +106,7 @@ class Result:
     fetched: int = 0
     written: int = 0
     skipped: int = 0
+    filtered: int = 0  # title_pattern に一致しなかった件数
     error: str = ""
     samples: list[str] = field(default_factory=list)
     dates: list[str] = field(default_factory=list)  # 新規アイテムの日付（空文字＝日付なし）
@@ -473,6 +477,11 @@ def fetch_items(source: Source) -> list[Item]:
         raise ValueError(f"kind={source.kind} は未対応（rss / html_list のみ）")
     if source.kind == "html_list" and not source.link_pattern:
         raise ValueError(f"{source.id}: kind: html_list には link_pattern が要ります")
+    for field_name in ("link_pattern", "title_pattern"):
+        try:
+            re.compile(getattr(source, field_name))
+        except re.error as exc:
+            raise ValueError(f"{source.id}: {field_name} が正規表現として不正です（{exc}）") from exc
     payload = fetch(source.url)
     if source.kind == "rss":
         return parse_feed(payload)
@@ -491,6 +500,12 @@ def collect_source(
         return result
 
     result.fetched = len(items)
+    if source.title_pattern:
+        # 省庁全体の新着情報のような広すぎるフィードを、見出しで問いに寄せる
+        keep = re.compile(source.title_pattern)
+        matched = [i for i in items if keep.search(i.title)]
+        result.filtered = len(items) - len(matched)
+        items = matched
     for item in items:
         key = title_key(item.title)
         if item.doc_id in seen or key in seen_titles:
@@ -594,11 +609,12 @@ def main(argv: list[str] | None = None) -> int:
     ]
 
     print()
-    print("| ソース | 取得 | 新規 | 既出 | 状態 |")
-    print("|---|---:|---:|---:|---|")
+    print("| ソース | 取得 | 新規 | 既出 | 対象外 | 状態 |")
+    print("|---|---:|---:|---:|---:|---|")
     for r in results:
         status = f"⚠️ {r.error}" if r.error else "ok"
-        print(f"| {r.source.name} | {r.fetched} | {r.written} | {r.skipped} | {status} |")
+        print(f"| {r.source.name} | {r.fetched} | {r.written} | {r.skipped} "
+              f"| {r.filtered} | {status} |")
     print()
     for r in results:
         if r.dates:

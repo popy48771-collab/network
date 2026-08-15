@@ -17,16 +17,21 @@
 | 項目 | 現況（2026-08-15） |
 |---|---|
 | 記事 | 390件（Googleニュース検索RSS 7本から自動収集） |
+| ソース | 有効9本。報道7本（`tier: secondary`）+ 一次情報2本（文化庁・文部科学省、`tier: primary`）|
 | 共起単位 | 426文 |
 | ネットワーク | 58ノード / 73エッジ（絞り込み前 1599 / 10335） |
 | 辞書 | 政策・制度 43件 / 施設・組織 40件 / 除外語 180語 |
-| テスト | 33件（`make test`） |
+| テスト | 50件（`make test`） |
 | リポジトリ | **public**（2026-08-15 に private から変更） |
 
-図を見る:
+**一次情報2本は 2026-08-15 に有効にしたばかりで、まだ記事が入っていない。**
+次の収集から本文（1記事 = 数十文）が混ざるので、閾値の見直しが要る（§5-②）。
+
+見る:
 
 - Gephi Lite … <https://lite.gephi.org/?file=https://raw.githubusercontent.com/popy48771-collab/network/main/out/network.gexf>
-- 単体HTML … `out/network.html` をブラウザで開く（外部依存なし）
+- 図（単体HTML）… `out/network.html` をブラウザで開く（外部依存なし）
+- **記事一覧 … `out/articles.html`**（検索・出典・期間で絞り込める。図と相互に行き来できる）
 - レポート … `out/report.md`
 
 ---
@@ -261,16 +266,32 @@ make collect      # sources/ のフィードを取得 → articles/ に追加
 make collect-dry  # 取得せず件数だけ確認（新ソースの動作確認に使う）
 make run          # articles/ を分析 → out/
 make demo         # 架空のサンプル記事で動作確認 → out/demo/
-make test         # pytest（33件）
+make test         # pytest（50件）
 make review       # 辞書に追加する候補を頻度順に出す
 ```
 
-- 作業ブランチ: `claude/culture-policy-cooccurrence-network-xxzzcl`
-- `main` へは PR を作ってマージ（これまで #1〜#5）
+- 作業ブランチ: `claude/repository-overview-2jqcsx`（それ以前は `claude/culture-policy-cooccurrence-network-xxzzcl`）
+- `main` へは PR を作ってマージ（これまで #1〜#6）
 - **テストは番人**。特に `test_policy_name_is_not_split`、`test_build_is_deterministic`、
   `test_secondary_tier_never_fetches_body` は、壊れたら設計が壊れている合図
-- 外部ネットワーク: この開発環境からは `news.google.com` などに接続できない。
-  実フィードの確認は GitHub Actions の `collect.yml` を `dry_run: true` で手動実行する
+
+### 外部サイトの確認は Actions でやる
+
+この開発環境からは `news.google.com` や `www.bunka.go.jp` に接続できない（egress が閉じている）。
+実データの確認は `collect.yml` を手動実行する。入力は4つ:
+
+| 入力 | 何をするか |
+|---|---|
+| `dry_run` | 書き込まずに件数だけ見る。**新しいソースを足したら必ず最初にこれ** |
+| `show_all` | 取れたアイテムを全件、日付付きで出す。日付の拾い方の確認に使う |
+| `only` | そのソースIDだけ取得する（例: `bunka_hodo`）|
+| `probe_url` | 収集せず、そのURLがフィードとして読めるかだけ確認する。読めないときは<br>告知されたフィード・フィードらしいリンク・ページ内リンクの先頭を出す |
+
+`probe_url` は新しい監視対象の下見に使う。文部科学省の配信URLはこれで見つけた
+（`/rss/rss.xml` が 404 で、`rss.html` を probe したら `b_menu/news/index.rdf` が出てきた）。
+
+**注意**: `collect` と `analyze` は `concurrency: repo-write-*` を共有しているので、
+待機中の実行は次の実行が来ると**キャンセルされる**。手動実行は1本ずつ流すこと。
 
 ### 色を変えるとき
 
