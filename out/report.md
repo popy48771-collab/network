@@ -1,6 +1,6 @@
 # 共起ネットワーク 分析レポート
 
-生成: 2026-08-15T12:20:57+00:00
+生成: 2026-08-15T12:21:18+00:00
 
 | 項目 | 値 |
 |---|---|
@@ -10,7 +10,7 @@
 | ノード数 | 58（絞り込み前 1599） |
 | エッジ数 | 73（絞り込み前 10335） |
 
-[Gephi Lite で開く](https://lite.gephi.org/?file=https://raw.githubusercontent.com/popy48771-collab/network/claude/culture-policy-cooccurrence-network-xxzzcl/out/network.gexf)
+[Gephi Lite で開く](https://lite.gephi.org/?file=https://raw.githubusercontent.com/popy48771-collab/network/main/out/network.gexf)
 
 ## 頻出ノード（出現文数）
 
