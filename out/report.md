@@ -1,6 +1,6 @@
 # 共起ネットワーク 分析レポート
 
-生成: 2026-08-15T12:21:18+00:00
+生成: 2026-08-15T13:52:47+00:00
 
 | 項目 | 値 |
 |---|---|
@@ -11,6 +11,8 @@
 | エッジ数 | 73（絞り込み前 10335） |
 
 [Gephi Lite で開く](https://lite.gephi.org/?file=https://raw.githubusercontent.com/popy48771-collab/network/main/out/network.gexf)
+
+記事そのものは `articles.html`（ブラウザで開く）／`articles.csv` で読める。
 
 ## 頻出ノード（出現文数）
 
@@ -150,6 +152,31 @@
 - **クラスタ 4**（7語）: 文化庁、宗教法人、売買、世界文化遺産、長官、枚目、提出
 - **クラスタ 5**（3語）: 特別展、幽霊、妖怪画コレクション
 - **クラスタ 6**（2語）: 日本、文化政策
+
+## 最近の記事
+
+新しい順に20件（全390件は `articles.html` / `articles.csv`）。
+
+- [東京国立近代美術館 新館長に北山浩士氏 - mc-jpn.com](https://news.google.com/rss/articles/CBMiSEFVX3lxTE03QTdqbHdqcHBmWEU0Nl9aRUphOWZPNVJVZlllQkItTUlKSzFQMzJvVUNCOVRWNjVoTU9qNnJaWjg5ZmhyMmJUZQ?oc=5)<br>　2026-08-15 / mc-jpn.com
+- [学芸員になりきって展示資料PR 延岡城・内藤記念博物館で体験イベント](https://news.google.com/rss/articles/CBMiS0FVX3lxTE5GSHY4ZS1yMnVOak9palpkT0pNUVAya2dhN0tXZjhiOG1vU1c5WFJOTFVTVGZNSzZkQ0dYZkhOS3pXbUFSTWZ6b2labw?oc=5)<br>　2026-08-15 / 47NEWS
+- [日本遺産・吹屋地区をPRして 高梁市推進協が認定商品、サービス募集](https://news.google.com/rss/articles/CBMib0FVX3lxTFBlMFBjcVZLZ2VnMTlOUmp6Rmc4c0plcllGR2tSLUlJOGdrbGUzZ2prcngxLTFneEFJcUR0ZDVQdW9DbkRfdWtBa2J4bDQzRFlhQk44VG8tX1hZTHgwMFNQWERZdjdmQXU1RktHUkE2Yw?oc=5)<br>　2026-08-14 / 山陽新聞
+- [日本遺産「鯨とともに生きる」認定10周年記念 スタンプラリー開催 [和歌山県]](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5LUmN3QzVEWGVEel9aRzBCRGJlaV9WYkhfZXdzVlNHUGE0bmlPdm9iQkMzNFZsakhZcVhIWmo5WUtPUG1NS0s4T1N0RTh3TmsyNXNoOTR5WG1XSUZEVWR1Q2ZNVkQtZjQ?oc=5)<br>　2026-08-14 / 朝日新聞
+- [日本遺産「鯨とともに生きる」認定10周年記念 スタンプラリー開催 (朝日新聞)](https://news.google.com/rss/articles/CBMijgFBVV95cUxQUl83enFUb2J1UUN5eWFvLUcyckZnYWNpNE5ETnZKMUZiQnVHNXBLeFdfTnlsZmU5bUtKRHpLYXh3TU1fNmlZMG5OZFRzQUU3eEZLMlEtRGxUdmlyNmo4SHJLT0xJb05VckpReUpzSGs1dkI3TTRlam9ycXVGQ0ZGLXdrOVRvOGhVYmVVUTdR?oc=5)<br>　2026-08-14 / Yahoo!ニュース
+- [日本遺産「鯨とともに生きる」スタンプラリー/和歌山](https://news.google.com/rss/articles/CBMieEFVX3lxTE90ZEJzY2VWUFUxbzB5bV9TaDRoak12WTh6QXJLM1VKVXIzMnd1ejlXYkJ6UjMybzVFS0todHpfNEowZFlZZ3JrVmU4MUo5ZTlHUWpmQmlYeHc4UTNnNXFzeHBFemtOekhBS1lGRk8wZEFieDdMZ0d1cA?oc=5)<br>　2026-08-14 / article.auone.jp
+- [国慶節期間中は文化観光が活況を呈し、ハノイ、ホーチミン市、沿岸部の観光地には多くの観光客が訪れる。](https://news.google.com/rss/articles/CBMitAFBVV95cUxPbVY0TFd3bkhIQjJJX240VDJiVHMyb1l0RHMzeTZhT204ZXl3b1hsQlk2UlpKUVRab3QxSDJ1S2IzNTNvVmN6NjctSXJwblpGVmRxMDRYYmJ3OFNkRG4zb1RjNktqc2E2bTZYTXZCRTRTdk04Nk1yNG1Od1FZYWlEdk1oUFBlcUY1SkdwRnhvSjJUNF9lRW5VYk9jLU5rOU5EWXByLXVMMkRaWFBTUS1DWUZnUGQ?oc=5)<br>　2026-08-14 / Vietnam.vn
+- [全国の博物館が「追いつめられた」 戦争資料の廃棄も選択肢...「最終手段」現場の葛藤 - tokyo-np.co.jp](https://news.google.com/rss/articles/CBMiU0FVX3lxTFA0MnZ2RmpSRE5tdkQ3SlhndXNEMk5vYmJjRG5nSGdGZ2dFY1lyVklkLUNDcjFXUFN2TzM2RkMxQ3JGX3BCOU9mUkVnNnRCQVFPLWdF?oc=5)<br>　2026-08-14 / tokyo-np.co.jp
+- [「高校の先生に勧められて何となく入った」→「最高の学科」“学生生活評価の高い東海地方の大学”ランキング上位に「この大学](https://news.google.com/rss/articles/CBMic0FVX3lxTFBmVUkzTDRkeGt5N0hFZ2pxZGlXMWdtRmppUS1KZE9rSUVUWjhfOHUxaWpmYmxpQVpmNV8tY3EwVnVDVlN4OGtUNnIxUWM4THVSRTVGU191R0t5WklMaGcwOGxDNkRWSEstVzRtbXZabTBqNGs?oc=5)<br>　2026-08-14 / news.nicovideo.jp
+- [資料廃棄の明記 大問題 残す分散管理 模索必要 博物館運営に新規定 金山喜昭法政大名誉教授](https://news.google.com/rss/articles/CBMiXkFVX3lxTFBXTmhTNElvRXY2OFFiSUllZkZ0Y3liUWVqMGFOZUR0RFU0ZlFQWE8wWXV2c2FwYjE3Wm80UG1LY0NiTUZ0ZnFRbzBXTTRoM2o3bDFhMWVVUGRZYkdSdFE?oc=5)<br>　2026-08-13 / okinawatimes.co.jp
+- [明和町日本遺産魅力増進業務委託公募型プロポーザルの実施について|明和町ホームページ - 多気郡](https://news.google.com/rss/articles/CBMieEFVX3lxTE1CQ0RCcDNBRmZkbkJiNDFfNFFNUmJuakYweWZrb25UUjdXazBFX0w0NWl4bUtrRFZjcTZHWG4tc19ySU1DN0hfSXhnS1V3QWNlOW1sVlRWeFR4ZHlrWWlzZzV6NDlnX0duc3BjN0Z3MFAxdmlmRkF5VQ?oc=5)<br>　2026-08-13 / town.meiwa.mie.jp
+- [日本遺産を活用した観光コンテンツ強化事業に係る公募型プロポーザルの実施](https://news.google.com/rss/articles/CBMiUEFVX3lxTE9Kc2ZjM0ptbFJyUjhweDktbkg2NHFMaG94eHpVNXJ2RDljUHRwc2lUVmdtMzFBc3pySmp5YmZZUWF2WmNZTWx5WUFqTk1VV3Ux?oc=5)<br>　2026-08-13 / トラベルボイス
+- [地域の歴史・文化・観光資源を、物語・絵本・スマホで展開!](https://news.google.com/rss/articles/CBMiU0FVX3lxTE5XWGctYWVkSHpOS0kteHU2TTJQUUlmS01JcU52UnZKNGNoYW51aXJRd1BnNzVZZ3RiTTRNR2lYdHhDbVdqdEFyTDlnY0NtOFh4THE0?oc=5)<br>　2026-08-13 / キャンプファイヤー
+- [京都府ふるさと納税「文化財を守り伝える京都府基金」](https://news.google.com/rss/articles/CBMiUEFVX3lxTE1VaFh1NHlTRnIzM05QeHdaZFA5cURsQkVSMW5McGxDN2ZQS1JnQmpkYlJFUVdfM1RPLXcwNUQwY2Eza1YteGVObTFRZWhsTVRB?oc=5)<br>　2026-08-13 / pref.kyoto.jp
+- [フンイエン ― 文化観光と体験型観光の可能性に満ちた土地。](https://news.google.com/rss/articles/CBMikwFBVV95cUxOdXNQME5FUGUza2FBQzRFVVJtODV6YWV0Q3c4NTNQLXkydmR5anF5ZjJ5U0VnNFBkbmUyN1FvQjNNZEwxZG5ZM1lLRUNUUGhVMjRUbGNuWEZ0bS1KOGV0MXJXcks3TWpKS3U0NkNoQ21UQ3NGTUlPaXZ2b3FMOXE1WDNsM1d1VlN6YzZNWXQwODkzMHM?oc=5)<br>　2026-08-13 / Vietnam.vn
+- [ピックルボール渋谷カップ2026](https://news.google.com/rss/articles/CBMiigFBVV95cUxNdnVLRURlYUlqSk9objZLTzJfUVVpVURkNURvMHZ3UXlLZlA4Uzd0NjF6aHU1TjFtNVlIbWJhY19LLTY0dzFjanVhVEE5UjF6R2ZXaDFrNDVSUWJrWm1qWmRRellfU3BSWW96bXhCZzFMV09rc29PYlEydGRBelBvSnZvZHpmdk9UVEE?oc=5)<br>　2026-08-13 / city.shibuya.tokyo.jp
+- [野首遺跡出土品 重要文化財指定記念 文化庁の文化財調査官がその魅力を講演](https://news.google.com/rss/articles/CBMiX0FVX3lxTE9CcGdpMm9vWkNTWW1CU0hTY0RYSXRjU3RLSmlfbkhjVjdaQmF5NHlwaXhUdVZHM1VhWmVfSm8yNFFRWXBaRlhzWWtfN0RmTjl5S0NJazIzVEMtYlZ6WE40?oc=5)<br>　2026-08-12 / 十日町タウン情報
+- [第2条:大きな可能性を秘めているが、スター選手はまだ少ない](https://news.google.com/rss/articles/CBMib0FVX3lxTFBWdkFHeGdGemJfNklUVUlTU1oyMGZ2M2hlbGp2VGt2RWt1OHY2VS1ab1NtSTNFYVdLci1rMXZ3Z0tjbVBDajJhLVgzN0RWNDlFLVpzeWdxVFF2LWRNc05BYVpIWHZDSmNGcmZCZ3RiOA?oc=5)<br>　2026-08-12 / Vietnam.vn
+- [文化観光推進法、立佞武多の館など拠点計画4件・地域計画2件を認定](https://news.google.com/rss/articles/CBMiVEFVX3lxTE8zeEd0TTZnMEJkYU92MjNDUlIyNTlMSWxkYko1N3dlbXh4aDluUmJ6OUFMdUVyOTBJV0VPZllwei1aeV9DRkJtLVRyWTRqMXBkWE9OeQ?oc=5)<br>　2026-08-12 / 観光経済新聞
+- [宮城県に4つのJUST!#5](https://news.google.com/rss/articles/CBMiS0FVX3lxTFBYX3dVZkRoVVZQOGppX1RHa3BLUjNfSWk2d0NzYkFzTTNOMVZDLW1UYTR1TXJQRi1CazlPU0dFSFNsLV9pVWNXSWpjaw?oc=5)<br>　2026-08-12 / TVer
 
 ---
 

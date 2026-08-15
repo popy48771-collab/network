@@ -1,0 +1,53 @@
+<!doctype html>
+<!--
+  回帰テスト用の一覧ページ（架空）。実在のページではない。
+
+  官公庁の報道発表一覧によくある形を写してある:
+    - 日付がリンクの手前にある（dl/dt/dd）
+    - 日付がリンクの後ろの括弧にある（ul/li）
+    - 同じ記事へのリンクがページ内に2回出る
+    - 本文ではなく PDF やナビゲーションへのリンクが混ざる
+    - 相対パスと絶対パスが混在する
+  これらを parse_link_list が捌けることを tests/test_collect.py で確かめる。
+-->
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>広報・報道・お知らせ | 架空庁</title>
+</head>
+<body>
+<nav aria-label="グローバルナビ">
+  <a href="/">ホーム</a>
+  <a href="/koho_hodo_oshirase/">広報・報道・お知らせ</a>
+  <a href="#main">本文へ</a>
+</nav>
+
+<main id="main">
+<h1>報道発表</h1>
+
+<dl class="release-list">
+  <dt>2026年8月14日</dt>
+  <dd>
+    <a href="/koho_hodo_oshirase/hodohappyo/93012301.html">文化財保存活用地域計画の認定について（第12回認定）</a>
+    <a href="/koho_hodo_oshirase/hodohappyo/pdf/93012301_01.pdf">PDF</a>
+  </dd>
+
+  <dt>2026年8月7日</dt>
+  <dd>
+    <a href="./hodohappyo/93012201.html">文化審議会博物館部会（第5回）の開催について</a>
+  </dd>
+</dl>
+
+<ul class="topics">
+  <li><a href="/koho_hodo_oshirase/hodohappyo/93012101.html">令和8年度 文化芸術振興費補助金の交付要綱を改正しました</a>（2026年7月31日）</li>
+  <li><a href="/koho_hodo_oshirase/hodohappyo/93012101.html">交付要綱の改正について（再掲）</a></li>
+  <li><a href="/seisaku/bunkashingikai/">審議会のページへ</a></li>
+  <li><a href="javascript:void(0)">もっと見る</a></li>
+</ul>
+</main>
+
+<footer>
+  <a href="/koho_hodo_oshirase/hodohappyo/">一覧</a>
+</footer>
+</body>
+</html>

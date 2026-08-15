@@ -1,10 +1,14 @@
-"""出力: GEXF（Gephi Lite 用）・CSV・JSON・単体HTMLビューア・レポート。"""
+"""出力: GEXF（Gephi Lite 用）・CSV・JSON・単体HTMLビューア・記事一覧・レポート。
+
+図と記事一覧は同じ payload から作る。図で見つけた語から記事へ、記事から語へ
+往復できることが大事で、そのために「記事 ↔ ノード」の対応を payload に持たせている。
+"""
 
 from __future__ import annotations
 
 import csv
 import json
-from collections import defaultdict
+from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -13,8 +17,16 @@ import networkx as nx
 from .cooccur import Stats
 from .ingest import Doc
 from .style import GROUP_STYLE, group_of
+from .textproc import Basket
 
-TEMPLATE = Path(__file__).parent / "templates" / "viewer.html"
+TEMPLATE_DIR = Path(__file__).parent / "templates"
+TEMPLATE = TEMPLATE_DIR / "viewer.html"
+ARTICLES_TEMPLATE = TEMPLATE_DIR / "articles.html"
+DATA_MARKER = "/*__GRAPH_DATA__*/null"
+
+# 一覧に載せる抜粋の長さ。報道記事はフィードの要約しか持っていないので、
+# ここを長くしても増えない（全文はそもそも保存していない）。
+SNIPPET_CHARS = 180
 
 
 def _size_of(graph: nx.Graph, node) -> float:
@@ -69,7 +81,86 @@ def write_csv(graph: nx.Graph, out_dir: Path) -> None:
             ])
 
 
-def graph_payload(graph: nx.Graph, stats: Stats, docs: list[Doc]) -> dict:
+# ---- 記事一覧 -------------------------------------------------------------
+
+
+def _snippet(doc: Doc) -> str:
+    """一覧に出す抜粋。先頭の見出しの繰り返しは落とす。
+
+    collect が書く記事は本文の先頭行が「見出し。」なので、そのまま出すと
+    見出しが二重に見える。
+    """
+    body = doc.body.strip()
+    for head in (f"{doc.title}。", doc.title):
+        if head and body.startswith(head):
+            body = body[len(head):].lstrip("。\n ")
+            break
+    text = " ".join(body.split())
+    return text[:SNIPPET_CHARS] + ("…" if len(text) > SNIPPET_CHARS else "")
+
+
+def articles_payload(docs: list[Doc], baskets: list[Basket], graph: nx.Graph) -> list[dict]:
+    """記事の一覧。新しい順。図に残ったノードだけを紐づける。
+
+    紐づけを「図に残ったノード」に限るのは、一覧から図へ飛べることを保証するため。
+    閾値で消えた語をチップにすると、押しても図に無い。
+    """
+    keep = set(graph.nodes)
+    per_doc: dict[str, set[str]] = defaultdict(set)
+    units: Counter = Counter()
+    for basket in baskets:
+        per_doc[basket.doc_id] |= basket.nodes & keep
+        units[basket.doc_id] += 1
+
+    articles = [
+        {
+            "doc_id": doc.doc_id,
+            "title": doc.title,
+            "date": doc.date,
+            "source": doc.source,
+            "url": doc.url,
+            "tier": doc.tier,
+            "n_units": units.get(doc.doc_id, 0),
+            "snippet": _snippet(doc),
+            "nodes": sorted(per_doc.get(doc.doc_id, ())),
+        }
+        for doc in docs
+    ]
+    # 日付が無い記事は末尾に回す（見出しだけで日付不明のものが上に来ると読みにくい）
+    articles.sort(key=lambda a: (a["date"] or "", a["title"]), reverse=True)
+    return articles
+
+
+def write_articles_html(payload: dict, path: Path) -> None:
+    """記事一覧の単体HTML。図と同じく外部CDNには依存しない。"""
+    template = ARTICLES_TEMPLATE.read_text(encoding="utf-8")
+    html = template.replace(DATA_MARKER, json.dumps(payload, ensure_ascii=False))
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(html, encoding="utf-8")
+
+
+def write_articles_csv(payload: dict, path: Path) -> None:
+    """記事一覧の表。表計算ソフトで並べ替え・絞り込みをしたいとき用。"""
+    labels = {n["id"]: n["label"] for n in payload["nodes"]}
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8-sig", newline="") as fp:
+        writer = csv.writer(fp)
+        writer.writerow(["date", "title", "source", "tier", "url", "nodes", "snippet"])
+        for article in payload["articles"]:
+            writer.writerow([
+                article["date"], article["title"], article["source"], article["tier"],
+                article["url"],
+                " ".join(labels.get(n, n) for n in article["nodes"]),
+                article["snippet"],
+            ])
+
+
+# ---- グラフの payload -----------------------------------------------------
+
+
+def graph_payload(
+    graph: nx.Graph, stats: Stats, docs: list[Doc], baskets: list[Basket] | None = None
+) -> dict:
     nodes = []
     for node, data in graph.nodes(data=True):
         nodes.append({
@@ -95,10 +186,20 @@ def graph_payload(graph: nx.Graph, stats: Stats, docs: list[Doc]) -> dict:
         }
         for a, b, data in graph.edges(data=True)
     ]
+    # 記事 ↔ ノードの相互参照。記事側は index で持つ（doc_id を並べると重くなる）
+    articles = articles_payload(docs, baskets or [], graph)
+    node_articles: dict[str, list[int]] = defaultdict(list)
+    for i, article in enumerate(articles):
+        for node_id in article["nodes"]:
+            node_articles[node_id].append(i)
+    for node in nodes:
+        node["articles"] = node_articles.get(node["id"], [])
+
     dates = [d.date for d in docs if d.date]
     return {
         "nodes": nodes,
         "edges": edges,
+        "articles": articles,
         "meta": {
             "generated_at": datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
             "n_docs": len(docs),
@@ -107,6 +208,7 @@ def graph_payload(graph: nx.Graph, stats: Stats, docs: list[Doc]) -> dict:
             "n_edges": graph.number_of_edges(),
             "period": f"{min(dates)} 〜 {max(dates)}" if dates else "日付情報なし",
             "has_trend": any(e.get("surprise") is not None for e in edges),
+            "sources": sorted({a["source"] for a in articles if a["source"]}),
         },
     }
 
@@ -119,7 +221,7 @@ def write_json(payload: dict, path: Path) -> None:
 def write_html(payload: dict, path: Path) -> None:
     """外部CDNに依存しない単体HTML。オフラインでもそのまま開ける。"""
     template = TEMPLATE.read_text(encoding="utf-8")
-    html = template.replace("/*__GRAPH_DATA__*/null", json.dumps(payload, ensure_ascii=False))
+    html = template.replace(DATA_MARKER, json.dumps(payload, ensure_ascii=False))
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(html, encoding="utf-8")
 
@@ -155,6 +257,8 @@ def write_report(
     if gexf_url:
         add(f"[Gephi Lite で開く]({gexf_url})")
         add("")
+    add("記事そのものは `articles.html`（ブラウザで開く）／`articles.csv` で読める。")
+    add("")
 
     if graph.number_of_nodes() == 0:
         add("## 結果なし")
@@ -245,6 +349,19 @@ def write_report(
         head = "、".join(label for _, label in members[:12])
         add(f"- **クラスタ {cid}**（{len(members)}語）: {head}")
     add("")
+
+    # 記事そのもの。図だけ見て記事を読まないと、共起の意味を取り違える
+    articles = payload.get("articles", [])
+    if articles:
+        add("## 最近の記事")
+        add("")
+        add(f"新しい順に20件（全{len(articles)}件は `articles.html` / `articles.csv`）。")
+        add("")
+        for article in articles[:20]:
+            title = f"[{article['title']}]({article['url']})" if article["url"] else article["title"]
+            meta_bits = " / ".join(b for b in (article["date"], article["source"]) if b)
+            add(f"- {title}<br>　{meta_bits}")
+        add("")
 
     add("---")
     add("")

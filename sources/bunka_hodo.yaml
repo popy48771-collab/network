@@ -1,14 +1,20 @@
-# 文化庁「広報・報道・お知らせ」。RSS配信が見当たらないため一覧ページの差分を取る。
+# 文化庁「広報・報道・お知らせ」。RSS配信が見当たらないため一覧ページのリンクを拾う。
 #
-# TODO: kind: html_list のパーサが未実装。実装後に enabled: true にする。
-#       セレクタは実際のHTMLを見てから決めること（fixtures/ に固定HTMLを置いて回帰テストを付ける）。
+# tier: primary なので本文まで保存する。報道と違い、官公庁の公表資料は全文で問題ない。
+# 本文が入る＝共起単位が「見出し1文」から「本文の各文」に変わるので、
+# このソースを有効にしたら config.yaml の閾値を見直すこと（docs/decisions.md 参照）。
+#
+# link_pattern は「記事ページのURLの形」。セレクタではなく href の正規表現にしてあるのは、
+# サイト改修でHTML構造が変わってもURLの形はそう変わらないため。
 id: bunka_hodo
 name: 文化庁 広報・報道・お知らせ
 kind: html_list
-url: https://www.bunka.go.jp/koho_hodo_oshirase/
+url: https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/
+link_pattern: "/koho_hodo_oshirase/hodohappyo/[^/]+\\.html$"
 tier: primary
 country: JP
 lang: ja
-enabled: false
+enabled: false   # 実ページでのパース結果を Actions の dry-run で確認してから true にする
 fetch_body: true
+max_items: 30
 rate_limit_sec: 3

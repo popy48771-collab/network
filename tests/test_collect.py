@@ -10,11 +10,21 @@ from pipeline import collect
 
 ROOT = Path(__file__).resolve().parents[1]
 FEEDS = ROOT / "fixtures" / "feeds"
+PAGES = ROOT / "fixtures" / "pages"
+LIST_BASE = "https://www.example.go.jp/koho_hodo_oshirase/"
+LIST_PATTERN = r"/hodohappyo/\d+\.html$"
 
 
 @pytest.fixture(scope="module")
 def gnews_items():
     return collect.parse_feed((FEEDS / "google_news.xml").read_bytes())
+
+
+@pytest.fixture(scope="module")
+def list_items():
+    return collect.parse_link_list(
+        (PAGES / "bunka_list.html").read_bytes(), LIST_BASE, LIST_PATTERN
+    )
 
 
 # ---- フィード解析 ----
@@ -29,6 +39,23 @@ def test_trailing_publisher_is_split_from_title(gnews_items):
     item = gnews_items[0]
     assert item.title == "文化財修理の補助拡充へ 文化庁が方針"
     assert item.publisher == "サンプル新聞"
+
+
+def test_publisher_with_a_hyphen_is_split_from_title():
+    """媒体名にハイフンが入ると「見出し - 媒体名」を正規表現では切れない。
+
+    実データで「… 新館長に北山浩士氏 - mc-jpn.com」が見出しに残っていた。
+    """
+    feed = (
+        '<?xml version="1.0"?><rss version="2.0"><channel><item>'
+        "<title>東京国立近代美術館 新館長に北山浩士氏 - mc-jpn.com</title>"
+        "<link>https://news.example.org/1</link>"
+        "<source url='https://mc-jpn.com'>mc-jpn.com</source>"
+        "</item></channel></rss>"
+    )
+    item = collect.parse_feed(feed.encode("utf-8"))[0]
+    assert item.title == "東京国立近代美術館 新館長に北山浩士氏"
+    assert item.publisher == "mc-jpn.com"
 
 
 def test_tracking_params_are_stripped(gnews_items):
@@ -60,6 +87,62 @@ def test_doc_id_follows_the_canonical_url():
     assert a.doc_id == b.doc_id, "追跡パラメータ違いが別記事として登録される"
 
 
+# ---- 一覧ページ解析（kind: html_list） ----
+
+
+def test_only_links_matching_the_pattern_become_items(list_items):
+    """一覧ページはナビ・PDF・関連ページだらけ。link_pattern で記事だけ残すこと。"""
+    assert len(list_items) == 3
+    assert all("/hodohappyo/" in item.url for item in list_items)
+    titles = [item.title for item in list_items]
+    assert "PDF" not in titles and "審議会のページへ" not in titles
+
+
+def test_relative_links_are_resolved_against_the_list_page(list_items):
+    assert list_items[1].url == (
+        "https://www.example.go.jp/koho_hodo_oshirase/hodohappyo/93012201.html"
+    )
+
+
+def test_date_is_read_from_the_text_before_the_link(list_items):
+    """<dt>2026年8月14日</dt><dd><a>…</a></dd> の形を拾えること。"""
+    assert list_items[0].published == "2026-08-14"
+    assert list_items[1].published == "2026-08-07"
+
+
+def test_date_is_read_from_the_text_after_the_link(list_items):
+    """「見出し（2026年7月31日）」の形も拾えること。"""
+    assert list_items[2].published == "2026-07-31"
+
+
+def test_same_url_twice_in_one_page_is_kept_once(list_items):
+    assert len({item.url for item in list_items}) == len(list_items)
+    assert "交付要綱の改正について（再掲）" not in [item.title for item in list_items]
+
+
+def test_link_pattern_is_required():
+    """パターン無しだと一覧ページの全リンクが記事になる。設定漏れは例外で止める。"""
+    with pytest.raises(ValueError):
+        collect.parse_link_list(b"<html></html>", LIST_BASE, "")
+
+
+def test_shift_jis_page_is_decoded():
+    """官公庁の古いページは Shift_JIS が残っている。utf-8 決め打ちだと文字化けする。"""
+    html = (
+        '<html><head><meta charset="Shift_JIS"></head><body>'
+        '<a href="/hodohappyo/1.html">文化財の保存と活用について</a>'
+        "</body></html>"
+    )
+    items = collect.parse_link_list(html.encode("shift_jis"), LIST_BASE, LIST_PATTERN)
+    assert items[0].title == "文化財の保存と活用について"
+
+
+def test_unknown_kind_is_reported(tmp_path):
+    source = collect.Source(id="s", name="n", url="https://e.com/", kind="scrape")
+    result = collect.collect_source(source, tmp_path, set(), set(), dry_run=True)
+    assert "kind=scrape" in result.error
+
+
 # ---- 著作権ルールの強制 ----
 
 
@@ -70,6 +153,30 @@ def test_secondary_tier_never_fetches_body():
 
     primary = collect.Source(id="s", name="n", url="u", tier="primary", fetch_body=True)
     assert collect._should_fetch_body(primary) is True
+
+
+def test_primary_article_stores_the_body(tmp_path):
+    """官公庁の公表資料は本文まで保存してよい。ここが通らないと §5-② が解けない。"""
+    item = collect.Item(
+        title="文化財保存活用地域計画を認定しました",
+        url="https://www.example.go.jp/koho_hodo_oshirase/hodohappyo/1.html",
+        published="2026-08-14",
+        body="文化庁は14日、文化財保存活用地域計画12件を認定した。\n認定を受けた市町村は、国庫補助の対象となる。",
+    )
+    source = collect.Source(
+        id="p", name="架空庁", url="u", tier="primary", fetch_body=True
+    )
+    text = collect.write_article(item, source, tmp_path).read_text(encoding="utf-8")
+    assert "tier: primary" in text
+    assert "国庫補助の対象となる" in text
+
+
+def test_body_is_truncated(monkeypatch):
+    """1記事が長すぎると共起単位を数百持って母集団を歪める。上限で切ること。"""
+    monkeypatch.setattr(
+        collect, "fetch", lambda url, retries=3: ("<p>" + "文化政策の推進に関する記述。" * 4000 + "</p>").encode()
+    )
+    assert len(collect.fetch_body("https://e.com/1")) == collect.BODY_MAX_CHARS
 
 
 def test_secondary_article_stores_only_headline_and_summary(tmp_path, gnews_items):
@@ -126,9 +233,13 @@ def test_shipped_sources_are_valid():
     for source in sources:
         assert source.tier in {"primary", "secondary"}
         assert source.url.startswith("https://")
+        assert source.kind in {"rss", "html_list"}
         # 報道ソースが本文取得を有効にしていないこと
         if source.tier == "secondary":
             assert not source.fetch_body
+        # 一覧ページはパターン無しだとナビまで記事になる
+        if source.kind == "html_list":
+            assert source.link_pattern, f"{source.id}: link_pattern が無い"
 
 
 def test_template_is_not_loaded_as_a_source():

@@ -53,14 +53,17 @@ def main(argv: list[str] | None = None) -> int:
         print("      ! 閾値が厳しすぎるか記事が少なすぎます。config.yaml を緩めてください。")
 
     print(f"[5/5] 出力: {out_dir}")
-    payload = export.graph_payload(graph, stats, docs)
+    payload = export.graph_payload(graph, stats, docs, baskets)
     out_dir.mkdir(parents=True, exist_ok=True)
     export.write_gexf(graph, out_dir / "network.gexf")
     export.write_csv(graph, out_dir)
     export.write_json(payload, out_dir / "graph.json")
     export.write_html(payload, out_dir / "network.html")
+    export.write_articles_html(payload, out_dir / "articles.html")
+    export.write_articles_csv(payload, out_dir / "articles.csv")
     export.write_report(graph, stats, docs, payload, out_dir / "report.md", args.gexf_url)
-    for name in ("network.gexf", "network.html", "report.md", "nodes.csv", "edges.csv", "graph.json"):
+    for name in ("network.gexf", "network.html", "articles.html", "report.md",
+                 "nodes.csv", "edges.csv", "articles.csv", "graph.json"):
         print(f"      - {out_dir / name}")
     return 0
 

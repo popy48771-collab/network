@@ -121,6 +121,16 @@
   .empty { color: var(--muted); font-size: 12px; }
   .swatch { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 5px; }
 
+  /* 記事へのリンク。図で見つけた語から記事本体に辿れないと、共起の意味を取り違える */
+  .articles { list-style: none; margin: 0; padding: 0; }
+  .articles li { padding: 6px 0; border-bottom: 1px solid var(--grid); font-size: 12px; }
+  .articles a { color: var(--text-primary); text-decoration: none; border-bottom: 1px solid var(--axis); }
+  .articles a:hover { color: var(--facility); border-bottom-color: var(--facility); }
+  .articles .when { color: var(--text-secondary); font-variant-numeric: tabular-nums; }
+  .more-link { display: inline-block; margin-top: 8px; font-size: 12px; color: var(--facility); }
+  header .links { font-size: 12px; margin-top: 4px; }
+  header .links a { color: var(--facility); }
+
   #tooltip {
     position: fixed; pointer-events: none; z-index: 10; max-width: 260px;
     background: var(--surface-1); border: 1px solid var(--border); border-radius: 7px;
@@ -142,6 +152,7 @@
 <header>
   <h1>文化政策ニュース 共起ネットワーク</h1>
   <div class="meta" id="meta"></div>
+  <div class="links"><a href="articles.html">記事一覧を読む →</a></div>
 </header>
 
 <div class="filters">
@@ -416,14 +427,32 @@ function neighborRows(node) {
              `<td class="num">${e.npmi.toFixed(3)}</td><td class="num">${e.cooc}</td></tr>`;
     }).join('');
 }
-const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* 記事一覧（articles.html と同じデータ）。図から記事本体へ辿れるようにする */
+const ARTICLES = DATA.articles || [];
+const ARTICLE_LIMIT = 8;
+
+function articleList(node) {
+  const items = (node.articles || []).map(i => ARTICLES[i]).filter(Boolean);
+  if (!items.length) return '';
+  const rows = items.slice(0, ARTICLE_LIMIT).map(a => {
+    const title = a.url
+      ? `<a href="${esc(a.url)}" target="_blank" rel="noopener noreferrer">${esc(a.title)}</a>`
+      : esc(a.title);
+    return `<li>${title}<div class="when">${esc(a.date || '日付不明')}${a.source ? ' ／ ' + esc(a.source) : ''}</div></li>`;
+  }).join('');
+  const all = `<a class="more-link" href="articles.html#node=${encodeURIComponent(node.id)}">` +
+    `この語が出た記事 ${items.length} 件をすべて読む →</a>`;
+  return `<h3>この語が出た記事</h3><ul class="articles">${rows}</ul>${all}`;
+}
 
 function showNode(node) {
   state.selected = node;
   if (!node) {
     panelTitle.textContent = 'ノードを選択';
     panelBody.className = 'empty';
-    panelBody.textContent = '図の中のノードをクリックすると、結びつきの強い相手が表で出ます。';
+    panelBody.textContent = '図の中のノードをクリックすると、結びつきの強い相手と、その語が出た記事が出ます。';
     draw(); return;
   }
   const kindLabel = {term: '語', facility: '文化施設', policy: '政策・制度・法令', other: '組織・地域・人物'}[node.group];
@@ -433,8 +462,20 @@ function showNode(node) {
     `<div style="color:var(--text-secondary);font-size:12px;margin-bottom:8px">` +
     `${kindLabel} ／ 出現 ${node.df} 文 ／ 次数 ${node.degree} ／ 媒介 ${node.betweenness.toFixed(4)}</div>` +
     `<table><thead><tr><th>共起相手</th><th class="num">NPMI</th><th class="num">共起</th></tr></thead>` +
-    `<tbody>${neighborRows(node)}</tbody></table>`;
+    `<tbody>${neighborRows(node)}</tbody></table>` +
+    articleList(node);
   draw();
+}
+
+/* 選択中の語を URL に残す。記事一覧の「図でこの語を見る」から飛んで来られる */
+function syncHash(node) {
+  const hash = node ? '#node=' + encodeURIComponent(node.id) : '';
+  history.replaceState(null, '', location.pathname + location.search + hash);
+}
+function selectFromHash() {
+  const hit = /^#node=(.*)$/.exec(location.hash);
+  const node = hit ? byId.get(decodeURIComponent(hit[1])) : null;
+  if (node) showNode(node);
 }
 
 function fillTopTable() {
@@ -453,7 +494,9 @@ cv.addEventListener('mousedown', e => {
 window.addEventListener('mouseup', e => {
   if (dragging && !dragMoved) {
     const r = cv.getBoundingClientRect();
-    showNode(pick(e.clientX - r.left, e.clientY - r.top));
+    const hit = pick(e.clientX - r.left, e.clientY - r.top);
+    showNode(hit);
+    syncHash(hit);
   }
   dragging = false; cv.classList.remove('dragging');
 });
@@ -524,10 +567,12 @@ clusterBtn.addEventListener('click', () => {
   draw();
 });
 document.getElementById('resetBtn').addEventListener('click', () => {
-  showNode(null); state.query = ''; document.getElementById('search').value = '';
+  showNode(null); syncHash(null);
+  state.query = ''; document.getElementById('search').value = '';
   fit(); draw();
 });
 window.addEventListener('resize', () => { draw(); });
+window.addEventListener('hashchange', selectFromHash);
 
 document.getElementById('meta').textContent =
   `記事 ${DATA.meta.n_docs} 件 ／ 期間 ${DATA.meta.period} ／ 文 ${DATA.meta.n_units} ／ ` +
@@ -536,6 +581,7 @@ document.getElementById('meta').textContent =
 fillTopTable();
 fit();
 recompute();
+selectFromHash();
 </script>
 </body>
 </html>

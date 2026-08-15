@@ -6,6 +6,10 @@
 
 冪等: 同じ記事（正規化URLが同じ）は何度走らせても1ファイルにしかならない。
 
+取得の種類は2つ。
+  kind: rss        RSS 2.0 / RDF / Atom を parse_feed で読む
+  kind: html_list  RSS が無いサイト向け。一覧ページのリンクを parse_link_list で拾う
+
 著作権の扱いはコードで強制する。人間の注意力に頼ると必ず破られるため。
   tier: primary   … 官公庁・独法の公表資料。本文まで取得・保存してよい
   tier: secondary … 報道記事。見出し + フィードの要約 + URL のみ。本文は取りに行かない
@@ -25,11 +29,12 @@ import xml.etree.ElementTree as ET
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
+from html.parser import HTMLParser
 from pathlib import Path
 
 import yaml
 
-from .ingest import _TextExtractor, normalize_date, normalize_text
+from .ingest import _DATE_PATTERNS, _TextExtractor, normalize_date, normalize_text
 
 USER_AGENT = (
     "culture-policy-network/0.1 (+https://github.com/popy48771-collab/network; "
@@ -37,6 +42,14 @@ USER_AGENT = (
 )
 TIMEOUT = 30
 NS = {"atom": "http://www.w3.org/2005/Atom", "dc": "http://purl.org/dc/elements/1.1/"}
+
+# 本文の保存上限。官公庁ページは添付の説明や関連リンクで長くなることがあり、
+# 全部入れると1記事が共起単位を数百持って母集団を歪める。
+BODY_MAX_CHARS = 20000
+# 一覧ページのリンクを記事とみなす最短の見出し長。「PDF」「詳細」「一覧」を落とす
+MIN_LIST_TITLE_LEN = 5
+# 日付を探す文脈の幅（リンクの前後それぞれ何文字まで見るか）
+DATE_CONTEXT_CHARS = 80
 
 # 追跡用クエリは URL 正規化のときに落とす（同じ記事が別URLで二重登録されるのを防ぐ）
 _TRACKING = re.compile(r"^(utm_|fbclid|gclid|igshid|mc_[ce]id|ref|ref_src|spm|yclid|_ga)")
@@ -57,6 +70,8 @@ class Source:
     fetch_body: bool = False
     max_items: int = 60
     rate_limit_sec: float = 2.0
+    # kind: html_list のとき、記事リンクとみなす href の正規表現。必須
+    link_pattern: str = ""
     note: str = ""
 
     @classmethod
@@ -125,6 +140,18 @@ def fetch(url: str, retries: int = 3) -> bytes:
             if attempt < retries - 1:
                 time.sleep(2 ** attempt)
     raise RuntimeError(f"取得失敗: {url} ({last})")
+
+
+def _decode(payload: bytes) -> str:
+    """meta charset を見てからデコードする。官公庁の古いページは Shift_JIS が残っている。"""
+    head = payload[:4096].decode("ascii", errors="ignore").lower()
+    hit = re.search(r'charset=["\']?\s*([\w\-]+)', head)
+    if hit:
+        try:
+            return payload.decode(hit.group(1), errors="replace")
+        except LookupError:
+            pass
+    return payload.decode("utf-8", errors="replace")
 
 
 def canonical_url(url: str) -> str:
@@ -219,12 +246,17 @@ def parse_feed(payload: bytes) -> list[Item]:
         )
         publisher = _text_of(node, "source")
 
-        # Google ニュースは見出し末尾に「 - 媒体名」を付ける。媒体名は source に寄せる
-        hit = _TRAILING_SOURCE.search(title)
-        if hit and not publisher:
-            publisher = hit.group(1).strip()
-        if hit:
-            title = title[: hit.start()].strip()
+        # Google ニュースは見出し末尾に「 - 媒体名」を付ける。媒体名は source に寄せる。
+        # 媒体名自体にハイフンが入ること（mc-jpn.com など）があり正規表現では切れないので、
+        # <source> で媒体名が分かっているときはその文字列を直接剥がす
+        if publisher and re.search(r"\s[-–—]\s" + re.escape(publisher) + r"\s*$", title):
+            title = re.sub(r"\s[-–—]\s" + re.escape(publisher) + r"\s*$", "", title)
+        else:
+            hit = _TRAILING_SOURCE.search(title)
+            if hit:
+                if not publisher:
+                    publisher = hit.group(1).strip()
+                title = title[: hit.start()].strip()
 
         # 要約が見出しの繰り返しでしかないことがある（Google ニュース）。その場合は捨てる
         if summary and (summary == title or summary.startswith(title[:20])):
@@ -234,6 +266,119 @@ def parse_feed(payload: bytes) -> list[Item]:
             Item(title=title, url=canonical_url(url), summary=summary,
                  published=published, publisher=publisher)
         )
+    return items
+
+
+# ---- 一覧ページ解析（kind: html_list） ------------------------------------
+
+
+class _LinkList(HTMLParser):
+    """一覧ページから「リンク先・見出し・その前後のテキスト」を拾う。
+
+    RSS を出していないサイト（文化庁の報道発表など）はこれで拾うしかない。
+    構造はサイトごとに違うので、セレクタを書かせるのではなく
+    **href の正規表現だけを設定させて、日付は前後の文脈から探す**方式にした。
+    セレクタはサイト改修のたびに壊れるが、URLの形はそう変わらない。
+    """
+
+    _SKIP = {"script", "style", "noscript", "svg", "head"}
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        # (href, 見出し, 直前のテキスト, 直後のテキスト)
+        self.links: list[list[str]] = []
+        self._skip_depth = 0
+        self._depth = 0          # <a> のネスト深さ
+        self._before = ""        # 直近に流れたテキスト（日付の文脈）
+        self._open: list | None = None
+
+    def handle_starttag(self, tag, attrs):
+        if tag in self._SKIP:
+            self._skip_depth += 1
+            return
+        if tag != "a":
+            return
+        href = dict(attrs).get("href") or ""
+        if self._open is not None:  # <a> の中の <a>（不正なHTML）は無視する
+            self._depth += 1
+            return
+        self._open = [href, "", self._before[-DATE_CONTEXT_CHARS:], ""]
+        self._depth = 1
+
+    def handle_endtag(self, tag):
+        if tag in self._SKIP and self._skip_depth:
+            self._skip_depth -= 1
+            return
+        if tag != "a" or self._open is None:
+            return
+        self._depth -= 1
+        if self._depth > 0:
+            return
+        self._open[1] = normalize_text(self._open[1])
+        self.links.append(self._open)
+        self._open = None
+        self._before = ""
+
+    def handle_data(self, data):
+        if self._skip_depth:
+            return
+        if self._open is not None:
+            self._open[1] += data
+            return
+        self._before += data
+        # 直前のリンクから見れば、これは「直後のテキスト」でもある
+        if self.links and len(self.links[-1][3]) < DATE_CONTEXT_CHARS:
+            self.links[-1][3] += data
+
+
+def _last_date(text: str) -> str:
+    """テキスト中で最後に現れる日付を ISO 8601 で返す。
+
+    normalize_date は最初の一致を返すが、リンクの手前の文脈では
+    **リンクに近い＝最後の**日付のほうが正しい。
+    """
+    best = ""
+    for pattern, (y, m, d) in _DATE_PATTERNS:
+        for hit in pattern.finditer(text):
+            try:
+                value = datetime(
+                    int(hit.group(y)), int(hit.group(m)), int(hit.group(d))
+                ).date().isoformat()
+            except ValueError:
+                continue
+            best = value
+    return best
+
+
+def parse_link_list(payload: bytes, base_url: str, link_pattern: str) -> list[Item]:
+    """一覧ページから記事アイテムを作る。href が link_pattern に一致するものだけ拾う。"""
+    if not link_pattern:
+        raise ValueError("kind: html_list には link_pattern（href の正規表現）が要ります")
+    pattern = re.compile(link_pattern)
+
+    parser = _LinkList()
+    parser.feed(_decode(payload))
+
+    items: list[Item] = []
+    seen: set[str] = set()
+    for href, title, before, after in parser.links:
+        if not href or href.startswith(("#", "javascript:", "mailto:")):
+            continue
+        url = canonical_url(urllib.parse.urljoin(base_url, href))
+        if not pattern.search(url) or len(title) < MIN_LIST_TITLE_LEN:
+            continue
+        if url in seen:
+            continue
+        seen.add(url)
+        # 日付は「リンクの直前 → 直後 → 見出しの中 → URL」の順に探す。
+        # 一覧ページは <dt>2026年8月14日</dt><dd><a>…</a></dd> の形が多い
+        published = (
+            _last_date(before)
+            or normalize_date(after[:DATE_CONTEXT_CHARS])
+            or normalize_date(title)
+            or normalize_date(urllib.parse.urlsplit(url).path)
+        )
+        items.append(Item(title=title, url=url, published=published))
     return items
 
 
@@ -247,11 +392,11 @@ def _should_fetch_body(source: Source) -> bool:
 
 def fetch_body(url: str) -> str:
     parser = _TextExtractor()
-    parser.feed(fetch(url).decode("utf-8", errors="replace"))
+    parser.feed(_decode(fetch(url)))
     text = normalize_text(parser.text())
     # ナビゲーションの短い行を落として、本文らしい塊だけ残す
     lines = [line for line in text.splitlines() if len(line.strip()) >= 15]
-    return "\n".join(lines)
+    return "\n".join(lines)[:BODY_MAX_CHARS]
 
 
 # ---- 書き出し -------------------------------------------------------------
@@ -310,16 +455,29 @@ def title_key(title: str) -> str:
     return re.sub(r"[\s　【】「」『』（）()\[\]・:：\-–—|｜/／]+", "", title)
 
 
+def fetch_items(source: Source) -> list[Item]:
+    """ソース定義に従ってアイテムを取ってくる。取得と解析の分岐はここだけ。
+
+    設定の検証は取得より先にやる。ネットワークに出てから落ちると、
+    設定ミスが「取得失敗」に化けて原因が分からなくなる。
+    """
+    if source.kind not in {"rss", "html_list"}:
+        raise ValueError(f"kind={source.kind} は未対応（rss / html_list のみ）")
+    if source.kind == "html_list" and not source.link_pattern:
+        raise ValueError(f"{source.id}: kind: html_list には link_pattern が要ります")
+    payload = fetch(source.url)
+    if source.kind == "rss":
+        return parse_feed(payload)
+    return parse_link_list(payload, source.url, source.link_pattern)
+
+
 def collect_source(
     source: Source, articles_dir: Path, seen: set[str], seen_titles: set[str], dry_run: bool
 ) -> Result:
     result = Result(source=source)
-    if source.kind != "rss":
-        result.error = f"kind={source.kind} は未実装（今は rss のみ）"
-        return result
     try:
-        items = parse_feed(fetch(source.url))[: source.max_items]
-    except (RuntimeError, ET.ParseError) as exc:
+        items = fetch_items(source)[: source.max_items]
+    except (RuntimeError, ValueError, ET.ParseError) as exc:
         result.error = str(exc)[:200]
         return result
 

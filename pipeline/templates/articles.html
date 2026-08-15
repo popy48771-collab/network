@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>記事一覧</title>
+<style>
+  /* 配色トークンは viewer.html と同じ。色を持つのは施設（青）と政策（橙）だけで、
+     語は中立グレー。根拠は pipeline/style.py の docstring。 */
+  :root {
+    color-scheme: light;
+    --surface-1: #fcfcfb;
+    --page: #f9f9f7;
+    --text-primary: #0b0b0b;
+    --text-secondary: #52514e;
+    --muted: #898781;
+    --grid: #e1e0d9;
+    --axis: #c3c2b7;
+    --border: rgba(11,11,11,0.10);
+    --term: #898781;
+    --facility: #2a78d6;
+    --policy: #eb6834;
+    --chip: rgba(11,11,11,0.04);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --surface-1: #1a1a19;
+      --page: #0d0d0d;
+      --text-primary: #ffffff;
+      --text-secondary: #c3c2b7;
+      --muted: #898781;
+      --grid: #2c2c2a;
+      --axis: #383835;
+      --border: rgba(255,255,255,0.10);
+      --term: #898781;
+      --facility: #3987e5;
+      --policy: #d95926;
+      --chip: rgba(255,255,255,0.06);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --surface-1: #1a1a19;
+    --page: #0d0d0d;
+    --text-primary: #ffffff;
+    --text-secondary: #c3c2b7;
+    --muted: #898781;
+    --grid: #2c2c2a;
+    --axis: #383835;
+    --border: rgba(255,255,255,0.10);
+    --term: #898781;
+    --facility: #3987e5;
+    --policy: #d95926;
+    --chip: rgba(255,255,255,0.06);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--text-primary);
+    font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+  header { padding: 16px 20px 10px; max-width: 980px; margin: 0 auto; }
+  h1 { margin: 0; font-size: 17px; font-weight: 650; letter-spacing: .01em; }
+  .meta { color: var(--text-secondary); font-size: 12px; margin-top: 4px; }
+  .meta a, footer a { color: var(--facility); }
+
+  .filters {
+    position: sticky; top: 0; z-index: 5;
+    background: var(--surface-1);
+    border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+  }
+  .filters .inner {
+    max-width: 980px; margin: 0 auto; padding: 10px 20px;
+    display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center;
+  }
+  .filters label { font-size: 12px; color: var(--text-secondary); display: flex; align-items: center; gap: 7px; }
+  input[type=search], select {
+    font: inherit; font-size: 13px; padding: 5px 9px;
+    border: 1px solid var(--axis); border-radius: 6px;
+    background: var(--surface-1); color: var(--text-primary);
+  }
+  input[type=search] { min-width: 210px; }
+  button {
+    font: inherit; font-size: 12px; padding: 5px 11px; border-radius: 6px;
+    border: 1px solid var(--axis); background: var(--surface-1); color: var(--text-primary); cursor: pointer;
+  }
+  button:hover { background: var(--page); }
+  .count { font-size: 12px; color: var(--text-secondary); font-variant-numeric: tabular-nums; margin-left: auto; }
+
+  /* 絞り込み中の語を明示する。押した結果が分からない絞り込みは使われない */
+  .active-filter {
+    max-width: 980px; margin: 0 auto; padding: 10px 20px 0;
+    display: none; align-items: center; gap: 10px; font-size: 12px; color: var(--text-secondary);
+  }
+  .active-filter.on { display: flex; flex-wrap: wrap; }
+
+  main { max-width: 980px; margin: 0 auto; padding: 4px 20px 28px; }
+  ol { list-style: none; margin: 0; padding: 0; }
+  li.article {
+    display: grid; grid-template-columns: 92px 1fr; gap: 2px 14px;
+    padding: 13px 0; border-bottom: 1px solid var(--grid);
+  }
+  .when { font-size: 12px; color: var(--text-secondary); font-variant-numeric: tabular-nums; padding-top: 2px; }
+  .when .tier { display: block; color: var(--muted); font-size: 11px; margin-top: 3px; }
+  .title { font-size: 15px; font-weight: 600; line-height: 1.45; margin: 0; }
+  .title a { color: var(--text-primary); text-decoration: none; border-bottom: 1px solid var(--axis); }
+  .title a:hover { border-bottom-color: var(--facility); color: var(--facility); }
+  .outlet { font-size: 12px; color: var(--text-secondary); margin-top: 3px; }
+  .snippet { font-size: 13px; color: var(--text-secondary); margin-top: 5px; }
+  .chips { margin-top: 7px; display: flex; flex-wrap: wrap; gap: 5px; }
+  .chip {
+    font-size: 11.5px; padding: 2px 8px; border-radius: 999px; cursor: pointer;
+    border: 1px solid var(--axis); background: var(--chip); color: var(--text-secondary);
+  }
+  .chip:hover { border-color: var(--text-secondary); color: var(--text-primary); }
+  .chip.facility { border-color: var(--facility); color: var(--facility); }
+  .chip.policy { border-color: var(--policy); color: var(--policy); }
+  .chip[aria-pressed="true"] { background: var(--text-primary); color: var(--surface-1); border-color: var(--text-primary); }
+  .empty { color: var(--muted); padding: 26px 0; }
+  .more { margin: 18px auto 0; display: block; }
+
+  footer {
+    max-width: 980px; margin: 0 auto; padding: 0 20px 22px;
+    font-size: 11px; color: var(--muted); border-top: 1px solid var(--border); padding-top: 12px;
+  }
+  @media (max-width: 620px) {
+    li.article { grid-template-columns: 1fr; gap: 2px; }
+    .when { padding-top: 0; }
+    .when .tier { display: inline; margin-left: 8px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>文化政策ニュース 記事一覧</h1>
+  <div class="meta" id="meta"></div>
+  <div class="meta"><a href="network.html">共起ネットワークの図を見る →</a></div>
+</header>
+
+<div class="filters">
+  <div class="inner">
+    <label><input type="search" id="q" placeholder="見出し・抜粋・語で検索" autocomplete="off"></label>
+    <label>出典
+      <select id="source"><option value="">すべて</option></select>
+    </label>
+    <label>期間
+      <select id="period">
+        <option value="0">すべて</option>
+        <option value="7">直近7日</option>
+        <option value="30">直近30日</option>
+        <option value="90">直近90日</option>
+        <option value="365">直近1年</option>
+      </select>
+    </label>
+    <label>並び
+      <select id="sort">
+        <option value="new">新しい順</option>
+        <option value="old">古い順</option>
+        <option value="nodes">語が多い順</option>
+      </select>
+    </label>
+    <span class="count" id="count"></span>
+  </div>
+</div>
+
+<div class="active-filter" id="activeFilter">
+  <span id="activeLabel"></span>
+  <button id="clearNode">この絞り込みを外す</button>
+  <a id="seeInGraph" href="network.html">図でこの語を見る →</a>
+</div>
+
+<main>
+  <ol id="list"></ol>
+  <div class="empty" id="empty" hidden>該当する記事がありません。検索語や期間を緩めてください。</div>
+  <button class="more" id="more" hidden>さらに表示</button>
+</main>
+
+<footer id="foot"></footer>
+
+<script>
+const DATA = /*__GRAPH_DATA__*/null;
+
+const PAGE = 60;                  // 一度に描く件数。長い一覧でも初期表示を軽くする
+const CHIP_MAX = 8;               // 1記事に出す語チップの数
+const KIND_LABEL = {term: '語', facility: '文化施設', policy: '政策・制度・法令', other: '組織・地域・人物'};
+
+const nodeById = new Map(DATA.nodes.map(n => [n.id, n]));
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* チップは「施設・政策 → 出現の多い語」の順に出す。図で色が付いているものを先に見せる */
+const chipOrder = (ids) => ids
+  .map(id => nodeById.get(id))
+  .filter(Boolean)
+  .sort((a, b) => (b.group !== 'term') - (a.group !== 'term') || b.df - a.df);
+
+/* 検索は見出し・抜粋・出典・紐づいた語を対象にする */
+const haystack = new Map(DATA.articles.map(a => [
+  a.doc_id,
+  [a.title, a.snippet, a.source, ...a.nodes.map(id => (nodeById.get(id) || {}).label || '')]
+    .join(' ').toLowerCase(),
+]));
+
+const latest = DATA.articles.reduce((m, a) => (a.date && a.date > m ? a.date : m), '');
+
+const state = {q: '', source: '', days: 0, sort: 'new', node: '', shown: PAGE};
+
+function filtered() {
+  const q = state.q.trim().toLowerCase();
+  let cutoff = '';
+  if (state.days && latest) {
+    const d = new Date(latest + 'T00:00:00Z');
+    d.setUTCDate(d.getUTCDate() - state.days);
+    cutoff = d.toISOString().slice(0, 10);
+  }
+  const out = DATA.articles.filter(a => {
+    if (state.node && !a.nodes.includes(state.node)) return false;
+    if (state.source && a.source !== state.source) return false;
+    if (cutoff && (!a.date || a.date < cutoff)) return false;
+    if (q && !haystack.get(a.doc_id).includes(q)) return false;
+    return true;
+  });
+  if (state.sort === 'old') out.reverse();
+  if (state.sort === 'nodes') out.sort((a, b) => b.nodes.length - a.nodes.length);
+  return out;
+}
+
+function articleHtml(a) {
+  const chips = chipOrder(a.nodes).slice(0, CHIP_MAX).map(n =>
+    `<button class="chip ${n.group === 'facility' ? 'facility' : n.group === 'policy' ? 'policy' : ''}" ` +
+    `data-node="${esc(n.id)}" aria-pressed="${n.id === state.node}" ` +
+    `title="${esc(KIND_LABEL[n.group])} ／ ${n.df} 文に出現">${esc(n.label)}</button>`).join('');
+  const rest = a.nodes.length - Math.min(a.nodes.length, CHIP_MAX);
+  const title = a.url
+    ? `<a href="${esc(a.url)}" target="_blank" rel="noopener noreferrer">${esc(a.title)}</a>`
+    : esc(a.title);
+  const tier = a.tier === 'primary' ? '公表資料' : a.tier === 'secondary' ? '報道' : '';
+  return `<li class="article">` +
+    `<div class="when">${esc(a.date || '日付不明')}${tier ? `<span class="tier">${tier}</span>` : ''}</div>` +
+    `<div><p class="title">${title}</p>` +
+    (a.source ? `<div class="outlet">${esc(a.source)}</div>` : '') +
+    (a.snippet ? `<div class="snippet">${esc(a.snippet)}</div>` : '') +
+    (chips ? `<div class="chips">${chips}${rest ? `<span class="chip" style="cursor:default">ほか${rest}語</span>` : ''}</div>` : '') +
+    `</div></li>`;
+}
+
+const list = document.getElementById('list');
+const countEl = document.getElementById('count');
+const emptyEl = document.getElementById('empty');
+const moreBtn = document.getElementById('more');
+
+function render() {
+  const rows = filtered();
+  list.innerHTML = rows.slice(0, state.shown).map(articleHtml).join('');
+  countEl.textContent = `${rows.length} 件 / 全 ${DATA.articles.length} 件`;
+  emptyEl.hidden = rows.length > 0;
+  moreBtn.hidden = rows.length <= state.shown;
+  moreBtn.textContent = `さらに表示（残り ${Math.max(0, rows.length - state.shown)} 件）`;
+
+  const filter = document.getElementById('activeFilter');
+  const node = state.node ? nodeById.get(state.node) : null;
+  filter.classList.toggle('on', !!node);
+  if (node) {
+    document.getElementById('activeLabel').innerHTML =
+      `<strong>${esc(node.label)}</strong>（${esc(KIND_LABEL[node.group])} ／ ${node.df} 文に出現）が出た記事`;
+    document.getElementById('seeInGraph').href = 'network.html#node=' + encodeURIComponent(node.id);
+  }
+}
+
+/* 語での絞り込みは URL に残す。図の側から #node=… で飛んで来られるようにする */
+function setNode(id, push = true) {
+  state.node = id || '';
+  state.shown = PAGE;
+  if (push) {
+    const hash = state.node ? '#node=' + encodeURIComponent(state.node) : '';
+    history.replaceState(null, '', location.pathname + location.search + hash);
+  }
+  render();
+}
+
+function nodeFromHash() {
+  const hit = /^#node=(.*)$/.exec(location.hash);
+  if (!hit) return '';
+  const id = decodeURIComponent(hit[1]);
+  return nodeById.has(id) ? id : '';
+}
+
+list.addEventListener('click', ev => {
+  const chip = ev.target.closest('button.chip[data-node]');
+  if (!chip) return;
+  const id = chip.dataset.node;
+  setNode(id === state.node ? '' : id);
+  window.scrollTo({top: 0, behavior: 'smooth'});
+});
+document.getElementById('clearNode').addEventListener('click', () => setNode(''));
+document.getElementById('q').addEventListener('input', ev => {
+  state.q = ev.target.value; state.shown = PAGE; render();
+});
+document.getElementById('source').addEventListener('change', ev => {
+  state.source = ev.target.value; state.shown = PAGE; render();
+});
+document.getElementById('period').addEventListener('change', ev => {
+  state.days = +ev.target.value; state.shown = PAGE; render();
+});
+document.getElementById('sort').addEventListener('change', ev => {
+  state.sort = ev.target.value; state.shown = PAGE; render();
+});
+moreBtn.addEventListener('click', () => { state.shown += PAGE * 2; render(); });
+window.addEventListener('hashchange', () => setNode(nodeFromHash(), false));
+
+/* 出典の選択肢は多いので、記事数の多い順に並べる */
+const bySource = new Map();
+DATA.articles.forEach(a => { if (a.source) bySource.set(a.source, (bySource.get(a.source) || 0) + 1); });
+document.getElementById('source').insertAdjacentHTML('beforeend',
+  [...bySource.entries()].sort((a, b) => b[1] - a[1])
+    .map(([name, n]) => `<option value="${esc(name)}">${esc(name)}（${n}）</option>`).join(''));
+
+document.getElementById('meta').textContent =
+  `${DATA.meta.n_docs} 件 ／ 期間 ${DATA.meta.period} ／ 図のノード ${DATA.meta.n_nodes} ／ 生成 ${DATA.meta.generated_at}`;
+document.getElementById('foot').textContent =
+  '見出しをクリックすると元記事（外部サイト）が開きます。語のチップを押すと、その語が出た記事だけに絞り込めます。' +
+  ' 報道記事は見出しとフィードの要約のみを保存しています（本文は保存しません）。同じ内容は articles.csv にも出力されています。';
+
+setNode(nodeFromHash(), false);
+</script>
+</body>
+</html>

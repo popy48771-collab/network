@@ -160,13 +160,21 @@ def test_build_is_deterministic(docs, cfg):
 # ---- 出力 ----
 
 
+@pytest.fixture(scope="module")
+def payload(built, docs):
+    graph, stats, baskets = built
+    return export.graph_payload(graph, stats, docs, baskets)
+
+
 def test_outputs_are_written(built, docs, tmp_path):
-    graph, stats, _ = built
-    payload = export.graph_payload(graph, stats, docs)
+    graph, stats, baskets = built
+    payload = export.graph_payload(graph, stats, docs, baskets)
     export.write_gexf(graph, tmp_path / "network.gexf")
     export.write_csv(graph, tmp_path)
     export.write_json(payload, tmp_path / "graph.json")
     export.write_html(payload, tmp_path / "network.html")
+    export.write_articles_html(payload, tmp_path / "articles.html")
+    export.write_articles_csv(payload, tmp_path / "articles.csv")
     export.write_report(graph, stats, docs, payload, tmp_path / "report.md")
 
     gexf = (tmp_path / "network.gexf").read_text(encoding="utf-8")
@@ -178,6 +186,54 @@ def test_outputs_are_written(built, docs, tmp_path):
 
     assert "共起ネットワーク 分析レポート" in (tmp_path / "report.md").read_text(encoding="utf-8")
     assert (tmp_path / "nodes.csv").exists() and (tmp_path / "edges.csv").exists()
+    assert (tmp_path / "articles.csv").exists()
+
+
+# ---- 記事一覧 ----
+
+
+def test_articles_are_listed_newest_first(payload):
+    dates = [a["date"] for a in payload["articles"] if a["date"]]
+    assert len(payload["articles"]) == 10
+    assert dates == sorted(dates, reverse=True)
+
+
+def test_articles_only_link_to_nodes_that_survived_the_filter(payload):
+    """一覧のチップから図に飛べること。閾値で消えた語をチップにすると押しても図に無い。"""
+    ids = {n["id"] for n in payload["nodes"]}
+    for article in payload["articles"]:
+        assert set(article["nodes"]) <= ids
+
+
+def test_node_and_article_reference_each_other(payload):
+    """図 → 記事 → 図 の往復ができること。"""
+    articles = payload["articles"]
+    node = max(payload["nodes"], key=lambda n: len(n["articles"]))
+    assert node["articles"], "どのノードも記事に紐づいていない"
+    for i in node["articles"]:
+        assert node["id"] in articles[i]["nodes"]
+
+
+def test_snippet_does_not_repeat_the_title(payload):
+    for article in payload["articles"]:
+        assert not article["snippet"].startswith(article["title"])
+
+
+def test_articles_html_is_standalone(payload, tmp_path):
+    export.write_articles_html(payload, tmp_path / "articles.html")
+    html = (tmp_path / "articles.html").read_text(encoding="utf-8")
+    assert "__GRAPH_DATA__" not in html, "テンプレートにデータが埋め込まれていない"
+    assert "http://" not in html.split("<script>")[0], "外部参照が混ざっている"
+    assert "https://" not in html.split("<script>")[0], "外部参照が混ざっている"
+    assert "記事一覧" in html
+
+
+def test_report_links_to_the_articles(built, docs, payload, tmp_path):
+    graph, stats, _ = built
+    export.write_report(graph, stats, docs, payload, tmp_path / "report.md")
+    report = (tmp_path / "report.md").read_text(encoding="utf-8")
+    assert "## 最近の記事" in report
+    assert payload["articles"][0]["title"] in report
 
 
 def test_empty_input_does_not_crash(tmp_path):

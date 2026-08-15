@@ -57,6 +57,8 @@ class Doc:
     source: str = ""
     path: str = ""
     tags: list[str] = field(default_factory=list)
+    # primary=官公庁の公表資料（本文あり） / secondary=報道（見出しのみ） / 空=人が置いた
+    tier: str = ""
 
     @property
     def text(self) -> str:
@@ -176,6 +178,7 @@ def _from_mapping(mapping: dict, path: Path, index: int = 0) -> Doc | None:
         source=_pick(mapping, "source"),
         path=str(path),
         tags=tags,
+        tier=str(mapping.get("tier") or "").strip(),
     )
 
 
