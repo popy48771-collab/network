@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <gexf xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
-  <meta lastmodifieddate="2026-08-15">
+  <meta lastmodifieddate="2026-08-16">
     <creator>NetworkX 3.6.1</creator>
   </meta>
   <graph defaultedgetype="undirected" mode="static" name="">
@@ -25,7 +25,7 @@
       <node id="t:保持者" label="保持者">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.11" />
-        <viz:position x="25.83" y="-200.48" z="0.0" />
+        <viz:position x="24.47" y="-189.94" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="6" />
@@ -38,7 +38,7 @@
       <node id="t:認定等" label="認定等">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.11" />
-        <viz:position x="23.82" y="-193.17" z="0.0" />
+        <viz:position x="22.56" y="-183.02" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="6" />
@@ -51,7 +51,7 @@
       <node id="t:妖怪画コレクション" label="妖怪画コレクション">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.67" />
-        <viz:position x="-42.19" y="871.95" z="0.0" />
+        <viz:position x="134.23" y="912.34" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="5" />
@@ -64,7 +64,7 @@
       <node id="t:幽霊" label="幽霊">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.67" />
-        <viz:position x="230.4" y="773.72" z="0.0" />
+        <viz:position x="222.84" y="736.01" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="5" />
@@ -77,7 +77,7 @@
       <node id="t:強化基金" label="強化基金">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.67" />
-        <viz:position x="934.68" y="183.98" z="0.0" />
+        <viz:position x="655.49" y="54.73" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="5" />
@@ -90,7 +90,7 @@
       <node id="t:文化芸術活動基盤" label="文化芸術活動基盤">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.67" />
-        <viz:position x="844.65" y="160.23" z="0.0" />
+        <viz:position x="721.44" y="110.21" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="5" />
@@ -103,7 +103,7 @@
       <node id="t:克彦" label="克彦">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.18" />
-        <viz:position x="39.87" y="-167.91" z="0.0" />
+        <viz:position x="37.78" y="-159.09" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="4" />
@@ -116,7 +116,7 @@
       <node id="t:議決" label="議決">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.18" />
-        <viz:position x="36.2" y="-160.1" z="0.0" />
+        <viz:position x="34.3" y="-151.69" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="4" />
@@ -129,7 +129,7 @@
       <node id="t:無断" label="無断">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.18" />
-        <viz:position x="710.85" y="436.36" z="0.0" />
+        <viz:position x="754.42" y="477.11" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="4" />
@@ -142,7 +142,7 @@
       <node id="t:録画" label="録画">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.18" />
-        <viz:position x="681.67" y="384.6" z="0.0" />
+        <viz:position x="796.57" y="434.31" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="4" />
@@ -155,7 +155,7 @@
       <node id="t:録音" label="録音">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.18" />
-        <viz:position x="728.36" y="341.72" z="0.0" />
+        <viz:position x="706.58" y="447.46" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="4" />
@@ -168,7 +168,7 @@
       <node id="t:docomomo" label="docomomo">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.18" />
-        <viz:position x="-296.43" y="831.18" z="0.0" />
+        <viz:position x="-318.63" y="574.78" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="4" />
@@ -181,7 +181,7 @@
       <node id="t:ジャパン" label="ジャパン">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.18" />
-        <viz:position x="-120.83" y="689.94" z="0.0" />
+        <viz:position x="-285.51" y="785.7" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="4" />
@@ -194,7 +194,7 @@
       <node id="t:藤原" label="藤原">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="13.23" />
-        <viz:position x="-117.8" y="-151.3" z="0.0" />
+        <viz:position x="-111.61" y="-143.35" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="12" />
@@ -207,7 +207,7 @@
       <node id="t:飛鳥" label="飛鳥">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="13.53" />
-        <viz:position x="-124.82" y="-158.74" z="0.0" />
+        <viz:position x="-118.26" y="-150.4" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="13" />
@@ -220,7 +220,7 @@
       <node id="t:宮都" label="宮都">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="12.93" />
-        <viz:position x="-119.59" y="-167.43" z="0.0" />
+        <viz:position x="-113.3" y="-158.63" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="11" />
@@ -233,7 +233,7 @@
       <node id="t:特別展" label="特別展">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.11" />
-        <viz:position x="144.99" y="964.04" z="0.0" />
+        <viz:position x="45.37" y="644.29" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="6" />
@@ -246,7 +246,7 @@
       <node id="policy:kokuho" label="国宝">
         <viz:color r="235" g="104" b="52" a="1.0" />
         <viz:size value="11.11" />
-        <viz:position x="-858.94" y="-6.34" z="0.0" />
+        <viz:position x="-652.03" y="-165.33" z="0.0" />
         <attvalues>
           <attvalue for="0" value="program" />
           <attvalue for="1" value="6" />
@@ -259,7 +259,7 @@
       <node id="t:亀虎古墳壁画" label="亀虎古墳壁画">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.67" />
-        <viz:position x="-688.2" y="-174.5" z="0.0" />
+        <viz:position x="-813.8" y="-6.01" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="5" />
@@ -272,7 +272,7 @@
       <node id="t:福岡市博物館収蔵" label="福岡市博物館収蔵">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.18" />
-        <viz:position x="43.01" y="681.05" z="0.0" />
+        <viz:position x="-46.01" y="825.19" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="4" />
@@ -285,7 +285,7 @@
       <node id="t:同審議会文化財分科会" label="同審議会文化財分科会">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.67" />
-        <viz:position x="29.01" y="-156.2" z="0.0" />
+        <viz:position x="27.49" y="-147.99" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="5" />
@@ -298,7 +298,7 @@
       <node id="t:売買" label="売買">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.52" />
-        <viz:position x="94.77" y="439.35" z="0.0" />
+        <viz:position x="89.79" y="416.26" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="7" />
@@ -311,7 +311,7 @@
       <node id="t:宗教法人" label="宗教法人">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="12.26" />
-        <viz:position x="91.19" y="427.2" z="0.0" />
+        <viz:position x="86.39" y="404.75" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="9" />
@@ -324,7 +324,7 @@
       <node id="t:クリエーター支援基金" label="クリエーター支援基金">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.52" />
-        <viz:position x="1000.0" y="114.0" z="0.0" />
+        <viz:position x="673.46" y="-32.19" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="7" />
@@ -337,7 +337,7 @@
       <node id="policy:bunka_shigen" label="文化資源">
         <viz:color r="235" g="104" b="52" a="1.0" />
         <viz:size value="12.6" />
-        <viz:position x="179.46" y="378.15" z="0.0" />
+        <viz:position x="170.03" y="358.28" z="0.0" />
         <attvalues>
           <attvalue for="0" value="policy" />
           <attvalue for="1" value="10" />
@@ -350,7 +350,7 @@
       <node id="t:記念物課" label="記念物課">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.52" />
-        <viz:position x="172.01" y="370.52" z="0.0" />
+        <viz:position x="162.97" y="351.05" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="7" />
@@ -363,7 +363,7 @@
       <node id="t:審議" label="審議">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.11" />
-        <viz:position x="45.56" y="-155.65" z="0.0" />
+        <viz:position x="43.16" y="-147.47" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="6" />
@@ -376,7 +376,7 @@
       <node id="t:文部科学大臣" label="文部科学大臣">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.11" />
-        <viz:position x="47.96" y="-164.58" z="0.0" />
+        <viz:position x="45.44" y="-155.93" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="6" />
@@ -389,7 +389,7 @@
       <node id="t:Eメール" label="Eメール">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.11" />
-        <viz:position x="-405.75" y="505.34" z="0.0" />
+        <viz:position x="-384.49" y="478.35" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="6" />
@@ -402,7 +402,7 @@
       <node id="t:kokugo" label="kokugo">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.18" />
-        <viz:position x="-584.63" y="652.3" z="0.0" />
+        <viz:position x="-587.37" y="394.95" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="4" />
@@ -415,7 +415,7 @@
       <node id="t:撮影" label="撮影">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.11" />
-        <viz:position x="782.73" y="369.01" z="0.0" />
+        <viz:position x="772.84" y="381.81" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="6" />
@@ -428,7 +428,7 @@
       <node id="t:コンテンツ制作" label="コンテンツ制作">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.18" />
-        <viz:position x="808.92" y="-175.15" z="0.0" />
+        <viz:position x="925.21" y="-111.66" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="4" />
@@ -441,7 +441,7 @@
       <node id="t:中核" label="中核">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.11" />
-        <viz:position x="903.94" y="-169.9" z="0.0" />
+        <viz:position x="1000.0" y="-62.7" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="6" />
@@ -454,7 +454,7 @@
       <node id="t:mext" label="mext">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="12.26" />
-        <viz:position x="-620.18" y="416.66" z="0.0" />
+        <viz:position x="-554.07" y="618.27" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="9" />
@@ -467,7 +467,7 @@
       <node id="t:受付期間" label="受付期間">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.11" />
-        <viz:position x="-73.27" y="-290.41" z="0.0" />
+        <viz:position x="-69.42" y="-275.15" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="6" />
@@ -480,7 +480,7 @@
       <node id="t:留意" label="留意">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="12.26" />
-        <viz:position x="-61.17" y="-292.45" z="0.0" />
+        <viz:position x="-57.95" y="-277.08" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="9" />
@@ -493,7 +493,7 @@
       <node id="t:保存活用" label="保存活用">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.67" />
-        <viz:position x="-589.33" y="210.64" z="0.0" />
+        <viz:position x="-556.61" y="211.43" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="5" />
@@ -506,7 +506,7 @@
       <node id="t:古墳壁画" label="古墳壁画">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.67" />
-        <viz:position x="-786.42" y="132.87" z="0.0" />
+        <viz:position x="-714.17" y="335.82" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="5" />
@@ -519,7 +519,7 @@
       <node id="t:参事官" label="参事官">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.91" />
-        <viz:position x="149.59" y="439.44" z="0.0" />
+        <viz:position x="141.73" y="416.35" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="8" />
@@ -532,7 +532,7 @@
       <node id="t:芸術文化担当" label="芸術文化担当">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.67" />
-        <viz:position x="154.64" y="451.54" z="0.0" />
+        <viz:position x="146.51" y="427.81" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="5" />
@@ -545,7 +545,7 @@
       <node id="policy:shiseki_meisho" label="史跡名勝天然記念物">
         <viz:color r="235" g="104" b="52" a="1.0" />
         <viz:size value="11.52" />
-        <viz:position x="18.85" y="-221.54" z="0.0" />
+        <viz:position x="17.86" y="-209.9" z="0.0" />
         <attvalues>
           <attvalue for="0" value="program" />
           <attvalue for="1" value="7" />
@@ -558,7 +558,7 @@
       <node id="t:指定等" label="指定等">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.11" />
-        <viz:position x="36.15" y="-209.13" z="0.0" />
+        <viz:position x="34.25" y="-198.14" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="6" />
@@ -571,7 +571,7 @@
       <node id="t:一般社団法人" label="一般社団法人">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.18" />
-        <viz:position x="-336.95" y="601.02" z="0.0" />
+        <viz:position x="-110.43" y="650.14" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="4" />
@@ -584,7 +584,7 @@
       <node id="policy:toroku_yukei_bunkazai" label="登録有形文化財">
         <viz:color r="235" g="104" b="52" a="1.0" />
         <viz:size value="10.18" />
-        <viz:position x="20.21" y="-263.45" z="0.0" />
+        <viz:position x="19.14" y="-249.6" z="0.0" />
         <attvalues>
           <attvalue for="0" value="program" />
           <attvalue for="1" value="4" />
@@ -597,7 +597,7 @@
       <node id="t:建造物" label="建造物">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.18" />
-        <viz:position x="2.56" y="-229.89" z="0.0" />
+        <viz:position x="2.43" y="-217.81" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="4" />
@@ -610,7 +610,7 @@
       <node id="t:採択先" label="採択先">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.18" />
-        <viz:position x="840.43" y="10.55" z="0.0" />
+        <viz:position x="816.96" y="-30.21" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="4" />
@@ -623,7 +623,7 @@
       <node id="t:会議資料" label="会議資料">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="12.6" />
-        <viz:position x="124.13" y="437.78" z="0.0" />
+        <viz:position x="117.61" y="414.78" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="10" />
@@ -636,7 +636,7 @@
       <node id="t:会議開催" label="会議開催">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.11" />
-        <viz:position x="121.05" y="424.05" z="0.0" />
+        <viz:position x="114.68" y="401.76" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="6" />
@@ -649,7 +649,7 @@
       <node id="t:経る" label="経る">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.52" />
-        <viz:position x="37.4" y="-149.96" z="0.0" />
+        <viz:position x="35.43" y="-142.08" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="7" />
@@ -662,7 +662,7 @@
       <node id="t:遠慮" label="遠慮">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.91" />
-        <viz:position x="786.82" y="451.13" z="0.0" />
+        <viz:position x="695.06" y="375.2" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="8" />
@@ -675,7 +675,7 @@
       <node id="t:無断転載" label="無断転載">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.18" />
-        <viz:position x="877.26" y="552.44" z="0.0" />
+        <viz:position x="602.18" y="286.16" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="4" />
@@ -688,7 +688,7 @@
       <node id="org:kanko_cho" label="観光庁">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="12.26" />
-        <viz:position x="156.57" y="165.89" z="0.0" />
+        <viz:position x="148.34" y="157.17" z="0.0" />
         <attvalues>
           <attvalue for="0" value="org" />
           <attvalue for="1" value="9" />
@@ -701,7 +701,7 @@
       <node id="t:報道" label="報道">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.91" />
-        <viz:position x="155.71" y="177.14" z="0.0" />
+        <viz:position x="147.52" y="167.83" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="8" />
@@ -714,7 +714,7 @@
       <node id="t:歴史" label="歴史">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="12.93" />
-        <viz:position x="299.61" y="282.82" z="0.0" />
+        <viz:position x="283.86" y="267.95" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="11" />
@@ -727,7 +727,7 @@
       <node id="t:紡ぐ" label="紡ぐ">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.67" />
-        <viz:position x="306.12" y="260.26" z="0.0" />
+        <viz:position x="290.03" y="246.58" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="5" />
@@ -740,7 +740,7 @@
       <node id="t:地域計画" label="地域計画">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="14.61" />
-        <viz:position x="168.91" y="168.91" z="0.0" />
+        <viz:position x="160.03" y="160.03" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="17" />
@@ -753,7 +753,7 @@
       <node id="t:拠点計画" label="拠点計画">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="13.81" />
-        <viz:position x="146.95" y="172.44" z="0.0" />
+        <viz:position x="139.23" y="163.38" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="14" />
@@ -766,7 +766,7 @@
       <node id="policy:bunka_kanko_suishinho" label="文化観光推進法">
         <viz:color r="235" g="104" b="52" a="1.0" />
         <viz:size value="15.34" />
-        <viz:position x="156.89" y="193.29" z="0.0" />
+        <viz:position x="148.65" y="183.13" z="0.0" />
         <attvalues>
           <attvalue for="0" value="law" />
           <attvalue for="1" value="20" />
@@ -779,7 +779,7 @@
       <node id="t:政策" label="政策">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="14.09" />
-        <viz:position x="197.57" y="350.09" z="0.0" />
+        <viz:position x="187.19" y="331.69" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="15" />
@@ -792,7 +792,7 @@
       <node id="t:決定" label="決定">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="12.6" />
-        <viz:position x="915.42" y="-15.54" z="0.0" />
+        <viz:position x="841.03" y="39.57" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="10" />
@@ -805,7 +805,7 @@
       <node id="t:アンケート" label="アンケート">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.18" />
-        <viz:position x="83.27" y="435.33" z="0.0" />
+        <viz:position x="78.89" y="412.45" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="4" />
@@ -818,7 +818,7 @@
       <node id="t:事例" label="事例">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.11" />
-        <viz:position x="71.47" y="448.97" z="0.0" />
+        <viz:position x="67.72" y="425.37" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="6" />
@@ -831,7 +831,7 @@
       <node id="t:回全国高等学校総合文化祭" label="回全国高等学校総合文化祭">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.11" />
-        <viz:position x="-767.28" y="-292.19" z="0.0" />
+        <viz:position x="-726.96" y="-276.83" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="6" />
@@ -844,7 +844,7 @@
       <node id="t:校東京公演" label="校東京公演">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.18" />
-        <viz:position x="-596.55" y="-460.34" z="0.0" />
+        <viz:position x="-565.2" y="-436.15" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="4" />
@@ -857,7 +857,7 @@
       <node id="org:mext" label="文部科学省">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.67" />
-        <viz:position x="-574.33" y="-522.14" z="0.0" />
+        <viz:position x="-544.15" y="-494.7" z="0.0" />
         <attvalues>
           <attvalue for="0" value="org" />
           <attvalue for="1" value="5" />
@@ -870,7 +870,7 @@
       <node id="t:会議室" label="会議室">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.67" />
-        <viz:position x="-403.59" y="-690.3" z="0.0" />
+        <viz:position x="-382.38" y="-654.02" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="5" />
@@ -883,7 +883,7 @@
       <node id="policy:hakubutsukanho" label="博物館法">
         <viz:color r="235" g="104" b="52" a="1.0" />
         <viz:size value="16.01" />
-        <viz:position x="-196.81" y="-314.95" z="0.0" />
+        <viz:position x="-186.47" y="-298.4" z="0.0" />
         <attvalues>
           <attvalue for="0" value="law" />
           <attvalue for="1" value="23" />
@@ -896,7 +896,7 @@
       <node id="t:改正" label="改正">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="14.86" />
-        <viz:position x="-242.61" y="-329.1" z="0.0" />
+        <viz:position x="-229.86" y="-311.8" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="18" />
@@ -909,7 +909,7 @@
       <node id="t:発信" label="発信">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.52" />
-        <viz:position x="736.63" y="-108.17" z="0.0" />
+        <viz:position x="984.02" y="32.24" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="7" />
@@ -922,7 +922,7 @@
       <node id="t:メールアドレス" label="メールアドレス">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.67" />
-        <viz:position x="-40.23" y="-307.34" z="0.0" />
+        <viz:position x="-38.11" y="-291.19" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="5" />
@@ -935,7 +935,7 @@
       <node id="t:連絡" label="連絡">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.11" />
-        <viz:position x="-52.49" y="-312.66" z="0.0" />
+        <viz:position x="-49.73" y="-296.23" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="6" />
@@ -948,7 +948,7 @@
       <node id="t:コンソーシアム" label="コンソーシアム">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.18" />
-        <viz:position x="-308.74" y="-662.04" z="0.0" />
+        <viz:position x="-130.75" y="-786.57" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="4" />
@@ -961,7 +961,7 @@
       <node id="t:向ける" label="向ける">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.91" />
-        <viz:position x="-138.0" y="-830.19" z="0.0" />
+        <viz:position x="-292.52" y="-627.24" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="8" />
@@ -974,7 +974,7 @@
       <node id="t:議題" label="議題">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.67" />
-        <viz:position x="-9.97" y="-691.1" z="0.0" />
+        <viz:position x="152.32" y="-814.1" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="5" />
@@ -987,7 +987,7 @@
       <node id="t:非公開" label="非公開">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.52" />
-        <viz:position x="160.77" y="-859.25" z="0.0" />
+        <viz:position x="-9.44" y="-654.78" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="7" />
@@ -1000,7 +1000,7 @@
       <node id="t:登録記念物" label="登録記念物">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.67" />
-        <viz:position x="-8.61" y="-256.31" z="0.0" />
+        <viz:position x="-8.16" y="-242.84" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="5" />
@@ -1013,7 +1013,7 @@
       <node id="t:答申" label="答申">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="15.34" />
-        <viz:position x="25.22" y="-172.06" z="0.0" />
+        <viz:position x="23.89" y="-163.02" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="20" />
@@ -1026,7 +1026,7 @@
       <node id="t:国語分科会言語資源" label="国語分科会言語資源">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.18" />
-        <viz:position x="-30.6" y="-164.18" z="0.0" />
+        <viz:position x="-28.99" y="-155.55" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="4" />
@@ -1039,7 +1039,7 @@
       <node id="t:委員会" label="委員会">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="14.09" />
-        <viz:position x="-58.49" y="-164.64" z="0.0" />
+        <viz:position x="-55.41" y="-155.99" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="15" />
@@ -1052,7 +1052,7 @@
       <node id="t:指定" label="指定">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.52" />
-        <viz:position x="1.71" y="-210.33" z="0.0" />
+        <viz:position x="1.62" y="-199.28" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="7" />
@@ -1065,7 +1065,7 @@
       <node id="t:企画展" label="企画展">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.11" />
-        <viz:position x="140.42" y="519.34" z="0.0" />
+        <viz:position x="133.04" y="492.05" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="6" />
@@ -1078,7 +1078,7 @@
       <node id="t:国立近現代建築資料館" label="国立近現代建築資料館">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.52" />
-        <viz:position x="139.97" y="481.67" z="0.0" />
+        <viz:position x="132.62" y="456.36" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="7" />
@@ -1091,7 +1091,7 @@
       <node id="t:関する" label="関する">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="12.26" />
-        <viz:position x="-763.02" y="362.21" z="0.0" />
+        <viz:position x="-755.59" y="121.37" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="9" />
@@ -1104,7 +1104,7 @@
       <node id="t:認定" label="認定">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="20.47" />
-        <viz:position x="143.6" y="152.17" z="0.0" />
+        <viz:position x="136.05" y="144.18" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="48" />
@@ -1117,7 +1117,7 @@
       <node id="t:登録" label="登録">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="18.53" />
-        <viz:position x="-51.24" y="-261.32" z="0.0" />
+        <viz:position x="-48.55" y="-247.59" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="36" />
@@ -1130,7 +1130,7 @@
       <node id="policy:sekai_bunka_isan" label="世界文化遺産">
         <viz:color r="235" g="104" b="52" a="1.0" />
         <viz:size value="16.85" />
-        <viz:position x="-93.15" y="-165.68" z="0.0" />
+        <viz:position x="-88.26" y="-156.97" z="0.0" />
         <attvalues>
           <attvalue for="0" value="program" />
           <attvalue for="1" value="27" />
@@ -1143,7 +1143,7 @@
       <node id="t:決議" label="決議">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.91" />
-        <viz:position x="-100.7" y="-158.58" z="0.0" />
+        <viz:position x="-95.4" y="-150.24" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="8" />
@@ -1156,7 +1156,7 @@
       <node id="t:保存" label="保存">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.91" />
-        <viz:position x="398.24" y="171.96" z="0.0" />
+        <viz:position x="377.31" y="162.92" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="8" />
@@ -1169,7 +1169,7 @@
       <node id="t:文化財" label="文化財">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="16.01" />
-        <viz:position x="412.12" y="204.53" z="0.0" />
+        <viz:position x="390.46" y="193.79" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="23" />
@@ -1182,7 +1182,7 @@
       <node id="t:選定" label="選定">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="12.6" />
-        <viz:position x="45.44" y="-194.01" z="0.0" />
+        <viz:position x="43.05" y="-183.82" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="10" />
@@ -1195,7 +1195,7 @@
       <node id="t:基準" label="基準">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.67" />
-        <viz:position x="-374.02" y="-397.49" z="0.0" />
+        <viz:position x="-354.37" y="-376.6" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="5" />
@@ -1208,7 +1208,7 @@
       <node id="t:廃棄" label="廃棄">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="14.09" />
-        <viz:position x="-347.13" y="-369.96" z="0.0" />
+        <viz:position x="-328.89" y="-350.51" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="15" />
@@ -1221,7 +1221,7 @@
       <node id="t:求める" label="求める">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.52" />
-        <viz:position x="-541.04" y="-196.16" z="0.0" />
+        <viz:position x="-512.61" y="-185.85" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="7" />
@@ -1234,7 +1234,7 @@
       <node id="t:運営" label="運営">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="12.93" />
-        <viz:position x="-509.67" y="-210.12" z="0.0" />
+        <viz:position x="-482.88" y="-199.07" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="11" />
@@ -1247,7 +1247,7 @@
       <node id="org:bunka_shingikai" label="文化審議会">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="20.32" />
-        <viz:position x="9.26" y="-182.5" z="0.0" />
+        <viz:position x="8.77" y="-172.91" z="0.0" />
         <attvalues>
           <attvalue for="0" value="org" />
           <attvalue for="1" value="47" />
@@ -1260,7 +1260,7 @@
       <node id="policy:nihon_isan" label="日本遺産">
         <viz:color r="235" g="104" b="52" a="1.0" />
         <viz:size value="18.53" />
-        <viz:position x="291.48" y="232.07" z="0.0" />
+        <viz:position x="276.17" y="219.87" z="0.0" />
         <attvalues>
           <attvalue for="0" value="program" />
           <attvalue for="1" value="36" />
@@ -1273,7 +1273,7 @@
       <node id="t:地域" label="地域">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="13.81" />
-        <viz:position x="356.19" y="340.79" z="0.0" />
+        <viz:position x="337.48" y="322.88" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="14" />
@@ -1286,7 +1286,7 @@
       <node id="t:展開" label="展開">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.11" />
-        <viz:position x="386.68" y="362.94" z="0.0" />
+        <viz:position x="366.36" y="343.87" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="6" />
@@ -1299,7 +1299,7 @@
       <node id="policy:hakubutsukan_toroku" label="博物館登録制度">
         <viz:color r="235" g="104" b="52" a="1.0" />
         <viz:size value="11.11" />
-        <viz:position x="-200.18" y="-346.5" z="0.0" />
+        <viz:position x="-189.66" y="-328.29" z="0.0" />
         <attvalues>
           <attvalue for="0" value="program" />
           <attvalue for="1" value="6" />
@@ -1312,7 +1312,7 @@
       <node id="t:公募" label="公募">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="12.93" />
-        <viz:position x="-447.42" y="-214.81" z="0.0" />
+        <viz:position x="-423.91" y="-203.52" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="11" />
@@ -1325,7 +1325,7 @@
       <node id="t:高知県" label="高知県">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.91" />
-        <viz:position x="-450.5" y="-176.48" z="0.0" />
+        <viz:position x="-426.83" y="-167.21" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="8" />
@@ -1338,7 +1338,7 @@
       <node id="t:計画" label="計画">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.52" />
-        <viz:position x="128.87" y="179.67" z="0.0" />
+        <viz:position x="122.09" y="170.23" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="7" />
@@ -1351,7 +1351,7 @@
       <node id="t:生きる" label="生きる">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.18" />
-        <viz:position x="225.84" y="193.43" z="0.0" />
+        <viz:position x="213.98" y="183.26" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="4" />
@@ -1364,7 +1364,7 @@
       <node id="t:部会" label="部会">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.11" />
-        <viz:position x="-46.2" y="-176.57" z="0.0" />
+        <viz:position x="-43.77" y="-167.29" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="6" />
@@ -1377,7 +1377,7 @@
       <node id="t:公募型プロポーザル" label="公募型プロポーザル">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.67" />
-        <viz:position x="346.8" y="242.64" z="0.0" />
+        <viz:position x="328.58" y="229.89" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="5" />
@@ -1390,7 +1390,7 @@
       <node id="t:活用" label="活用">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="15.1" />
-        <viz:position x="388.93" y="254.5" z="0.0" />
+        <viz:position x="368.49" y="241.12" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="19" />
@@ -1403,7 +1403,7 @@
       <node id="t:日本" label="日本">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="15.1" />
-        <viz:position x="447.75" y="772.13" z="0.0" />
+        <viz:position x="349.89" y="706.95" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="19" />
@@ -1416,7 +1416,7 @@
       <node id="t:未来" label="未来">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.91" />
-        <viz:position x="463.04" y="851.14" z="0.0" />
+        <viz:position x="292.19" y="756.8" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="8" />
@@ -1429,7 +1429,7 @@
       <node id="t:策定" label="策定">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.11" />
-        <viz:position x="196.63" y="148.48" z="0.0" />
+        <viz:position x="186.3" y="140.68" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="6" />
@@ -1442,7 +1442,7 @@
       <node id="t:博物館" label="博物館">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="18.87" />
-        <viz:position x="-302.79" y="-339.5" z="0.0" />
+        <viz:position x="-286.88" y="-321.66" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="38" />
@@ -1455,7 +1455,7 @@
       <node id="t:収蔵庫" label="収蔵庫">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.91" />
-        <viz:position x="-338.57" y="-346.82" z="0.0" />
+        <viz:position x="-320.78" y="-328.6" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="8" />
@@ -1468,7 +1468,7 @@
       <node id="t:受賞" label="受賞">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.18" />
-        <viz:position x="477.34" y="584.87" z="0.0" />
+        <viz:position x="517.7" y="642.91" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="4" />
@@ -1481,7 +1481,7 @@
       <node id="t:文化政策" label="文化政策">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="16.65" />
-        <viz:position x="423.95" y="647.77" z="0.0" />
+        <viz:position x="440.84" y="628.73" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="26" />
@@ -1494,7 +1494,7 @@
       <node id="t:著作権分科会" label="著作権分科会">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.67" />
-        <viz:position x="-7.64" y="-155.76" z="0.0" />
+        <viz:position x="-7.24" y="-147.57" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="5" />
@@ -1507,7 +1507,7 @@
       <node id="t:期文化経済部会" label="期文化経済部会">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.67" />
-        <viz:position x="57.49" y="-206.9" z="0.0" />
+        <viz:position x="54.47" y="-196.03" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="5" />
@@ -1520,7 +1520,7 @@
       <node id="t:劇場" label="劇場">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="13.23" />
-        <viz:position x="-491.13" y="-256.03" z="0.0" />
+        <viz:position x="-465.32" y="-242.58" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="12" />
@@ -1533,7 +1533,7 @@
       <node id="t:指定管理" label="指定管理">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="12.26" />
-        <viz:position x="-464.54" y="-267.65" z="0.0" />
+        <viz:position x="-440.13" y="-253.59" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="9" />
@@ -1546,7 +1546,7 @@
       <node id="policy:shitei_kanrisha" label="指定管理者制度">
         <viz:color r="235" g="104" b="52" a="1.0" />
         <viz:size value="14.61" />
-        <viz:position x="-466.56" y="-235.48" z="0.0" />
+        <viz:position x="-442.04" y="-223.1" z="0.0" />
         <attvalues>
           <attvalue for="0" value="program" />
           <attvalue for="1" value="17" />
@@ -1559,7 +1559,7 @@
       <node id="t:文化財分科会企画調査会" label="文化財分科会企画調査会">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.18" />
-        <viz:position x="-19.75" y="-194.3" z="0.0" />
+        <viz:position x="-18.71" y="-184.09" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="4" />
@@ -1572,7 +1572,7 @@
       <node id="t:拠点" label="拠点">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.91" />
-        <viz:position x="182.2" y="192.03" z="0.0" />
+        <viz:position x="172.62" y="181.94" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="8" />
@@ -1585,7 +1585,7 @@
       <node id="t:美術館" label="美術館">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="18.53" />
-        <viz:position x="-410.93" y="-262.66" z="0.0" />
+        <viz:position x="-389.34" y="-248.86" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="36" />
@@ -1598,7 +1598,7 @@
       <node id="t:文化" label="文化">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="18.18" />
-        <viz:position x="288.67" y="339.11" z="0.0" />
+        <viz:position x="273.5" y="321.29" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="34" />
@@ -1611,7 +1611,7 @@
       <node id="t:観光" label="観光">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="12.26" />
-        <viz:position x="312.59" y="368.7" z="0.0" />
+        <viz:position x="296.17" y="349.32" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="9" />
@@ -1624,7 +1624,7 @@
       <node id="t:問題" label="問題">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.11" />
-        <viz:position x="-304.74" y="-364.11" z="0.0" />
+        <viz:position x="-288.72" y="-344.97" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="6" />
@@ -1637,7 +1637,7 @@
       <node id="t:資料" label="資料">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="13.81" />
-        <viz:position x="-333.13" y="-360.03" z="0.0" />
+        <viz:position x="-315.62" y="-341.11" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="14" />
@@ -1650,7 +1650,7 @@
       <node id="policy:bunkazai_hozon_katsuyo_chiiki_keikaku" label="文化財保存活用地域計画">
         <viz:color r="235" g="104" b="52" a="1.0" />
         <viz:size value="16.65" />
-        <viz:position x="130.03" y="124.18" z="0.0" />
+        <viz:position x="123.19" y="117.66" z="0.0" />
         <attvalues>
           <attvalue for="0" value="program" />
           <attvalue for="1" value="26" />
@@ -1663,7 +1663,7 @@
       <node id="t:収蔵品" label="収蔵品">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="12.26" />
-        <viz:position x="-322.04" y="-375.3" z="0.0" />
+        <viz:position x="-305.12" y="-355.57" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="9" />
@@ -1676,7 +1676,7 @@
       <node id="t:事業" label="事業">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="14.86" />
-        <viz:position x="387.45" y="304.71" z="0.0" />
+        <viz:position x="367.09" y="288.7" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="18" />
@@ -1689,7 +1689,7 @@
       <node id="t:魅力" label="魅力">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.67" />
-        <viz:position x="323.69" y="218.2" z="0.0" />
+        <viz:position x="306.68" y="206.74" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="5" />
@@ -1702,7 +1702,7 @@
       <node id="t:明記" label="明記">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.67" />
-        <viz:position x="-290.37" y="-377.22" z="0.0" />
+        <viz:position x="-275.11" y="-357.39" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="5" />
@@ -1715,7 +1715,7 @@
       <node id="t:年フード" label="年フード">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.18" />
-        <viz:position x="137.85" y="271.14" z="0.0" />
+        <viz:position x="130.61" y="256.89" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="4" />
@@ -1728,7 +1728,7 @@
       <node id="t:別紙" label="別紙">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="12.6" />
-        <viz:position x="79.27" y="-27.09" z="0.0" />
+        <viz:position x="75.11" y="-25.67" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="10" />
@@ -1741,7 +1741,7 @@
       <node id="t:国立博物館" label="国立博物館">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.11" />
-        <viz:position x="-407.69" y="-229.33" z="0.0" />
+        <viz:position x="-386.26" y="-217.28" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="6" />
@@ -1754,7 +1754,7 @@
       <node id="t:無い" label="無い">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="12.26" />
-        <viz:position x="342.66" y="601.04" z="0.0" />
+        <viz:position x="440.88" y="539.89" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="9" />
@@ -1767,7 +1767,7 @@
       <node id="org:bunkacho" label="文化庁">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="28.0" />
-        <viz:position x="137.63" y="400.31" z="0.0" />
+        <viz:position x="130.4" y="379.28" z="0.0" />
         <attvalues>
           <attvalue for="0" value="org" />
           <attvalue for="1" value="111" />
@@ -1780,7 +1780,7 @@
       <node id="policy:mukei_bunka_isan" label="無形文化遺産">
         <viz:color r="235" g="104" b="52" a="1.0" />
         <viz:size value="10.67" />
-        <viz:position x="-16.5" y="-220.04" z="0.0" />
+        <viz:position x="-15.63" y="-208.48" z="0.0" />
         <attvalues>
           <attvalue for="0" value="program" />
           <attvalue for="1" value="5" />
@@ -1793,7 +1793,7 @@
       <node id="t:稼ぐ" label="稼ぐ">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.52" />
-        <viz:position x="-311.09" y="-390.56" z="0.0" />
+        <viz:position x="-294.74" y="-370.03" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="7" />
@@ -1806,7 +1806,7 @@
       <node id="t:支援" label="支援">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="14.86" />
-        <viz:position x="178.69" y="276.28" z="0.0" />
+        <viz:position x="169.3" y="261.76" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="18" />
@@ -1819,7 +1819,7 @@
       <node id="t:長官" label="長官">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="12.6" />
-        <viz:position x="170.26" y="419.34" z="0.0" />
+        <viz:position x="161.31" y="397.31" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="10" />
@@ -1832,7 +1832,7 @@
       <node id="t:巡る" label="巡る">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.91" />
-        <viz:position x="-437.81" y="-276.93" z="0.0" />
+        <viz:position x="-414.8" y="-262.38" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="8" />
@@ -1845,7 +1845,7 @@
       <node id="t:枚目" label="枚目">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.18" />
-        <viz:position x="173.0" y="437.69" z="0.0" />
+        <viz:position x="163.91" y="414.69" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="4" />
@@ -1858,7 +1858,7 @@
       <node id="t:施設" label="施設">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="13.23" />
-        <viz:position x="-390.94" y="-216.6" z="0.0" />
+        <viz:position x="-370.39" y="-205.22" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="12" />
@@ -1871,7 +1871,7 @@
       <node id="t:案内" label="案内">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="11.52" />
-        <viz:position x="92.4" y="395.02" z="0.0" />
+        <viz:position x="87.55" y="374.27" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="7" />
@@ -1884,7 +1884,7 @@
       <node id="t:提出" label="提出">
         <viz:color r="137" g="135" b="129" a="1.0" />
         <viz:size value="10.67" />
-        <viz:position x="121.97" y="462.37" z="0.0" />
+        <viz:position x="115.56" y="438.08" z="0.0" />
         <attvalues>
           <attvalue for="0" value="term" />
           <attvalue for="1" value="5" />
