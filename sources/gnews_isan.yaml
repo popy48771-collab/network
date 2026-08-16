@@ -1,0 +1,17 @@
+# 文化財の外向き（登録・推薦・保存の意思決定）。既存の gnews_bunkazai は
+# 保存・修理・防災に絞ってあるので、遺産としての語られ方がまるごと抜けていた。
+#
+# 「ユネスコ」単独は教育・科学の話が大量に混ざるので入れない。
+# 2026-08-16 の dry-run で「重要無形民俗文化財」を入れていたら民俗芸能の公演記事
+# （「根子番楽 恒例の盆公演」）が入ったので外した。公演は追わない。
+
+id: gnews_isan
+name: Googleニュース「世界遺産・無形文化遺産（登録）」
+kind: rss
+url: https://news.google.com/rss/search?q=%28%E4%B8%96%E7%95%8C%E9%81%BA%E7%94%A3%20OR%20%E7%84%A1%E5%BD%A2%E6%96%87%E5%8C%96%E9%81%BA%E7%94%A3%29%20%28%E7%99%BB%E9%8C%B2%20OR%20%E6%8E%A8%E8%96%A6%20OR%20%E4%BF%9D%E5%AD%98%20OR%20%E8%AB%AE%E5%95%8F%29&hl=ja&gl=JP&ceid=JP:ja
+query: "(世界遺産 OR 無形文化遺産) (登録 OR 推薦 OR 保存 OR 諮問)"
+tier: secondary
+country: JP
+lang: ja
+enabled: true
+max_items: 60

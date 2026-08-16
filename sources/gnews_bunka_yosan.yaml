@@ -1,0 +1,17 @@
+# 金の話。概算要求・予算は文化政策の意思がいちばん露骨に出る場所だが、
+# 見出しに「文化政策」とは書かれないので既存の検索語では落ちていた。
+#
+# 2026-08-16 の dry-run で「基金」を入れていたら民間財団の助成金告知
+# （「ふるさと振興基金 助成先決定」）が混ざったので外した。
+# 公費の配分だけを見る。民間の助成は gnews_artscouncil 側で拾う。
+
+id: gnews_bunka_yosan
+name: Googleニュース「文化予算・概算要求」
+kind: rss
+url: https://news.google.com/rss/search?q=%28%E6%96%87%E5%8C%96%E5%BA%81%20OR%20%E6%96%87%E5%8C%96%E8%8A%B8%E8%A1%93%29%20%28%E4%BA%88%E7%AE%97%20OR%20%E6%A6%82%E7%AE%97%E8%A6%81%E6%B1%82%20OR%20%E8%A3%9C%E6%AD%A3%E4%BA%88%E7%AE%97%29&hl=ja&gl=JP&ceid=JP:ja
+query: "(文化庁 OR 文化芸術) (予算 OR 概算要求 OR 補正予算)"
+tier: secondary
+country: JP
+lang: ja
+enabled: true
+max_items: 60
