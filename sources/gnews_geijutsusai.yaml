@@ -1,12 +1,16 @@
 # 芸術祭・国際展。あいちトリエンナーレの補助金不交付のような
 # 「文化政策が最も可視化される現場」だが、これまで専用の検索語が無く、
 # 他の検索語に引っかかった分だけが偶然入っていた。
+#
+# 2026-08-16 の dry-run で「芸術祭 OR トリエンナーレ OR ビエンナーレ」だけだと
+# チケット販売・開催告知が大半だった。芸術祭は開催情報の量が圧倒的に多いので、
+# 公金の語との AND で政策の文脈に寄せる。開催そのものは追わない。
 
 id: gnews_geijutsusai
-name: Googleニュース「芸術祭・国際展」
+name: Googleニュース「芸術祭・国際展（公金）」
 kind: rss
-url: https://news.google.com/rss/search?q=%E8%8A%B8%E8%A1%93%E7%A5%AD%20OR%20%E3%83%88%E3%83%AA%E3%82%A8%E3%83%B3%E3%83%8A%E3%83%BC%E3%83%AC%20OR%20%E3%83%93%E3%82%A8%E3%83%B3%E3%83%8A%E3%83%BC%E3%83%AC&hl=ja&gl=JP&ceid=JP:ja
-query: "芸術祭 OR トリエンナーレ OR ビエンナーレ"
+url: https://news.google.com/rss/search?q=%28%E8%8A%B8%E8%A1%93%E7%A5%AD%20OR%20%E3%83%88%E3%83%AA%E3%82%A8%E3%83%B3%E3%83%8A%E3%83%BC%E3%83%AC%20OR%20%E3%83%93%E3%82%A8%E3%83%B3%E3%83%8A%E3%83%BC%E3%83%AC%29%20%28%E8%A3%9C%E5%8A%A9%E9%87%91%20OR%20%E5%8A%A9%E6%88%90%20OR%20%E4%BA%88%E7%AE%97%20OR%20%E6%A4%9C%E8%A8%BC%20OR%20%E4%B8%AD%E6%AD%A2%29&hl=ja&gl=JP&ceid=JP:ja
+query: "(芸術祭 OR トリエンナーレ OR ビエンナーレ) (補助金 OR 助成 OR 予算 OR 検証 OR 中止)"
 tier: secondary
 country: JP
 lang: ja
