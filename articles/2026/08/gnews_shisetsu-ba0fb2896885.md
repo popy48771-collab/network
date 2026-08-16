@@ -1,0 +1,12 @@
+---
+title: "神戸市『西区文化センター』なでしこホールが大規模改修で長期休館へ 老朽化に伴い"
+date: 2026-08-10
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMifEFVX3lxTE9DSzl3dW5EU0l4MDBERjBmSDdZd0tZbDZqb05NYjJCMG5EenJTRy12Yy1HaGx3T0ZKdWt3Z3ZrOWh1UW1OMDVra2VSQ21EMk9ObmxjTDZORFFZUFc2cHZXdzI4SWhVRVZwNVNPakJQMmNWYkJVMnRRRWZoWnfSAYIBQVVfeXFMTVNaY2NubFJ2OTZ6M00wdDZGTVR1Ny1ITFRBQjhlTVpKLWJEbUd0M0hSbUJVWnZDaVdsU2xVQ1Uybk9BY2EtWnpKODNyOWRTXzRXajAtdE1CSkpPa1owVUFYbHVMWW5JenA3OTRETDd4WW9ieDZjaUJobDZ5SmhNeV94Zw?oc=5"
+collected_by: gnews_shisetsu
+tier: secondary
+lang: ja
+country: JP
+---
+
+神戸市『西区文化センター』なでしこホールが大規模改修で長期休館へ 老朽化に伴い。

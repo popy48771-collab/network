@@ -1,0 +1,12 @@
+---
+title: "AI利用作品に条件付きで著作権、インドネシアで法改正案 テックに使用料"
+date: 2026-07-17
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMiggFBVV95cUxNRXF4ZzJaU3lDZXpOa3hhSHR3LUpkYVdCdWFJSTI4TGxYZ3RGVDVQanVOdTV1WUk2WFRKVTduQkxSa1llalVUcllGSWhDa253M0dJbWk1TWpBczlxaFlwOTNEdGtKSmtQT1h4bXpZNFlrc0E5TEtpVGtGUGNnaXMyX1VR0gGHAUFVX3lxTFBoODAzSW42OHVrLVlhR3lqamEtX2tMREk1Q2VjTm5iQ0hBZHpnWDhEd0xlUU8tLXBJeUNxSXhJWEMtQVkwZXVnQnowVmJjMF85MXVYQWpYc1B0Z3ZXZWFuLXRKU25EUUpvRUJMWVZzbjktdkZPU3cxQjUwOEVBbVRLR20zNzlvNA?oc=5"
+collected_by: gnews_chosakuken
+tier: secondary
+lang: ja
+country: JP
+---
+
+AI利用作品に条件付きで著作権、インドネシアで法改正案 テックに使用料。

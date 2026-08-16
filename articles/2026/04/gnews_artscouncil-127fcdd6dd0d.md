@@ -1,0 +1,12 @@
+---
+title: "209事業に助成金 岡田文化財団、四日市で贈呈式 三重"
+date: 2026-04-12
+source: "伊勢新聞"
+url: "https://news.google.com/rss/articles/CBMi1gJBVV95cUxQNVc0b2JDSzFmRk9ES2dZYXBKeHdBTXdNZTljR2hxOWhmc293eGNmSUM0cE5FX3VIcF9KZEJCNmxYNG43eGd2UUUzYkFlRFBnUko1SGZtSmpCSHcxdHl4Um96REdDS1pwOUs5NFh2NmcwYXF2ci1YN1QxclhLV3pvMWQ0V1ZoYjVQakwxSkFZcWpmaTN5MGllbGx3YU15b3JLUlE3UjRmZTRNUmFSVDgyNmtTNGx0Zm5qMmdaTGpVbDlkRzBXUDRmY0c3aXVuZDZhdHBzOFlXbEg0bWRQdl8yVTM2NEd2RkhNMU9FWnR5MVN6N1QwaHVrc0RsS2FaOC1IN2xONmVDQVVIaHE3cTNvUFJKRkhOWFRmaWNzYzJXM2E5djI2OWpMd2M0eXpLbzlOMy1uZDNsVnN1T2QtSkN4bW1ycmpJTlROMVdQWlRhbDV2dUlPNnc?oc=5"
+collected_by: gnews_artscouncil
+tier: secondary
+lang: ja
+country: JP
+---
+
+209事業に助成金 岡田文化財団、四日市で贈呈式 三重。

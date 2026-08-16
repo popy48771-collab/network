@@ -1,0 +1,12 @@
+---
+title: "飛鳥・藤原の宮都世界遺産登録!"
+date: 2026-07-26
+source: "公明党"
+url: "https://news.google.com/rss/articles/CBMiowJBVV95cUxPX2Jlc29DSmVUX2w5WW1yV3NaTVdjdjNvWjFVdk9JczZoR3gxUTd1NDFmMW44S2twMXVHU002THd2SXZLNHlpRm81MTR4QmxCTUl5NHpLbGRNNmhpTy1objY0ZVB3SVRMNW5jSmNVVUdZbWJObFZRSVFjSU94S2xRdHZEbDAxQlVPazNtZzAzNTd3M2VuWEJUZ1lFVXVRdlNOOXo4YnBxVjJFaVNQR0tNc3l4ZDdBdzdrOE1IeWdLcDdNS3R6ZGFnR0oxaEJ4WXNLYmFOQmt5cVZ0QW40akVEWFp3aGNnNVRUS2hQVjMxVWhHUVZXajUybXAzczVPRkRMWTMzWEhaX0E2TjRRLTVOamtCVHBveUxTSlMxdmlwX0ZXM3c?oc=5"
+collected_by: gnews_isan
+tier: secondary
+lang: ja
+country: JP
+---
+
+飛鳥・藤原の宮都世界遺産登録!。

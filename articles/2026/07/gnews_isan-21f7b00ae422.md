@@ -1,0 +1,12 @@
+---
+title: "親子で島の自然に触れる 世界遺産登録から5年 奄美・徳之島で記念イベント|政治・行政"
+date: 2026-07-27
+source: "nankainn.com"
+url: "https://news.google.com/rss/articles/CBMi3AJBVV95cUxQSzhQTjB5M2lMaWd4WGl2VVRHWGxKLTIzcHBvZlRiVkloMTBpajQ0SGUxbHZOTmloMDNRR3JPSWFLZDFXU2RRUG1sbjA3UUJMeU5Xa0tYeXh2SXN4U2Y3N1Itb2lZTlRNQ3Z1cEd0N1RHU1ZYdzBmbUp4U2h0ZkRZOEdab2YzM1I0UnNRSEhYck5tUTBQbldfUGpOaWtDRl8xNktsemEzQ1dUYlBtV3VqazIwZWpaOWpUV1FaTk1qcml2WlhoZDZvTzB0Q1M0Z0pKVEZfT2RNQjV4dTNYWDgwZ3VoaWhiejc2Q0FHSDFob3N5bUlzX0dicGJDYzZ5RUc0dXEzcFlmTUo1akNNcDRyeDBwdU5zNkdrMGNHZDBReEpuLS0zaHZSZHFoUnJ3dVpXM0pjZlFPaURMaHJKVkNjd2V0WHE4aUdUNzduV1F5dWF0UjVQZE10WFpFX3o?oc=5"
+collected_by: gnews_isan
+tier: secondary
+lang: ja
+country: JP
+---
+
+親子で島の自然に触れる 世界遺産登録から5年 奄美・徳之島で記念イベント|政治・行政。
