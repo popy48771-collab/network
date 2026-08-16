@@ -28,7 +28,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from collections import Counter
 from dataclasses import dataclass, field
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from html.parser import HTMLParser
 from pathlib import Path
@@ -76,6 +76,11 @@ class Source:
     # 見出しがこの正規表現に一致するアイテムだけ採る。省庁全体の新着情報のように
     # フィードが広すぎるときの絞り込み。この場合 **これが検索語＝問いにあたる**
     title_pattern: str = ""
+    # 何日前より古いアイテムを捨てるか。0 は無制限（既定）。
+    # Googleニュース検索は数年前の記事も返すので、新しい検索語を足すと過去が一気に入り、
+    # 「直近で急に強まった結びつき」（surprise）の基準が薄まる。母集団の時間幅を
+    # 決めるのは分析上の判断なので、既定では何もしない（設定した分だけ効く）
+    max_age_days: int = 0
     note: str = ""
 
     @classmethod
@@ -108,6 +113,7 @@ class Result:
     written: int = 0
     skipped: int = 0
     filtered: int = 0  # title_pattern に一致しなかった件数
+    aged_out: int = 0  # max_age_days より古くて捨てた件数
     template_lines: int = 0  # テンプレートとみなして本文から外した行の種類数
     error: str = ""
     samples: list[str] = field(default_factory=list)
@@ -538,6 +544,23 @@ def title_key(title: str) -> str:
     return re.sub(r"[\s　【】「」『』（）()\[\]・:：\-–—|｜/／]+", "", title)
 
 
+def drop_old_items(
+    items: list[Item], max_age_days: int, today: date | None = None
+) -> tuple[list[Item], int]:
+    """`max_age_days` より古いアイテムを落とす。残ったアイテムと落とした件数を返す。
+
+    **日付が取れなかったアイテムは残す。** 日付が無い＝古いとは限らないし、
+    一覧ページの日付の拾い方が壊れたときに（全件が日付なしになる）
+    黙って全部消えるのが一番まずい。日付なしの件数は dry-run の表示で見える。
+    """
+    if max_age_days <= 0:
+        return items, 0
+    today = today or datetime.now(timezone.utc).astimezone().date()
+    cutoff = (today - timedelta(days=max_age_days)).isoformat()
+    keep = [i for i in items if not i.published or i.published >= cutoff]
+    return keep, len(items) - len(keep)
+
+
 def fetch_items(source: Source) -> list[Item]:
     """ソース定義に従ってアイテムを取ってくる。取得と解析の分岐はここだけ。
 
@@ -577,6 +600,7 @@ def collect_source(
         matched = [i for i in items if keep.search(i.title)]
         result.filtered = len(items) - len(matched)
         items = matched
+    items, result.aged_out = drop_old_items(items, source.max_age_days)
     fresh: list[Item] = []
     for item in items:
         key = title_key(item.title)
@@ -689,12 +713,12 @@ def main(argv: list[str] | None = None) -> int:
     ]
 
     print()
-    print("| ソース | 取得 | 新規 | 既出 | 対象外 | 状態 |")
-    print("|---|---:|---:|---:|---:|---|")
+    print("| ソース | 取得 | 新規 | 既出 | 対象外 | 期限切れ | 状態 |")
+    print("|---|---:|---:|---:|---:|---:|---|")
     for r in results:
         status = f"⚠️ {r.error}" if r.error else "ok"
         print(f"| {r.source.name} | {r.fetched} | {r.written} | {r.skipped} "
-              f"| {r.filtered} | {status} |")
+              f"| {r.filtered} | {r.aged_out} | {status} |")
     print()
     for r in results:
         if r.template_lines:

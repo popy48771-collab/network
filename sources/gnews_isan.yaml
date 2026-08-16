@@ -1,0 +1,15 @@
+# 文化財の外向き（登録・推薦・観光との接続）。既存の gnews_bunkazai は
+# 保存・修理・防災に絞ってあるので、遺産としての語られ方がまるごと抜けていた。
+#
+# 「ユネスコ」単独は教育・科学の話が大量に混ざるので入れない。
+
+id: gnews_isan
+name: Googleニュース「世界遺産・無形文化遺産」
+kind: rss
+url: https://news.google.com/rss/search?q=%E4%B8%96%E7%95%8C%E9%81%BA%E7%94%A3%20OR%20%E7%84%A1%E5%BD%A2%E6%96%87%E5%8C%96%E9%81%BA%E7%94%A3%20OR%20%E9%87%8D%E8%A6%81%E7%84%A1%E5%BD%A2%E6%B0%91%E4%BF%97%E6%96%87%E5%8C%96%E8%B2%A1&hl=ja&gl=JP&ceid=JP:ja
+query: "世界遺産 OR 無形文化遺産 OR 重要無形民俗文化財"
+tier: secondary
+country: JP
+lang: ja
+enabled: true
+max_items: 60

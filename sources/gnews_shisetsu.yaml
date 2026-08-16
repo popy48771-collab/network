@@ -1,0 +1,14 @@
+# 文化施設の老朽化・休館・建て替え。公共ホールの更新期が重なっていて、
+# 「作る政策」ではなく「畳む政策」がどう語られるかを見るための母集団。
+# 既存の gnews_gekijo は助成・補助金・指定管理に絞ってあるので重ならない。
+
+id: gnews_shisetsu
+name: Googleニュース「文化施設の改修・休館」
+kind: rss
+url: https://news.google.com/rss/search?q=%28%E6%96%87%E5%8C%96%E4%BC%9A%E9%A4%A8%20OR%20%E5%B8%82%E6%B0%91%E4%BC%9A%E9%A4%A8%20OR%20%E6%96%87%E5%8C%96%E3%83%9B%E3%83%BC%E3%83%AB%29%20%28%E6%94%B9%E4%BF%AE%20OR%20%E5%BB%BA%E3%81%A6%E6%9B%BF%E3%81%88%20OR%20%E4%BC%91%E9%A4%A8%20OR%20%E8%80%81%E6%9C%BD%E5%8C%96%29&hl=ja&gl=JP&ceid=JP:ja
+query: "(文化会館 OR 市民会館 OR 文化ホール) (改修 OR 建て替え OR 休館 OR 老朽化)"
+tier: secondary
+country: JP
+lang: ja
+enabled: true
+max_items: 60

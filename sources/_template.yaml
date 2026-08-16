@@ -11,6 +11,11 @@ lang: ja
 enabled: true
 max_items: 60              # 1回の実行で見る最大件数
 fetch_body: false          # 本文を取りに行くか。tier: primary のときだけ有効
+max_age_days: 0            # これより古いアイテムを捨てる。0 は無制限（既定）
+                           # Googleニュース検索は数年前の記事も返す。母集団の時間幅を
+                           # 絞ると「直近で急に強まった結びつき」が読みやすくなる代わりに、
+                           # 記事数は減る。設定したら decisions.md に記録すること
+                           # 日付が取れなかったアイテムは（古いとは限らないので）残る
 
 # --- Google アラートを使う場合 ---
 # https://www.google.com/alerts でキーワードを登録し、配信先を「RSSフィード」にすると

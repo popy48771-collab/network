@@ -1,0 +1,13 @@
+# 中間支援組織。国と現場の間で誰が配分を決めているかは、
+# 「文化政策」「文化庁」の検索語では拾えない（記事の主語が財団やアーツカウンシルになるため）。
+
+id: gnews_artscouncil
+name: Googleニュース「アーツカウンシル・文化財団」
+kind: rss
+url: https://news.google.com/rss/search?q=%E3%82%A2%E3%83%BC%E3%83%84%E3%82%AB%E3%82%A6%E3%83%B3%E3%82%B7%E3%83%AB%20OR%20%E6%96%87%E5%8C%96%E8%B2%A1%E5%9B%A3&hl=ja&gl=JP&ceid=JP:ja
+query: "アーツカウンシル OR 文化財団"
+tier: secondary
+country: JP
+lang: ja
+enabled: true
+max_items: 60

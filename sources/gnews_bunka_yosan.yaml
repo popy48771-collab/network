@@ -1,0 +1,13 @@
+# 金の話。概算要求・予算・基金は文化政策の意思がいちばん露骨に出る場所だが、
+# 見出しに「文化政策」とは書かれないので既存の検索語では落ちていた。
+
+id: gnews_bunka_yosan
+name: Googleニュース「文化予算・概算要求」
+kind: rss
+url: https://news.google.com/rss/search?q=%28%E6%96%87%E5%8C%96%E5%BA%81%20OR%20%E6%96%87%E5%8C%96%E8%8A%B8%E8%A1%93%29%20%28%E4%BA%88%E7%AE%97%20OR%20%E6%A6%82%E7%AE%97%E8%A6%81%E6%B1%82%20OR%20%E5%9F%BA%E9%87%91%29&hl=ja&gl=JP&ceid=JP:ja
+query: "(文化庁 OR 文化芸術) (予算 OR 概算要求 OR 基金)"
+tier: secondary
+country: JP
+lang: ja
+enabled: true
+max_items: 60

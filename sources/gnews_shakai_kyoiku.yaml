@@ -1,0 +1,15 @@
+# 社会教育側。図書館法・社会教育法は dict/policies.yaml に登録してあるのに、
+# それを含む記事を集める検索語が無かった（辞書にあっても母集団に無ければ図に出ない）。
+#
+# 「図書館」単独はイベント告知と新刊紹介が大半になるので、制度側の語との AND で絞る。
+
+id: gnews_shakai_kyoiku
+name: Googleニュース「図書館・公民館（社会教育）」
+kind: rss
+url: https://news.google.com/rss/search?q=%28%E5%9B%B3%E6%9B%B8%E9%A4%A8%20OR%20%E5%85%AC%E6%B0%91%E9%A4%A8%29%20%28%E6%8C%87%E5%AE%9A%E7%AE%A1%E7%90%86%20OR%20%E5%9B%B3%E6%9B%B8%E9%A4%A8%E6%B3%95%20OR%20%E7%A4%BE%E4%BC%9A%E6%95%99%E8%82%B2%20OR%20%E5%8F%B8%E6%9B%B8%29&hl=ja&gl=JP&ceid=JP:ja
+query: "(図書館 OR 公民館) (指定管理 OR 図書館法 OR 社会教育 OR 司書)"
+tier: secondary
+country: JP
+lang: ja
+enabled: true
+max_items: 60

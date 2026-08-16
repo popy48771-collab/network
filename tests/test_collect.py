@@ -2,7 +2,9 @@
 
 from __future__ import annotations
 
+from datetime import date
 from pathlib import Path
+from urllib.parse import parse_qs, urlsplit
 
 import pytest
 
@@ -153,6 +155,45 @@ def test_title_pattern_filters_a_too_wide_feed(tmp_path, monkeypatch):
     assert result.filtered == 1
 
 
+def test_max_age_days_is_off_by_default():
+    """既定では時間で捨てない。母集団の時間幅を変えるのは明示的な設定だけ。"""
+    assert collect.Source(id="s", name="n", url="https://e.com/").max_age_days == 0
+    items = [collect.Item(title="古い記事", url="https://e.com/1", published="2017-07-21")]
+    keep, dropped = collect.drop_old_items(items, 0)
+    assert (len(keep), dropped) == (1, 0)
+
+
+def test_old_items_are_dropped_when_max_age_is_set():
+    items = [
+        collect.Item(title="9年前", url="https://e.com/1", published="2017-07-21"),
+        collect.Item(title="境界のちょうど上", url="https://e.com/2", published="2026-06-16"),
+        collect.Item(title="昨日", url="https://e.com/3", published="2026-08-15"),
+    ]
+    keep, dropped = collect.drop_old_items(items, 61, today=date(2026, 8, 16))
+    assert [i.title for i in keep] == ["境界のちょうど上", "昨日"]
+    assert dropped == 1
+
+
+def test_items_without_a_date_survive_the_age_filter():
+    """日付なし＝古い、ではない。一覧ページの日付の拾い方が壊れたときに
+    黙って全件消えるのを避ける（消えると気付けない）。"""
+    items = [collect.Item(title="日付なし", url="https://e.com/1")]
+    keep, dropped = collect.drop_old_items(items, 7, today=date(2026, 8, 16))
+    assert (len(keep), dropped) == (1, 0)
+
+
+def test_aged_out_items_are_counted_in_the_result(tmp_path, monkeypatch):
+    items = [
+        collect.Item(title="古い記事", url="https://e.com/1", published="2017-07-21"),
+        collect.Item(title="新しい記事", url="https://e.com/2",
+                     published=date.today().isoformat()),
+    ]
+    monkeypatch.setattr(collect, "fetch_items", lambda source: items)
+    source = collect.Source(id="s", name="n", url="https://e.com/rss", max_age_days=30)
+    result = collect.collect_source(source, tmp_path, set(), set(), dry_run=True)
+    assert (result.written, result.aged_out) == (1, 1)
+
+
 def test_broken_pattern_is_reported_before_fetching(tmp_path):
     source = collect.Source(id="s", name="n", url="https://e.go.jp/rss", title_pattern="文化(")
     result = collect.collect_source(source, tmp_path, set(), set(), dry_run=True)
@@ -287,6 +328,22 @@ def test_shipped_sources_are_valid():
         # 一覧ページはパターン無しだとナビまで記事になる
         if source.kind == "html_list":
             assert source.link_pattern, f"{source.id}: link_pattern が無い"
+
+
+def test_google_news_urls_have_matching_locale_params():
+    """hl / gl / ceid は3つセットで揃っていないとフィードが空になる。
+
+    ソースは YAML を1枚足すだけで増やせるようにしてあるので、
+    URL を手で組むときの取り違えをここで止める。
+    """
+    for source in collect.load_sources(ROOT / "sources"):
+        if "news.google.com" not in source.url:
+            continue
+        query = parse_qs(urlsplit(source.url).query)
+        assert query.get("q"), f"{source.id}: 検索語が無い"
+        assert query.get("hl") == ["ja"], f"{source.id}: hl"
+        assert query.get("gl") == ["JP"], f"{source.id}: gl"
+        assert query.get("ceid") == ["JP:ja"], f"{source.id}: ceid"
 
 
 def test_template_is_not_loaded_as_a_source():
