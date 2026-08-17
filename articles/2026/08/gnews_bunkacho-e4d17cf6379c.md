@@ -1,0 +1,12 @@
+---
+title: "「三献」軸に食文化調査 文化庁事業で価値検証 奄美食育食文化プロジェクト|芸能・文化"
+date: 2026-08-17
+source: "nankainn.com"
+url: "https://news.google.com/rss/articles/CBMi1wJBVV95cUxOYkp0bmlDUVkzejkyWVp3XzVYTnlTWnhWcUFmWGdHYzZGbFptazFoNzhBaHJEZVdaQTFETlI5TXRjb29ZYzNpUkxJMGdQVER3OVhJSkwzX0loT2hoRjhyRF9xXzV1dkh3UWFuTkM2eXdTSHp1V0c5cmp2d2hIRUVRMzNMZ0hjOTJfa09veHJQTGU1UUdNem5vMGx1b3duU0dMZ3hBNHpJRHBuY2h4ckNLWDVLcjdqZTAwclUwbDViZF96dmwyeWwzVzBvdHotaUYzNjFMT3A1S2wxUE13ODdTOVJZUVZ5WXRPaVRYdWdyNWFfMzJYbGNQd2NzX2RYZk1ubU41eVVSVFBEZDJDRUZ0d2ljcE9iVTFOSnY5VGltUmY0dXU0bXRBclZCajZLdE1NSW5jR1lrc3BXRVZhSjJ0d2lsODBpek5HbzZmRDZESzk4aGtMdG84?oc=5"
+collected_by: gnews_bunkacho
+tier: secondary
+lang: ja
+country: JP
+---
+
+「三献」軸に食文化調査 文化庁事業で価値検証 奄美食育食文化プロジェクト|芸能・文化。
