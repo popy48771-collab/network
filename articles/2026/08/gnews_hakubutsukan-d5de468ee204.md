@@ -1,0 +1,12 @@
+---
+title: "大学生が博物館実習 市教諭のパワーアップ研修も 奄美博物館|政治・行政"
+date: 2026-08-19
+source: "nankainn.com"
+url: "https://news.google.com/rss/articles/CBMi3AJBVV95cUxQVHMzTjlZeHY0VjdCWmQtNHdPbGFtQUV0NGp0ZVhNNWpXUmdyWi1SeHJMRW5tdHdqQWU5Umhaa3dxTXctVDN0Y2tFSDFEVndxVFVVQ2kyUTRNTVk2dTdac3hMUUN3Sy1iV1ZEYU1WczZrcmhyOUw2dnlaZWpSYjZhNGNzS0RfNG96SEwxV1ctZFp1d1BJQXdMUWRoc0FZTWxscUtkLTlMN1Q2QmZzdlljeXVLWjY2ZEw4N28ycTZFZmRFUVV5TGhWMkctTjRUTldfT0FSMmFFenp0b3FaT3hlNGp6QnpScjJmRzNHSXVtUVhGMUJ3Und0dnctY2VDZHVPdVE2MmlybW9iUGZSaV9YZWZrbllVZ1R5ZXAyQno3YnJ2ZGo4QnQ5NVo5UG1HTjBTWWV5RnJ5R1htc1RWNFlwbHpVeTg0NEw4WTBEUUdfNktTRk5yWE1vdk5ad0o?oc=5"
+collected_by: gnews_hakubutsukan
+tier: secondary
+lang: ja
+country: JP
+---
+
+大学生が博物館実習 市教諭のパワーアップ研修も 奄美博物館|政治・行政。
