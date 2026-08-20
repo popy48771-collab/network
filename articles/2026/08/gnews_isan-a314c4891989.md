@@ -1,0 +1,12 @@
+---
+title: "豪華けんらんな屋台と勇壮なお囃子が魅力 ユネスコの無形文化遺産「花輪ばやし」が開幕! 花輪のまちが熱気に包まれる 秋田"
+date: 2026-08-20
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMijgFBVV95cUxOM3ctSk4wN09haWdySjVZZExaRldsWHVscnhHTEh2LUpYNlZqZUhkV25wMFFmdTBkQTlrYzNKVUl6SjF4NXpfazNic2NlMWkxS3dEQ3R2c3RfN2ZHendoeHlyVEhvUTZOeHlWVTB1Q0szU3A4Tl81NWcxUHV3OTlKZVRKdmFWWFNsOGRoZmR30gGAAUFVX3lxTE5ESlNvZHZBMk1IMGJlMldqYWZpUnhKaVZIYS11RlU4cE1UU1B2QkNDVDk3QmxtU2M2czdLdXlYanoxU28yY1JnOFo0Q2ljS2hPTkt3S2FST3hBQzh1YVVTd3pDM1g0MUZMMllsbUliWUplbDZjQzV4cnJuTjZWZDJU?oc=5"
+collected_by: gnews_isan
+tier: secondary
+lang: ja
+country: JP
+---
+
+豪華けんらんな屋台と勇壮なお囃子が魅力 ユネスコの無形文化遺産「花輪ばやし」が開幕! 花輪のまちが熱気に包まれる 秋田。

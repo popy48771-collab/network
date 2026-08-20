@@ -1,14 +1,14 @@
 # 共起ネットワーク 分析レポート
 
-生成: 2026-08-19T21:21:26+00:00
+生成: 2026-08-20T21:23:46+00:00
 
 | 項目 | 値 |
 |---|---|
-| 記事数 | 1145 |
-| 対象期間 | 2016-10-27 〜 2026-08-19 |
-| 共起単位数（文） | 1589 |
-| ノード数 | 318（絞り込み前 3778） |
-| エッジ数 | 588（絞り込み前 29245） |
+| 記事数 | 1197 |
+| 対象期間 | 2016-10-27 〜 2026-08-20 |
+| 共起単位数（文） | 1664 |
+| ノード数 | 337（絞り込み前 3899） |
+| エッジ数 | 653（絞り込み前 30273） |
 
 [Gephi Lite で開く](https://lite.gephi.org/?file=https://raw.githubusercontent.com/popy48771-collab/network/main/out/network.gexf)
 
@@ -18,36 +18,36 @@
 
 | # | ノード | 種別 | 出現文数 | 次数 | 媒介中心性 |
 |---:|---|---|---:|---:|---:|
-| 1 | 文化庁 | 組織・地域・人物 | 193 | 35 | 0.2431 |
-| 2 | 世界文化遺産 | 政策・制度・法令 | 126 | 22 | 0.0691 |
-| 3 | 登録 | 語 | 106 | 25 | 0.0942 |
-| 4 | 飛鳥 | 語 | 65 | 15 | 0.0037 |
-| 5 | 藤原 | 語 | 62 | 15 | 0.0037 |
-| 6 | 文化 | 語 | 59 | 10 | 0.1213 |
-| 7 | 認定 | 語 | 54 | 14 | 0.1110 |
-| 8 | 文化審議会 | 組織・地域・人物 | 52 | 21 | 0.0856 |
-| 9 | 日本遺産 | 政策・制度・法令 | 51 | 9 | 0.1482 |
-| 10 | 博物館 | 語 | 50 | 20 | 0.1113 |
-| 11 | 宮都 | 語 | 49 | 13 | 0.0232 |
-| 12 | 美術館 | 語 | 48 | 11 | 0.1473 |
-| 13 | 指定管理者制度 | 政策・制度・法令 | 41 | 11 | 0.2044 |
-| 14 | 改正 | 語 | 37 | 9 | 0.0365 |
-| 15 | 日本 | 語 | 37 | 3 | 0.0155 |
-| 16 | 事業 | 語 | 35 | 6 | 0.0278 |
+| 1 | 文化庁 | 組織・地域・人物 | 201 | 40 | 0.2672 |
+| 2 | 世界文化遺産 | 政策・制度・法令 | 134 | 27 | 0.0686 |
+| 3 | 登録 | 語 | 113 | 26 | 0.0583 |
+| 4 | 飛鳥 | 語 | 68 | 17 | 0.0145 |
+| 5 | 藤原 | 語 | 65 | 17 | 0.0145 |
+| 6 | 文化 | 語 | 63 | 12 | 0.1506 |
+| 7 | 日本遺産 | 政策・制度・法令 | 57 | 9 | 0.0500 |
+| 8 | 文化審議会 | 組織・地域・人物 | 55 | 21 | 0.0775 |
+| 9 | 認定 | 語 | 55 | 14 | 0.0616 |
+| 10 | 宮都 | 語 | 52 | 12 | 0.0089 |
+| 11 | 博物館 | 語 | 51 | 21 | 0.1124 |
+| 12 | 美術館 | 語 | 48 | 11 | 0.1019 |
+| 13 | 指定管理者制度 | 政策・制度・法令 | 44 | 12 | 0.1777 |
+| 14 | 改正 | 語 | 38 | 9 | 0.0290 |
+| 15 | 日本 | 語 | 38 | 2 | 0.0000 |
+| 16 | 事業 | 語 | 36 | 6 | 0.0124 |
 | 17 | 文化政策 | 語 | 35 | 1 | 0.0000 |
-| 18 | 著作権法 | 政策・制度・法令 | 32 | 14 | 0.0370 |
-| 19 | 決定 | 語 | 31 | 11 | 0.0718 |
-| 20 | 文化財保存活用地域計画 | 政策・制度・法令 | 30 | 3 | 0.0104 |
-| 21 | 支援 | 語 | 30 | 3 | 0.0075 |
-| 22 | 枚目 | 語 | 30 | 15 | 0.0512 |
-| 23 | 活用 | 語 | 30 | 2 | 0.0082 |
-| 24 | 文化財 | 語 | 28 | 1 | 0.0000 |
-| 25 | 答申 | 語 | 26 | 15 | 0.0571 |
-| 26 | 博物館法 | 政策・制度・法令 | 25 | 3 | 0.0052 |
-| 27 | 文化芸術 | 語 | 25 | 2 | 0.0021 |
-| 28 | ユネスコ | 組織・地域・人物 | 24 | 5 | 0.0002 |
-| 29 | 政策 | 語 | 24 | 4 | 0.0474 |
-| 30 | 策定 | 語 | 24 | 6 | 0.0060 |
+| 18 | 著作権法 | 政策・制度・法令 | 33 | 15 | 0.0411 |
+| 19 | 決定 | 語 | 32 | 11 | 0.0805 |
+| 20 | 支援 | 語 | 31 | 3 | 0.0073 |
+| 21 | 枚目 | 語 | 31 | 15 | 0.0635 |
+| 22 | 文化財保存活用地域計画 | 政策・制度・法令 | 30 | 3 | 0.0099 |
+| 23 | 活用 | 語 | 30 | 2 | 0.0027 |
+| 24 | 政策 | 語 | 29 | 6 | 0.1402 |
+| 25 | 文化財 | 語 | 29 | 1 | 0.0000 |
+| 26 | 委員会 | 語 | 28 | 11 | 0.1249 |
+| 27 | 文化観光 | 政策・制度・法令 | 27 | 4 | 0.0001 |
+| 28 | ユネスコ | 組織・地域・人物 | 26 | 6 | 0.0112 |
+| 29 | 博物館法 | 政策・制度・法令 | 26 | 3 | 0.0050 |
+| 30 | 文化芸術 | 語 | 26 | 2 | 0.0021 |
 
 ## 話題を橋渡ししているノード（媒介中心性 上位）
 
@@ -55,21 +55,21 @@
 
 | # | ノード | 媒介中心性 | 出現文数 |
 |---:|---|---:|---:|
-| 1 | 文化庁 | 0.2431 | 193 |
-| 2 | 指定管理者制度 | 0.2044 | 41 |
-| 3 | 日本遺産 | 0.1482 | 51 |
-| 4 | 美術館 | 0.1473 | 48 |
-| 5 | 文化 | 0.1213 | 59 |
-| 6 | 周年 | 0.1206 | 10 |
-| 7 | 博物館 | 0.1113 | 50 |
-| 8 | 認定 | 0.1110 | 54 |
-| 9 | 登録 | 0.0942 | 106 |
-| 10 | 選定 | 0.0919 | 12 |
-| 11 | 文化審議会 | 0.0856 | 52 |
-| 12 | 助成 | 0.0820 | 21 |
-| 13 | 決定 | 0.0718 | 31 |
-| 14 | 世界文化遺産 | 0.0691 | 126 |
-| 15 | イベント | 0.0660 | 17 |
+| 1 | 文化庁 | 0.2672 | 201 |
+| 2 | 指定管理者制度 | 0.1777 | 44 |
+| 3 | 文化 | 0.1506 | 63 |
+| 4 | 政策 | 0.1402 | 29 |
+| 5 | 委員会 | 0.1249 | 28 |
+| 6 | 博物館 | 0.1124 | 51 |
+| 7 | 美術館 | 0.1019 | 48 |
+| 8 | 助成 | 0.0938 | 22 |
+| 9 | 決定 | 0.0805 | 32 |
+| 10 | 文化審議会 | 0.0775 | 55 |
+| 11 | 世界文化遺産 | 0.0686 | 134 |
+| 12 | 選定 | 0.0668 | 12 |
+| 13 | 枚目 | 0.0635 | 31 |
+| 14 | 認定 | 0.0616 | 55 |
+| 15 | 登録 | 0.0583 | 113 |
 
 ## 結びつきの強いペア（NPMI 上位）
 
@@ -98,13 +98,13 @@
 | 21 | 四神 — 管理施設 | 1.000 | 4 | 1.000 |
 | 22 | nnn — 日掲載 | 1.000 | 4 | 1.000 |
 | 23 | 規制 — 輸入音楽CD | 1.000 | 4 | 1.000 |
-| 24 | 出現 — 石舞台古墳 | 1.000 | 4 | 1.000 |
-| 25 | 藤原 — 飛鳥 | 0.985 | 62 | 0.954 |
-| 26 | コミケ — ポイント | 0.968 | 5 | 0.833 |
-| 27 | コミケ — 行方 | 0.968 | 5 | 0.833 |
-| 28 | 弁理士 — ポイント | 0.968 | 5 | 0.833 |
-| 29 | 弁理士 — 行方 | 0.968 | 5 | 0.833 |
-| 30 | 次創作 — ポイント | 0.968 | 5 | 0.833 |
+| 24 | 推進本部 — 食文化推進本部 | 1.000 | 4 | 1.000 |
+| 25 | 対応要領 — 差別 | 1.000 | 4 | 1.000 |
+| 26 | 対応要領 — 解消 | 1.000 | 4 | 1.000 |
+| 27 | 差別 — 解消 | 1.000 | 4 | 1.000 |
+| 28 | 藤原 — 飛鳥 | 0.986 | 65 | 0.956 |
+| 29 | コミケ — ポイント | 0.969 | 5 | 0.833 |
+| 30 | コミケ — 行方 | 0.969 | 5 | 0.833 |
 
 ## 直近で急に強まった結びつき（surprise 上位）
 
@@ -112,85 +112,85 @@
 
 | # | ペア | surprise | 直近NPMI | 以前NPMI | 新規 |
 |---:|---|---:|---:|---:|:--:|
-| 1 | 出現 — 石舞台古墳 | +1.000 | 1.000 | 0.000 | ★ |
-| 2 | カインホア — デー | +1.000 | 1.000 | 0.000 | ★ |
-| 3 | 相談窓口 — 障害 | +1.000 | 1.000 | 0.000 | ★ |
-| 4 | 相談窓口 — 理由 | +1.000 | 1.000 | 0.000 | ★ |
-| 5 | 相談窓口 — 職員 | +1.000 | 1.000 | 0.000 | ★ |
-| 6 | 障害 — 理由 | +1.000 | 1.000 | 0.000 | ★ |
-| 7 | 障害 — 職員 | +1.000 | 1.000 | 0.000 | ★ |
-| 8 | 理由 — 職員 | +1.000 | 1.000 | 0.000 | ★ |
-| 9 | オリックス — 登録記念試合 | +0.940 | 0.940 | 0.000 | ★ |
-| 10 | プロジェクト — 奄美食育食文化 | +0.891 | 0.891 | 0.000 | ★ |
-| 11 | 相談窓口 — 関する | +0.873 | 0.873 | 0.000 | ★ |
-| 12 | 障害 — 関する | +0.873 | 0.873 | 0.000 | ★ |
-| 13 | 理由 — 関する | +0.873 | 0.873 | 0.000 | ★ |
-| 14 | 職員 — 関する | +0.873 | 0.873 | 0.000 | ★ |
-| 15 | 無形文化遺産 — 盆踊り | +0.850 | 0.850 | 0.000 | ★ |
-| 16 | コラボ — 奈良県 | +0.801 | 0.801 | 0.000 | ★ |
-| 17 | 奄美食育食文化 — 事業 | +0.801 | 0.801 | 0.000 | ★ |
-| 18 | 実習 — 目指す | +0.756 | 0.756 | 0.000 | ★ |
-| 19 | 認定 — 周年記念 | +0.756 | 0.756 | 0.000 | ★ |
-| 20 | クアンチ省 — 文化 | +0.717 | 0.717 | 0.000 | ★ |
+| 1 | 推進本部 — 食文化推進本部 | +1.000 | 1.000 | 0.000 | ★ |
+| 2 | 対応要領 — 差別 | +1.000 | 1.000 | 0.000 | ★ |
+| 3 | 対応要領 — 解消 | +1.000 | 1.000 | 0.000 | ★ |
+| 4 | 対応要領 — 障害 | +1.000 | 1.000 | 0.000 | ★ |
+| 5 | 対応要領 — 相談窓口 | +1.000 | 1.000 | 0.000 | ★ |
+| 6 | 対応要領 — 理由 | +1.000 | 1.000 | 0.000 | ★ |
+| 7 | 対応要領 — 職員 | +1.000 | 1.000 | 0.000 | ★ |
+| 8 | 差別 — 解消 | +1.000 | 1.000 | 0.000 | ★ |
+| 9 | 差別 — 障害 | +1.000 | 1.000 | 0.000 | ★ |
+| 10 | 差別 — 相談窓口 | +1.000 | 1.000 | 0.000 | ★ |
+| 11 | 差別 — 理由 | +1.000 | 1.000 | 0.000 | ★ |
+| 12 | 差別 — 職員 | +1.000 | 1.000 | 0.000 | ★ |
+| 13 | 解消 — 障害 | +1.000 | 1.000 | 0.000 | ★ |
+| 14 | 解消 — 相談窓口 | +1.000 | 1.000 | 0.000 | ★ |
+| 15 | 解消 — 理由 | +1.000 | 1.000 | 0.000 | ★ |
+| 16 | 解消 — 職員 | +1.000 | 1.000 | 0.000 | ★ |
+| 17 | 障害 — 相談窓口 | +1.000 | 1.000 | 0.000 | ★ |
+| 18 | 障害 — 理由 | +1.000 | 1.000 | 0.000 | ★ |
+| 19 | 障害 — 職員 | +1.000 | 1.000 | 0.000 | ★ |
+| 20 | 相談窓口 — 理由 | +1.000 | 1.000 | 0.000 | ★ |
 
 ## 文化施設・政策と結びついている語
 
-- **世界文化遺産**（政策・制度・法令, 出現126文）: 飛鳥(0.71), 藤原(0.70), 宮都(0.66), 登録(0.64), 彦根城(0.45), 登録決定(0.45), 登録記念試合(0.44), オリックス(0.42)
-- **著作権法**（政策・制度・法令, 出現32文）: 改正案(0.81), 閣議決定(0.70), 改正(0.69), 起きる(0.68), 危険(0.65), 進行中(0.62), 歌手(0.59), 国会(0.58)
-- **文化観光推進法**（政策・制度・法令, 出現20文）: 拠点計画(0.86), 地域計画(0.79), 観光庁(0.74), 報道(0.73), 認定(0.66), 拠点(0.54), 計画(0.50), 支援(0.33)
-- **指定管理者制度**（政策・制度・法令, 出現41文）: 図書館(0.69), 主催(0.54), 運営(0.45), 選定(0.36), 美術館(0.35), 求める(0.35), 市民(0.34), ホール(0.34)
-- **日本遺産**（政策・制度・法令, 出現51文）: 生きる(0.64), 紡ぐ(0.57), 公募型プロポーザル(0.48), 魅力(0.48), 周年記念(0.44), 歴史(0.42), 紹介(0.37), 周年(0.36)
-- **東京文化会館**（文化施設, 出現14文）: 殿堂(0.80), オペラ(0.72), 長期休館(0.67), 改修(0.57)
-- **史跡名勝天然記念物**（政策・制度・法令, 出現7文）: 指定等(0.91), 登録記念物(0.78), 答申(0.59), 文化審議会(0.41)
-- **無形文化遺産**（政策・制度・法令, 出現13文）: 盆踊り(0.77), ユネスコ(0.66), 文化審議会(0.31), 登録(0.30)
-- **文化資源**（政策・制度・法令, 出現14文）: 記念物課(0.89), 政策(0.72), 文化庁(0.40)
-- **博物館法**（政策・制度・法令, 出現25文）: 改正(0.70), 博物館登録制度(0.66), 博物館(0.44)
-- **芸術祭**（政策・制度・法令, 出現19文）: 国際(0.60), 再開(0.57), 中止(0.45)
-- **文化財保存活用地域計画**（政策・制度・法令, 出現30文）: 長岡市(0.55), 認定(0.53), 記念(0.37)
-- **文化観光**（政策・制度・法令, 出現22文）: カインホア(0.72), デー(0.62)
-- **国宝**（政策・制度・法令, 出現15文）: 亀虎古墳壁画(0.94)
+- **世界文化遺産**（政策・制度・法令, 出現134文）: 飛鳥(0.71), 藤原(0.70), 登録(0.66), 宮都(0.66), 彦根城(0.46), 登録決定(0.45), 奈良(0.44), 登録記念試合(0.43)
+- **著作権法**（政策・制度・法令, 出現33文）: 改正案(0.81), 改正(0.70), 閣議決定(0.69), 起きる(0.68), 危険(0.65), 進行中(0.61), 歌手(0.59), 国会(0.57)
+- **文化観光推進法**（政策・制度・法令, 出現24文）: 拠点計画(0.83), 観光庁(0.78), 地域計画(0.77), 報道(0.70), 認定(0.67), 拠点(0.61), 件認定(0.59), 計画(0.52)
+- **指定管理者制度**（政策・制度・法令, 出現44文）: 図書館(0.68), 主催(0.54), 運営(0.44), 公募(0.37), 選定(0.36), 美術館(0.34), 求める(0.34), 劇場(0.34)
+- **日本遺産**（政策・制度・法令, 出現57文）: 生きる(0.63), 紡ぐ(0.57), 公募型プロポーザル(0.47), 魅力(0.45), 歴史(0.44), 周年記念(0.42), 周年(0.38), 紹介(0.36)
+- **東京文化会館**（文化施設, 出現14文）: 殿堂(0.80), オペラ(0.72), 長期休館(0.68), 改修(0.58)
+- **史跡名勝天然記念物**（政策・制度・法令, 出現7文）: 指定等(0.91), 登録記念物(0.79), 答申(0.60), 文化審議会(0.41)
+- **文化観光**（政策・制度・法令, 出現27文）: 推進本部(0.68), 食文化推進本部(0.68), カインホア(0.68), デー(0.59)
+- **無形文化遺産**（政策・制度・法令, 出現15文）: 盆踊り(0.74), ユネスコ(0.70), 文化審議会(0.28), 登録(0.27)
+- **文化資源**（政策・制度・法令, 出現14文）: 記念物課(0.90), 政策(0.69), 文化庁(0.40)
+- **博物館法**（政策・制度・法令, 出現26文）: 改正(0.69), 博物館登録制度(0.64), 博物館(0.40)
+- **芸術祭**（政策・制度・法令, 出現19文）: 国際(0.63), 再開(0.57), 中止(0.44)
+- **国宝**（政策・制度・法令, 出現17文）: 亀虎古墳壁画(0.91), 彦根城(0.59)
+- **文化財保存活用地域計画**（政策・制度・法令, 出現30文）: 長岡市(0.55), 認定(0.53), 記念(0.36)
 - **登録有形文化財**（政策・制度・法令, 出現5文）: 建造物(0.90)
 - **アーツカウンシル**（政策・制度・法令, 出現8文）: 沖縄(0.80)
-- **博物館登録制度**（政策・制度・法令, 出現7文）: 博物館法(0.66)
-- **文化財防災**（政策・制度・法令, 出現7文）: センター(0.63)
+- **博物館登録制度**（政策・制度・法令, 出現8文）: 博物館法(0.64)
+- **文化財防災**（政策・制度・法令, 出現7文）: センター(0.61)
 
 ## 話題のかたまり（Louvain コミュニティ）
 
-- **クラスタ 0**（34語）: 登録、世界文化遺産、藤原、飛鳥、宮都、委員会、登録記念試合、オリックス、ユネスコ、産経新聞、決議、奈良県
-- **クラスタ 1**（28語）: 博物館、枚目、解説、次創作、弁理士、コミケ、想定、行方、ポイント、中期目標、国立、閉館
-- **クラスタ 2**（26語）: 文化庁、売買、宗教法人、アンケート、事業、会議開催、事例、政策、ホームページ内、会議資料、記念物課、文化資源
-- **クラスタ 3**（23語）: 文化審議会、答申、議決、克彦、同審議会文化財分科会、文部科学大臣、審議、経る、認定等、保持者、選定、史跡名勝天然記念物
-- **クラスタ 4**（23語）: 日本遺産、文化、対象事業決定、周年記念、東京芸術文化鑑賞、サポート助成、観光、生きる、歴史、紡ぐ、クアンチ省、公募型プロポーザル
-- **クラスタ 5**（19語）: 中止、助成金、不自由展、ビエンナーレ、ベネチア、フェスティバル、日産、ニスモフェスティバル、芸術祭、財団、あいちトリエンナーレ、明治安田クオリティオブライフ文化
-- **クラスタ 6**（17語）: 認定、地域計画、文化観光推進法、拠点計画、件目、県内、報道、観光庁、策定、宮城、文化財保存活用地域計画、計画
-- **クラスタ 8**（16語）: 指定管理者制度、アーツカウンシル東京、海外派遣プログラム、アートマネージメント人材等、派遣参加者、公募開始、図書館、主催、公募、運営、指定管理、求める
-- **クラスタ 7**（16語）: 著作権法、改正、改正案、閣議決定、歌手、危険、BGM使用料、進行中、使用料、成立、博物館法、可決
-- **クラスタ 9**（11語）: 関する、障害、相談窓口、理由、職員、検討会、古墳壁画、保存活用、支援、文化芸術、アーチスト
+- **クラスタ 0**（39語）: 世界文化遺産、登録、藤原、飛鳥、宮都、委員会、奈良、産経新聞、登録記念試合、ユネスコ、オリックス、奈良県
+- **クラスタ 1**（30語）: 博物館、枚目、解説、次創作、弁理士、コミケ、想定、行方、ポイント、中期目標、閉館、国立
+- **クラスタ 2**（23語）: 文化審議会、答申、議決、克彦、同審議会文化財分科会、審議、文部科学大臣、経る、認定等、保持者、選定、史跡名勝天然記念物
+- **クラスタ 3**（23語）: 文化庁、解消、差別、対応要領、関する、障害、相談窓口、理由、職員、会議資料、検討会、古墳壁画
+- **クラスタ 4**（22語）: 認定、地域計画、文化観光推進法、観光庁、拠点計画、件目、県内、報道、策定、宮城、拠点、地域
+- **クラスタ 5**（20語）: 中止、助成金、表現、ビエンナーレ、不自由展、ベネチア、あいちトリエンナーレ、フェスティバル、芸術祭、日産、ニスモフェスティバル、財団
+- **クラスタ 6**（20語）: 文化、長官、対象事業決定、漫画、経済、伊藤学司、東京芸術文化鑑賞、サポート助成、観光、アニメ、好循環、クアンチ省
+- **クラスタ 7**（18語）: 指定管理者制度、アーツカウンシル東京、海外派遣プログラム、アートマネージメント人材等、派遣参加者、公募開始、図書館、主催、公募、運営、センター、指定管理
+- **クラスタ 8**（17語）: 著作権法、改正、改正案、閣議決定、歌手、危険、BGM使用料、進行中、使用料、成立、博物館法、可決
+- **クラスタ 9**（14語）: 日本遺産、事業、周年記念、生きる、歴史、奄美食育食文化、紡ぐ、プロジェクト、公募型プロポーザル、活用、採択、作成
 
 ## 最近の記事
 
-新しい順に20件（全1145件は `articles.html` / `articles.csv`）。
+新しい順に20件（全1197件は `articles.html` / `articles.csv`）。
 
+- [豪華けんらんな屋台と勇壮なお囃子が魅力 ユネスコの無形文化遺産「花輪ばやし」が開幕! 花輪のまちが熱気に包まれる 秋田](https://news.google.com/rss/articles/CBMijgFBVV95cUxOM3ctSk4wN09haWdySjVZZExaRldsWHVscnhHTEh2LUpYNlZqZUhkV25wMFFmdTBkQTlrYzNKVUl6SjF4NXpfazNic2NlMWkxS3dEQ3R2c3RfN2ZHendoeHlyVEhvUTZOeHlWVTB1Q0szU3A4Tl81NWcxUHV3OTlKZVRKdmFWWFNsOGRoZmR30gGAAUFVX3lxTE5ESlNvZHZBMk1IMGJlMldqYWZpUnhKaVZIYS11RlU4cE1UU1B2QkNDVDk3QmxtU2M2czdLdXlYanoxU28yY1JnOFo0Q2ljS2hPTkt3S2FST3hBQzh1YVVTd3pDM1g0MUZMMllsbUliWUplbDZjQzV4cnJuTjZWZDJU?oc=5)<br>　2026-08-20 / dメニューニュース
+- [第26期 文化審議会 著作権分科会 政策小委員会(第1回)を開催します](https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/94425101.html)<br>　2026-08-20 / 文化庁 広報・報道・お知らせ
+- [東京駅に奈良 明日香村の“石舞台古墳” 世界遺産登録をPR](https://news.google.com/rss/articles/CBMiWEFVX3lxTE43YXJOcHBacXlod3c5RXVDRnFsOERIU3ZlSDNpV25QUzhVSDM1U0ZyWDQzZlBjMm1iQ1F2VkZFNEZBbWM2OEtlbnozd1lwU2JQWnhSeXUtSms?oc=5)<br>　2026-08-20 / NHKニュース
+- [東京駅に世界遺産「石舞台古墳」出現 1/2スケールで再現、8月30日まで](https://news.google.com/rss/articles/CBMiV0FVX3lxTE5YeXRpN2dlbE5odFVyQkZBZmF0MHJxWTEzTXc5Z3hJV2oxaWU3MTZLTDAydW9zeFUxUEczZWdjRVRkVndsMW95UjJWVlVLYnA0Nm1uRy1Xbw?oc=5)<br>　2026-08-20 / TRAICY(トライシー)
+- [村野藤吾設計の「宇部市文化会館」、改修経て再始動 記念イベントも(みんなの経済新聞ネットワーク)](https://news.google.com/rss/articles/CBMif0FVX3lxTE9FeDBsWlBjTC16VGQ1T3ZnYVZHYVZPZDE5NWhlR2dSYnhFZ2pFZHV5MUduMHdUT1J2OS1qSFI2MVVxV0xqajRxV2NncTY1UzBZYVpxMDV6OVRzTWlRT2ltX2ZaVEMtU2pTTFRmQUhUYzlQNUpHZTZRQUtYcFdDOFU?oc=5)<br>　2026-08-20 / Yahoo!ニュース
+- [日本遺産大山詣り 10周年で記念事業 特別展示、ロゴ作成など](https://news.google.com/rss/articles/CBMiZEFVX3lxTE9nRThtak03WmlkelFCRmpqMElsSFplRU04OVZDUnpYcjgtQWNMS09VV0tRU01YVW5sV1FxcVVqZ29hTnk1N3Y1SmRuV3ZhVnppZExFZHBSaHZMYjBDU1QwbExQN08?oc=5)<br>　2026-08-20 / タウンニュース
+- [文化観光推進法で6計画を新規認定、計69計画に 観光庁、文化庁](https://news.google.com/rss/articles/CBMiUEFVX3lxTE0zWENzVV9oMWhXM2lwNjVEUFg4Zjc0bm05UFJWbDRFcHVJbWV4bVg2emdRN3VEQnpVbnFHOHl6RloxSGVZaC1NVHlha0xOQmRP?oc=5)<br>　2026-08-20 / 住宅新報
+- [府中市 四谷文化センター 市民の今日的ニーズに合致した施設機能を・・同センターが令和8年11月28日から大規模改修工事のため休館となります](https://news.google.com/rss/articles/CBMiTkFVX3lxTE9vSXVtRkJhYmJnU09HWVoxUE5yZW45ei1yWkdNUG5YZkt6VkVmSDJ3eEt5NVNZLXN2SldPemNXOWNSVHExMDFvZVBCV2FfQQ?oc=5)<br>　2026-08-20 / r-yuuki.jp
+- [大野町総合町民センターおよび大野町立図書館の指定管理者募集](https://news.google.com/rss/articles/CBMiUEFVX3lxTE00aWJiaG04cXpJWnNRQWlzb1BXa3Bpc1NxbFo2R1NHOTdTc204MGt3bW5aZGI3Q0N0dkZkcEQ5SGZ0ZlFXcnVqYTl6bEFMRDQ4?oc=5)<br>　2026-08-20 / town-ono.jp
+- [リニューアルした「宇部市文化会館」の「文化ホール」](https://news.google.com/rss/articles/CBMiWEFVX3lxTE1KNnktU2t4Vjg3Y3lEWDJxaURNNGZ2TXNHNV80VnZZV0ctajhDVnBWOWJJVHdjaTZ3R0tWRVBzTmVBeHRwWkdwcFJfdFNialk1UTJEM1RPcVE?oc=5)<br>　2026-08-20 / 山口宇部経済新聞
+- [ユネスコ無形文化遺産「花輪ばやし」開幕! 日本三大ばやしのひとつ 豪華けんらんな屋台...勇壮なお囃子とかけ声で観客を魅了 秋田・鹿角市](https://news.google.com/rss/articles/CBMihwFBVV95cUxPUFp3M2FiOHNFTWYzQzVZODJjeUVDUHQxZ2tXV18zTUVKVHhfZ3pwa2l5VEdsMjAyeFozOHZGTXNXbWJ5QTZiRkwyaExEd1Z2TUNMdnZnMkdXMFdRTHpqUXFzTEdPMkg2bG1MWURybzRDb1RVZ200eS1reUJ4b2puZnJjM2ZVSUU?oc=5)<br>　2026-08-20 / 日テレNEWS NNN
+- [ベトナム少数民族文化観光村で、タクコン祭を再現する。](https://news.google.com/rss/articles/CBMinAFBVV95cUxPZ0tiUlpiUUkyQ2gyRmdOazJYMTkzOXUzRXpIcS1peXh5X2p6Y2d0NWxqYUl1ZDk4UW1UNWMyc292TGJJZXFFY25rTHFyejZzSjB5Um9WV1ZMdUt5NVplUzBYeExGUGdaNDNoUWptMlNTcl92MG52R3lSbmVVTGw4M2pkM0E3S0JVUGpLWTl4OG1lNF81SWFJWWYtYl8?oc=5)<br>　2026-08-20 / Vietnam.vn
+- [ベトナム少数民族文化観光村:ハノイ西部における観光振興の核となる。](https://news.google.com/rss/articles/CBMisgFBVV95cUxQMFR4SEpFV2dXaXNZRkVveFVOcjlCbmFWaGRIY2R6WUw1X2ZGa0Vsd2pjNUlVUmJnLW8zUWx5cGMyMmEtX3FpQmtzMVhzM3FrTWRvSXZJdXROUVJib3B6b1BDVjROS1o5RDh1ckh6eU5yaVNBVUdUWDFpcTBHemgzWVlCdmNSN3QyaERydXRCVG5LbFNHUjlOZ2huV3AyOVQ3Tko4UDhKcFFCZFU0emR3dVBn?oc=5)<br>　2026-08-20 / Vietnam.vn
+- [ハノイ市は、文化村を主要な文化観光地へと変貌させることを目指している。](https://news.google.com/rss/articles/CBMioAFBVV95cUxQQWpjNGJsVDd2MGpRQ3JIR09TN1FQLVQwMTdfM1JUdW5KRWVJeExfSWxKTENrVzlLRjNJcmkwN2tSOF9ZNW5WYkxpeDhQVzB0Vk5HZHlQQU43OHlQUmhKdTN5enZuSDVpNHpudDNsSnh3THRCY1dzdk9XclJBNUJHSklVWmNFOXgtTTJodTFtel95WmtBUEt2NjZ1b2xQQk4z?oc=5)<br>　2026-08-20 / Vietnam.vn
+- [アルパの音色聴いて 下諏訪総合文化センター改修記念で29日 河瀬あゆかさん演奏会](https://news.google.com/rss/articles/CBMiUEFVX3lxTE5oOGw1bWFQTlFGemJXN2lTZGp3T3BxTkRrU0N0M25QcUtZTWtIRkpWSVN5dzd4a0tDMDNrVU5LM29td1BDZFk0d0RpNllQUE8w?oc=5)<br>　2026-08-20 / 市民新聞
+- [【国宝】彦根城、悲願の<世界遺産>登録へ5回目の挑戦...先輩・姫路城との差別化へ打ち出した「苦心の戦略」とは](https://news.google.com/rss/articles/CBMickFVX3lxTE9pay1KVmVaSndBR1NWcHdHaGw5OHZrc3FpdVhmYVBHbDh2VDJEeE9kRDJXa3dRMlI4TUw1S2ZrT0lScURUbmo5VDZ4V19xTVEtWmVjclBrRWs3Q3VtaWFjR3VHeC16Y3ZZcVNLNkVESDhwUQ?oc=5)<br>　2026-08-20 / 読売新聞
 - [鹿児島県 三献、鶏飯、ミキ調査研究へ 文化庁「食文化ストーリー」採択 有識者検討会開き意見交換 奄美食育食文化プロジェクト](https://news.google.com/rss/articles/CBMif0FVX3lxTE0tVm5xT3BFaXNrLXFzNGpObG5id21RdHZuNWZGYTBadTdMVHViSXgtVW8yVXVib2dSald4ZkNIT1VDQ0dpN285VDZiWG13SFJmZVNhcmI4YVpJWTFpbFhqSTdEVm1sRUVTNDhHU1hlSlN6X21Ra0duMEkxNmJHRnM?oc=5)<br>　2026-08-19 / Yahoo!ニュース
 - [満足の「飛鳥・藤原」へ 世界遺産登録を機に奈良県が誘客計画 「ハローキティ」「クイズノック」コラボ/特設PRサイト/バス延伸など](https://news.google.com/rss/articles/CBMiX0FVX3lxTFA1V0xBRC1QaHJ0SnVmVFNVMFM4SUY1ZzJXZEZPSXlnUWxqNlpldjFzZjlkT0kyVnR0amNIdy1sZUk1cU52UHRQUURzSmdSVjQ2d1ZtSG9TczFUWFJVT1JF?oc=5)<br>　2026-08-19 / 奈良新聞
 - [文化審議会文化財分科会企画調査会(第7回)を開催します](https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/94423501.html)<br>　2026-08-19 / 文化庁 広報・報道・お知らせ
 - [座間市 東地区文化センター環境改善事業 トイレ改修等プロポ](https://news.google.com/rss/articles/CBMigAFBVV95cUxQVERhbndlM3plemVzTjhWa3NTTWhiOGt2OTZtMUQyeFJ5eFBHLXlQWjFCa1JxSWZ0czRWUzJZR2VUQkRfdWtRb0xBRlA5UVhOcGRORWdlZFJFdnJtZFBGeS1PeW51ZTU0RDdCWTl4eE5MRFo3TGh0X3N4TEtKYlNEOQ?oc=5)<br>　2026-08-19 / 建通新聞
-- [奈良書店組合 文化庁事業不採択も読書推進活動の手緩めず](https://news.google.com/rss/articles/CBMiUkFVX3lxTE93bkFtMWtBb05hUVdlb0JFWjQwWDBJM0VCOWVsczlDa2FCNTBzR3lDczVIY0ZwTDJJTTRlVVV6WjVwcFA1bFdXY3FnNkxRZVpmYUE?oc=5)<br>　2026-08-19 / bunkanews.jp
-- [大学生が博物館実習 市教諭のパワーアップ研修も 奄美博物館|政治・行政](https://news.google.com/rss/articles/CBMi3AJBVV95cUxQVHMzTjlZeHY0VjdCWmQtNHdPbGFtQUV0NGp0ZVhNNWpXUmdyWi1SeHJMRW5tdHdqQWU5Umhaa3dxTXctVDN0Y2tFSDFEVndxVFVVQ2kyUTRNTVk2dTdac3hMUUN3Sy1iV1ZEYU1WczZrcmhyOUw2dnlaZWpSYjZhNGNzS0RfNG96SEwxV1ctZFp1d1BJQXdMUWRoc0FZTWxscUtkLTlMN1Q2QmZzdlljeXVLWjY2ZEw4N28ycTZFZmRFUVV5TGhWMkctTjRUTldfT0FSMmFFenp0b3FaT3hlNGp6QnpScjJmRzNHSXVtUVhGMUJ3Und0dnctY2VDZHVPdVE2MmlybW9iUGZSaV9YZWZrbllVZ1R5ZXAyQno3YnJ2ZGo4QnQ5NVo5UG1HTjBTWWV5RnJ5R1htc1RWNFlwbHpVeTg0NEw4WTBEUUdfNktTRk5yWE1vdk5ad0o?oc=5)<br>　2026-08-19 / nankainn.com
-- [受動的な保存から、能動的な国家記憶の構築へと移行する。](https://news.google.com/rss/articles/CBMilAFBVV95cUxNNWZObWJDT2w0RzF3d1d2b2hkVzBNXzhyd3VSTGV5VkYzelZYdmR5YjJpN0lYdjh4anp3cHVzSkU4WE9WRnJrMTZwOFl4MXB2a2ppeVVaUmdISG1LamRCa0JDRGFEVmpOY25IcHpzNk5PQ243ZEkyVFhqWWdTcG83RS10dDZiM20xWjZFdzNmLW5GRzJz?oc=5)<br>　2026-08-19 / Vietnam.vn
-- [修理から学ぶ文化財・技術 那覇 県内外の高校生16人参加](https://news.google.com/rss/articles/CBMiYkFVX3lxTE00VjFXa0JzRy12clE3NTYzY2NJVmxaMkVjNGE2Y1gwa3V4SF9UUzh4Zmd3VG03eDBaeGNuWUNDbmpGbTIySU5rWUNiVmtEM2NBeDF5eE85S1pmQ0xTV3pvUkpB?oc=5)<br>　2026-08-19 / 琉球新報デジタル
-- [事務総長兼会長のトー・ラム氏は、文化スポーツ観光省と協力して、文化財保護や博物館の整備に取り組んでいる。](https://news.google.com/rss/articles/CBMipgFBVV95cUxNQXJtNTl0OTIyREpBX0VHcXVHZmtkaXUyak15M19mbE03eDlqQUVHYkNkV0kwUmRFTTJOaEFvWUlCaHMzR1lTb25wSlB3R2djUU9uRFdvby15RV82eFhYR0hoY2tqX0tLanpyTUtuS2R5Z25RaDRuSFc0WXByWEhpTWNIaGtLZEJDbDI3b0ZLZDZMT0g5REg1R1hERkdVTUtOUXYyOFB3?oc=5)<br>　2026-08-19 / Vietnam.vn
-- [世界遺産登録30周年の名所や、連続テレビ小説で注目の宇野千代ゆかりの地へ「旅色FOCAL」広島・宮島・岩国周辺特集公開](https://news.google.com/rss/articles/CBMiakFVX3lxTE5TenBxcVZUclg0ME1wWUZ1dHg0RkJrRlc0TkdKTzBwMTgyUzExUFRrVXBlUkxldjVQdXBsV1J6UnJRbmZRNUpubVRrM3RLMFU0dHFDOVRGRFpJU1ZKdFd1bjRtTDU0cTZQWnc?oc=5)<br>　2026-08-19 / PR TIMES
-- [フィンランドの「アアルト建築群」が世界遺産に!フィンランディア・ホールなど13作品が登録](https://news.google.com/rss/articles/CBMiQkFVX3lxTE5oYXpNV010eU00YUp2azVvNGtGMTJZNWRVaVc3djRaYUU3T2RzakRncEw0UTREdEo2MENjVnNYQ1NqQQ?oc=5)<br>　2026-08-19 / LifTe 北欧の暮らし
-- [【埼玉県飯能市】埼玉県指定無形民俗文化財「下名栗の獅子舞」に伝わる秘伝書の初公開について](https://news.google.com/rss/articles/CBMiakFVX3lxTE5Ddm93Y3dZWlhBd3I4aWswYk9tUXF3ZVFKaW1aRXMzdXVZSFZ5cXlzcTB3QzIySzZocDAyZVFYUFdvbGdPdzk4NUVDOXp5YkkyYVAxb0lGSnZPN3J4Vmt1N1Zqck02YldrS1E?oc=5)<br>　2026-08-19 / PR TIMES
-- [【トークイベント】石川直樹写真集『飛鳥|藤原』トークイベント・「飛鳥・藤原の宮都」の世界遺産登録記念イベント](https://news.google.com/rss/articles/CBMibEFVX3lxTE5yS1VRaU1uOXpoU1pqYjhXSml3Zk1qYmNuUFBTUEw1U0tiZ0tURFI2Q3EyNEpJSENqN0tOWk5URFBXUUwzaDh5cXU5OFY0Ym5pWm5kODYtUnhwS0VWaFVJc1dET0N2QnZoUGZxUA?oc=5)<br>　2026-08-19 / 蔦屋書店ポータル
-- [★フィンランドのアアルト建築群がユネスコ世界遺産に登録](https://news.google.com/rss/articles/CBMiSEFVX3lxTE1DOVRQYng0YjA2cGs0R1VfUVlDb3AtRWNPSzhSUFItSmNPNFFWWXpKT21OdnVEdnJYTlJLNWtsdm9fUjZ6emxOWQ?oc=5)<br>　2026-08-19 / 航空新聞社
-- [KKBかご探「めぐって発見!日本遺産「薩摩の武士が生きた町」」(令和8年8月15日放送)](https://news.google.com/rss/articles/CBMiakFVX3lxTE5xQTVnNS1RbmdsUlg3QVo1THRtSWp6OElnZnFITl9LSDNOQUpwMmNncl9peWt0bERWRmlnNEl3TnpUQTA2Nm1fbnk1LUJTQVctOXNnNXZMZV96ODl3NWxlcEFkcGQzM2tKZmc?oc=5)<br>　2026-08-19 / pref.kagoshima.jp
-- [鹿児島県の奄美博物館で大学生が学芸員資格目指し実習、資料デジタル化など学ぶ(奄美新聞)](https://news.google.com/rss/articles/CBMif0FVX3lxTE16Z0xHTlk5UUZLZXctTWtQSGhtOTgxemlielhibGJ6eFhqQkE5a1dhRU9xQlM0NmVWX29GNWdwclFhNzl5VjB6S09wSkJzc0NHWi04QU1TQkZhakFhLWk3bDZrQWI5cDlRNEE1eVpPYWJIdFQ2YUlBRDR2TmxBR28?oc=5)<br>　2026-08-18 / Yahoo!ニュース
-- [鹿児島県の奄美博物館で大学生が学芸員資格目指し実習、資料デジタル化など学ぶ (奄美新聞)](https://news.google.com/rss/articles/CBMijgFBVV95cUxQNE9vaUxYYUtXN1o4UmladDk0Y19xV19Oc3VqY0ZDalVEaEh1ZldKazJNX241azAtY0xmT1FPd0ltcXI2a2hfYlBhUjA5aE5CeHRKMm1XM0VUcVZERXd3SGJsU0wxTkktMHowTlVRY3ZHWndBT2NoSEdUZGFsa3NRcHFiUEowVVk3Z1VzakVB?oc=5)<br>　2026-08-18 / Yahoo!ニュース
-- [第3期文化施設部会 博物館ワーキンググループ(第3回)を開催いたします](https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/94420601.html)<br>　2026-08-18 / 文化庁 広報・報道・お知らせ
-- [焼津市 文化会館の内壁タイル改修を来年度に 打診調査を9月委託](https://news.google.com/rss/articles/CBMigAFBVV95cUxNQXN5Nk1oQmxXQXdFWlZ3d2VRYTJrd3RjVXRvaU5sNVFkQXB6aFNGZHpsOGx2ZXpqNVY5Z1UxVTNLWlhrQmRlOVl6RTFjVWtBVkhmal95bS1aMmFFM2ZmMUtQWC1LMjd5TnpWUnlpcXRFV04teUtVNHBrVk40VVZDUQ?oc=5)<br>　2026-08-18 / 建通新聞
-- [次期指定管理者を募集 総合福祉センターと点字図書館 桐生市](https://news.google.com/rss/articles/CBMiUEFVX3lxTE5RSGZfNzZRRk92d1gwNWJMTmVvZmNsQ2tkZ0FRVUItdHd6aG1oeWcxNXhhZFBDLUV4dFVkZG5ycFYwNFVIYmhTaGlwal9hRHly?oc=5)<br>　2026-08-18 / 桐生タイムス
 
 ---
 
