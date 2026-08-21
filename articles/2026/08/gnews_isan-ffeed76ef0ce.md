@@ -1,0 +1,12 @@
+---
+title: "【オリックス】9月26日ファーム広島戦を「飛鳥・藤原の宮都」世界遺産登録記念試合として開催"
+date: 2026-08-18
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMilgFBVV95cUxOdEhjY3o0a09kWFQydjNxSWtZZFRKR2RnOHdyaTdaMXcxWWNFZ3pmMUN1QURnRTFxWmdVa2w3TE93bGxWSEZoTUFHVXdYUTNzemxWUklDQlVMOXFneGwxQ3ZLODZseGF3LXhDUHRfN3RQM0Z2NEEyVUVWc01jQXFFZ2pNZjZ4UUhkVE1KNjdLSF8tOW9BU1HSAZsBQVVfeXFMT3pESEFOQXhoeC1fX0pnUXlRSzNYdHkyNExvYVhCMUlqWVI4Y0FCZWZuSTVRSW9LSjl3cTFPNzBDTTJpVjBzRFBfOGpObWhrRi1pbjFmdnNuNDZZLS03RWVxR1M4aTRrWF94Z0lxOTFUSEJENkhGbE14LU15RzdXYlRpc1FVTTduS3dnVzdsQ1N2OUtuUEw0RkswdWs?oc=5"
+collected_by: gnews_isan
+tier: secondary
+lang: ja
+country: JP
+---
+
+【オリックス】9月26日ファーム広島戦を「飛鳥・藤原の宮都」世界遺産登録記念試合として開催。

@@ -1,0 +1,12 @@
+---
+title: "日本遺産大山詣り 10周年で記念事業 特別展示、ロゴ作成など〈伊勢原市〉"
+date: 2026-08-21
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNWWVaTnBiaDJZZzM1ZDJwQTM3clZrWEZDWThrMkRZem9QZEFFLXBHUmVsNlZLWEtzY3FmUl9VX2pxbVcyd0pWekdWVHBXSTBEakxrZ0l4c0F0UVpVT3VjYUt0VDJfMkVWbTluV19XVXU1TGFCUEJuNURnMzdPblV6UG5LQnRpdjZpUmVJVWpfdm15YlViUm1BTXBqYkhFOXBxeDlVZ3RCVlVlOC1LaDRwQkRueUJVcDY4RUNER0FTQjg0Tkt6OW9VREMyVm8xUjM50gGAAUFVX3lxTE5qS09xdzlMcXFkdEFZbEtZNy1wdTJfYVBnV1RDV3VOVzdUNFVuOTVNQ013OUF1bXBXRTBKa2lQVXBzY0gycXpINE4yVV9SWlZUXzBldTZzMmwxNHdQeEJNQmZBWUdIYzhINUVjZnFYZlpybUZ4NDZUN1FkWURhVEJZ?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+日本遺産大山詣り 10周年で記念事業 特別展示、ロゴ作成など〈伊勢原市〉。

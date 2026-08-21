@@ -1,0 +1,12 @@
+---
+title: "「鯨とともに生きる」日本遺産ウォークin宇久井半島"
+date: 2026-08-21
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOTzZrREh5QnFDREQ1cXhGcjRmS2kyTEZOLVZPZ0s4T2MzTlFxZklmREtCMWpUSXZOTmxQOWVXa3czcm0xblNleVlqWndpSUdJVlpGR2NldVkyV1pRUEI3a2RmdEhnN1RUZldOUU13UUkybG5tYklBY1c0X0VLV0lDbUZ2aVZnU0tlbGQwRFJ3dGsxd0I4NEtxUmRQYk9HN1BOaWRfN1hHaTh6VnF6aXRTV05Rd1lucFEwNnM3UHRRNG81V1otRnkwaENuMFZiQzRwZzFTZlg0d9IBhgFBVV95cUxNMktmMFU0cjE3YjlscWhxTUdoS1JtZlEwNjZjcUU3SUhDOUFLZzRPN1lyTkdRN00xYjhsQllWX0pxWjlmZmVBNXJIZVJnLUUtYnIxY0FDRkh5NnN1aXdEa0Z4azE2UmR2b0NaUm44WkhEa3Y0UElHdmVyek84ZmFPQTJQMVQ2QQ?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+「鯨とともに生きる」日本遺産ウォークin宇久井半島。
