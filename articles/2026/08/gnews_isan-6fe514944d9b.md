@@ -1,0 +1,12 @@
+---
+title: "お囃子に合わせ幻想的な舞を披露 ユネスコ無形文化遺産登録の西馬音内盆踊り 今年も多くの観光客を魅了 秋田・羽後町"
+date: 2026-08-18
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMie0FVX3lxTFBDN2ZoWTJRZ084U3RwVFZDcENYZWdGRldkX29nM00zcTYxdkxoaXRRYnJrRDFLUTJaRnItWlVOMV9VUU5YODQ2b0F3QnZyMDUwWTE0cy1pTUhlTGhTZHBNV2luZk5kQXpVRG9RbThZYkNyckN5d3pkRkMtb9IBgAFBVV95cUxPaVN1eU0xZ2hZeHRiTTRYMGhkdmVWT1JKUkt3ZVctODQ1cG5nRVNQV3dCRlJGWjhSeE4ydkZMcnRjX2hvbkdlRFBRdzVkMU9CTkhKZ1d4OHFLZm1Kb1RTYUlweVgyTWptWmktbzFMQlpBWGJuRUVMdWtCRzdyZlVDRg?oc=5"
+collected_by: gnews_isan
+tier: secondary
+lang: ja
+country: JP
+---
+
+お囃子に合わせ幻想的な舞を披露 ユネスコ無形文化遺産登録の西馬音内盆踊り 今年も多くの観光客を魅了 秋田・羽後町。
