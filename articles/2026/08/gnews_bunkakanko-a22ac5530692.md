@@ -1,0 +1,12 @@
+---
+title: "「中国の北極」漠河、年間通じ文化観光を促進"
+date: 2026-08-23
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOc2pnWHJoUGxDbzhnUVpxV2hIYTJCRUk2ZjZSOVQ3cmtZa3Rra19EZDhKNnRNbjFha3pzVjNubmFmNEJfazZ0Y0hMVnR6TnY0MHJOajdUaWF0b3JWeVNGa2VxZFpoclF3R19NdHpCR3BQclZmZUJtV3hpNUtfQ0t1ekh4TDdLZllsbU8w0gGQAUFVX3lxTE05dWRhWDB1WGtiM2Y1RzlCZmJILVp4TUkwaVRtQUd6dVlLdGpDYXlyTUJDVmhkeFZDUC1kTFVrdVNET0VFTUVpLWdzLTZZMU1DUEtVeW92VlJzbERzckc4bWtGei1lM2dELTBqZHBCeW00NEIyQ3l1bnEyV2phS196UEV4ZmpwNUU1aFJIYWprSg?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+「中国の北極」漠河、年間通じ文化観光を促進。
