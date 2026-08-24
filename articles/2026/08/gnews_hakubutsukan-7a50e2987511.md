@@ -1,0 +1,12 @@
+---
+title: "大恐竜展で新種化石の研究解説 大橋学芸員、研究者志した経緯も語る"
+date: 2026-08-22
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMihwFBVV95cUxNQzlmekh0dWI3ZGJqYUpnc1R3UGNCREI5ekJ6Z1FSWU9qTEdudWRLYnI0clVHNUc0NVFpMmFoR2NDYlhFR1RhLWVpTHREYTZWaUxwdFMtdzZkUDBkb0huOXF1X2dXV05xX2drZmNrUjFQY3JEUGdsNU9nNExsZkEtWjZ2WngyZ2PSAYwBQVVfeXFMTjZjVWQ2SldURTZvZ0lQYzdPMkZvRURVSERESlNrcFZGUm5hQ0c5ZVhlRFgweVp6QWlJLW5iaERud1ZLUTZHX0dUam1OMGhDcnhhN0s3a2lJQThCanVLRXpvWXNDOWRldXdTSnV5a2JYZ0VRWVE3OFRUQUNGRmZXVDRqWTRZbTYyUGxUNXQ?oc=5"
+collected_by: gnews_hakubutsukan
+tier: secondary
+lang: ja
+country: JP
+---
+
+大恐竜展で新種化石の研究解説 大橋学芸員、研究者志した経緯も語る。
