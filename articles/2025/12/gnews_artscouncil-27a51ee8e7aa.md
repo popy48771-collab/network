@@ -1,0 +1,12 @@
+---
+title: "第9回「福島三部作と資金調達」(前編)"
+date: 2025-12-03
+source: "アーツカウンシル東京"
+url: "https://news.google.com/rss/articles/CBMiqgJBVV95cUxNQnE0YzJwOXQ1Wkw2dXRyRzB5SVVZc0dISTVuVlZ4Y2hSNC1pN2t0S3hZNWc4U1V2Wi1hNThBcGdob2F2ZVJsVUFfUEd2dUM4N2V4dDBucVVlVHl6VEJoZVhXY0FhbGJvYUtVWDBCd0lYV1U4M3BoU0gxQlp3U0tFY0pyVGswWC1QZTVhUnRnV0ZreGxhY1NhNUtPVHY0VGFRd3NfYVdOT3BKZVBsem1vUTdySjFwU3RZUmhPRDRqeWtvWVRMQzJzTlVuLVcxMFZFVTViclVYMkdrd0IxbkxGREdic3pjdWRaeHR5UFNnRXJZNmtyRGx2TFg3YkxiRVRlNEVEZVl6bjEtMGkzYlJVVWdDX21ONk5rRllBejR5U292MzlRQmt5am53?oc=5"
+collected_by: gnews_artscouncil
+tier: secondary
+lang: ja
+country: JP
+---
+
+第9回「福島三部作と資金調達」(前編)。
