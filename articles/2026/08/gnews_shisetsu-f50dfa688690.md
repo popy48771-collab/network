@@ -1,0 +1,12 @@
+---
+title: "藤沢市 大型公共事業11件「立ち止まる」 市民会館建て替えや中学給食全員実施も〈藤沢市〉"
+date: 2026-08-28
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQZV8yVTlVOFBqcmFhSjE3RGE3ZUtqQWJHLTByQ2gybFpEclNscGRkcXN2R1NLNEtNQUluWTVhUGpfNEx4bDVfTUZtRm50TmxoNndxbkEyeHlHMzh2UXpDR3ZlQ21NVkh6SGRqTFd3QnFkanNxMjkxRVpvUThpT21LdVVjUkhDeUZJNGhySk5QQmYwQlhFajhDMHFtNkpmazRvbXhOVFVYOWtqNTVyZlZCVkhTdEozUThfSG1VQlRSaE1aQ1g4UkxnYzV0QnlBdzJ20gGAAUFVX3lxTFBkTDlxQUJiOHQ5MEFGRWhZWjBXaEo3Y3FvX29zLTZuSjZTb1YtQk0tWUlKSDN4WGtYU0EwaEZKTEJtSkV0ZVJRaU80SllGREw0Z2h0UWplY2NCRFczdVY3TlFBZW1hbFJOWk40REs1SHY3OFF2N3IzNkJEWm1NRFZo?oc=5"
+collected_by: gnews_shisetsu
+tier: secondary
+lang: ja
+country: JP
+---
+
+藤沢市 大型公共事業11件「立ち止まる」 市民会館建て替えや中学給食全員実施も〈藤沢市〉。
