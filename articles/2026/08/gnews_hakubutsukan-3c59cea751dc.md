@@ -1,0 +1,12 @@
+---
+title: "【あふれる博物館】全国の博物館や美術館で、収蔵品の保管スペース不足が深刻化している。多くの施設で収蔵庫が満杯状態だ。国民共有の財産を、どう後世に残していったらよいのか?!"
+date: 2026-08-27
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMiekFVX3lxTE9PbndGZkJWZVhHNXhhc3RYZ0dwLWpKMDlPb3JrUmRZOUFMaDhOZ2lwWWpiX21tY0FUaHBHT1FWNW9aN1VhbjIzRDZwS0xEWXRJbzkta1pudzRyYW9yYkFrNVQwNXI1b2JmcHBkNmhJTTk3OFJYYWZ0a09R0gF_QVVfeXFMTjZSWHdIQVNEU18wMlZQSkFXZ25wbkp4NzAwWUJBdWtBemlNaWFlSEtSQnhhVUZIQ3I3VTEwSFJxeGMySDZyUXJkcjFtV1B4SmRSeGxIbkxFWTFlbEpIZ3c3TzJlMEdmVnpDTE96ZlJSRmYyZjA4YTVCeGlWQmpDNA?oc=5"
+collected_by: gnews_hakubutsukan
+tier: secondary
+lang: ja
+country: JP
+---
+
+【あふれる博物館】全国の博物館や美術館で、収蔵品の保管スペース不足が深刻化している。多くの施設で収蔵庫が満杯状態だ。国民共有の財産を、どう後世に残していったらよいのか?!。
