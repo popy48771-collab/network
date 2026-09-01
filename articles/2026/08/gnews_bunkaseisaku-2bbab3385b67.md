@@ -1,0 +1,12 @@
+---
+title: "⟪国立映画アーカイブ⟫ クラウドファンディング目標値 1億5000万へ繰り上げの好調!「日本の文化政策の課題」を映画ジャーナリストが提言"
+date: 2026-08-30
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZWFvUi1LdjhQdnVOUjd1OHBoLUJJLThwc2E4QVpIaG5yUkF3V1p4dEg4ekQ1dDFTTEQzd2FNME1ObDYwN3B1SW5YOHlDcHVEbld0aDdnd3YxTFhCM0Vwc3BDWU9JZURrMzBTbnhzdlhPMkFyRlRLbkl2R3FVMlJfWVBkcEJZRDRieFBINllwcnB5T0ZBaEpycHV6WTLSAZwBQVVfeXFMUGVhb1ItS3Y4UHZ1TlI3dThwaC1CSS04cHNhOEFaSGhuclJBd1daeHRIOHpENXQxU0xEM3dhTTBNTmw2MDdwdUluWDh5Q3B1RG5XdGg3Z3d2MUxYQjNFcHNwQ1lPSWVEazMwU254c3ZYTzJBckZUS25JdkdxVTJSX1lQZHBCWUQ0YnhQSDZZcHJweU9GQWhKcnB1elky?oc=5"
+collected_by: gnews_bunkaseisaku
+tier: secondary
+lang: ja
+country: JP
+---
+
+⟪国立映画アーカイブ⟫ クラウドファンディング目標値 1億5000万へ繰り上げの好調!「日本の文化政策の課題」を映画ジャーナリストが提言。
