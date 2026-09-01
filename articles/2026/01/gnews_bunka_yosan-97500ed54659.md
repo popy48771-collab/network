@@ -1,0 +1,12 @@
+---
+title: "韓国・李在明大統領、文化・芸術支援で補正予算に言及...青瓦台「検討した事実ない」と火消し"
+date: 2026-01-17
+source: "KOREA WAVE"
+url: "https://news.google.com/rss/articles/CBMiwgJBVV95cUxNOXRrRVpycDVtWUwzbk9yM0pMQUFJM3lMODFBZE9EdlY5alhGRjBTWW9DemRGMGZ6UzFDdlhjNTF5ck1FUmJoQVRObUNNODQzTXI0QkxkLXFFN1dBTVoyU0E1VUp1c2tjb19fZkluZnFTVVBsNWRXVTl4eDdNOFFnMjk1aHBKeE5SaVVaUDc5S05JNE9XTzFoQUNkZGI2WWkySmdfalI0S05yU1RSd2czWnFwYTdrRTZiNkJBSkhGbnBvX0REemV2WTlDbHZYRXVlaGlmRDlpbkN4MDlUZ0QzRnNucGE2Zm00aFpZWFZtcDIxejRySEJLUHVWRVpzYmcwTVBPMmN3NEFZT1dGZllLYlVxMDNNM0NKSWtCWmw0Qzl3R2RyQlpDRUZuQTRHcUkxbW4xUXZhbEktSE8zX01vYmZ3?oc=5"
+collected_by: gnews_bunka_yosan
+tier: secondary
+lang: ja
+country: JP
+---
+
+韓国・李在明大統領、文化・芸術支援で補正予算に言及...青瓦台「検討した事実ない」と火消し。
