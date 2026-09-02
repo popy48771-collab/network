@@ -1,0 +1,12 @@
+---
+title: "青島ビール博物館、文化観光の注目スポットに 中国山東省"
+date: 2026-08-31
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPbkNwRkpGSkNmenRvSV94TV83WmhKY2VVYjdOZmZUSHRhMzNlbWZlTDgyUHhVbllIR1dJVXA3aW5FY2lYRW1NdEdPdUQ1elU3S3JuaG45RTBIcWwzeUxnZ0pnY1BoU0lCRzBKZUFqbWlQN1pIaS1ndEktNDZWZldrUGRxN1ExR2xNUWZV0gGQAUFVX3lxTE1INXUtNDN3eXhiTklRU3pzVU00a01xUjhvSzlkdkd1NWlQNEI0ck1KenhnbzZOUGdlcTdwOWtGZkxITWg3bzlJYV9CZjBvbVItZTV1Y2Fnc090LXJXMjVSUVlyWDVUSndZM2U0cVhYMWtkVjdpWHlFb2JXa0N3c0V1dnM4ZnlYUDRtbVhLTUxHYQ?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+青島ビール博物館、文化観光の注目スポットに 中国山東省。

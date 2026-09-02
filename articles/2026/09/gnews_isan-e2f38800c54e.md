@@ -1,0 +1,12 @@
+---
+title: "世界遺産「飛鳥・藤原」のラッピングバス 奈良交通の桜井飛鳥線で"
+date: 2026-09-02
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSUVZVTlZWEtyYnZXS1JxZzJ4MUhnTi1sYUN5RXN3RlB0c3JRSVg5RTFXd1ZsMksxUnRPTk9nMmp5czFRLUtiem1jZ3dQOTFtS2J2SHVjZTV1Nkx3YWpuLXA5bWU3N2hoWHZYaWhERWNONUdfY0RUTXlrVTNjZkdXZXZmYWlQS3lENGhQNzhBZkEzdDlRRm9tZdIBngFBVV95cUxQZk1tVkx1bjNfcGFjdjJ2cUozRUJDUXppMXNXSTlWRmpIVTdCdnBkUkpMcGh4X2wzSkhCa2xrYjd1QWtnVlBMT19faEs0TnAtcGZGcWE2T3M3RUdaQWdqZ3ZsMnRYM1dlVjkxZ1ZwZlRPRUdzUjRYTzdZcmJ0N3BJRWlPSWhJdWJqZGlwV01JdW42YS1SNmQwMmFvLTNtZw?oc=5"
+collected_by: gnews_isan
+tier: secondary
+lang: ja
+country: JP
+---
+
+世界遺産「飛鳥・藤原」のラッピングバス 奈良交通の桜井飛鳥線で。

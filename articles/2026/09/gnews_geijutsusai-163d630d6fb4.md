@@ -1,0 +1,12 @@
+---
+title: "復興公営住宅は県が整備、芸術祭は広域開催へ 石川県が152億円の9月補正予算案"
+date: 2026-09-01
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMilgFBVV95cUxPRjhfc0JXYUR1dTdkM3ktaHQxWjRpTGpjc3hIa21XOUpxQU96SU1mSXRocURsd2dGZng3ck1HWkU1cXkwQWgzcTZGUVRFbUphSFo5cEhnb3R3bVppcmJ4Um9nQlhabHg3MVp4UGU1b21YcGRwdUlPQkFiQUdXdFZZRVZ4T2g2aTFKaWNoZ2diNnpQcUJ4OHfSAZsBQVVfeXFMTm5XNGM0VXcxeTAwU2tJT1pobzRtcXQwTmEzWFNqMmNCa3h2c216R25SSnNEczJZbENWR19IelJGaDQtakd0RnU2OVBxY3ZjSHh6QWRLTXVSRFhtbGNxQ1ZHZnRnQ3FNUkVIbzM3T1VCSXpIeElvT3BnOWZOa1JIQ0pEYmRzdElGMUFCWms1UDFleTBOeFUtY244dmM?oc=5"
+collected_by: gnews_geijutsusai
+tier: secondary
+lang: ja
+country: JP
+---
+
+復興公営住宅は県が整備、芸術祭は広域開催へ 石川県が152億円の9月補正予算案。

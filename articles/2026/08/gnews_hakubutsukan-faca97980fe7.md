@@ -1,0 +1,12 @@
+---
+title: "頭突き恐竜化石の発見秘話、福島県立博物館学芸員トーク 会津若松でイベント"
+date: 2026-08-23
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMihwFBVV95cUxPZGl2VFluUnQydEdqbkV4ZEt3cFRjbXNfSWJreTNTNmxtQUk4cGpWMHFYRHp2SGh2bHpWVXRtaGxTRDZwaWpfMTl3TGZHaGE2TXQyRENnWkRCanpLbXg0RTlDMFlVN0psSzQ4N1Nna0lfY1gyc0lob2l1YWttWXBJVzhKRnhxQ1nSAYwBQVVfeXFMT29DUnREWmNWZl9fdTgzbFpPTlFhQmJxaVdUUDVSYWkwTUZJME1tOG5kZjFxQTh2WU5LWnNEUW5GRGFfZTIxTGJ1Mm52eGM1SEZCUndGOEszRXZpbnl2aUN0bnQ5eGR1d3VlZWRuVUZHemNCai1ZVlViY0I2NV93ZHhfeVpFYnR3SWJRR0g?oc=5"
+collected_by: gnews_hakubutsukan
+tier: secondary
+lang: ja
+country: JP
+---
+
+頭突き恐竜化石の発見秘話、福島県立博物館学芸員トーク 会津若松でイベント。

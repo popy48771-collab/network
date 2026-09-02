@@ -1,0 +1,12 @@
+---
+title: "地域の文化財を物語にまとめて発信する「日本遺産」、6件を再審査に...認定取り消しの可能性も"
+date: 2026-09-01
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMijgFBVV95cUxNY2RFaUljbUxqNGpZTl9LSlpnUlF6aHFwUlBfQ3dTejdCTEk1cF85clctSlRHbHZYM0NSYkhZc1ZfRVAxSlpqckM0dmFPM2FkLU9qZERfMjVaenJVWWNKX01BQ09nMXg5ZVVDXzZzY3ctM2ZOcUdIcmtLY2dXOHd5emhtWEQ2ZHBPbUNXcjZn0gGTAUFVX3lxTE1kVWVVY1B4ajhGTkxZaFpWU3FRMXprdVY0VUg0dllQODBhN19BSzBzYjYxS1dtTTNDWlFsTnc4SVJfRTdtXzdvNXNETjB3XzNqd0UtZW94WGhmYW5hUUR0UlhJdnhmSXpvOXBNLXhXTjhGQURMbXJ1Ym5Gd09wdFVZWHdnSzZJXzdnMzgwSDYydnJLTQ?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+地域の文化財を物語にまとめて発信する「日本遺産」、6件を再審査に...認定取り消しの可能性も。
