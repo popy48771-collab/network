@@ -1,0 +1,12 @@
+---
+title: "議会報告(令和6年4定)文化芸術、スポーツ関連事業の所管について"
+date: 2024-12-15
+source: "公明党"
+url: "https://news.google.com/rss/articles/CBMi_AJBVV95cUxQY184LUNlb3dyQm1veDhNOXk0bVgybGI3bGlid1MtaVlvbWNzNGNIdkkzOFBYX2l1aElZdGUzSU5iTkEyMU9vLVhRMWZVSkg1WDhROG5WdWw0ZzQ3alJaVmR0d0owMUxob055WlRWR2VId2tZTnFnU1UyS1hKdXpPWm9NSGNVV3JpZVpmU2FUY0lkWlVlekRnOTBYZTQzcnptN3BwS3ozOFBEMTRudWFiUFdqNjgzQTJlZWMwVVh4dC1mVGlMLXp3MjQ1eXV2Si1rMlIxMDhyN2NtRk9ZajVFclRQQXJHX01QY0lNc2xKeDNzeTA1VnJrbDMtNzlxWHVHR2JrU2VTU2R6cmRCWFBVQ3l4RElUaExjaE9EU1ppMVM1Znc5V2NDLTJxUUNaalJSNWszblR5MUtuZVZ6clNDSEdXOTFpcXBJbjhTQ0J4LU1tTHlRaVNFLXdsSmpoM2ZYYzBDX2tyVHNVUDNzSGJUb0wwaHh2RER6SFhHNA?oc=5"
+collected_by: gnews_jichitai
+tier: secondary
+lang: ja
+country: JP
+---
+
+議会報告(令和6年4定)文化芸術、スポーツ関連事業の所管について。

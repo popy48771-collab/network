@@ -1,0 +1,12 @@
+---
+title: "検閲ではなく勇気と自信とチャンスをーあいちトリエンナーレ2019を巡って"
+date: 2019-12-06
+source: "nli-research.co.jp"
+url: "https://news.google.com/rss/articles/CBMib0FVX3lxTE9aY1AtalhsRTItS2VJcms4MUxHSERsYnN2UHhpdDJhU3dhMTB5aWY0RjM1ZkZHN2dBenZPWlpHczFhSTg1UU5JeDhhcDNYOE9hckdLb2hqem5RempuUUxYUWxCZTdQeVpJSDJOVVFNWdIBf0FVX3lxTE9WcjVSWFhyNEw2ZFBnSlprSkMzX1VobmpTVFRhWmNBTWVZOUJXcFRETGdQS1p1dDNDTHJmT1ZRa0cybmYzeS1uamZRZU1UWXFOT1ZHWEpteTI1c0pRX0tUaTFiSWtlLW5DSUxMNjFsdFpSZ05JanpHMjdKUmlzQXM?oc=5"
+collected_by: gnews_geijutsusai
+tier: secondary
+lang: ja
+country: JP
+---
+
+検閲ではなく勇気と自信とチャンスをーあいちトリエンナーレ2019を巡って。

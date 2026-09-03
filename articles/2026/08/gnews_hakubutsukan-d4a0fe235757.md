@@ -1,0 +1,12 @@
+---
+title: "【全国75%でひっ迫状態】博物館の裏側で深刻な「収蔵庫不足」 閉園した保育園の再利用から「資料の除籍・活用」まで、博物館が直面する危機と存続への試み"
+date: 2026-08-23
+source: "TBS NEWS DIG"
+url: "https://news.google.com/rss/articles/CBMi-AJBVV95cUxPMVhDX0c5VlNYNGxDMExRTnRiLUlDZEdFdG9ySmI5MnJPQ2tTNVlENElyZHNDYlM1OUNwNDQ3Y2Mwa195VGdPeVdkQTFWVTZ5dEtSRlRWMHp1RUlva0VjYkhoa1Q5UzZ1SEItdzJLTzhtTFcyNm5jZkxzc055cXF6Y0pzRHl5WnBlbEVzU2JtZjQ0b09pcEJQSy1vOG51LU80ckJfQkNURDhnT3JKOUcxNEk2UUczTDJCcFBFMXNNd0FKUVNaVlJmR3NoWGFyNzVHVm9leENZQUYwc1hLT0pWcEdOYjRKWkFjOUVHNWJ4TEZJbFQtSnByMjdqUjZTanhrSUtuTWlEa3p3QjdUeFNtVkhkVURpeDVEakRvdjBJZGlfdWppMHJhUUw0VjY2dDh4bFg0ZkkwVVdIVWc0VGF0VU9SUmhzc2VGYlhGaV9SUFU5VGhsXzJVaFptUXFwMkc5NW53VHZ2X2pLYlJ5ckwzZU5qRW9WMVBL?oc=5"
+collected_by: gnews_hakubutsukan
+tier: secondary
+lang: ja
+country: JP
+---
+
+【全国75%でひっ迫状態】博物館の裏側で深刻な「収蔵庫不足」 閉園した保育園の再利用から「資料の除籍・活用」まで、博物館が直面する危機と存続への試み。

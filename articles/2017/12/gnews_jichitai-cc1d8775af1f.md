@@ -1,0 +1,12 @@
+---
+title: "基本法改正で問われる文化政策の原点─なぜ、文化に政策が必要なのか"
+date: 2017-12-07
+source: "ハフポスト"
+url: "https://news.google.com/rss/articles/CBMigwFBVV95cUxPSjVLT1RCeFNFUDVrN29QVi1nN2k4V2tCYUZmdVZ0a1J5cDZiZXFrQWVXSUY5SUxfdlhKWlBfWUNqbkpKdkc1djllb3BvU0xlRm43NS1PRnkzZ3pTYlM1NlNGUkZxZ2RVdkw2YnM5N1h5OWMyWEJXQU9UVmo2WFZvMXF3d9IBjgFBVV95cUxQY1lpWXRYWk1LWHFGY05vN2RSMUd1ZzVEREVGbERVajk5d3lwVlVwdTVyN0NLZnlBVVFMUVE0dE9rYmJvV3dlYkZ0M0dQNkk5NEVsdWxRd3ZJaEZrMUpoTmY3SXdzN3d1bW5sY2hXbllFa2NsNFdtVVJVdDJsaV9wYk1SVTRfbDE3SGszUWt3?oc=5"
+collected_by: gnews_jichitai
+tier: secondary
+lang: ja
+country: JP
+---
+
+基本法改正で問われる文化政策の原点─なぜ、文化に政策が必要なのか。

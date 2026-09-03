@@ -1,0 +1,12 @@
+---
+title: "農業・文化・観光を組み合わせ地域振興 中国重慶市豊都県"
+date: 2026-09-02
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOeE9LTEtPVTZCV005R3J4S3JXNTZ6bl9GZGtJM3hnYk9nN05EWkw5c3NmNUNwcVB2NDdKTmhjOE0xZldIV1U1alNvd0N4N1dQNHVvcThUb0NYNXJlbm9sb1ZyV3lyRnlsbGMxb1NzTDB3dFRrbGlQeE12MFQtMmxNM0dpaTBzdUMyX1Vv0gGQAUFVX3lxTE15V3dEaGdWRkRYWlByQ2tVeXdmNnhtUmotcXJEbzFFLVZrSzRRV0tqalJBTlNjeHZfZnJXWWtTRDJhUjF3NUhhaDczTmRIVFRtdTJlMWpUWHBWdGt6WU1PVFBUXzM0Z1o3NjhnXzdsMHM3RGMtNHlkS0xWd0lIVk5mNHNvV1UxRzRla2dhY2JvRA?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+農業・文化・観光を組み合わせ地域振興 中国重慶市豊都県。
