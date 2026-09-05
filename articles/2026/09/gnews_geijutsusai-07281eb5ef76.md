@@ -1,0 +1,12 @@
+---
+title: "韓国は「一つの中国」原則順守を 芸術祭の参加中止で中国外交部"
+date: 2026-09-04
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMiiwFBVV95cUxONDBMdTBlOVl5UG92eVpOeEV3R3JXRkNBdHFBdjNOUFpINGI4Z1ctVTRsaHVTTG1BRjk4ZmpZV3hOXzQ2WUotMEhLdTFzUVRQVnpSTUd5Tm83ZmpNaTZEakYySEhDRnVyUVJ6dDZTb2lKS1F1Q1ZMT25QYUhuNXBWbXdGN3VVQXFvd2dz0gGQAUFVX3lxTE9US2Q0VEl4WTlTWWlLeDVfd0JmREwteWM5dDk4bVYtYXVHQkxkRFphZ08zRkRjR0RDS2ZIVHhibUNNaEEyMjl6VmQ4ZEZjODZubXBQWVFST2NHcWpkRXNkWWdPVGRWRE1RTG1kdUEyQ0o4NUVETmtURVRHTk0wRUVwU1lpOE83MGRaRmM1SkQ1RQ?oc=5"
+collected_by: gnews_geijutsusai
+tier: secondary
+lang: ja
+country: JP
+---
+
+韓国は「一つの中国」原則順守を 芸術祭の参加中止で中国外交部。

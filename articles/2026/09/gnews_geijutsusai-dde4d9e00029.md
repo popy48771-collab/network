@@ -1,0 +1,12 @@
+---
+title: "中国、「台湾パビリオン」巡り抗議 光州ビエンナーレの参加中止"
+date: 2026-09-03
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOYUxkTFhWVm5pU19vZzA2WG8yWnR1Y0NwQU5NNTR2ekRhOXlPTm9DcGVkMDl6U0pGSzNraG03N2hPM2FOOFl1ajRoa0JaS1FxQUtKRkxHZUt2TGhDZktZY0xXNlI4YWZrUXZoc1QzVlV6cTlLRFhWNzdaSjhVMGh3YXRZXzIwcHBtemhtYUJrVFVtbHpEazVXaFNIWHd0enBJSUdzaUlTYnQwTmpRT3FCbUF1MlRLai11WUtxVHM0RFh0QW83TVhMSi1fV1ZjRVNwbHYtZmNLZjMwcVhkWGVHS0JQcDF3WEXSAZcBQVVfeXFMTVQydmxQZkg3aXV3Ti1DdUM3RkhadUozSGpZa0tZVkR0c05NeTVhMUZkQW84dW40MlZhZWxfYmpjOVBwdEVRbnMxaVJuMDBHb18weXBnTWpreTQ4bHJlZEhoNWpiTGV1OVpzUkk1MFFaY3A3bk16SkR3bDhsMGM1YW1ZRGJtNGZrMUI1LWxmbzNaZVctZ1Vfaw?oc=5"
+collected_by: gnews_geijutsusai
+tier: secondary
+lang: ja
+country: JP
+---
+
+中国、「台湾パビリオン」巡り抗議 光州ビエンナーレの参加中止。
