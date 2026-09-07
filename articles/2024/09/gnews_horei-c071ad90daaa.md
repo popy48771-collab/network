@@ -1,0 +1,12 @@
+---
+title: "文化庁、文化観光推進法に基づく拠点・地域計画の策定を支援、10月3日まで公募"
+date: 2024-09-28
+source: "観光経済新聞"
+url: "https://news.google.com/rss/articles/CBMiywJBVV95cUxPMW5mcEl4RzZ5SVdpX2R5bXdQb1RkQ0J2eXRTYVJraWRxdlplYjRIanZRN3hZMFdWRW14akIxNWZKWXpIRmRYU0MxeW8wdklJaGY1WUsyeDM0NkN2eWFWUDFsdEtKZlRobnBIZmtlV2RQUXFpQlhid3RCS3VpZUxsU2VhYUE4OXloXzhhNjVucV9hNE5uXzJYT3JIdEN1WFJya0F3MkktRGV3NFhWTlFIMEp5ZkUzYkFiSEpwQ1BwXzJGWWdwX0ZHQ29MUGRwZlY1dlhuN3FsdWZuZ0tSUlk1aHItejFNdXZMRlJzLUh0T0F0QUlNaWxhVi1tNzhhNUQ0UGhiOXRFcTc0ZUEwN2xtTFFkeTZ0MWdfdkN4ZXItaWNKR1hxb3F4aXFQbkpNWld1OFdyMmRMbXlpeTJvTklVY3pJZUMtdjlwbW9V?oc=5"
+collected_by: gnews_horei
+tier: secondary
+lang: ja
+country: JP
+---
+
+文化庁、文化観光推進法に基づく拠点・地域計画の策定を支援、10月3日まで公募。
