@@ -1,0 +1,12 @@
+---
+title: "文化観光推進に24億円 文化庁予算 概算要求"
+date: 2023-09-12
+source: "観光経済新聞"
+url: "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNRE5zaVlZcG1CSXVzdndneUROam0xdlFUeE40NERXSGFaSE16RXZ4S01rOHJidVdWbEV3c1lvQVBRaDExRGZtT1UyN2IyVlp0bnNqMFA0TXZYZGhlNTlWWVBvY09aNFF0Wi02T0FyZUN1OUNHaDJBSm1vdVhuZDFZcW15MlZ1bzAwd2lCM005d0hEbFlOa1FPZDVVNm5OeXhqOTU5em9CSUJMSXhTaDFwQUFNTHFVVW5KX3VhWTlEdldIWm9HVVVmQkUwRFlXUHBuY2ctQlZYa2JfOFlTT2E2RVpSLVVKclduR2lsXzBGT0tuejhDUmlmVEl2Qm0yZ1M0blNYMTJtSVZia2MtV3BCekVxTnp5Q3NYVFVmeGhCX1RFVmJVRnQxNHl5UQ?oc=5"
+collected_by: gnews_bunka_yosan
+tier: secondary
+lang: ja
+country: JP
+---
+
+文化観光推進に24億円 文化庁予算 概算要求。

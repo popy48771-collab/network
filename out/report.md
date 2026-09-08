@@ -1,14 +1,14 @@
 # 共起ネットワーク 分析レポート
 
-生成: 2026-09-07T23:15:43+00:00
+生成: 2026-09-08T23:08:38+00:00
 
 | 項目 | 値 |
 |---|---|
-| 記事数 | 2395 |
-| 対象期間 | 1998-12-25 〜 2026-09-07 |
-| 共起単位数（文） | 3416 |
-| ノード数 | 599（絞り込み前 6670） |
-| エッジ数 | 1100（絞り込み前 68173） |
+| 記事数 | 2436 |
+| 対象期間 | 1998-12-25 〜 2026-09-08 |
+| 共起単位数（文） | 3466 |
+| ノード数 | 597（絞り込み前 6768） |
+| エッジ数 | 1096（絞り込み前 69153） |
 
 [Gephi Lite で開く](https://lite.gephi.org/?file=https://raw.githubusercontent.com/popy48771-collab/network/main/out/network.gexf)
 
@@ -18,36 +18,36 @@
 
 | # | ノード | 種別 | 出現文数 | 次数 | 媒介中心性 |
 |---:|---|---|---:|---:|---:|
-| 1 | 世界文化遺産 | 政策・制度・法令 | 363 | 4 | 0.0097 |
-| 2 | 日本遺産 | 政策・制度・法令 | 143 | 4 | 0.0136 |
-| 3 | 飛鳥 | 語 | 124 | 3 | 0.0000 |
-| 4 | 藤原 | 語 | 115 | 4 | 0.0010 |
-| 5 | 彦根城 | 語 | 105 | 13 | 0.0771 |
-| 6 | 文化観光 | 政策・制度・法令 | 102 | 9 | 0.0004 |
-| 7 | 関する | 語 | 91 | 8 | 0.0931 |
-| 8 | 博物館 | 語 | 85 | 2 | 0.0000 |
-| 9 | 宮都 | 語 | 84 | 5 | 0.0029 |
-| 10 | 文化審議会 | 組織・地域・人物 | 80 | 9 | 0.0387 |
+| 1 | 世界文化遺産 | 政策・制度・法令 | 371 | 4 | 0.0014 |
+| 2 | 日本遺産 | 政策・制度・法令 | 143 | 4 | 0.0107 |
+| 3 | 飛鳥 | 語 | 126 | 3 | 0.0000 |
+| 4 | 藤原 | 語 | 117 | 3 | 0.0000 |
+| 5 | 彦根城 | 語 | 108 | 12 | 0.0061 |
+| 6 | 文化観光 | 政策・制度・法令 | 107 | 7 | 0.0002 |
+| 7 | 関する | 語 | 92 | 8 | 0.0634 |
+| 8 | 博物館 | 語 | 87 | 2 | 0.0000 |
+| 9 | 宮都 | 語 | 86 | 5 | 0.0006 |
+| 10 | 文化審議会 | 組織・地域・人物 | 80 | 9 | 0.0226 |
 | 11 | 認定 | 語 | 78 | 6 | 0.0001 |
 | 12 | 指定管理者制度 | 政策・制度・法令 | 67 | 6 | 0.0000 |
-| 13 | 改正 | 語 | 67 | 5 | 0.0029 |
-| 14 | 著作権法 | 政策・制度・法令 | 60 | 12 | 0.0256 |
-| 15 | 向ける | 語 | 59 | 8 | 0.0155 |
-| 16 | 事業 | 語 | 58 | 2 | 0.0039 |
-| 17 | 社会教育士 | 語 | 57 | 11 | 0.0174 |
-| 18 | 決定 | 語 | 56 | 7 | 0.0097 |
-| 19 | 目指す | 語 | 49 | 3 | 0.0388 |
-| 20 | 奈良 | 語 | 48 | 6 | 0.0154 |
-| 21 | 社会教育 | 語 | 48 | 9 | 0.0816 |
-| 22 | ユネスコ | 組織・地域・人物 | 47 | 4 | 0.0000 |
-| 23 | 中止 | 語 | 47 | 5 | 0.0135 |
-| 24 | 芸術祭 | 政策・制度・法令 | 46 | 6 | 0.0009 |
+| 13 | 改正 | 語 | 67 | 5 | 0.0023 |
+| 14 | 著作権法 | 政策・制度・法令 | 60 | 12 | 0.0201 |
+| 15 | 向ける | 語 | 59 | 8 | 0.0144 |
+| 16 | 事業 | 語 | 58 | 2 | 0.0031 |
+| 17 | 決定 | 語 | 57 | 7 | 0.0077 |
+| 18 | 社会教育士 | 語 | 57 | 11 | 0.0131 |
+| 19 | ユネスコ | 組織・地域・人物 | 50 | 4 | 0.0000 |
+| 20 | 目指す | 語 | 50 | 3 | 0.0042 |
+| 21 | 奈良 | 語 | 49 | 6 | 0.0121 |
+| 22 | 社会教育 | 語 | 48 | 9 | 0.0616 |
+| 23 | 芸術祭 | 政策・制度・法令 | 47 | 6 | 0.0002 |
+| 24 | 中止 | 語 | 47 | 5 | 0.0018 |
 | 25 | 全国 | 語 | 46 | 6 | 0.0000 |
 | 26 | 活用 | 語 | 46 | 6 | 0.0000 |
-| 27 | 重要文化財 | 政策・制度・法令 | 43 | 9 | 0.0001 |
+| 27 | 重要文化財 | 政策・制度・法令 | 45 | 11 | 0.0002 |
 | 28 | 政策 | 語 | 42 | 2 | 0.0000 |
 | 29 | 図書館 | 語 | 41 | 6 | 0.0000 |
-| 30 | 資料 | 語 | 39 | 8 | 0.0039 |
+| 30 | 巡る | 語 | 40 | 3 | 0.0000 |
 
 ## 話題を橋渡ししているノード（媒介中心性 上位）
 
@@ -55,21 +55,21 @@
 
 | # | ノード | 媒介中心性 | 出現文数 |
 |---:|---|---:|---:|
-| 1 | 指定 | 0.1300 | 21 |
-| 2 | 年熊本地震 | 0.1135 | 35 |
-| 3 | 政令 | 0.0963 | 4 |
-| 4 | 選定 | 0.0945 | 28 |
-| 5 | 関する | 0.0931 | 91 |
-| 6 | 推薦候補 | 0.0898 | 14 |
-| 7 | 首長部局 | 0.0883 | 5 |
-| 8 | 連携 | 0.0882 | 19 |
-| 9 | 考え方 | 0.0857 | 7 |
-| 10 | 社会教育 | 0.0816 | 48 |
-| 11 | 災害 | 0.0813 | 10 |
-| 12 | 彦根城 | 0.0771 | 105 |
-| 13 | 保持者 | 0.0715 | 7 |
-| 14 | 認定等 | 0.0715 | 6 |
-| 15 | 枚目 | 0.0690 | 36 |
+| 1 | 年熊本地震 | 0.0788 | 36 |
+| 2 | 関する | 0.0634 | 92 |
+| 3 | 首長部局 | 0.0631 | 5 |
+| 4 | 連携 | 0.0625 | 20 |
+| 5 | 社会教育 | 0.0616 | 48 |
+| 6 | 考え方 | 0.0589 | 7 |
+| 7 | 政令 | 0.0573 | 4 |
+| 8 | 災害 | 0.0557 | 10 |
+| 9 | 枚目 | 0.0537 | 36 |
+| 10 | 備える | 0.0501 | 4 |
+| 11 | 未来 | 0.0489 | 34 |
+| 12 | 繋ぐ | 0.0480 | 21 |
+| 13 | 国立文化財機構 | 0.0464 | 12 |
+| 14 | 指定 | 0.0428 | 21 |
+| 15 | 支える | 0.0368 | 17 |
 
 ## 結びつきの強いペア（NPMI 上位）
 
@@ -93,18 +93,18 @@
 | 16 | 大阪共立 — 大阪府立中央 | 1.000 | 6 | 1.000 |
 | 17 | 録画 — 録音 | 1.000 | 5 | 1.000 |
 | 18 | コミケ — 弁理士 | 1.000 | 5 | 1.000 |
-| 19 | 神山社会教育振興 — 総括官 | 1.000 | 5 | 1.000 |
-| 20 | 意識啓発プロジェクト — 若年層向け著作権 | 1.000 | 4 | 1.000 |
-| 21 | 克彦 — 議決 | 1.000 | 4 | 1.000 |
-| 22 | 亀虎古墳壁画体験 — 亀虎古墳壁画保存 | 1.000 | 4 | 1.000 |
-| 23 | 亀虎古墳壁画体験 — 四神 | 1.000 | 4 | 1.000 |
-| 24 | 亀虎古墳壁画体験 — 管理施設 | 1.000 | 4 | 1.000 |
-| 25 | 亀虎古墳壁画保存 — 四神 | 1.000 | 4 | 1.000 |
-| 26 | 亀虎古墳壁画保存 — 管理施設 | 1.000 | 4 | 1.000 |
-| 27 | 四神 — 管理施設 | 1.000 | 4 | 1.000 |
-| 28 | 所属機関 — 氏名 | 1.000 | 4 | 1.000 |
-| 29 | 無料配布中 — 講演映像 | 1.000 | 4 | 1.000 |
-| 30 | 無料配布中 — 講演資料 | 1.000 | 4 | 1.000 |
+| 19 | もりおか歴史文化館 — テーマ展 | 1.000 | 5 | 1.000 |
+| 20 | 神山社会教育振興 — 総括官 | 1.000 | 5 | 1.000 |
+| 21 | 意識啓発プロジェクト — 若年層向け著作権 | 1.000 | 4 | 1.000 |
+| 22 | 克彦 — 議決 | 1.000 | 4 | 1.000 |
+| 23 | 亀虎古墳壁画体験 — 亀虎古墳壁画保存 | 1.000 | 4 | 1.000 |
+| 24 | 亀虎古墳壁画体験 — 四神 | 1.000 | 4 | 1.000 |
+| 25 | 亀虎古墳壁画体験 — 管理施設 | 1.000 | 4 | 1.000 |
+| 26 | 亀虎古墳壁画保存 — 四神 | 1.000 | 4 | 1.000 |
+| 27 | 亀虎古墳壁画保存 — 管理施設 | 1.000 | 4 | 1.000 |
+| 28 | 四神 — 管理施設 | 1.000 | 4 | 1.000 |
+| 29 | 所属機関 — 氏名 | 1.000 | 4 | 1.000 |
+| 30 | 無料配布中 — 講演映像 | 1.000 | 4 | 1.000 |
 
 ## 直近で急に強まった結びつき（surprise 上位）
 
@@ -112,86 +112,85 @@
 
 | # | ペア | surprise | 直近NPMI | 以前NPMI | 新規 |
 |---:|---|---:|---:|---:|:--:|
-| 1 | メディア芸術クリエーター育成 — 支援事業 | +1.000 | 1.000 | 0.000 | ★ |
-| 2 | 反発 — 台湾館 | +1.000 | 1.000 | 0.000 | ★ |
-| 3 | 県立博物館 — 講師 | +1.000 | 1.000 | 0.000 | ★ |
-| 4 | 前年度比 — 年度概算要求 | +1.000 | 1.000 | 0.000 | ★ |
-| 5 | 改善 — 認める | +1.000 | 1.000 | 0.000 | ★ |
-| 6 | 鋸山 — 結論 | +0.969 | 0.969 | 0.000 | ★ |
-| 7 | 反発 — 参加 | +0.951 | 0.951 | 0.000 | ★ |
-| 8 | 台湾館 — 参加 | +0.951 | 0.951 | 0.000 | ★ |
-| 9 | 認定審査 — 鋸山 | +0.946 | 0.946 | 0.000 | ★ |
-| 10 | 再審査 — 纏める | +0.940 | 0.940 | 0.000 | ★ |
-| 11 | 再審査 — 可能性 | +0.940 | 0.940 | 0.000 | ★ |
-| 12 | 新潟 — 視察 | +0.940 | 0.940 | 0.000 | ★ |
-| 13 | 神社 — 香川 | +0.940 | 0.940 | 0.000 | ★ |
-| 14 | 審議会 — 改善 | +0.940 | 0.940 | 0.000 | ★ |
-| 15 | 審議会 — 認める | +0.940 | 0.940 | 0.000 | ★ |
-| 16 | 鋸山 — 千葉 | +0.939 | 0.939 | 0.000 | ★ |
-| 17 | 反発 — 中止 | +0.922 | 0.922 | 0.000 | ★ |
-| 18 | 台湾館 — 中止 | +0.922 | 0.922 | 0.000 | ★ |
-| 19 | 認定審査 — 結論 | +0.917 | 0.917 | 0.000 | ★ |
-| 20 | 結論 — 千葉 | +0.903 | 0.903 | 0.000 | ★ |
+| 1 | 岩木山神社 — 林檎娘 | +1.000 | 1.000 | 0.000 | ★ |
+| 2 | 岩木山神社 — コラボ | +1.000 | 1.000 | 0.000 | ★ |
+| 3 | 林檎娘 — コラボ | +1.000 | 1.000 | 0.000 | ★ |
+| 4 | 御守りカード — 限定配布 | +1.000 | 1.000 | 0.000 | ★ |
+| 5 | 御守りカード — 修理 | +1.000 | 1.000 | 0.000 | ★ |
+| 6 | 限定配布 — 修理 | +1.000 | 1.000 | 0.000 | ★ |
+| 7 | メディア芸術クリエーター育成 — 支援事業 | +1.000 | 1.000 | 0.000 | ★ |
+| 8 | 反発 — 台湾館 | +1.000 | 1.000 | 0.000 | ★ |
+| 9 | 県立博物館 — 講師 | +1.000 | 1.000 | 0.000 | ★ |
+| 10 | 改善 — 認める | +1.000 | 1.000 | 0.000 | ★ |
+| 11 | 御守りカード — 重要文化財 | +0.949 | 0.949 | 0.000 | ★ |
+| 12 | 限定配布 — 重要文化財 | +0.949 | 0.949 | 0.000 | ★ |
+| 13 | 反発 — 参加 | +0.949 | 0.949 | 0.000 | ★ |
+| 14 | 台湾館 — 参加 | +0.949 | 0.949 | 0.000 | ★ |
+| 15 | 佐渡島 — 視察 | +0.938 | 0.938 | 0.000 | ★ |
+| 16 | 金山 — 視察 | +0.938 | 0.938 | 0.000 | ★ |
+| 17 | 温泉文化 — 鳥取 | +0.938 | 0.938 | 0.000 | ★ |
+| 18 | 新潟 — 視察 | +0.938 | 0.938 | 0.000 | ★ |
+| 19 | 審議会 — 改善 | +0.938 | 0.938 | 0.000 | ★ |
+| 20 | 審議会 — 認める | +0.938 | 0.938 | 0.000 | ★ |
 
 ## 文化施設・政策と結びついている語
 
+- **重要文化財**（政策・制度・法令, 出現45文）: 割れる(0.76), 修理中(0.75), 仏像(0.74), 木造阿弥陀如来座像(0.73), 委託先(0.72), 修理(0.64), 一部毀損(0.64), 国有(0.64)
 - **著作権法**（政策・制度・法令, 出現60文）: 改正(0.77), 改正案(0.77), 閣議決定(0.65), 配分(0.64), 起きる(0.62), 歌手(0.62), BGM(0.57), 進行中(0.57)
-- **重要文化財**（政策・制度・法令, 出現43文）: 割れる(0.77), 修理中(0.76), 仏像(0.75), 木造阿弥陀如来座像(0.74), 委託先(0.72), 一部毀損(0.65), 国有(0.65), 作業(0.55)
-- **文化観光**（政策・制度・法令, 出現102文）: 週間(0.65), モクチャウ(0.63), 推進本部(0.62), 食文化推進本部(0.62), ベトナム民族(0.59), 大使(0.57), 井上あずみさん(0.55), 交付式(0.52)
-- **東京文化会館**（文化施設, 出現21文）: 殿堂(0.80), 年休館(0.78), バレエ公演(0.75), オペラ(0.71), バレエ(0.60), 改修(0.52), 休館(0.52)
-- **無形文化遺産**（政策・制度・法令, 出現35文）: ユネスコ(0.76), 盆踊り(0.70), 幻想的(0.68), 開幕(0.60), 山形(0.58), 豪華(0.58), 香川(0.58)
+- **無形文化遺産**（政策・制度・法令, 出現36文）: ユネスコ(0.76), 盆踊り(0.69), 幻想的(0.68), 開幕(0.59), 山形(0.58), 豪華(0.58), 香川(0.58)
 - **文化観光推進法**（政策・制度・法令, 出現28文）: 拠点計画(0.85), 地域計画(0.80), 観光庁(0.78), 報道(0.74), 認定(0.65), 拠点(0.61)
-- **指定管理者制度**（政策・制度・法令, 出現67文）: 長谷工(0.64), TRCグループ(0.62), 大阪共立(0.62), 大阪府立中央(0.62), 図書館(0.61), 主催(0.57)
-- **芸術祭**（政策・制度・法令, 出現46文）: 台湾館(0.66), 国際(0.64), 愛知(0.61), 反発(0.57), 中止(0.56), 中国(0.52)
+- **文化観光**（政策・制度・法令, 出現107文）: 週間(0.65), モクチャウ(0.63), 推進本部(0.61), 食文化推進本部(0.61), ベトナム民族(0.58), 大使(0.56), 井上あずみさん(0.55)
+- **東京文化会館**（文化施設, 出現21文）: 殿堂(0.80), 年休館(0.78), バレエ公演(0.75), オペラ(0.71), バレエ(0.60), 改修(0.52)
+- **指定管理者制度**（政策・制度・法令, 出現67文）: 長谷工(0.64), TRCグループ(0.62), 大阪共立(0.62), 大阪府立中央(0.62), 図書館(0.61), 主催(0.58)
+- **芸術祭**（政策・制度・法令, 出現47文）: 台湾館(0.66), 国際(0.64), 愛知(0.61), 反発(0.57), 中止(0.56), 中国(0.52)
 - **アーツカウンシル**（政策・制度・法令, 出現19文）: 支援情報(0.82), 日付更新(0.82), 沖縄(0.81), 助成(0.55)
 - **国宝**（政策・制度・法令, 出現32文）: 亀虎古墳壁画(0.81), 床磨き(0.69), 同時(0.61), 壁画(0.54)
-- **世界文化遺産**（政策・制度・法令, 出現363文）: 彦根城(0.63), 飛鳥(0.60), 藤原(0.59), 宮都(0.56)
+- **世界文化遺産**（政策・制度・法令, 出現371文）: 彦根城(0.63), 飛鳥(0.60), 藤原(0.59), 宮都(0.56)
 - **史跡名勝天然記念物**（政策・制度・法令, 出現8文）: 指定等(0.81), 登録記念物(0.79), 答申(0.59)
-- **日本遺産**（政策・制度・法令, 出現143文）: 認定審査(0.55), 認定継続(0.55), 鋸山(0.53), 生きる(0.52)
+- **日本遺産**（政策・制度・法令, 出現143文）: 認定審査(0.55), 認定継続(0.55), 鋸山(0.54), 生きる(0.52)
 - **文化資源**（政策・制度・法令, 出現18文）: 記念物課(0.90), 政策(0.68)
 - **登録有形文化財**（政策・制度・法令, 出現5文）: 建造物(0.79)
-- **国立映画アーカイブ**（文化施設, 出現6文）: クラウドファンディング(0.70)
-- **文化観光拠点施設**（政策・制度・法令, 出現4文）: 計画(0.66)
-- **博物館法**（政策・制度・法令, 出現30文）: 改正(0.63)
+- **国立映画アーカイブ**（文化施設, 出現6文）: クラウドファンディング(0.72)
+- **博物館法**（政策・制度・法令, 出現30文）: 改正(0.64)
 - **文化財保存活用地域計画**（政策・制度・法令, 出現34文）: 認定(0.55)
 
 ## 話題のかたまり（Louvain コミュニティ）
 
-- **クラスタ 0**（66語）: 社会教育主事、社会教育士、講習、称号、社会教育、取る、ワーキング、広げる、グループ、在り方、活躍、首長部局
+- **クラスタ 0**（63語）: 社会教育主事、社会教育士、称号、社会教育、講習、取る、ワーキング、広げる、グループ、在り方、活躍、首長部局
 - **クラスタ 1**（43語）: 年熊本地震、適用、秩序、共生社会、被災、政令、復旧、向ける、通知、救援、国立文化財機構、災害
-- **クラスタ 2**（33語）: 枚目、解説、YouTube、弁理士、コミケ、次創作、著作権、行方、ポイント、講演資料、講演映像、無料配布中
-- **クラスタ 3**（28語）: 彦根城、推薦、象徴、宮都、推薦決定、大名統治、年登録、藤原、江戸時代、飛鳥、世界文化遺産、登録記念試合
-- **クラスタ 4**（27語）: 採択先、専門人材育成、コンテンツ制作、発信、確保等、支える、中核、決定、認定取り消し、文化芸術活動基盤、強化基金、再審査
-- **クラスタ 5**（23語）: 答申、議決、克彦、同審議会文化財分科会、経る、文化審議会、文部科学大臣、審議、保持者、認定等、選定、選定保存技術
-- **クラスタ 6**（19語）: 著作権法、歌手、改正案、閣議決定、配分、BGM、使用料、BGM使用料、改正、進行中、危険、還元
-- **クラスタ 7**（17語）: 直面、収蔵庫不足、除籍、試み、裏側、保育園、存続、危機、資料、活用、全国、博物館指針策定
-- **クラスタ 9**（17語）: 広島、厳島神社、原爆ドーム、描く、切っ掛け、デザイン、次世代、繋ぐ、周年、記念、周年記念、宮島
-- **クラスタ 8**（17語）: 台湾館、反発、中国、芸術祭、表現、中止、韓国、参加、不自由展、愛知、あいちトリエンナーレ、巡る
+- **クラスタ 2**（27語）: 採択先、専門人材育成、コンテンツ制作、確保等、支える、発信、決定、中核、認定取り消し、文化芸術活動基盤、強化基金、再審査
+- **クラスタ 3**（27語）: 枚目、解説、YouTube、弁理士、コミケ、次創作、行方、ポイント、著作権、講演資料、講演映像、無料配布中
+- **クラスタ 4**（24語）: 彦根城、推薦、年登録、象徴、宮都、推薦決定、大名統治、藤原、飛鳥、江戸時代、世界文化遺産、審議会
+- **クラスタ 5**（22語）: 答申、議決、克彦、同審議会文化財分科会、経る、文化審議会、文部科学大臣、審議、保持者、認定等、選定保存技術、再始動
+- **クラスタ 6**（21語）: 台湾館、反発、中国、芸術祭、表現、中止、韓国、参加、不自由展、愛知、あいちトリエンナーレ、巡る
+- **クラスタ 7**（19語）: 著作権法、歌手、改正案、閣議決定、配分、BGM、使用料、BGM使用料、改正、進行中、危険、還元
+- **クラスタ 8**（17語）: 直面、収蔵庫不足、除籍、試み、裏側、保育園、存続、危機、資料、活用、全国、博物館指針策定
+- **クラスタ 9**（17語）: 広島、厳島神社、原爆ドーム、切っ掛け、描く、デザイン、次世代、繋ぐ、周年、記念、周年記念、宮島
 
 ## 最近の記事
 
-新しい順に20件（全2395件は `articles.html` / `articles.csv`）。
+新しい順に20件（全2436件は `articles.html` / `articles.csv`）。
 
-- [鳥取県で「温泉」をテーマに世界サミット アンバサダーは「テルマエ・ロマエ」作者ヤマザキ・マリさん ステージでは主人公ルシウス登場? 「温泉文化」の無形文化遺産登録目指す(2026年9月7日掲載)|日本海テレビNEWS NNN](https://news.google.com/rss/articles/CBMihwFBVV95cUxPLWN4a0E2SmsxTXVxQkJId3YtTUJwYWVNLU80NDhEUW9pM2dLdXZwM01reTBOVFExemhfWmd4RG5YdkQzU1JLRXhwQ2dRelkyMEhDNXVRWUJ2VGhoU1NYdlFXU0RIdFlEZkhtSkR1emgwNHpWUS1ybHB5emk2R2xQeVFXZFVRWlU?oc=5)<br>　2026-09-07 / 日テレNEWS NNN
-- [松本市のヒマラヤスギ伐採「文化庁が切るよう指導した事実ない」 市民団体が中止要求書を市に提出](https://news.google.com/rss/articles/CBMicEFVX3lxTE51Z2F3T3AzTFJhY2puZUdSOEYyeUhuanJUcXdrSU43anBuUXpiallzbXVzNWJIQ0F6eG83M3V1elhWeXZEWGVyNWNwSWtPR0NzaUhHSXJKTzdhV3Y1bURxUVBFR2hpWU5nSlBMVXRLd1g?oc=5)<br>　2026-09-07 / 信濃毎日新聞デジタル
-- [早明浦ダムにも雨を...まんのう町の神社で雨乞いの踊り・ユネスコ無形文化遺産登録「綾子踊」奉納【香川】](https://news.google.com/rss/articles/CBMiZEFVX3lxTE5xSFI4a0xMUUFidTk1b1llODdudmluOU45eEdULUVKRGMxbXJtRGZ6d0ZUSm1jQjd5cDRpR0MxdHFwb054c1BZMGx6OTUxMFFwUG1DNTBsb0hhVDIxUU8wR3Z4UHM?oc=5)<br>　2026-09-07 / OHK 岡山放送
-- [日本の温泉文化、無形文化遺産登録めざせ 鳥取で応援知事らがサミット](https://news.google.com/rss/articles/CBMibEFVX3lxTFBMUHFNeURRR1pudnJEU1QxVE5xM0tuNEc0YjI0V084c3hzLWUya0hra3VZX1hfbGNScWpYWjdwcVptUVc5WWxYdlM5dDA5TjFweTBDRF9iYlNBZFBELWQzeWQzeElCWTJNUWh5VA?oc=5)<br>　2026-09-07 / 日本経済新聞
-- [文化観光事業10件認定 県観光連盟100億円基金で支援|経済|富山のニュース|富山新聞](https://news.google.com/rss/articles/CBMiV0FVX3lxTE11bU5TckV6cXlSX2NQcTRJZlRvTk5GeXluYXFVdmpPVWhlX0JTUlFVZnRhVjJlTnVJMlNYdVZSRURVdmdRWW1VUG9JX1NfcDBJcUJ3dzhfYw?oc=5)<br>　2026-09-07 / 北國新聞
-- [文化庁、令和8年度メディア芸術クリエイター育成支援事業の採択企画を決定 | ニュース | IT×エンタメの最前線を届ける](https://news.google.com/rss/articles/CBMiR0FVX3lxTFByckpNaUNCWnBKdVRLUjhEeU1fdEFRSTVqQ2hIcnRIdDJ6U2xPVzdPM3c1OER0WlVvTm5QUGNpQU91SjAtVmlJ?oc=5)<br>　2026-09-07 / MEDIAMIXI
-- [岸田元首相が「佐渡島の金山」視察 首相在任中に世界遺産登録《新潟》(2026年9月7日掲載)|TeNY NEWS NNN](https://news.google.com/rss/articles/CBMiiAFBVV95cUxOanNDVmg3cXJfYnVYdWNMakZLeGx2QXR4V2NHaTNHdE9hcjRsQ2N5d04wRHRQRmpMM2F6eW5kZ1VFY1IxVTZQUkJRN1p4Y0NSOXJGY1VLNFJ6RWFyS3Vsc0VaTnBQTHVaTG5sRGRQWDEwT1dmelJoTlIzUVR4R1FTbGV5bktKVjJi?oc=5)<br>　2026-09-07 / 日テレNEWS NNN
-- [土蔵白壁、地震で被災...保存へ議論と検討 宇城市松合地区 文化財未指定で修復費は所有者負担 <2026年熊本地震](https://news.google.com/rss/articles/CBMiT0FVX3lxTE0zcDlJRnpxbTRhTzNSSy1JNnJOLUFzQWZ6NloybzRoRzFEdjdRYmJPMkdCbV9JaVF1Q3g5VVhURi1fTm5WZGZvZW5xam5wbGc?oc=5)<br>　2026-09-07 / 熊本日日新聞社
-- [国内の世界遺産、情報誌で紹介 ユネスコ加盟75年で販売(共同通信)](https://news.google.com/rss/articles/CBMif0FVX3lxTE52dVZBVmxxRzhFWUpmV21CMmgwTHlGQ2c4dmlLU1BzU1pEQ1MzNk95eDNsZkpJbEF5ckRQUHFkSnB2RTNQTWdJMWFVOElFcWRVOGdDQ2hTN2lrZ2tzR0gwYVdJSTQ3SHUzSVlfbU84SGhTekdNQnBWNHJ6RlgwYWc?oc=5)<br>　2026-09-07 / news.yahoo.co.jp
-- [国内の世界遺産、情報誌で紹介 ユネスコ加盟75年で販売](https://news.google.com/rss/articles/CBMinAFBVV95cUxOTm45aUVoOHBmOGMzdk52TUpxOWdteGdQelBpS1RGQUV1S0taeVlzcHMwT0xSSlY3a1RTTHZBLWFRT0NacGo0eGxtaWFFdUw3YXZjbnJNVUFBV2hGQ05Db290aHJwa0xTSTJ1S2d4aUdheDdpbWY0cl9tbXRLblNnOHcxcXNmRlpGcUtqU0FZYVJza0ZyaXpNS0xlZVM?oc=5)<br>　2026-09-07 / 山形新聞
-- [中山道の木曽11宿有志が新団体結成、観光振興 日本遺産認定取り消しの危機に:ニュース](https://news.google.com/rss/articles/CBMiX0FVX3lxTFBrTnl5SC1oVm5QSzZaQ1NKSmlFWUtmVk1lVzM1VnU5V083X2xLMHB4bGo2MU9MWGR1M3JHRlA3WDZvVEdtWE5GY1ktaWh3SThSWXgtVGc4a3RTNGU1VkZN?oc=5)<br>　2026-09-07 / 中日BIZナビ
-- [世界遺産登録の「飛鳥・藤原の宮都」も 青木剛さんが大和路写真展 三重・菰野町(三重テレビ放送)](https://news.google.com/rss/articles/CBMif0FVX3lxTE55NkdTTmFPVEpvcFdiWkREdEtoVFZXVUgxR1drdlpJTTdDT0VvZWJXRnJXdXY5bk1iU2tEekEyYWw5cmVuWVFNWDdnTVYxY2ptOFVhRks3LVFBVlRKcW1mc2tWcEdBWGZVVk1aWi03b3czOHRUVWpJdG41SXZqR0U?oc=5)<br>　2026-09-07 / news.yahoo.co.jp
-- [世界遺産登録11周年「なかまヘリテージフェス」 2026年11月8日(日) 〜 2026年11月29日(日) | 福岡おでかけ・イベント情報](https://news.google.com/rss/articles/CBMiXkFVX3lxTE8zR3VzemlPeHNVSXVtUHBLQWlJcUJJcE0wOERta1VSbG9UYVZSR1dKRDNMTmNUNzctM3JFeEhNYVlQSk1ISGNaT1lPNEFPVmJtTFJFZGd6LUxQQTc2dkE?oc=5)<br>　2026-09-07 / 西日本新聞me
-- [世界遺産の運河でチャリティー水泳](https://news.google.com/rss/articles/CBMiU0FVX3lxTE1DNHNwd21XRExaYjVBaFZUZnZZNUp0bEJFX3pQbUxySk5KSTNHT3ZKVGxQWU44amVQZnlBODA4U1RrUzRHcXVaSVZwc3hYZU1CVTFr?oc=5)<br>　2026-09-07 / 彦根経済新聞
-- [ユネスコ無形文化遺産登録に向け世界に魅力発信 湯梨浜町で温泉文化世界サミット](https://news.google.com/rss/articles/CBMiUEFVX3lxTE5oeFBtelVuTnVJR0ptbEpVYUFTWEh1Y2lNWi1yZjdKTV9lUmF2N3hyak5MbnBCMVlVU29kN1lLSlM3eFgtOHdVa21GY1FWcnpz?oc=5)<br>　2026-09-07 / nnn.co.jp
-- [マンガの言葉データベース 「全集中」「んちゃ」など50年分 文化庁整備へ](https://news.google.com/rss/articles/CBMiY0FVX3lxTFBiSGtVSkIwdmk0YXpHbnNEcFh1UFF6R0ZZZFVQa0Vralc5NjNrc1lzTk1kNGFSQUZGNUpQeENTV2dhdURtaEJncVo2NXNRQjVlQndYVElYYnA1WnRnM0pNMFNGNA?oc=5)<br>　2026-09-07 / yomiuri.co.jp
-- [りんご娘が岩木山神社とコラボ!重要文化財の修理へ「お守りカード」制作 あさってから限定配布](https://news.google.com/rss/articles/CBMiS0FVX3lxTFB3RXQyZ3NuOUFtWTdaSHlkSVFLOG9JNFVmNkxUYkRMMnJkTzhpNVFUbW1HcjlUbXlPd3gySUI5c2xSanRiMVQzd2praw?oc=5)<br>　2026-09-07 / TVer
-- [まち歩きで歴史学ぶ~美術博物館学芸員が解説~【苫小牧】](https://news.google.com/rss/articles/CBMiTEFVX3lxTFBwWkpBN3J5YlpfS0xYRzhRSW0yZHRyRGhNUTVmN1RrUXpJM1Q4ZTBTRW1LLWRDaVVPLXJCNE5iTWlmdENSRTZKRzM3anQ?oc=5)<br>　2026-09-07 / 北海道ニュースリンク
-- [ご当地アイドル「りんご娘」と岩木山神社がコラボ!重要文化財の修理へ「お守りカード」限定配布(青森放送)](https://news.google.com/rss/articles/CBMif0FVX3lxTE8tQTh5c3NDdzR3SXR0TFh3aUNubDBydU5iX1lKa09Xb0x4a2o0STRPOXFIZzdubk4tMy1yeG9kbE9aa2E4dzRVcHBwNEFnMDRDUFk0RzJRaDM0ZmU5bHY4VUhnUVpRZ0NHZHhyRUNrY2Q1U25YNTNfV2tZeWRuZFE?oc=5)<br>　2026-09-07 / news.yahoo.co.jp
-- [くらしナビ・環境:世界遺産登録から5年 徳之島はいま](https://news.google.com/rss/articles/CBMiaEFVX3lxTE5wVWpQeXAyTjhFeFF5QjQtV0VXbU5GNnBsVVczbWRPc3ExMmthZnl4WDdjTGR1OHVBNHVpQmlsQk95YXFTWTdLRHZJYVVLWEhqM1Q5OVNxZmhqQlVDRDRrdzZmdGQ4eWpy?oc=5)<br>　2026-09-07 / 毎日新聞
+- [銭湯文化 観光客にPR 都、利用方法やマナー発信 割引クーポンも /東京](https://news.google.com/rss/articles/CBMiaEFVX3lxTE4xRTFOV3poaXZmQ3otUWtVQWRvMW5FenBHWW9HMkVGa2VEY1gxcmpHS3FzVVUyYUVETU5XSDJhaU9Sd3dXT1NtNVQ2M2hDemhvRmUzaXVZdUJoVkpmMUs4ZlhLaHBIRTlU?oc=5)<br>　2026-09-08 / 毎日新聞
+- [温泉文化のユネスコ登録へ、鳥取で「温泉文化世界サミット」初開催](https://news.google.com/rss/articles/CBMiTkFVX3lxTFBGU2k4UC1DZnktWXJkbmQwVGJ2dHk1aHV0TDV2N3k0cjhPeXhlallUbHBHOGQwRjZ6UTNfejFlX0dLUUdkR2E4a2xYUWVidw?oc=5)<br>　2026-09-08 / ryoko-net.co.jp
+- [文化庁、令和9年度予算でコンテンツ関連施策を大幅増額要求。クリエイター育成支援を重点化](https://news.google.com/rss/articles/CBMiWEFVX3lxTE5fcmlXNG5ycC1UM0I1VllYalgxM1FnNVVjd0NJM1Q1Z2sweDNjSGxFcW8tVFkwUy1nbngtMGlqYXRGWFdBakVVbHhVX0lVc0lMT05reUVRQXQ?oc=5)<br>　2026-09-08 / Brand New Creativity
+- [彦根で「彦根城みらいフェスティバル」 レイラック滋賀FCホームゲームも](https://news.google.com/rss/articles/CBMiUEFVX3lxTE5DLWs1T3FBNkJaWUNoOUtzaGVTU3NWb1h4MEZkaTVZN1VQYmxRbnV0VVlDMTR5RjRWR2F3Y2NXUGdZbEY5U01UN01aanFFR041?oc=5)<br>　2026-09-08 / hikone.keizai.biz
+- [山形市の新市民会館の工期、大幅延長に 資材供給遅れ 働き方も影響(朝日新聞)](https://news.google.com/rss/articles/CBMif0FVX3lxTE9xWXlmREZjUUQ0VVFvdVpmUkYzRWs1blZBTl9lLTZ6SW5nQmlrUS1mNTVsX2lWWmtSdGotUWgtTndmck9mZ0drMl81OHBydTBNd2RDUC1XWkVLODVUcWU1c0NyRV9rV3hXdTVtQ3VJR1RjczFQdmJfVXFkdUtBejA?oc=5)<br>　2026-09-08 / Yahoo!ニュース
+- [大阪・心斎橋の古刹「三津寺」、築200 年の本堂と高層ホテルが融合し新たな都市型文化財保存のモデルへ](https://news.google.com/rss/articles/CBMiUEFVX3lxTE5qYmxuWXh3QTB3VG5xem0yUEJBVTFVLVV3YlVoT0cxbzIxUGdyV1Mta3FsOTl5NFJTSzRMTEdQcTAzazBBcmRQUGp6Q3VjT2dB?oc=5)<br>　2026-09-08 / Storm.mg
+- [国重要有形民俗文化財「上三原田の歌舞伎舞台」(群馬・渋川市) 観客席に屋根架け7年ぶり公演 11月実施へ寄付募る](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9rYjREcF9wSVBaZUsybzhQNDJQUERiUHRoZ0hZSHZrdWZrYjMyVlM0amh6dWg0YWR5SjY2dVhLLVdIMzVVcFNwUG80Tlg4UWZXWWs0aENNQTR1Zw?oc=5)<br>　2026-09-08 / 上毛新聞電子版
+- [倉敷市民会館2年間休館して改修【倉敷市議会議員】2026.9.8](https://news.google.com/rss/articles/CBMiXkFVX3lxTFBmTnh2a1dTRkpZX2xTYTFmNGFJTjhicDVreWU5MjBLMDVRa2o1MU9mN0JHRGhFeXNBVW1GRTlrSU9PektGVHNHZV8xbmJ3Y196T1dkYjBhZnlVeEZDRWc?oc=5)<br>　2026-09-08 / 選挙ドットコム
+- [五線譜でボクシングの動きを記号化する「拳譜(けんぷ)」が、令和8年度文化庁メディア芸術クリエイター育成支援事業に採択されました](https://news.google.com/rss/articles/CBMia0FVX3lxTE03T2tVM1U1Y3AwQlhpaS1sSkI4NDVzRnlkUUdzcVNST1BpenVTSG9TVHFVdHlaRkVOVGxLVzI3LWV4NHJZN29ydFlHZUE0MjRWLW1xSDM2bE9NYnF5N3Y3VEpzYVZOYUE0cUpn?oc=5)<br>　2026-09-08 / 時事ドットコム
+- [世界遺産・宮原坑など題材 子どもの絵がキーホルダーに](https://news.google.com/rss/articles/CBMiVEFVX3lxTE0wMkdnT0RmNGtpcTUzWVZycG1qMnN1QnZaZGJtcS1yd3hsQlpteUthQTVOOFJrb0hxR2YxZU9VYTFyVTNYTTVyVGtkRVpQOTl4Qm8zMQ?oc=5)<br>　2026-09-08 / 福岡ふかぼりメディア ささっとー
+- [ヴァンフー区:地域密着型文化観光開発のためのスキル研修。](https://news.google.com/rss/articles/CBMimgFBVV95cUxQY2hSRGdNZ1pYUWE2cnlHWHNIRDZZdHFMeGtmRkRBWExtQ09SSnZWeHNkT25MQ3p6MzRtcnBKbzBGbEU5MThkSV9EUzVGZkNhX0Y0ZDNSNllOS1FTclFidnhNM2lWSVZyZDJLUHcyWDFfTzlrcm9uTjhlM2RMNDBzd3hvMW9JMUdCc3JGSTBIWnJFNE5uNVFxUkdB?oc=5)<br>　2026-09-08 / Vietnam.vn
+- [モクチャウ文化観光週間2026の総括会議](https://news.google.com/rss/articles/CBMigwFBVV95cUxNYWJCMGUzRVE0UU84RTNGVlNmUS05d0NjNXhJY3NYWFR1QTFUR045VmwxclJva2Q5N3FhRVQxX2ZZM1RmQVpaN2pnUG93ZWl2cVNaVDJfby1TcmZMRDNtMmhvbjFsZmFoM2F2aGJYN3R4bFU5a3hJeExkdGV2UTRkTktvbw?oc=5)<br>　2026-09-08 / Vietnam.vn
+- [ボクシングに書き言葉「拳譜」誕生、文化庁事業に採択](https://news.google.com/rss/articles/CBMiRkFVX3lxTE14ZFVtRDBvYm5EUS01VnJzbGpRSUVKVDNrYTVka2NhT3hxcDh3WS1uM1hqTEtBWDc0R2c3T1AzMHFLTWE2clE?oc=5)<br>　2026-09-08 / Koubo
+- [ヒクオン村における「ルーザーランド - 祖先の土地」コミュニティベースの文化観光村モデルの実施状況に関する報告会議 - フー・トー州観光局公式情報ページ](https://news.google.com/rss/articles/CBMi_AFBVV95cUxQQW9rM1FrWkpvY3NYSUhLM2FmY1A3Wk1CQ2poRmEwRDhCSnVYRzlBT1F1T1N6WkRmd2ozczBwLVNlUDVHOF92SUxCbl9VZ0ltZmZvd0hvMWpWeEloektDaFRFNTgwbzdVRmFfbEEzd1pFVDVmMUtqNkkxRjV1Z0FFYlJncjNhRWpSOXhsRGhwb1Fta1BOcndHT1RHT0YzcTdsWDM1d1FLQkpuWjdWbHhJRU1mLTY0anpGQTNwNi1sb1dib0hPb1hwcm9zV1laSjkwa0ljS2VfVExZUkVoQzBQWlRtcmg1LUlKUVZyZFpwZ2NCWmJJelppajY5NUE?oc=5)<br>　2026-09-08 / Vietnam.vn
+- [トラジャ中村海人が石垣島で、長年の夢“カジキマグロの一本釣り”に挑む! 「この引きはデカい」という船長の言葉に、力いっぱいリールを握りしめ...!?](https://news.google.com/rss/articles/CBMiV0FVX3lxTFBHTVpXdkFxV29kNEp6ZEM0YUNpOWxmOHpEc0padkptX2RLUWRVeTdiZ2lKTk1HaklPM0hpNnA4cmtESWJGM1I4OFBucWdrdU90aFRZcHFWTQ?oc=5)<br>　2026-09-08 / ABCマガジン
+- [チュオンサ博物館における収蔵品の充実と展示内容の向上。](https://news.google.com/rss/articles/CBMiogFBVV95cUxQWGVGSUFRa1daaHNTSF9JazhlejYwTnlxV3dIV0xzSmQtXzl1cG5vVHRhbkg3R2RUTDgwQktnS1V3MFNCMFpDcXdXTDlCRi1Ca1FWN2FhTWVDTDROdHpLRmROVXdua2NZUmZBd20xR3ZfNXpzMEVwWVJ1RTlPUTdFaHVjNS1QUjlmMXgtMmVUbElUQWtxa3N2cW5aMkp0c0wyQkE?oc=5)<br>　2026-09-08 / Vietnam.vn
+- [クラウドファンディング終了!ご支援と応援ありがとうございました!](https://news.google.com/rss/articles/CBMic0FVX3lxTE9JU2JZdi1qUF9Ra1VSVUN5SWJtT2tsb0g0RFhmYTl2enZiQUZ5NlZkZXFmb1ZDOEwzOFk2VjBaR0dXZlBhNVh5TWctRFF6NGFBVS1aNXkzMVpJT1lCXzgya2RXVjBXdEE2V2VudS1xbHFMdUU?oc=5)<br>　2026-09-08 / クラウドファンディング - READYFOR
+- [イランの世界遺産、攻撃被害からの修復作業続く。日本からゴレスタン宮殿保存支援申し出も](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBLOFpJUzh2YjZCaWExRy1qREdlelhKdkxWTTR0S2xmSlhrQ0F3ellUMDdLVS1tOGhuVkQ0elVWSDhEWld6cjdJa0ZVOEdydnc?oc=5)<br>　2026-09-08 / ARTnews JAPAN
+- [【軽井沢プリンスホテル】軽井沢の歴史・文化・観光をつなぐ「開運めぐり旅」を開催 軽井沢・プリンスショッピングプラザ×熊野皇大神社と連携した愛犬との開運旅、限定御朱印、特別グルメを楽しむ秋限定企画](https://news.google.com/rss/articles/CBMia0FVX3lxTE9XNzlHeENCX3Z4N01QWjVoeWN3MGFjdzVDT2VtRkt0X1UxN2hScFZJd1JRWU8wNHNKUjhaaE91VWJydWVJOFdPR09nTFVfazJFa2E3MkcwUVNKMm9GVEVsVmJCOUw0RzdDYjd3?oc=5)<br>　2026-09-08 / 時事ドットコム
+- [【奈良】大阪から日帰りで世界遺産へ!「飛鳥・藤原の宮都」を自転車で巡る旅](https://news.google.com/rss/articles/CBMiV0FVX3lxTE1uTUtRXzNfQl9tRFFhR29vejVBWTlSRFI1dTFEZlljeDJlRXYxU3VNMjM1NTN2cnNzUFJmRUx0RW15b1lsa2JLT3J4RVdxVHpHYWlyc2s0SQ?oc=5)<br>　2026-09-08 / 地球の歩き方
 
 ---
 
