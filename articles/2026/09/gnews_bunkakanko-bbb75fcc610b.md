@@ -1,0 +1,12 @@
+---
+title: "中国国際サービス貿易交易会、文化・観光特別展で没入型体験"
+date: 2026-09-09
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQa0JJRGc2MHU3cU42bUt1R2dWMDRZaWlQMVhRaVZWUGt6czlua29Fbk92MHNEYWczdDZocGprdGFaMTg1OGh3OEdNTlp2NXoxTWoxYmV1RGF1dUxSX3pjeDhWRU1MdXdjRVdXT3RZcjNlZXpGRmdQMUJYMW5xbEE5ZnlrUVYxNC0zVzRZ0gGQAUFVX3lxTFBsUXU1S3hSOXlkdnhJWW92Wk9oYWdXTEh4Z01RMk9IN0ZBVlNZRmxWVWF1RHBvS0toWUtNaFZQLTJDQ3hRSGlwNktsdnFzcDJRRV80OTlMSU4wMUs2bV96SEpwR2VpY2diM2pJUW51OWZuTmVfV3hPNlJHNWhqamNjT2lSbnpTX2Z2LWh3Zmo2OA?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+中国国際サービス貿易交易会、文化・観光特別展で没入型体験。
