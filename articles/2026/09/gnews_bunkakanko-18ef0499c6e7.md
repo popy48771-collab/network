@@ -1,0 +1,12 @@
+---
+title: "<炭鉄港 日本遺産>18市町で59イベントを開催 10月10〜12日 岩見沢、夕張で遺構見学"
+date: 2026-09-10
+source: "topics.smt.docomo.ne.jp"
+url: "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQS3o3eW1jYVFEdTJRYnB2ZjEwUm43QjRnWEdibGZxMDJ1QXJVMEFDQWdyR3BKSGVDVHYwT1lRdkFFVVJaTW0tY3l5aFJfR3JCQlJUUkRhVnhxRzVVRXd5R2syZmk4SWxRU0dWdUY3S0o1RmdxNHFsb2VyV1VldjkxOE1OLUlOVWxQZDNVNkc4Y3ByWTQzRTFHUGNqWGtjZzdyWmtSTl9JUk9rZVdnSUJaQUdKWXotZTBZdDdscmZ0S1Q3VndaZkhhWHpBNXRLVWhNOFHSAYIBQVVfeXFMUDNELWctcG5QWXIxUFpCVWVwZ3lTeHZkMVE5S3g5cEtEeFNvZktYYkpnWUR6TmpTTnVlbWR6dDNVLXBfX3ZZTk41MGJTUHF2OG0yZ3NMUHdTMEpEMm5hSmFKbzF3SlR2aDZnckM1eUlPQ1RGRkV2TVBwSWxidFZjcUctUQ?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+<炭鉄港 日本遺産>18市町で59イベントを開催 10月10〜12日 岩見沢、夕張で遺構見学。
