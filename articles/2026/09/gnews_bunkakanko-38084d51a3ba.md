@@ -1,0 +1,12 @@
+---
+title: "「大山詣り」日本遺産認定10周年!特別展示のお知らせ"
+date: 2026-09-11
+source: "公明党"
+url: "https://news.google.com/rss/articles/CBMi-wJBVV95cUxOS2Zta2JpZFNWUnVYMjB3dmZjZzU5OXlEb1JUUUJObndkcl92cTJtUVVxUmpKRWwwcGg3SmVmN3hwQ2dDYjJlU2E4alZwbm1kRUdXY1dBOHloU0tvUG5RSGN2Z19ieTA2YUtXM3ZGQmIzdDFVSXBSZnBqdEduRzFseklKNnZMYVYtQ2lFekZ4S3loRmN5YzdyVnlmNFc3dTB3LTZVTWpCWFA4aEZER094UllESF93bjU3amNSYnY4Q0NZa2IwZWRRZXZwd1BQY0duSTFaRGFjbzhDTUkzQkEtbGZUNjAxZGpITzREbHZiZ3JETXRVa3NsUl9pY1RNNWpNRnZfT3dYMS1VX09CMXJ2X2lDNmJSblctRFFIVGRJUEN5NnBhYk9jSFZHdmtWYkxhZy1lRW81YXN4U3BmbzlFRksyOEotQkt4eXc3U05WWGgwVElvLVlOdFRsS1dVdTdEQW9zWkVXRXUzanRJbXhBR2dTdEROd2JBVDI0?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+「大山詣り」日本遺産認定10周年!特別展示のお知らせ。
