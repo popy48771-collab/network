@@ -1,0 +1,12 @@
+---
+title: "広大な田んぼが農業・文化・観光融合の舞台に 中国黒竜江省富錦市"
+date: 2026-09-13
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOWnJMdkhtM0JtZ2RHMlRZVHhPdHhZaDJKV0wxU2Z6Nmk2QldvU1RldWZFS2RfMVd1SkcyWXpLLXo2YjBqbE0tWi1sX0oxaGZMNi1nSWNpaHZOcmJ0NUZDQWp3YXhJZkZMbmd4TmpveVFaUUxTbEtLZWZSTDQ1SjM2M1g4TjNKUXhKTVpV0gGQAUFVX3lxTE1kU3k2eWxHdDdLblJLNWw1NnpmSzNGS2hyMjNLa0pfc2dJdTBGQ2hOT1hCaWpfd0NEdHd1Skp2Mk04Qk1hQURQbUJqQVVCUFZzM3JlOFJkSm5sV2tTa0lhd21IX2tZOGlnRFJiTFZOVFVOTUgxZV85OE5HQU9LLVB3am0tU0ZsWmx6OENUVFNscQ?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+広大な田んぼが農業・文化・観光融合の舞台に 中国黒竜江省富錦市。

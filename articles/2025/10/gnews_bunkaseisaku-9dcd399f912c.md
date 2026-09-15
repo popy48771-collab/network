@@ -1,0 +1,12 @@
+---
+title: "サウジアラビアが「MONDIACULT 2029」を開催するとユネスコが発表"
+date: 2025-10-02
+source: "アラブニュース"
+url: "https://news.google.com/rss/articles/CBMi5wJBVV95cUxON0pZUWdjakpVM0wtMnRBTXp1ZFAxSHdMaXk1eksxYmNMVXl0MzFlZVJGUWRCSFViRURBaDlBeDN3TGVTSzg4UGJBMnNHOEZoTUZIaEtJT05HMGxxY09sSDBuNld4cEhzUVV1M3N3V1BReDZET2xCVzFRVTNNUWVFX1RZYV82Yk1iUm1kaW9PODhPcVVqeXZiQ054MzVxWWsyYnhWSnBxWjRXd0xrM3B4d0NxZXpmS0twLVY0X0pBTzVxaUVKZy1IblVyU09SaFdrUFhDQ2I2NXJBbWxPclRGSjIyUklVVEtXZm13amZmNXdTSmxQV2xHRHZxLUxCOVRRSHY0am9JM2pDMFZXS1lhYkdXRTBHZUZ6QVNVaHBpUW14c0JuNkVfS0lpNzNMRlh5MV9IS0x2Z2F4VDRoREpnY204eVh3RmVvZlpaTnViNFVKbXRBcUR5b2FIN0hicW5lMzhidHNrVQ?oc=5"
+collected_by: gnews_bunkaseisaku
+tier: secondary
+lang: ja
+country: JP
+---
+
+サウジアラビアが「MONDIACULT 2029」を開催するとユネスコが発表。
