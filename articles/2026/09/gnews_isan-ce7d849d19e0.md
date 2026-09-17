@@ -1,0 +1,12 @@
+---
+title: "祝・世界遺産登録!「飛鳥・藤原の宮都」の旅と上質で心地よいステイ@グランドメルキュール奈良橿原"
+date: 2026-09-17
+source: "大阪キタじゃーなる"
+url: "https://news.google.com/rss/articles/CBMi3AJBVV95cUxObFVzS3lhYWxFREdqUWRRMGVUTk5tUjN6dXBGbnZiaDdkZW5NQ1gxbHl5UTYyVzFBSkZ2NkktY3BtTFlXRWYtczYtbUVjM080LUY4NEktbElqU1luUG1fZU1LYlBOVlBfQ3NXVUFBMjdfM3RHckw3WGlrOWdpQW1PRlJiQl9aTzNyVDZBMnhjRURic2psdXVMdEUwSWJyYUthY0JoeS1IeTdHUjBTS3hxbjZrMnpoT3ZVZFFYUVpFdERFYmx5S0I3MkRIU0JEMllULUpnc3NMTThJT2RReVNnQ1NzSTUzOHFjbXc5NDYxTTM4OEgxQ09RaWxCb3dyRjhzR2oyWE01cmxqZUQ2QUpaV0FWRVo2QzZmNEpSTzdleEE1U2FaTWU3NjVHTFhsYnAxOGtJT281M3RYV1lFdkY4U1VZZENmVUpiT0JHa1hBdHNwdnJJSWRIYktDVWU?oc=5"
+collected_by: gnews_isan
+tier: secondary
+lang: ja
+country: JP
+---
+
+祝・世界遺産登録!「飛鳥・藤原の宮都」の旅と上質で心地よいステイ@グランドメルキュール奈良橿原。
