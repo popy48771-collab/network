@@ -1,0 +1,12 @@
+---
+title: "農村の文化・観光産業発展に注力 中国浙江省湖州市"
+date: 2026-09-18
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOZlJzaHFmZ0o1RHF3am9tUTl4ZHZmc2tBak1ic2p0Y1M2U0hJamdRa0Z0TndGUHpYQWJ5NWluNmVIQWZBRkxvOFVXZ0gtSlE2dGdIS0ZHNV9uUnJqeng4X2RGeXJRQ1hHNGt4TnpMTDh4ZWhpeGlWSmJFUU4ySWRobkVBZ2pfV0k2Mi0yYzlzMFBTXy1aaWduZTlXaUNYWjNUR05qWGxaQ2tRVmktSkgtX2dsQldUTU45cmJNaGlVMkI4Y2J3cXJHeUpMQnhoelpwZFlDcWpfZHBxc18yNTh6dNIBkAFBVV95cUxQWGNCSkFTSktkTXJiU3RFY2Z1ak1xUEVRb2x6VzN3SFREZE11Nkxuc1FrbTVjaHBFUm1yZm15eFZrZlB0Z1JKeko0WWpmNllBZ0RJVTlQQnUzWkVyT2RhS05CZDVuZnJpc05iYVl5Y1JBd1VnSV9qZFhzNzFVeVNWVEplbmtXUmhmUkxsRU0tak8?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+農村の文化・観光産業発展に注力 中国浙江省湖州市。
