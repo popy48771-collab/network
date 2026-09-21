@@ -1,0 +1,12 @@
+---
+title: "中国−中央アジア間の文化観光列車、定期運行へ"
+date: 2026-09-21
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOOExRanJLRmNFWTZEUWw4VWI4TFZ6WHh3QXFJaWZGOFEzM3docmx2bHdYWS1rRlpyXy14dVBuVlY2VGNSV0EwanlxenFjTnFEbk11dnByb1hkN05XdXg1QUdLM2YtYjktVFViRmNsaUZaRWtHa19ZVFBNdnVkbUt3TDU0emx5OGdlZ2Rn0gGQAUFVX3lxTE1RUmxTYTk2c2pRQkJEUlJySkYwc2xaeXJrcFlCZVdPWDRyMmhwRG1ZcklTX01tYXNxUWt5MGdUWmRNR3JQaUZiRHZ2b1lBLV9SSWlyUEtSNlluajVfUmEzZUxRam5SYXJQYnphalR2cGlwTzJ6cDBjekd1R1BaZ2NEUGNsU2pmMnpYWW5GSGo2Tg?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+中国−中央アジア間の文化観光列車、定期運行へ。
