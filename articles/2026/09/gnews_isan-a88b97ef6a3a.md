@@ -1,0 +1,12 @@
+---
+title: "「国東半島は魅力的な地域」イタリアの研究者が神社仏閣など視察 世界遺産登録目指す地元団体にアドバイス"
+date: 2026-09-20
+source: "oita-press.co.jp"
+url: "https://news.google.com/rss/articles/CBMidkFVX3lxTFBRaTIyODREWDVvVUYwUkxQOE9xT29vTmRUb1BlTXNuS0pwSE1ENm1TT012ODltMTl1QUFnOVBlWUNTU0dmcmNWZWcyU1Z4ZzZXR1hudmZnQ1RIXzdybVNnZUlFMDJzdDBhQjhZcDhZSFlXQm5idkHSAYIBQVVfeXFMTkw4b19SdEg1MUxkQUNTbEJqYWtwYXBXLXFoVEExc2ZVRE5pXzM3UWNCT2xBNlVXN1VNRTRrTVQyTEtiZFUwNkVMT1dxS1d6QlY1amdfTTduVkZQSGtTWVptWWt5SlpHYmpSaDlld0JkZTlkQ094SnVIYzZtejB1cU5uQQ?oc=5"
+collected_by: gnews_isan
+tier: secondary
+lang: ja
+country: JP
+---
+
+「国東半島は魅力的な地域」イタリアの研究者が神社仏閣など視察 世界遺産登録目指す地元団体にアドバイス。

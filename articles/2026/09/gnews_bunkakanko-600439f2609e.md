@@ -1,0 +1,12 @@
+---
+title: "中国東北3省の写真展、ハルビンで開幕 歴史・文化・観光が融合"
+date: 2026-09-22
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbktIMjhjNW5OWmxxVTdGNGhOLURRNmhicEJfRW9adE4zaV9ZMkpzdDR0Nkhndk5USVRLaUo2bXRCdGdnNHhrTHFHeDdXQ1FIOUd4WjNrdWo0VDFxQklTNGRrVmsxVUxvbDUwMlNLV1h4SGVMb0hoRnMxTUVCY3ktdjh1X3hycTdfYlg40gGQAUFVX3lxTE9FLVNtRUI2WG5DMWc4WUppZWxtRmJkN2ZKM1pNbTZ3SHEyUW1MajFjTzhBN2NkX05kMHo2N0ZJSjJZc1pfOTBnZmpoRDVkbzRVVl9xUXhwNndJbFZuU1hYRXRIQXNqbWRnRU94X29kc3dKZUk4MkgzNXFMLWVMZmZtMkRpMGVBWk1uSHhabjF5Qg?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+中国東北3省の写真展、ハルビンで開幕 歴史・文化・観光が融合。

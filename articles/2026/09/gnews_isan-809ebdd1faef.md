@@ -1,0 +1,12 @@
+---
+title: "【三重県 伊賀市】ユネスコ無形文化遺産登録10周年記念イベント「上野天神祭がやってくる!」を開催"
+date: 2026-09-22
+source: "ラブすぽ"
+url: "https://news.google.com/rss/articles/CBMizwJBVV95cUxQQmZQcE9FNG1pOFR6UE1LS0xvUnN0M1NjZzRxRnpMWjVLNm5yR2VtMVotRU5tSS1KdENBQmR3Vk5YbHlkeHg5cEpRdlF1enJCS2ZrTFpFODkxQktJY244ZlF5Y1F3YzRLeVRRajMwT3cwVDV4TWMwaFRsTTdOeUxEcXVxdWwwMkY2RHpGMmdiTVpPaUlmYlQ3NF8zYlJFVFJpQ0hfNGJnMXRrS3I5LXpXU3JTZzd1bXdlSVpQMHRjTVNWbnlFWDRvak1fZ09ZanJ0MlpHbFhTbFJyN3lqdE5wS2RzNVpYeVNtdUE0Zm12d2xmdjRQVEdFWUNoLVY2UW9KMExsSTUxYzdjMUJVdnllOTQwTDBya2sxQnY0d3BHYnFIR3htZEZUTzBuOGNEUllMR2gwLS1TY2ItRHFBVW92OXhGTndERkFNWmlSb2o0aw?oc=5"
+collected_by: gnews_isan
+tier: secondary
+lang: ja
+country: JP
+---
+
+【三重県 伊賀市】ユネスコ無形文化遺産登録10周年記念イベント「上野天神祭がやってくる!」を開催。
