@@ -1,0 +1,12 @@
+---
+title: "【速報】星野リゾートの新たなホテル「星のや飛鳥」 開業は来年7月22日に決定 1泊19万3000円〜 「飛鳥・藤原の宮都」の世界遺産登録で注目の奈良・明日香村"
+date: 2026-09-25
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOY3cySGRoWFNhQ3BFaFBPTTBMTkpja2U5V3AzSVZXRUZYeUJCelFMSlRyZHVtQWlNM1pHSlNQSWVneUZHYU9RWnBVX2wwQ1dLQkFoNlloR3I0Wlhmckk4OHJvQW5hTHhPWjZvQUtKLURFM0V1VXlrYzR0MU5GNGUxd0pabTJmTWlWcmNjWjNLUXI1MXFKZ3RhUXpnVzVOUjgyd2xXcDh1UTNBdjl3V3BCOGVzZG5IMlZaYWRkVEVwek1tTDlyYW5VV1cxcnFkdG4tZEHSAYIBQVVfeXFMTndXSHhqYWFfajJoMEJGbWdnb0pyQktOZF9BZGJ3T1JORmx2RWpENmRVTV9vS0dRcG8tOU90eUpFcm1YQzlKdmtJNnRpcGpYZUZhczNJQ2h1Q0pXVld4NTNQVTcyS0J2YVMxcGJJZW56YXVqdkZXOGlEV2lONlkwQkRCUQ?oc=5"
+collected_by: gnews_isan
+tier: secondary
+lang: ja
+country: JP
+---
+
+【速報】星野リゾートの新たなホテル「星のや飛鳥」 開業は来年7月22日に決定 1泊19万3000円〜 「飛鳥・藤原の宮都」の世界遺産登録で注目の奈良・明日香村。
