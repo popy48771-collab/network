@@ -1,0 +1,12 @@
+---
+title: "関羽の故郷で文化観光祭 中国山西省運城市"
+date: 2026-09-25
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPNDZrR0FJVWlIN1ZyLUxLUGxod2RuRndEN3p0OFNBV09LcVhJT1NOV0ZwWmZzNDg2RmxyaWpyRnZiUmtGRFE3elFrN3RVWkY0MXNCaFVQUkxJSDlRczlkaF9zTFpOSS04UW1HbldvWFZNTExueDNVRzZJQy14ckVacUF6VUxfQVpBRExv0gGQAUFVX3lxTE5xTklBUjg0a2QtYmE1VXF4OFB1NkZGOUVqT2x1eG1YM0QzY202RTZLSVBINHBVdDFERHUzdnU5alhveWlwNWVlTXpsamFnMmM4dVpPTnlCWTJLNU0tT0c3cmtUeDZsZm8xVzQtSnVOWVR1TUlkUVMzQnI5QWRrcXNLUnZvVUpDcFJYVldpRkJoTw?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+関羽の故郷で文化観光祭 中国山西省運城市。
