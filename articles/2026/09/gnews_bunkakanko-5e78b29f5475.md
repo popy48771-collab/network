@@ -1,0 +1,12 @@
+---
+title: "岡山の文化・観光施設巡って JR西などスタンプラリー"
+date: 2026-09-27
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMifkFVX3lxTE9LWE9KVFlNMWI2QjRHNW5JWEx0QWVuN3RnZjZFamgzak9sZVFzSk44MVhBRjh3aFg4X0kzS25HUWFVSHdZNzlfaWpseXlJdEpnX1UxcndUc1RQaFl3YjZoLXljN2pOdkQ1cGtNWlppNGhVeG9PX0FxZ3VkUTlFd9IBgwFBVV95cUxPcnNLUElMMHFHYzRJSXVSYnhUMjZNdHp0bEp6d0JDVjdlT2lYY1FMWngxV1FzZ2lSODJUVkwtc3REd3l3ZmJrU3ZpdWxsVnBjd2FLbzBMakVhaldaUmhxVWJCOE5MMjd4MjJkMEV3cWVCYlRxcnZXUVg1SW1uWmFZaEc4TQ?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+岡山の文化・観光施設巡って JR西などスタンプラリー。
