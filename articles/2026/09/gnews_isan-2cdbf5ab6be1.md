@@ -1,0 +1,12 @@
+---
+title: "TBS「世界遺産」で「VIVANT」海外ロケ地を特集 堺雅人の映像で高層ビルの謎も説明"
+date: 2026-09-27
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZ056THZGOTV2cjVlRXozWFpEZ2NkMWF2X0dWc2hGZ0tLeFk0SU1PTE56M0t3REFCbVJ5STc1Tzhfcy10OFgyMzhOYzFVWXZiRUtOdjFpREEwZi1BYW0xSVVlSFM5d01QbUpnNUFubmF4RDlGbllnZHVIQ1lXWGhjeldmc29WQWZycHNDRjhLRzBYR09SZVFpRm9NYnJyUVXSAaQBQVVfeXFMTVlZZW5vemRaMjhwTEIwMmUxZ0dFVHVmV2ExUDMxRGp3dnZ0NzIzUV9qdVR0SF9Lc3VvRHFNLU5mX1QzNmllZTd6Rl9KSVkycXFzRzV1Vk4tYXJubVBONjRLQ0toV0o5eGxOckZ1eGlibC1nRjg3eENWZ1Vab3FHSDMzb0dzMEpDamFKSjZkbXNXTHR2cTZKa3lSY0I1enlEd3RkYWY?oc=5"
+collected_by: gnews_isan
+tier: secondary
+lang: ja
+country: JP
+---
+
+TBS「世界遺産」で「VIVANT」海外ロケ地を特集 堺雅人の映像で高層ビルの謎も説明。
