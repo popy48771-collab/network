@@ -1,0 +1,12 @@
+---
+title: "日本が世界遺産登録目指す足尾銅山に行ってみると...強制動員の痕跡なく、粗末な木造碑だけ"
+date: 2026-09-25
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMihwFBVV95cUxOaTg0RDNLMXNGNEJ2QU81a1pKbWhCZnhvN3FSRDFjWVRSb1NyY0xsd0ZqWFJtbVdIei1DbmJIbTFiM2xabGVROTBnRDY0c0VvbkpvZ3RKNE9NT1lMb1R2WU5mcF9RQ0ZYX1VWZ3NFQWVIUkhJcDdCQUNxRXF2VUFkaHVJUEhYSXPSAYwBQVVfeXFMTWRnci1yd3duWE5zZ1EwSEJtQmNPTlN0TzFBUndqQU90N01LODYtYmpWNkt3RGFEMDdpbENScmRpNGdnOWUzQUVIV2Zwb0haQmh0aXBnUVJSWmlYVDJxTXdGekVPdE9zajFjSG1vWU53NG4wdXJXR0YxVDlqNXNCWmpocEpwa1dGNVk3WU0?oc=5"
+collected_by: gnews_isan
+tier: secondary
+lang: ja
+country: JP
+---
+
+日本が世界遺産登録目指す足尾銅山に行ってみると...強制動員の痕跡なく、粗末な木造碑だけ。

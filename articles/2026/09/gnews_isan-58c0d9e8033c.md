@@ -1,0 +1,12 @@
+---
+title: "仲良しコンビの米倉涼子と比嘉愛未がエジプトの世界遺産の旅へ...10・13放送「絶景&世界遺産 火曜の良純孝太郎」3時間SP"
+date: 2026-09-29
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZV9IYnJnMzk2SmlwMlpLd0s5UXJBVlVlMkRDdGVSbG81WGxxTzJtMU9aUXFEanRDV204bEszLWExZjh2czJRcDRVVzlpT1dud3hCWGlvVnRyVzhxZl90czc5SVdyMi13M0o2YlhrMEFXSmlfUXcxWHdIOGMtczl4Z2tjY0NLWGJIRGFZNUV30gGTAUFVX3lxTFBhZkZPdmRZa05uUHZOOGFCRGItWTVKQ1hLU2VRLXBTTzBrcjRGUU5HWGtrc1R0MElOUXZaSWtIVDJrSWIyWEUxWEtGY283SUQ1azN3bGVnWGdYbVV4WHFKb1JRdW0tQUd6bkpVczZXaHV1c1BHVjRoN0VTX3lzNU9PdEVQLTFTZGJMa3RncXl0V2dqQQ?oc=5"
+collected_by: gnews_isan
+tier: secondary
+lang: ja
+country: JP
+---
+
+仲良しコンビの米倉涼子と比嘉愛未がエジプトの世界遺産の旅へ...10・13放送「絶景&世界遺産 火曜の良純孝太郎」3時間SP。
