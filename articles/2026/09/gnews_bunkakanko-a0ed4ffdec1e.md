@@ -1,0 +1,12 @@
+---
+title: "日本遺産認定10周年記念「鯨とともに生きる」公開セミナー"
+date: 2026-09-30
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOV3BlQ3YtdmUwMHRkNjQ1eTNFOFh4cllyUURobW81b3RRWm5vWTc4MXp5TnlsbmJWSHQyd213QjJrNjV4ekVnOE5JWVROZGFFZHEwaUNNSWZfbnctZXhUb2s3LWlSc2trdDRxR2IwbmdBZEVGd3lFS0MxNTVReGl3dEkxNWd1STk5eERZR3BZZUt1NUszRkVpVUd2UXJXLUxId0Rhenp1MVR0LUxoTGtrVVAwcXJDSTBPQzFLZ2pUVlBTZy05MEZEYU1qN0Fvb0dLWWVsNU40QdIBhgFBVV95cUxQQm0zcmtTR1U0UFV1Zmxza09BY3h2SkhkSWtoYlJHSmlLVXZMSUo2WEd4ODkzMlBCSzk0bzktd0VLVGZSQW1YdmtmSVVUUVJjajZmR1VLUW9OYm9EcDR0dlAyRUY2SzBLRkpPLUJGTmJQOThXXzRZeGJ6cFNtRTFwNUJiVWUwZw?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+日本遺産認定10周年記念「鯨とともに生きる」公開セミナー。
