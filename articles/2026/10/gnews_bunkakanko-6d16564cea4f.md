@@ -1,0 +1,12 @@
+---
+title: "日本遺産「女人高野」ピンクリボンデーイベント 慈尊院多宝塔ライトアップ"
+date: 2026-10-02
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQcWlCTFdnUHp6WWxVc0tBekJqaU5NdGRtZllpYThSOE80RXNmNGlSYVNrLTJIREZuWGcxVzk5Yjd4TXZ3N1M5ZUIzclB6M2ExV0twUnVLQmRZcEFkU3VPMUNndGRzdm9ER0NPaGh0aVVMak5yNVFYLUlXX1YwMW1uTk9va3V0M0pBRVJOTHluYmN3NlQzcGFYUC1Fcjl0bnp4M1kxUlVpMFYyZGZzcE1LT3ozTlpKQW1nQUcxaUNBc0RnUjllbUJhOFZDcmk4SmFjZXliUndR0gGGAUFVX3lxTE5aXy1zSUZqaENqdm9QMEhtb081Z1dfcFRENU52U2tqVjFRYThTR2x2OUVFTXE2YXhzbWFBb2U0Z1pSX2FVbGxQVGdZUlp1Vm1nWEJsN0twMG03QS1tN1cyM3VDc2hzWlB1c09fVEU4QUF0di1hWUl4bGpxNUJtNThPY19nV3N3?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+日本遺産「女人高野」ピンクリボンデーイベント 慈尊院多宝塔ライトアップ。
