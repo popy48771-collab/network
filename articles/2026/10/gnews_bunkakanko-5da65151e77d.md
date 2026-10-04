@@ -1,0 +1,12 @@
+---
+title: "中国の国慶節連休、成都市で多彩な文化観光イベント"
+date: 2026-10-04
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNbWdCeGl2cXZzWU44NUVxYTFTcGduUUNSWDAxbmEyOFBrQmd5Vk45TmRfejdYQWxuZlZ1OXpXQVJMbk9IMy1ha1A3RjhiQm1KY0NKdVk1aWlWdnZCOHgxT29ZMkNPNzFCdjhYSzFqR25iVG9JaGJJWldmMXBUTnAxMkc5UkNkdUlPbGJVbHlRc21QSDAxWWFhMWJwdUYwRmxVYVdsT0FiV2h3dEswa2h0c0JIZjFyMmI2cDBNamNXcGlZVGF0bHE4dktJQzJzMVZ2V3E2ZzZkSE1qWXNERUNkMNIBkAFBVV95cUxPbnVYbFpyZzQ1YVpCOTh3ZWJjQ1ZkS1VxTVVBdkRIU01UclQyMGt6elU1ZUYzVVRKLUpkWE1ZYTVJWk9lN3JIMTgxdHg5dkRkTUdxQTNaNVNQcXNjbnNEeFFRYUwzUjA0NmU2UHUtUlJNb3hlblRLVmdDZDAzTWduRzd3Y1hIUmJRMVRNRTVFNGM?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+中国の国慶節連休、成都市で多彩な文化観光イベント。

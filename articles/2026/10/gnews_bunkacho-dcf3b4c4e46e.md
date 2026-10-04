@@ -1,0 +1,12 @@
+---
+title: "国語に「関心ある」と答えた人 過去最高の83.1% 文化庁の世論調査"
+date: 2026-10-04
+source: "SmartNews"
+url: "https://news.google.com/rss/articles/CBMiwANBVV95cUxQcmRacVVlU25CUlg1S3lOT1lQd0xsSWFSNkNBeTZLSGFXVU51czdQX0g3N1FqVWg2alpnLTJYODlPTFFiNkJnZW5pOV9JVjlVLWpjT1NDUE1mWU94dkx4aFhzTXBOWEh2eWdpZzBFUkJicm5kSk9XMDBwbWlwaWdNYm5xam8zVjNvSzZsWE5rdm0xd29XNGkwMGlObzJuUU4wOHI2RnYtaW1vVFdQSFdPNFpIZUtOVkI0T19PT0RfT01fMEhBc2VlU0tkdFdHc3N3SzhPNzJDSkw0eVZqRUNoay1GRTkteWFldTUyNkUxN2Vha2Rjd3FmRC1sb1RZOHdCeHFkbC12ZC00NmlnaDkwaVpvdzliTE1NU3B3ZWRHUXZqSGdna2hfazhBVDRHM1ZUckVUcGFodHVMaDFpQWI2c1IyMUJpSDhnaTktX0o2bHpXUGszQVBMb0hJb3Q5ZkdVU092MWR6Zjc0NmlHZkJINlgwMW5jQ0V3bHdBamNvTG5OOW1CNTdFcDFPNk1BWHpGU1lQQUVuZXAwNHhsV2d2b1U1MFQ2YVJMdnY1bVVvN0dDUEZ0Q3ctTXFueWNDLU8t?oc=5"
+collected_by: gnews_bunkacho
+tier: secondary
+lang: ja
+country: JP
+---
+
+国語に「関心ある」と答えた人 過去最高の83.1% 文化庁の世論調査。
