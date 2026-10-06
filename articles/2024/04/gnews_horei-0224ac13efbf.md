@@ -1,0 +1,12 @@
+---
+title: "「登録博物館」に登録*先駆的挑戦にお墨付き"
+date: 2024-04-23
+source: "北海道新聞デジタル"
+url: "https://news.google.com/rss/articles/CBMi2AJBVV95cUxONFFsNFF1dkU3WkhaOWlWcmNxSVN6ODJlWDdYc3BoSHRsZVVkVEV4RGxKSFI2Zm8xd2lNN21aWnhBdWhjRlg4QnpXUzRQYmtXaDNzSms5cU91VFJvQUZwcVlLTDR3cWROZUFXMk0tSnBFd0lGS0s2RXVrUmRqa2d6VW5KOThMSG9mYWozQ1JhQ2MyekxzdWR2aVVEaFBBdWhDY29WaElYX25mY21vOF82U3dRVjdkX24wUXBTSWJwMDBwcWJPV1JTUkd0SmRnVDhIN1BiT1AycEVWUVVoa01ycEdRamJfN2lPaTVrT2c2R3R1SWdFNXBXOGU3aEdJV3FjemlOZWR4LXBoVlNMMm91dnJ6WGJXYUdzNGMtRGdtQXFGZHdXcktUenBsVlNHNmZET2hJUjBOYzNubTZFY0hSMkhESHFzUWE5RHdsR3V6ck1OcEQxV2RrUA?oc=5"
+collected_by: gnews_horei
+tier: secondary
+lang: ja
+country: JP
+---
+
+「登録博物館」に登録*先駆的挑戦にお墨付き。

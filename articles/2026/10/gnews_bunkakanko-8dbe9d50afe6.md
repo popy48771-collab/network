@@ -1,0 +1,12 @@
+---
+title: "中国の国慶節連休 各地で文化・観光消費が活況"
+date: 2026-10-04
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQODBxb1NLTWZVX2MtZXlNTmNza1gwaVE5ZDRYUkUtdjF6RlM1Q056aVUxNnRuZnR6SDl1a0JFNmU2alJGTjVXZnFsQVZfbVAxLVRFVHR3THROM2dvcnV3bHlDZi1ZVHF3b1lrM1VZSXNEend4UmxOZVFxdFpNbXBreHM3SjlMMS1kTm1aQWd3MjBHOWNibzZTVzBWcUNOOXp1c1FtUm9YT21hcG5zRHV5aG92bGNVVDhzMldRNFJkT2NjcVdaLVZYeDNnYnktMmloVVVHNTBab3V2aTVpYkVBUdIBkAFBVV95cUxPLW1YVi1qSGd2QVRrS3pyUldYMFoxajMzRDJTa2lhWFV1clRFVEZlelFQTGs2N0lHNW56cDdSc3U3MFlwd3FxQzUxVWpYaF96QWRfZVJiS1hWYXJtcXBORGFPdGdmWC1LdkVVRzQtdFBpSS1KWlhvRzNGckhidFRoeWNfa0loMFR2QVZ3NUxDQ1Q?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+中国の国慶節連休 各地で文化・観光消費が活況。
