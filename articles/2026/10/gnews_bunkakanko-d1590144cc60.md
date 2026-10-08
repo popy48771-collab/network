@@ -1,0 +1,12 @@
+---
+title: "中国の国慶節連休、テクノロジーで新たな文化・観光体験"
+date: 2026-10-07
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQRkI1bnlkX2ZWODZYUDA1ZHVWZlZaaVRycnhJRXVNdGh6X25SQUJFNG9vZnhYX2dIdjhUWDZQMUUtUjNrSEJBTWhZclZPWFZWcjhNNWNaZXNsbDF3ZEVqVkZGbWFxWDZnSjNHSTY0UXlLNkVBYUM4MTl3ZUtSSGtGNFprRlhQdUpQNzNv0gGQAUFVX3lxTFA5bzU4N0R0V3ZBNjAxMzRPNXI0Nk5HejFsUHdyeXpwNTAwRnpOZmRQU0N5T2dNVmkxczFONDh3SUVpSURMY0U1cW4zZlZETlUzXzZPOTh2clo4Y3MtblBkQnVvcmd4Z2FnYkRmdm9EWFA3MkppUkRYRU5PcllsSl90bDRZbkVNTm5iUHlLcEtENw?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+中国の国慶節連休、テクノロジーで新たな文化・観光体験。

@@ -1,0 +1,12 @@
+---
+title: "【活動報告:文化芸術振興の要望書を提出】"
+date: 2026-10-07
+source: "公明党"
+url: "https://news.google.com/rss/articles/CBMiyAJBVV95cUxQdHY1TU5JTnZpSGxyRm5VWF93MFQyQXhPakVpYWN1V2JCc0ljOF9RYmc2RVp1dUJqdmhQMmpuSW05ZU95ZEhtQ2hfVy1JZkF6elFpeWxaSVkzQ214c1Q3Ymt5TFV4eWhRTmM3Ym9pa0ZjenRlMVJGY2NiUmVlbFF5RGU0S0VuZkJiSlRBTkRieU9QMDFYSm0xc0NzM3JNbi02RGFjc3lscjdWMGxTZDVlZWJnN2dQRk5acm5JckRUZnQ2a2NCTTRkb2cxaXA0a2F5dko3M09oTlJ4Rkt3MTRCZ0ZEWExFVUprSkg2QlNVLUd1bVQzWHF1TkQyRTlvRmdlc0Rsb25kQVFzcDZxeG1Vc1FkZGxuRGdVS3hITVpZSDRuRWljTjY4NXJjQ25NT2hDczhxUEJPMTBUNl9WNmhwd2I0WXpEckVt?oc=5"
+collected_by: gnews_bunka_yosan
+tier: secondary
+lang: ja
+country: JP
+---
+
+【活動報告:文化芸術振興の要望書を提出】。
