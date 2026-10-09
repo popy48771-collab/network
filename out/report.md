@@ -1,14 +1,14 @@
 # 共起ネットワーク 分析レポート
 
-生成: 2026-10-08T00:41:20+00:00
+生成: 2026-10-09T00:56:35+00:00
 
 | 項目 | 値 |
 |---|---|
-| 記事数 | 3349 |
-| 対象期間 | 1970-01-01 〜 2026-10-07 |
-| 共起単位数（文） | 5214 |
-| ノード数 | 576（絞り込み前 8869） |
-| エッジ数 | 947（絞り込み前 102080） |
+| 記事数 | 3385 |
+| 対象期間 | 1970-01-01 〜 2026-10-09 |
+| 共起単位数（文） | 5252 |
+| ノード数 | 577（絞り込み前 8922） |
+| エッジ数 | 950（絞り込み前 102746） |
 
 [Gephi Lite で開く](https://lite.gephi.org/?file=https://raw.githubusercontent.com/popy48771-collab/network/main/out/network.gexf)
 
@@ -18,33 +18,33 @@
 
 | # | ノード | 種別 | 出現文数 | 次数 | 媒介中心性 |
 |---:|---|---|---:|---:|---:|
-| 1 | 飛鳥 | 語 | 169 | 2 | 0.0000 |
-| 2 | 藤原 | 語 | 152 | 2 | 0.0000 |
-| 3 | 宮都 | 語 | 111 | 2 | 0.0000 |
-| 4 | 社会教育士 | 語 | 103 | 2 | 0.0036 |
+| 1 | 飛鳥 | 語 | 170 | 2 | 0.0000 |
+| 2 | 藤原 | 語 | 153 | 2 | 0.0000 |
+| 3 | 宮都 | 語 | 112 | 2 | 0.0000 |
+| 4 | 社会教育士 | 語 | 103 | 2 | 0.0013 |
 | 5 | 文化審議会 | 組織・地域・人物 | 94 | 2 | 0.0004 |
-| 6 | 社会教育主事 | 語 | 69 | 2 | 0.0031 |
+| 6 | 社会教育主事 | 語 | 69 | 2 | 0.0012 |
 | 7 | 著作権法 | 政策・制度・法令 | 63 | 2 | 0.0000 |
-| 8 | 重要文化財 | 政策・制度・法令 | 58 | 5 | 0.0001 |
+| 8 | 重要文化財 | 政策・制度・法令 | 59 | 5 | 0.0001 |
 | 9 | 周年 | 語 | 58 | 3 | 0.0000 |
-| 10 | 表現 | 語 | 56 | 2 | 0.0006 |
+| 10 | 表現 | 語 | 56 | 2 | 0.0003 |
 | 11 | 政策 | 語 | 52 | 2 | 0.0000 |
 | 12 | 文部科学省 | 組織・地域・人物 | 50 | 2 | 0.0000 |
-| 13 | 作る | 語 | 48 | 4 | 0.0041 |
-| 14 | 枚目 | 語 | 48 | 5 | 0.0006 |
-| 15 | 講習 | 語 | 44 | 2 | 0.0016 |
-| 16 | 中国 | 語 | 43 | 2 | 0.0000 |
+| 13 | 作る | 語 | 48 | 4 | 0.0014 |
+| 14 | 枚目 | 語 | 48 | 5 | 0.0005 |
+| 15 | 中国 | 語 | 47 | 1 | 0.0000 |
+| 16 | 講習 | 語 | 44 | 2 | 0.0006 |
 | 17 | 助成 | 語 | 42 | 2 | 0.0000 |
 | 18 | 図書館 | 語 | 42 | 4 | 0.0000 |
-| 19 | 改修 | 語 | 42 | 3 | 0.0006 |
+| 19 | 改修 | 語 | 42 | 3 | 0.0005 |
 | 20 | 著作権 | 語 | 41 | 4 | 0.0001 |
-| 21 | 年熊本地震 | 語 | 39 | 2 | 0.0005 |
+| 21 | 年熊本地震 | 語 | 40 | 1 | 0.0000 |
 | 22 | 答申 | 語 | 39 | 6 | 0.0008 |
 | 23 | 職員 | 語 | 38 | 6 | 0.0000 |
-| 24 | 取る | 語 | 37 | 3 | 0.0008 |
-| 25 | 持つ | 語 | 37 | 2 | 0.0125 |
+| 24 | 取る | 語 | 37 | 3 | 0.0002 |
+| 25 | 持つ | 語 | 37 | 1 | 0.0000 |
 | 26 | 推薦 | 語 | 37 | 3 | 0.0000 |
-| 27 | 活躍 | 語 | 37 | 3 | 0.0085 |
+| 27 | 活躍 | 語 | 37 | 3 | 0.0023 |
 | 28 | 結果 | 語 | 37 | 2 | 0.0000 |
 | 29 | 資質 | 語 | 36 | 2 | 0.0000 |
 | 30 | 能力 | 語 | 35 | 3 | 0.0000 |
@@ -55,21 +55,21 @@
 
 | # | ノード | 媒介中心性 | 出現文数 |
 |---:|---|---:|---:|
-| 1 | 称号 | 0.0144 | 32 |
-| 2 | 一連 | 0.0142 | 7 |
-| 3 | 自分 | 0.0126 | 13 |
-| 4 | 持つ | 0.0125 | 37 |
-| 5 | 資格 | 0.0100 | 9 |
-| 6 | 働く | 0.0097 | 13 |
-| 7 | 活躍 | 0.0085 | 37 |
-| 8 | 見出だす | 0.0074 | 6 |
-| 9 | 作り出す | 0.0070 | 9 |
-| 10 | 基盤 | 0.0066 | 19 |
-| 11 | 地域コミュニティー | 0.0062 | 10 |
-| 12 | 支える | 0.0060 | 28 |
-| 13 | 省察 | 0.0059 | 4 |
-| 14 | 他者 | 0.0050 | 7 |
-| 15 | 深める | 0.0045 | 16 |
+| 1 | 働く | 0.0046 | 13 |
+| 2 | 自分 | 0.0041 | 13 |
+| 3 | 見出だす | 0.0036 | 6 |
+| 4 | 作り出す | 0.0034 | 9 |
+| 5 | 熊本地震 | 0.0034 | 14 |
+| 6 | 基盤 | 0.0033 | 19 |
+| 7 | 地域コミュニティー | 0.0031 | 10 |
+| 8 | 支える | 0.0031 | 28 |
+| 9 | 他者 | 0.0026 | 7 |
+| 10 | 官民連携 | 0.0025 | 7 |
+| 11 | 災害 | 0.0024 | 11 |
+| 12 | 資格 | 0.0024 | 9 |
+| 13 | 深める | 0.0024 | 16 |
+| 14 | 活躍 | 0.0023 | 37 |
+| 15 | 適用 | 0.0023 | 7 |
 
 ## 結びつきの強いペア（NPMI 上位）
 
@@ -112,77 +112,77 @@
 
 | # | ペア | surprise | 直近NPMI | 以前NPMI | 新規 |
 |---:|---|---:|---:|---:|:--:|
-| 1 | 手織り — 畳製作技術 | +1.000 | 1.000 | 0.000 | ★ |
-| 2 | 手織り — 認定書 | +1.000 | 1.000 | 0.000 | ★ |
-| 3 | 畳製作技術 — 認定書 | +1.000 | 1.000 | 0.000 | ★ |
-| 4 | 夫妻 — 秋篠宮 | +1.000 | 1.000 | 0.000 | ★ |
-| 5 | 噴飯 — 意味変化 | +1.000 | 1.000 | 0.000 | ★ |
-| 6 | 噴飯 — 日常 | +1.000 | 1.000 | 0.000 | ★ |
-| 7 | 意味変化 — 日常 | +1.000 | 1.000 | 0.000 | ★ |
-| 8 | 入る — 現実 | +1.000 | 1.000 | 0.000 | ★ |
-| 9 | 判断力 — 表現力等 | +0.984 | 0.984 | 0.000 | ★ |
-| 10 | 思考力 — 表現力等 | +0.984 | 0.984 | 0.000 | ★ |
-| 11 | 器楽 — 歌唱 | +0.961 | 0.961 | 0.000 | ★ |
-| 12 | 夫妻 — 歌舞伎鑑賞 | +0.954 | 0.954 | 0.000 | ★ |
-| 13 | 夫妻 — 新国立劇場 | +0.954 | 0.954 | 0.000 | ★ |
-| 14 | 秋篠宮 — 歌舞伎鑑賞 | +0.954 | 0.954 | 0.000 | ★ |
-| 15 | 秋篠宮 — 新国立劇場 | +0.954 | 0.954 | 0.000 | ★ |
-| 16 | 噴飯 — 流れ | +0.954 | 0.954 | 0.000 | ★ |
-| 17 | 意味変化 — 流れ | +0.954 | 0.954 | 0.000 | ★ |
-| 18 | 日常 — 流れ | +0.954 | 0.954 | 0.000 | ★ |
-| 19 | 復元 — 修理 | +0.944 | 0.944 | 0.000 | ★ |
-| 20 | 図画工作 — 工芸 | +0.938 | 0.938 | 0.000 | ★ |
+| 1 | 入る — 現実 | +1.000 | 1.000 | 0.000 | ★ |
+| 2 | 判断力 — 表現力等 | +0.983 | 0.983 | 0.000 | ★ |
+| 3 | 思考力 — 表現力等 | +0.983 | 0.983 | 0.000 | ★ |
+| 4 | 器楽 — 歌唱 | +0.959 | 0.959 | 0.000 | ★ |
+| 5 | 入る — 紐解く | +0.942 | 0.942 | 0.000 | ★ |
+| 6 | 現実 — 紐解く | +0.942 | 0.942 | 0.000 | ★ |
+| 7 | 復元 — 修理 | +0.942 | 0.942 | 0.000 | ★ |
+| 8 | 図画工作 — 工芸 | +0.934 | 0.934 | 0.000 | ★ |
+| 9 | 図画工作 — 美術 | +0.915 | 0.915 | 0.000 | ★ |
+| 10 | 世論調査 — 現実 | +0.897 | 0.897 | 0.000 | ★ |
+| 11 | 世論調査 — 入る | +0.897 | 0.897 | 0.000 | ★ |
+| 12 | 国語 — 現実 | +0.860 | 0.860 | 0.000 | ★ |
+| 13 | 国語 — 入る | +0.860 | 0.860 | 0.000 | ★ |
+| 14 | 回国民文化祭 — 基本構想 | +0.860 | 0.860 | 0.000 | ★ |
+| 15 | 入る — 本来 | +0.860 | 0.860 | 0.000 | ★ |
+| 16 | 現実 — 本来 | +0.860 | 0.860 | 0.000 | ★ |
+| 17 | 器楽 — 統合 | +0.839 | 0.839 | 0.000 | ★ |
+| 18 | 感性 — 知性 | +0.827 | 0.827 | 0.000 | ★ |
+| 19 | 歌唱 — 統合 | +0.802 | 0.802 | 0.000 | ★ |
+| 20 | 入る — 理解 | +0.802 | 0.802 | 0.000 | ★ |
 
 ## 文化施設・政策と結びついている語
 
 - **九州国立博物館**（文化施設, 出現5文）: 面白い(0.86), 開催決定(0.80), 深める(0.78), ツアー(0.76), トーク(0.75)
-- **重要文化財**（政策・制度・法令, 出現58文）: 割れる(0.76), 修理中(0.75), 仏像(0.74), 委託先(0.72), 木造阿弥陀如来座像(0.71)
+- **重要文化財**（政策・制度・法令, 出現59文）: 割れる(0.76), 修理中(0.75), 仏像(0.74), 委託先(0.72), 木造阿弥陀如来座像(0.70)
 - **文化観光推進法**（政策・制度・法令, 出現29文）: 拠点計画(0.87), 地域計画(0.81), 観光庁(0.80), 報道(0.74)
 - **東京文化会館**（文化施設, 出現21文）: 殿堂(0.82), 年休館(0.79), バレエ公演(0.77), オペラ(0.73)
 - **新国立劇場**（文化施設, 出現10文）: 夫妻(0.84), 秋篠宮(0.84), 歌舞伎鑑賞(0.80)
-- **アーツカウンシル**（政策・制度・法令, 出現20文）: 支援情報(0.82), 日付更新(0.82), 沖縄(0.79)
 - **劇場法**（政策・制度・法令, 出現5文）: 公開シンポジウム(0.89), 施行(0.77), 齎す(0.77)
+- **アーツカウンシル**（政策・制度・法令, 出現20文）: 支援情報(0.82), 日付更新(0.82), 沖縄(0.78)
 - **文化資源**（政策・制度・法令, 出現23文）: 記念物課(0.89), 政策(0.71)
 - **文化財保護法**（政策・制度・法令, 出現5文）: 適用(0.82), 通知(0.71)
 - **著作権法**（政策・制度・法令, 出現63文）: 改正案(0.78), 閣議決定(0.68)
 
 ## 話題のかたまり（Louvain コミュニティ）
 
-- **クラスタ 0**（31語）: 工夫、発想、働く、思考力、判断力、表現力等、技能、意図、自分、習得、感性、身体性
-- **クラスタ 1**（26語）: 熊本地震、適用、秩序、通知、共生社会、災害、寄付、日本語教育支援総合、パッケージ、北東北、政令、備える
-- **クラスタ 2**（24語）: 議決、克彦、同審議会文化財分科会、経る、村野藤吾設計、答申、バレエ公演、年休館、再始動、記念イベント、文部科学大臣、殿堂
-- **クラスタ 3**（22語）: YouTube、配信、方向け、ウェブ会議、弁理士、コミケ、模様、報道関係者、ライブ、次創作、講演資料、講演映像
-- **クラスタ 4**（19語）: 資格、称号、職員さん、人たち、皆さん、名乗る、社会教育施設、取る、付け、立てる、崩す、社会教育主事講習
+- **クラスタ 0**（31語）: 工夫、働く、表現力等、発想、技能、思考力、判断力、意図、自分、習得、感性、身体性
+- **クラスタ 1**（30語）: 省察、実践、繋がり、資格、往還、職員さん、地域社会、人たち、重なる、皆さん、称号、名乗る
+- **クラスタ 2**（26語）: 熊本地震、秩序、適用、通知、共生社会、災害、寄付、日本語教育支援総合、パッケージ、北東北、政令、備える
+- **クラスタ 3**（24語）: 議決、克彦、同審議会文化財分科会、経る、村野藤吾設計、答申、バレエ公演、年休館、再始動、記念イベント、文部科学大臣、殿堂
+- **クラスタ 4**（22語）: YouTube、配信、方向け、ウェブ会議、弁理士、コミケ、模様、報道関係者、ライブ、次創作、講演資料、講演映像
 - **クラスタ 5**（17語）: 自治体職員向け、札幌、文化事業、官民連携、事例、派遣参加者、鳥取、海外派遣プログラム、アートマネージメント人材等、公募開始、売買、アーツカウンシル東京
-- **クラスタ 6**（13語）: 採択先、専門人材育成、コンテンツ制作、支える、文化芸術活動基盤、強化基金、クリエーター支援基金、確保等、中核、収蔵ミニチュア展、タバコ、年度補正予算事業
-- **クラスタ 7**（13語）: 閣議決定、改正案、歌手、BGM、配分、使用料、楽曲使用料、還元、歌手ら、BGM使用料、権利創設、分配
-- **クラスタ 8**（12語）: 器楽、図画工作、歌唱、区分、工芸、小学校、創造的、美術、矢羽、統合、つ目、書道
-- **クラスタ 9**（11語）: 存続、除籍、直面、収蔵庫不足、保育園、裏側、試み、危機、収蔵資料、博物館指針策定、廃棄
+- **クラスタ 7**（13語）: 採択先、専門人材育成、コンテンツ制作、支える、文化芸術活動基盤、強化基金、クリエーター支援基金、確保等、中核、収蔵ミニチュア展、タバコ、年度補正予算事業
+- **クラスタ 6**（13語）: 沖縄、首里城、県立芸大、修理文化財御披露目、日付更新、支援情報、特別展、妖怪画コレクション、幽霊、福岡市博物館収蔵、アーツカウンシル、福岡市博物館
+- **クラスタ 8**（13語）: 閣議決定、改正案、歌手、BGM、配分、使用料、楽曲使用料、還元、歌手ら、BGM使用料、権利創設、分配
+- **クラスタ 9**（12語）: 器楽、図画工作、工芸、歌唱、区分、創造的、小学校、美術、矢羽、統合、つ目、書道
 
 ## 最近の記事
 
-新しい順に20件（全3349件は `articles.html` / `articles.csv`）。
+新しい順に20件（全3385件は `articles.html` / `articles.csv`）。
 
-- [青年文化芸術パス、執行機関にも22倍増を一方通告](https://news.google.com/rss/articles/CBMijgFBVV95cUxOdzFfQ0draTIyN2ExNkxueFNrRjBhS1NYYk9QRWxwSWRSRmtYaDVIblJXT3JITFlCSmdjR2tXaWd1Z3dpbVBBWDFtZkxRZHdVU3A0cktkRERvTlJ1SGx0VExua2NkZHYxM3ZUMzJiLVBKeHd4Tmp5dzd6bUk5WTExTlJPc3VBOVY5S3hPUVdR?oc=5)<br>　2026-10-07 / 조선일보
-- [日本遺産 歴史を紡ぐ本邦国策を北海道に観よ!〜北の産業革命「炭鉄港」〜 | お知らせ | ニュース](https://news.google.com/rss/articles/CBMiXkFVX3lxTFBXcmJUTFlUUFRram1IeE1nTlJ1RFFqdDlOakpNNkZsTHpFbk4wTEdMSFgwQ2MteERUUUJjQjNiMzJKd1psa21FSHloMHFBdmxIZEVFRnotZVZhNm9pS0E?oc=5)<br>　2026-10-07 / 自由民主党
-- [文化観光は中国の伝統を蘇らせる。](https://news.google.com/rss/articles/CBMid0FVX3lxTFBwOElMWU5oendlTk1TcE5TcTZrbXJEVGpfendzRm5peFdkVWJ6b3FDLXhyZ2FSRmp5dXhabTFRZ1pwN3l1TUswMWZBWEhkMGdZX1ZNRmpYZDNvaHkyOEMzemtGX09EMm5RTFZENXVPdTBSeVNpTC1R?oc=5)<br>　2026-10-07 / Vietnam.vn
-- [文化庁「国語に関する世論調査」結果 「ひもとく」「佳境に入る」などの本来の意味/現実の理解の差が明らかに](https://news.google.com/rss/articles/CBMiXEFVX3lxTFBFaVdzenQ3eVZkcFk3aHpmWXhsaEZBZlRtY3l0Ymw0eTdwTGV4cklZWnhONTBHUjJkMjkzaFUtLXppVWlqQmlkZ0l3QnJvYnFuMFROOU9uVWI2S2tL?oc=5)<br>　2026-10-07 / 山陽新聞
-- [文化庁、令和7年度「国語に関する世論調査」の結果を公表](https://news.google.com/rss/articles/CBMiTEFVX3lxTE4zWmo5V2lneVlTeVZRU1dRX3ozLXZIa1NidEptRGtJUV9pYWZMY0pYck12STEzZVdXYjBuNFo3LUlFaWhsQkV0VW1QZDc?oc=5)<br>　2026-10-07 / カレントアウェアネス・ポータル
-- [大雪で破損した国の重要文化財「弘前城二の丸未申櫓」の保存修理工事へ 2029年度まで櫓は見られず(青森放送)](https://news.google.com/rss/articles/CBMif0FVX3lxTE42NFVpc1BtXzJxTlFnbEdyQUJRdmUyZlh6NVlzUHRRRU45SE9CM3N4R3I0eFhCVWFfSF9Fc2JPTk9xYTdrVnZfYU9lZmdpaXdUTGJ2czhFeEJNWFJoOHZDcm5pZkNlb09oSC00NENJc1NUNjh6cV81dEZid3BvckU?oc=5)<br>　2026-10-07 / Yahoo!ニュース
-- [原爆ドームと厳島神社の世界遺産30年をPR ラッピング電車やサミット計画](https://news.google.com/rss/articles/CBMiS0FVX3lxTFB4N0tqUWlWcTVoV3Y1WkRiZ3cxbXA0Q0VlMHBRbndGcU1va00ySmJHdlNqY3FMY2U1RFF6SEg0YW5UekpIbHJwemZ0TQ?oc=5)<br>　2026-10-07 / 47NEWS
-- [八ヶ岳エリアに4つのJUST!#11](https://news.google.com/rss/articles/CBMiS0FVX3lxTE1PaFNpWER6dzVfTm5LZ0EwMkdlTHY3dWNGb0N4b3N4ZEQ5Sm96MkVkX0Y5SHlpUXVlMmViaUdJSUw2ZHpEYVZJQmpydw?oc=5)<br>　2026-10-07 / TVer
-- [中央教育審議会初等中等教育分科会教育課程部会芸術ワーキンググループ(第10回)の議事録を掲載しました](https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/113/gijiroku/mext_00010.html)<br>　2026-10-07 / 文部科学省 新着情報（文化関連のみ）
-- [中国の国慶節連休、テクノロジーで新たな文化・観光体験](https://news.google.com/rss/articles/CBMiiwFBVV95cUxQRkI1bnlkX2ZWODZYUDA1ZHVWZlZaaVRycnhJRXVNdGh6X25SQUJFNG9vZnhYX2dIdjhUWDZQMUUtUjNrSEJBTWhZclZPWFZWcjhNNWNaZXNsbDF3ZEVqVkZGbWFxWDZnSjNHSTY0UXlLNkVBYUM4MTl3ZUtSSGtGNFprRlhQdUpQNzNv0gGQAUFVX3lxTFA5bzU4N0R0V3ZBNjAxMzRPNXI0Nk5HejFsUHdyeXpwNTAwRnpOZmRQU0N5T2dNVmkxczFONDh3SUVpSURMY0U1cW4zZlZETlUzXzZPOTh2clo4Y3MtblBkQnVvcmd4Z2FnYkRmdm9EWFA3MkppUkRYRU5PcllsSl90bDRZbkVNTm5iUHlLcEtENw?oc=5)<br>　2026-10-07 / dメニューニュース
-- [ハノイ市は、ベトナム少数民族文化観光村を市レベルの観光エリアとして認定している。](https://news.google.com/rss/articles/CBMiswFBVV95cUxNVXRST1prLUxYVHVCc3h2WDIwV0lVTVpEb2pHVUtwNUZfOERmb0h6UkkydWNqaHhWV1NyNHZyT3JGbUtEQ2dPWTBENWFqYUtJZ0VpdjZDbnhpTF95NU15V19reGhXWnF3OHdXa1I5VWthYXRJTGw5NmpzMEZOZEN5S202MVdUYlJjSkpwd2huQ0FYSzFMZkRGUzFhSnJOUFFNQzVvamttdm9NTkhES1RzWFhyOA?oc=5)<br>　2026-10-07 / Vietnam.vn
-- [サレン住宅街では、2026年に開催されるムオンロー文化観光祭に向けて、活気あふれる観光や体験型アクティビティが展開されている。](https://news.google.com/rss/articles/CBMi0gFBVV95cUxNZFd6d0pndWZVd1pydktGWjZCamF4ajZzOFJrT3lNVkJycHJQcjdZbEs2OEloblpIakNocldyYlBVRzJZMTRWeFY1Y29PbWdZQjFvLVBqaXpfcnJGZmhTRmpvN0szcm1kT1RieEpHeU40aXA0Z1RDR0NPVUt2ZnBaNElXcThlMGg5a1pnV05MYkkxeWJSMW8tYWRUalBQdkdpMmlBaWZGUkNlc0V5NGpMd1RsYzFkQUFjcGpnamo2U012aVRoemVLTkFYLWk3MFlDenc?oc=5)<br>　2026-10-07 / Vietnam.vn
-- [クアンチ省は、文化観光週間を定期的な文化交流の場として発展させようとしている。](https://news.google.com/rss/articles/CBMipgFBVV95cUxNUUZXTXJ6X0xIbm11ZF9FeG9hTVpKMnI1d19hbVI4dmtqYXA2RDR3cUJsM2xxOUxzdlRGdVNwaS1wVDZTYjVuWGJfZ21mMFFkX2hRSm9VLUktZzBtbVl6RUJFOW5OSWw2XzVSQ1diT0txWHE1c0UwcjlWcXh0dFkzc2daZEtScUJNNnlBZF9MeS05SWExaGpLX3BYTmhrZHc2M1d4bHp3?oc=5)<br>　2026-10-07 / Vietnam.vn
-- [【活動報告:文化芸術振興の要望書を提出】](https://news.google.com/rss/articles/CBMiyAJBVV95cUxQdHY1TU5JTnZpSGxyRm5VWF93MFQyQXhPakVpYWN1V2JCc0ljOF9RYmc2RVp1dUJqdmhQMmpuSW05ZU95ZEhtQ2hfVy1JZkF6elFpeWxaSVkzQ214c1Q3Ymt5TFV4eWhRTmM3Ym9pa0ZjenRlMVJGY2NiUmVlbFF5RGU0S0VuZkJiSlRBTkRieU9QMDFYSm0xc0NzM3JNbi02RGFjc3lscjdWMGxTZDVlZWJnN2dQRk5acm5JckRUZnQ2a2NCTTRkb2cxaXA0a2F5dko3M09oTlJ4Rkt3MTRCZ0ZEWExFVUprSkg2QlNVLUd1bVQzWHF1TkQyRTlvRmdlc0Rsb25kQVFzcDZxeG1Vc1FkZGxuRGdVS3hITVpZSDRuRWljTjY4NXJjQ25NT2hDczhxUEJPMTBUNl9WNmhwd2I0WXpEckVt?oc=5)<br>　2026-10-07 / 公明党
-- [【愛知県豊田市】重要文化財 旧鈴木家住宅の主屋再建250年を記念し、3つの座敷を初公開](https://news.google.com/rss/articles/CBMie0FVX3lxTE40VDlQTm5uY1NfaTRVUnpyMDMxX1N3ZmY1Snd4ZFc4ektqY2U1ZjZlWWprbFMyUHExcFl4X1NxQnd3WUhRMExRZmdsTHJKV1hteG1MNVRFVVBNdTFCUGlRbmJPSUNOWENSMFQtbXB5aXVieFZVUTNVTTJDVQ?oc=5)<br>　2026-10-07 / ニコニコニュース
-- [【インフォグラフィック】ムオンロー文化観光フェスティバル2026](https://news.google.com/rss/articles/CBMihAFBVV95cUxNZE5YYXVseEtxR2oxRU9FeWFIT29lekJROTRvSjBCcjA0Wm5TSDRFYVBPQ1VXZFVkcmozNFphY19NVUdFdnpDNTZhV1pveGhhMUs5ajFmbVVFU0pZdlliMmE0c0ZIak9OalgxbWdsV2Nqem1ZYUhndVpDSFltUU5Vb3VWRFA?oc=5)<br>　2026-10-07 / Vietnam.vn
-- [「大津祭」からくり修理進む 400年の元の姿を探る調査 「貴重な文化財を次世代へ」](https://news.google.com/rss/articles/CBMiWEFVX3lxTE8zekljOXF5Q2pPdEliZkhYWFJVb3VvcnVZV29YTWNQZHc0VWpHZXc3em9HR3VGUVkybnNhTGpKNUlLYnR3eml2VDZuOFlUbm1SSlZyYmd1aW4?oc=5)<br>　2026-10-07 / 京都新聞デジタル
-- [[首里城文化財 修理・復元・収集のいま](3) 宮城奈々 染織 原資料に基づき復元着手 研究者と製作者が一丸](https://news.google.com/rss/articles/CBMiXkFVX3lxTE5JYkR2Rk9DNTJ2cHRoVmtMQ2huVmo3ZnJpUW5od21sczZDVjdCU2pidk5rOHFsRFVWN3JLYjdEX0RtczR5bWo4YW55LWY1dXc1bGQ3anFCYXVTekp6V0E?oc=5)<br>　2026-10-07 / 沖縄タイムス社
-- [DOCOMOMO Japan 300選 選定記念「モダン・ムーブメントと建築の現在」](https://news.google.com/rss/articles/CBMiakFVX3lxTE5QanQ1VzQtbWZRN18xZ25vU3doUWNuTHlUWi1QV3RrQnBXT1Y3SlZvMXpNVi02SlVzcFVGbXEwV1ZIOUllOFFldF9xeHdtdEVZVElhampDWkpiYkl1RFg2TFdGUHRsVUFYcWc?oc=5)<br>　2026-10-07 / デザイン情報サイト[JDN]
-- [立石淑恵(オホーツクミュージアムえさし学芸員)*雪の季節](https://news.google.com/rss/articles/CBMi5wJBVV95cUxNeC1XZEQtTjNScGp4M1AxOE9WZ29rbHo5aFBWV3dZMWE4SHk5Qm44UUtyakJjdVFLV3dtM19MN3RYTngxTV8xM0NkZ0N2X1daY1U5SlNoejBRQ2VvYUM3NVZDLWdpcFBoeHotT2N6M3RaUDBRRGtNWDV1bDVTcUNoTThLVWhGZmhhM1hKUUd3LW5GVGUwRDkwNEY0XzY2eVJZWDJ0S3p6UEVQNW1HM19mUVA0Mm5wRF9WU3NZcm9oLTJCd2p5YkVnSDdOWEo3RXRiRVVsYWFBVWdfVWpvOG5MV1p6ZGdWckotZEtON2tkUU9WYm5RekdVd3VFUmM5cnhLY0JlbGM2OWRNWmNna295VlBXakZkZ2Qya25yZEIxdzEzdWtzc2ZnXzF3M000ajlwekh1dWVKR3dMSWc5em1SNlNFYVp2Y2hnVG1XTG5qVXJ5azZ4bGdUd2FvcmlPejJSbC1VVW1ucw?oc=5)<br>　2026-10-06 / 北海道新聞デジタル
+- [被災文化財の救出へ連携確認 知事に「レスキュー事業」報告 <2026年熊本地震>(熊本日日新聞)](https://news.google.com/rss/articles/CBMif0FVX3lxTE5Ld0dsZ1dwd0V1bTVIMXFFWEM0SmVQc0o4SG1JelNkVHlUd3BkRGQ4Tm9MTElEbngwX0hISHFZVkZtV2hXYkFhNXZmR1g1S0FOVE02UDMzY3U0d3ZkbkdRYjJRSlRUOUV0RHZaS29abUlUTy0yanBsdjFYSVN6SHM?oc=5)<br>　2026-10-09 / Yahoo!ニュース
+- [中国、渤海遺跡の世界遺産登録を推進...韓国国家遺産庁「把握していない」(中央日報日本語版)](https://news.google.com/rss/articles/CBMif0FVX3lxTE9TcUZRUkREWnQzWjNvOWZTd2lYYkdKTFZwb05rdUpPdTcwZEhpQ2MwaHV1cEZPRzVheUhRWm9uQmtyaFJlRFdEaHR4MEN0bVRDNmJLRHdGdXU5MkNCcnczUkFqd2h3OE9fREdVN19Gb095YS1LaS1nN0hpV1EzcFk?oc=5)<br>　2026-10-09 / Yahoo!ニュース
+- [飯田市、文化会館改修で初の利用団体向け説明会 「計画できた後に説明されても...」異論も](https://news.google.com/rss/articles/CBMicEFVX3lxTE40emQtYXRfeW9RLUxKdkVOQkZYRHpNMkdtUERyekRiMHRFRnVMT1NQT0NUZzhrMlZRN1IxdmsxcmlHeVdkcG9RTUdEVnhCU3pXblhlVFdZYzB0Nng3Wm8tVjZOV0Z6cDBBTGtUTTZrMTM?oc=5)<br>　2026-10-08 / 信濃毎日新聞デジタル
+- [枚方市文化財保存活用地域計画](https://news.google.com/rss/articles/CBMiX0FVX3lxTE5zaGxRb3phclp5MzFPRHZRY0RJNUlUTUhKSE1meWdKQV8zTnRYTkRpdWZsT1V2MndZc0l3NXc4M2pzNi1HakJyQ01EOEZHWi1fU0ZkVEFwTjVKaWRzc1Bz?oc=5)<br>　2026-10-08 / 枚方市
+- [新居浜・県総合科学博物館で「剥製」特別展 国立科博収蔵、世界最大級の野生ヒツジなど180点](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Rem5xWXotbE9KZjhCQ01SUTJUb0Z2d0VvZVJLZWNxd3hudWhxd0RlZXRyNVN0RnZQNVdQLUZsYTRweUlGNUZKdTVPNGdOVWFvNWNKUWpVQXRtdGxGUTJXLQ?oc=5)<br>　2026-10-08 / 愛媛新聞
+- [信者も後継者もいない寺なのに買い手がつく...元税務署長が明かす「宗教法人を買う人たち」の本当の狙い](https://news.google.com/rss/articles/CBMie0FVX3lxTE9PUFc1NlJRbE43OHl4NDJXb29CV05ha24td195YWtKSjU2UFZMYU9BOFA4a3owaTZZdVFvTU16bEdWSzd0TXY1dmc1c1VEV0tnbS1NTjZEeUNxelJQSzYzTnMxbGMzcTkxdDZpTzAtcTcwOHlTazhjS3g5QQ?oc=5)<br>　2026-10-08 / ニコニコニュース
+- [伊勢原市 文化会館改修設計をプロポーザルで](https://news.google.com/rss/articles/CBMigAFBVV95cUxONG5VeWpJRjl6VzR1MHlQUFJmRWVhUWhzZUd2Z2hUTXdPTWxHek9feTJEQjY0TUI0ZW1VaWZQQ2g4TFk2RUtuYWN0d3dOanVXbFZTSUs5RVVUdGVMaGJWcDdXeUloVUFwcExleUo1WUlxZ0d6bnF6WGJhVkJIcTV6NQ?oc=5)<br>　2026-10-08 / 建通新聞
+- [中国蘇州・陽澄湖の上海ガニ漁が解禁 スマート化と文化観光の融合で8200億円相当の産業規模へ](https://news.google.com/rss/articles/CBMiUkFVX3lxTFB3LUk1cUliRlFCcHRiemhvbEU1TDMxQzIyek85SzdwSVpFNUJnRUtKa3h3NC1NSGV1UWVlZWRqcjRIZU5fb1lBQmpwVl9ZMGxCYmfSAVRBVV95cUxQRVZRRXl1M0RQLTd5dFlzdWxRalRiS0RrTjF6ZXItUTVwakdkWExfVExHcXVWaW92WHB6V1U3cHZLdV9PYms0UHBxUG44aEg1cmNvdXI?oc=5)<br>　2026-10-08 / AFPBB News
+- [中国・重慶、国慶節に観光客910万人 「食・宿・買い物」消費も大幅増](https://news.google.com/rss/articles/CBMiS0FVX3lxTE9qaW1PeWRSNFV2cEJKSURVYkZ4TVRTSzJpWXNtYnkwTTNRNDlBa2lBYzV2Q0lGa1V5cmQ4dnczUzMwdWJFYUFkNnU1WQ?oc=5)<br>　2026-10-08 / 中国経済新聞
+- [世界遺産生かし観光振興 6都道県連携、奄美初の現地交流会|社会・経済](https://news.google.com/rss/articles/CBMi2gJBVV95cUxOd3pibDRRV3NEN21FM1JnTVhSZ3NkUHJjQlRobjZ3SWRuTVJBa2VUZDFGNTN4TUFfZzhwZWdUUThpZDNuNUtLVW43RXVIMUx5NUpaTmd6MnpuaVBDd25YWkZRS3JVbFdQZFZ4YndNY2pURmFTMjhaQTc5ZUVMTGhFemU2ZmhjU3U3bzF0Q292OEM5Z1JBbWdCbFFiaTZHSnhJS2syTUI4Q1ViSzJBdVJDN1ltUTRlV21pc2xKaTd3VTVrMjZBUWU1TGRyS1B6QTZmVmg0bGQzT0ZjQkczV1VkZXlNeVJyeVBvUkIwb09Yb2cxdFUwdzhnT2xDM21fYWRmMkUwSWwwTmdROEtfQ0dZaElyT0NoN28yWkJZWXoteXZOZFc2X1BtVUExbDhQTk1XZzBIa19yMl9aX1MyUEgxenU3aVRKeTVUS0VtVDI3NXNOUkdkczNvRkx3?oc=5)<br>　2026-10-08 / 南海日日新聞
+- [世界遺産「飛鳥・藤原の宮都」の歴史に触れる、ナイトラウンジセミナーを開催【グランドメルキュール奈良橿原】](https://news.google.com/rss/articles/CBMiakFVX3lxTFBvaGJpUnNQUzlxVzlYeDFyYzZCOGUySTFydVczMm9WbV9NU1NZek9JLXpMZzVPRHRlYlYwMmkxdG9HT2JwVUVZbElDTlIwM254QWZ3RGRJWl9IVXEtS2ViRFV5WWNiT19Iamc?oc=5)<br>　2026-10-08 / PR TIMES
+- [ユネスコ加盟75周年記念 世界遺産で「るるぶ」 群馬・富岡市など協力](https://news.google.com/rss/articles/CBMiWkFVX3lxTE80SEppak5Zakd4bWhpc2Z5RzZxRGY4NFZfYnEwQlRNLTdjbW9NOFJWbXNIdzY0NXpUcTh6VzlBeE1lRkNzSHRlVmZEUUlyZVY0dUw3WmpUVTFMZw?oc=5)<br>　2026-10-08 / 上毛新聞電子版
+- [ムオンロー文化観光フェスティバル2026:タイ・ソーダンスのエッセンスを広め、ベトナム北西部の色彩を発信する。](https://news.google.com/rss/articles/CBMiswFBVV95cUxOM3p5aFpxZjJwdTQ4X1FZZ3YteEcxcTZOZi1PMnB6c2FVQ2R1SWdyb2dkLWpwcUwyRnA2ZGFteVRKb1FHRXVFb1lKZDBQTkN2WmdCaWFkNTJSNWJ0SEhvMnZzbUNJcURzVmlXTlByeHlyRjNjZW84WjRNb1hGWG5xd0I1WWNZM3R5d0pGaU1iY3FUOHVFRDR5ZHRta2tfd3RuMG9qanZkZWFEYXBZaGpndmVJMA?oc=5)<br>　2026-10-08 / Vietnam.vn
+- [ベトナム伝統工芸村フェア2026:農村の産物、文化、観光を結びつける。](https://news.google.com/rss/articles/CBMipgFBVV95cUxOWHpYSGN4ZFB4Z0RGRHZBUkxHN1R3dURrUVgzZlNYaVBRX0tkRDE4VC1FVnFkV2hTLU5hNlFvUXNsaTBpSE9MQTJwX0hldFh2akxXUW4xMWxoX25hMElVY1hqVW5jSjdlV040U3BkcnhzcGw3TkJNNDlFWm13cGRITUhWNFlqaWZxaDVzX00xLVdBM2I3cWxPRVItWDhuVzFLR1NReE53?oc=5)<br>　2026-10-08 / Vietnam.vn
+- [デザインの歴史をたどる展覧会「デザイン・クロニクル展 なにが生まれて、なにが変わった?」が国立工芸館(金沢市)にて開幕!](https://news.google.com/rss/articles/CBMiakFVX3lxTFBuc1gxN1RNVW1fcEFZZUdUU3M2SjhtMWZEeF9JU1pGcTNuUEhUbnFJc3h2eG12M2xNc0hoRnRoVEx0T3hmRVZyNXBqaHdBYkJtZXVUNkczeS11MjRnVktCUGJRRFFBeFpfNHc?oc=5)<br>　2026-10-08 / PR TIMES
+- [ディエンカイン古城の価値を保存・促進するとともに、文化・観光開発にも取り組む。](https://news.google.com/rss/articles/CBMirAFBVV95cUxNRlpfQjd5TTNvbmVJS2JDU1IyejZXUWZJN244RHdNSEJnYWtJWW1HWS1icFBmQ1ZNUW9MMEhtV1ExNXNOcVp0V1VnWUFKSG4xNVZaYVozWTRmV0VkLUQ1V1hacFlpVm1JNnc4MzNLR0NHbGVwMkFSd1RGemMxbEJhSV9UYmNOMlRtblhwYzhCalpsd1EtcHFXeFRwV2pFVi1rN2kyRnhiX1ZsWWp3?oc=5)<br>　2026-10-08 / Vietnam.vn
+- [スペインサッカーの名門4クラブがイスタンブルに集結!「2027年スペイン・スーパーカップ」をトルコで初開催](https://news.google.com/rss/articles/CBMiakFVX3lxTE91NUpxT2stZ2hOcmM4WGNiLXRyMVhtMFE0Z2ZGOGlYczRaLVlMcXZucjZGMzJyNk5PM2FNOEFRVTU2RGE0bXVVcm5ZS1RqOWFKM1VudklYMGV4d3FXT2xoUXFpaTc1TGljN1E?oc=5)<br>　2026-10-08 / PR TIMES
+- [アブダビ文化観光局主催 Experience Abu Dhabi Japan セミナー 「福岡」「名古屋」](https://news.google.com/rss/articles/CBMiTEFVX3lxTE50SHlnSjRfaGpKdVRfMHg2cTJqTHdIbEJoUElOb1VLcnl4Yk5oSzhUbEJLU3RaZ3JoNmJBa19weWszUTJPaHhaWEJQU1Q?oc=5)<br>　2026-10-08 / 航空新聞社
+- [お面で変身! 岩美町の小学校で伝統芸能をテーマにしたデジタルアートの特別授業 文化庁の事業の一環で中国地方では初めて 鳥取県(2026年10月8日掲載)|日本海テレビNEWS NNN](https://news.google.com/rss/articles/CBMihwFBVV95cUxQLWNFSk9YM3RuZFN5bk5fc0s4QU96dF84WXZkUlBKMm55VUNvODFZU09vaXdjYlQxRHZyZVctejJYaGlLWHNjLXlUUmR2QThQeEZrOXFFNnZiaXdVX2xEcG9ha19QRWpHeGJWWXpodU54TG1KOUx3MUwta2NTZnBPb3lqWGtpWFU?oc=5)<br>　2026-10-08 / 日テレNEWS NNN
+- [【国立科学博物館】野口英世生誕150年記念企画展「感染症への挑戦:過去・現在・未来」開催及び報道内覧会実施のお知らせ](https://news.google.com/rss/articles/CBMiakFVX3lxTFBCY0VEMEdiUzVqQ3NEZExVLVZzMWRmaGhPWDRhNFBScDRBbWhmdDdkTVJ6bHgzVEQwd0JhNGVHTXB6c3RGVnYtcmZ6ZGZtRmpxOU5JQWs5UmNEd19XdEVfMlNSRE1EV3llNkE?oc=5)<br>　2026-10-08 / PR TIMES
 
 ---
 
