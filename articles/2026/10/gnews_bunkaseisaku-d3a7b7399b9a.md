@@ -1,0 +1,12 @@
+---
+title: "ピアニスト反田恭平氏が謝罪 奈良県文化政策顧問を辞任、年内国内公演の収益は公益活動団体に寄付"
+date: 2026-10-09
+source: "Infoseek"
+url: "https://news.google.com/rss/articles/CBMickFVX3lxTE1PbWtYMHRENksyeTlmY3o0djFYdVdhaUd0UTlOZjFkdWZJNG1HcklIaHBIYWFyNkNGQllxd0tVNTI1LVh6MWt6aGxveDdMcnBtMDlCMXI3ZTR2OExjTGFBeW1acDQyTU85NkNaXzJCb3dKd9IBckFVX3lxTE1PbWtYMHRENksyeTlmY3o0djFYdVdhaUd0UTlOZjFkdWZJNG1HcklIaHBIYWFyNkNGQllxd0tVNTI1LVh6MWt6aGxveDdMcnBtMDlCMXI3ZTR2OExjTGFBeW1acDQyTU85NkNaXzJCb3dKdw?oc=5"
+collected_by: gnews_bunkaseisaku
+tier: secondary
+lang: ja
+country: JP
+---
+
+ピアニスト反田恭平氏が謝罪 奈良県文化政策顧問を辞任、年内国内公演の収益は公益活動団体に寄付。

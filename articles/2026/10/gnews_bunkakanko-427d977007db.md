@@ -1,0 +1,12 @@
+---
+title: "省党委員会のホアン・ジャン副書記は、出演者たちに対し、2026年のムオンロー文化観光祭に向けてダイ・ソーエ舞踊のリハーサルを行うよう奨励した。"
+date: 2026-10-10
+source: "Vietnam.vn"
+url: "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPQTU0NmhiMDJud3B1b3FidjhwZXFyRmVrdndjSXpDZGRPbVJfTGRFRHVUMkpSRV9zS3ZadUg1eTU4ZTMydmJsYm56VXFCLTY3ajloc2FkOEdqa0d1ZnZVOVotbktMakUzVmZyMXlHd0o0cmpXQ2xFQ3NSWUhhSnd3aW1HNnU5dWU5ZzdnX3lwampqWm1PMFJVeGE1NUtmazV1ZEVOd0g5a0JtZVp5ekRubEMyM2NSTFh0Rno2eEVaS3EyMUwyT0R1eWxQSjhmSExWM2ZmTjE0bHczWEoyYzgwS3RVUlVkQ1J1ZzV2RG5ZTHo?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+省党委員会のホアン・ジャン副書記は、出演者たちに対し、2026年のムオンロー文化観光祭に向けてダイ・ソーエ舞踊のリハーサルを行うよう奨励した。。

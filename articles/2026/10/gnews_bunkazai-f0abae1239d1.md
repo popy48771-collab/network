@@ -1,0 +1,12 @@
+---
+title: "特集展示 文化財保存活用地域計画 連携企画「おおいたらしさー歴史の記憶ー」"
+date: 2026-10-10
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMigAFBVV95cUxOLUNXZW5rV0p3NUJnWDFBWlJpQ0tuMWZOVmoyT1lOa0FjbV9KZFczX1ZwcVZVcTJ5bWxxMEJ0NXBUYjJhSGhjbEFnY2J3RjlCTGFKUzMtdU45ZzlCOWsxLWpQLWl1aUJLTGlCbTB5czhkY3dZN0N4UmNRYVNGdjRBWNIBhgFBVV95cUxPN09vMzE3WTU4ZVBDU3EzQ1FFQkFZYUVLcWFtYUdJOVNjU3BuVTJmd1k5NDRXU05aTWJvdmJtcnVzeThrM1pfSS1ONVBvWWhRbkthVUpOQ3lIRHZ3ZEtfLXM3T25uWjA1aXZreGxFSkduQkwtcFRxcW1pTDZzWXRJN2NsRnFDQQ?oc=5"
+collected_by: gnews_bunkazai
+tier: secondary
+lang: ja
+country: JP
+---
+
+特集展示 文化財保存活用地域計画 連携企画「おおいたらしさー歴史の記憶ー」。
