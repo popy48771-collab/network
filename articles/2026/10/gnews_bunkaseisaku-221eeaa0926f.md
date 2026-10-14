@@ -1,0 +1,12 @@
+---
+title: "反田恭平被告が奈良県文化政策顧問を辞任"
+date: 2026-10-09
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMilAFBVV95cUxNMG9GZ21QekRQUDhmUDF0WFRsNGxHZmd1UXZJOHFveVdUN0prVm80aVJaUjdUOWxFY0t0czdISEd3U1FPT243Tld5RlpIa21LdVd6dXlmNVVkRzJwRnpZTWc2bHdMTGVsUlh0Ykw0X2pLMDJQT0d4bHNhb2RPMmk2dENwb2E3b2hfRW1zb0Q3R0lxM0Nr0gGaAUFVX3lxTE1xczZQQkpBN05WbjBhQUE3dHYzRDVMelhCX0NsMDJ5dXhoUDVFQnFZRTAxeFNCX1RiR0lDZ2RucUloU21QWHZZNDVSWDlhS19UejEzN1FBT2JrX1FZWlNUUDBnTTNIbmlILUk1NUN5cVpQWmdJWU1UTTd2UzhmUUxVTDc3bXN5RDRHdXl1bnhyUjRHZnhmOTNJRGc?oc=5"
+collected_by: gnews_bunkaseisaku
+tier: secondary
+lang: ja
+country: JP
+---
+
+反田恭平被告が奈良県文化政策顧問を辞任。
