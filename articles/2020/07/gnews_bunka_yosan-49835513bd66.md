@@ -1,0 +1,12 @@
+---
+title: "新型コロナ、文化芸術支援に「500億円」の予算が計上されるまで。映画界で起きた連帯の動きを振り返る"
+date: 2020-07-31
+source: "ハフポスト"
+url: "https://news.google.com/rss/articles/CBMieEFVX3lxTE9jd1ZmdHZkekpqY2tFMU5UWGJ0alZ6eGpnd3AzdjZ3VFBwSkRLTGVqNFZReGFWVEZwOUdGeEpFTXJFUTFab0lDbGJQaEV2bHdmdVFXeVFzczRNVHZUaV9qcERlZkFPZGFDdmFDVVRvR1U5dzA3VFFqN9IBf0FVX3lxTE8yYk1GZHZVb2JkVnBNY1dyYVVnZzlYajZLSVBlVXpNRFgwSU5uMzUtS1pwejB1VGowZktsaWxjRmFMVkZqUjNGZU9YUUVkVUNHT19ZRllITjAtdHVjRy1qcExoTUdTX05rN3hSY2JTeGlzQ2NoR2JwWEFyVTZ0NHM?oc=5"
+collected_by: gnews_bunka_yosan
+tier: secondary
+lang: ja
+country: JP
+---
+
+新型コロナ、文化芸術支援に「500億円」の予算が計上されるまで。映画界で起きた連帯の動きを振り返る。
