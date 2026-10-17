@@ -1,14 +1,14 @@
 # 共起ネットワーク 分析レポート
 
-生成: 2026-10-16T23:13:56+00:00
+生成: 2026-10-17T22:50:42+00:00
 
 | 項目 | 値 |
 |---|---|
-| 記事数 | 3630 |
-| 対象期間 | 1970-01-01 〜 2026-10-16 |
-| 共起単位数（文） | 5620 |
-| ノード数 | 579（絞り込み前 9400） |
-| エッジ数 | 960（絞り込み前 108983） |
+| 記事数 | 3659 |
+| 対象期間 | 1970-01-01 〜 2026-10-17 |
+| 共起単位数（文） | 5649 |
+| ノード数 | 579（絞り込み前 9431） |
+| エッジ数 | 959（絞り込み前 109493） |
 
 [Gephi Lite で開く](https://lite.gephi.org/?file=https://raw.githubusercontent.com/popy48771-collab/network/main/out/network.gexf)
 
@@ -31,9 +31,9 @@
 | 11 | 答申 | 語 | 48 | 5 | 0.0000 |
 | 12 | 改修 | 語 | 45 | 2 | 0.0000 |
 | 13 | 図書館 | 語 | 44 | 4 | 0.0000 |
-| 14 | 助成 | 語 | 42 | 2 | 0.0000 |
-| 15 | 職員 | 語 | 42 | 6 | 0.0000 |
-| 16 | 年熊本地震 | 語 | 41 | 1 | 0.0000 |
+| 14 | 助成 | 語 | 43 | 2 | 0.0000 |
+| 15 | 年熊本地震 | 語 | 42 | 1 | 0.0000 |
+| 16 | 職員 | 語 | 42 | 6 | 0.0000 |
 | 17 | 理由 | 語 | 39 | 6 | 0.0000 |
 | 18 | 結果 | 語 | 39 | 2 | 0.0011 |
 | 19 | 特別展 | 語 | 38 | 3 | 0.0000 |
@@ -55,21 +55,21 @@
 
 | # | ノード | 媒介中心性 | 出現文数 |
 |---:|---|---:|---:|
-| 1 | 熊本地震 | 0.0046 | 14 |
-| 2 | 官民連携 | 0.0032 | 7 |
-| 3 | 備える | 0.0031 | 6 |
-| 4 | 災害 | 0.0029 | 11 |
-| 5 | 自治体職員向け | 0.0027 | 6 |
-| 6 | 適用 | 0.0026 | 8 |
-| 7 | 文化財保護法 | 0.0024 | 5 |
-| 8 | 通知 | 0.0024 | 16 |
-| 9 | 募る | 0.0021 | 7 |
-| 10 | 寄付 | 0.0019 | 21 |
-| 11 | 経る | 0.0017 | 28 |
-| 12 | 自分 | 0.0016 | 13 |
-| 13 | 他者 | 0.0013 | 7 |
-| 14 | 深める | 0.0012 | 17 |
-| 15 | 官報告示 | 0.0012 | 4 |
+| 1 | 経る | 0.0017 | 28 |
+| 2 | 自分 | 0.0016 | 13 |
+| 3 | 他者 | 0.0014 | 7 |
+| 4 | 熊本地震 | 0.0013 | 15 |
+| 5 | 通知 | 0.0013 | 16 |
+| 6 | 災害 | 0.0013 | 11 |
+| 7 | 備える | 0.0013 | 6 |
+| 8 | 深める | 0.0012 | 17 |
+| 9 | 適用 | 0.0012 | 8 |
+| 10 | 文化財保護法 | 0.0012 | 5 |
+| 11 | 官報告示 | 0.0012 | 4 |
+| 12 | 結果 | 0.0011 | 39 |
+| 13 | 働く | 0.0011 | 13 |
+| 14 | 募る | 0.0011 | 7 |
+| 15 | 会長日比野 | 0.0010 | 6 |
 
 ## 結びつきの強いペア（NPMI 上位）
 
@@ -99,12 +99,12 @@
 | 22 | コミケ — 弁理士 | 1.000 | 5 | 1.000 |
 | 23 | もりおか歴史文化館 — テーマ展 | 1.000 | 5 | 1.000 |
 | 24 | タバコ — 収蔵ミニチュア展 | 1.000 | 5 | 1.000 |
-| 25 | J:COM — オリジナル番組 | 1.000 | 5 | 1.000 |
-| 26 | 京都博覧会テーマ — 学芸員課程卒業展示 | 1.000 | 5 | 1.000 |
-| 27 | 京都博覧会テーマ — 有職紋様 | 1.000 | 5 | 1.000 |
-| 28 | 京都博覧会テーマ — 皇學館大 | 1.000 | 5 | 1.000 |
-| 29 | 京都博覧会テーマ — 神道博物館 | 1.000 | 5 | 1.000 |
-| 30 | 学芸員課程卒業展示 — 有職紋様 | 1.000 | 5 | 1.000 |
+| 25 | 京都博覧会テーマ — 学芸員課程卒業展示 | 1.000 | 5 | 1.000 |
+| 26 | 京都博覧会テーマ — 有職紋様 | 1.000 | 5 | 1.000 |
+| 27 | 京都博覧会テーマ — 皇學館大 | 1.000 | 5 | 1.000 |
+| 28 | 京都博覧会テーマ — 神道博物館 | 1.000 | 5 | 1.000 |
+| 29 | 学芸員課程卒業展示 — 有職紋様 | 1.000 | 5 | 1.000 |
+| 30 | 学芸員課程卒業展示 — 皇學館大 | 1.000 | 5 | 1.000 |
 
 ## 直近で急に強まった結びつき（surprise 上位）
 
@@ -113,25 +113,25 @@
 | # | ペア | surprise | 直近NPMI | 以前NPMI | 新規 |
 |---:|---|---:|---:|---:|:--:|
 | 1 | ミステリー — 歩く | +1.000 | 1.000 | 0.000 | ★ |
-| 2 | 市内 — 箇所 | +1.000 | 1.000 | 0.000 | ★ |
-| 3 | 曳山巡行 — 絡繰 | +0.964 | 0.964 | 0.000 | ★ |
-| 4 | ミステリー — 鎌倉 | +0.954 | 0.954 | 0.000 | ★ |
-| 5 | 鎌倉 — 歩く | +0.954 | 0.954 | 0.000 | ★ |
-| 6 | 周遊 — 市内 | +0.936 | 0.936 | 0.000 | ★ |
-| 7 | 周遊 — 箇所 | +0.936 | 0.936 | 0.000 | ★ |
-| 8 | 市内 — コラボ | +0.936 | 0.936 | 0.000 | ★ |
-| 9 | 鎌倉 — コラボ | +0.904 | 0.904 | 0.000 | ★ |
-| 10 | 曳山巡行 — 大津祭 | +0.895 | 0.895 | 0.000 | ★ |
-| 11 | 周年記念シンポジウム — 明日 | +0.887 | 0.887 | 0.000 | ★ |
-| 12 | 鎌倉 — 市内 | +0.846 | 0.846 | 0.000 | ★ |
-| 13 | 鎌倉 — 箇所 | +0.846 | 0.846 | 0.000 | ★ |
-| 14 | 周年記念シンポジウム — 開く | +0.846 | 0.846 | 0.000 | ★ |
-| 15 | ミステリー — コラボ | +0.823 | 0.823 | 0.000 | ★ |
-| 16 | 文化遺産国際協力 — 明日 | +0.815 | 0.815 | 0.000 | ★ |
-| 17 | 文化遺産国際協力 — コンソーシアム | +0.815 | 0.815 | 0.000 | ★ |
-| 18 | 周年記念シンポジウム — 文化遺産国際協力 | +0.812 | 0.812 | 0.000 | ★ |
-| 19 | 鎌倉 — 周遊 | +0.782 | 0.782 | 0.000 | ★ |
-| 20 | 絡繰 — 滋賀 | +0.778 | 0.778 | 0.000 | ★ |
+| 2 | 勧告 — 書道 | +1.000 | 1.000 | 0.000 | ★ |
+| 3 | 登録可否 — 書道 | +1.000 | 1.000 | 0.000 | ★ |
+| 4 | 曳山巡行 — 絡繰 | +0.964 | 0.964 | 0.000 | ★ |
+| 5 | ミステリー — 鎌倉 | +0.955 | 0.955 | 0.000 | ★ |
+| 6 | 鎌倉 — 歩く | +0.955 | 0.955 | 0.000 | ★ |
+| 7 | 周年記念シンポジウム — 明日 | +0.936 | 0.936 | 0.000 | ★ |
+| 8 | 周遊 — 市内 | +0.936 | 0.936 | 0.000 | ★ |
+| 9 | 市内 — 箇所 | +0.936 | 0.936 | 0.000 | ★ |
+| 10 | 市内 — コラボ | +0.936 | 0.936 | 0.000 | ★ |
+| 11 | 鎌倉 — コラボ | +0.904 | 0.904 | 0.000 | ★ |
+| 12 | 曳山巡行 — 大津祭 | +0.895 | 0.895 | 0.000 | ★ |
+| 13 | 周遊 — 箇所 | +0.873 | 0.873 | 0.000 | ★ |
+| 14 | 文化遺産国際協力 — 明日 | +0.868 | 0.868 | 0.000 | ★ |
+| 15 | 鎌倉 — 市内 | +0.847 | 0.847 | 0.000 | ★ |
+| 16 | 周年記念シンポジウム — 開く | +0.847 | 0.847 | 0.000 | ★ |
+| 17 | ミステリー — コラボ | +0.823 | 0.823 | 0.000 | ★ |
+| 18 | 文化遺産国際協力 — コンソーシアム | +0.815 | 0.815 | 0.000 | ★ |
+| 19 | 周年記念シンポジウム — 文化遺産国際協力 | +0.812 | 0.812 | 0.000 | ★ |
+| 20 | 鎌倉 — 周遊 | +0.783 | 0.783 | 0.000 | ★ |
 
 ## 文化施設・政策と結びついている語
 
@@ -149,41 +149,41 @@
 
 ## 話題のかたまり（Louvain コミュニティ）
 
-- **クラスタ 0**（23語）: 工夫、働く、思考力、判断力、習得、自分、感性、意図、発想、技能、表現力等、知性
-- **クラスタ 1**（19語）: 自治体職員向け、札幌、文化事業、無理、官民連携、派遣参加者、鳥取、事例、海外派遣プログラム、アートマネージメント人材等、公募開始、パートナーシップ
-- **クラスタ 2**（19語）: 辞任、奈良県文化政策顧問、謝罪、年内国内公演、ピアニスト反田恭平氏、寄付、収益、災害、熊本地震、反田恭平被告、適用、備える
+- **クラスタ 0**（21語）: 工夫、働く、思考力、判断力、習得、感性、意図、発想、自分、技能、表現力等、知性
+- **クラスタ 1**（19語）: 自治体職員向け、札幌、文化事業、無理、派遣参加者、官民連携、鳥取、事例、海外派遣プログラム、アートマネージメント人材等、公募開始、パートナーシップ
+- **クラスタ 2**（17語）: 秩序、共生社会、災害、通知、日本語教育支援総合、パッケージ、適用、備える、日本語教育、事務連絡、被災、政令
 - **クラスタ 3**（16語）: 会長日比野、議決、克彦、同審議会文化財分科会、経る、保持者、文部科学大臣、審議、答申、村野藤吾設計、再始動、記念イベント
 - **クラスタ 4**（13語）: YouTube、配信、方向け、ウェブ会議、模様、報道関係者、ライブ、講演資料、講演映像、無料配布中、見逃す、tver
+- **クラスタ 7**（13語）: 辞任、奈良県文化政策顧問、謝罪、年内国内公演、ピアニスト反田恭平氏、寄付、収益、反田恭平被告、熊本地震、ピアニスト、松浜軒、募る
 - **クラスタ 6**（13語）: コラボ、鎌倉、生態、考察、琵琶湖博物館、監督、市内、ミステリー、周遊、箇所、林檎娘、岩木山神社
 - **クラスタ 5**（13語）: 閣議決定、歌手、改正案、BGM、配分、還元、歌手ら、BGM使用料、楽曲使用料、使用料、権利創設、分配
-- **クラスタ 9**（11語）: 秩序、共生社会、通知、日本語教育支援総合、パッケージ、日本語教育、事務連絡、被災、PDF、復旧、年熊本地震
-- **クラスタ 7**（11語）: 存続、除籍、直面、保育園、裏側、試み、収蔵庫不足、危機、収蔵資料、博物館指針策定、廃棄
-- **クラスタ 8**（11語）: 職員さん、皆さん、名乗る、人たち、社会教育施設、称号、付け、立てる、資格、取る、社会教育士
+- **クラスタ 8**（12語）: トーク、九州国立博物館、頭突き恐竜化石、福島県立博物館学芸員、発見秘話、会津若松、面白い、開催決定、他者、深める、ツアー、思考
+- **クラスタ 9**（11語）: 存続、除籍、直面、保育園、裏側、試み、収蔵庫不足、危機、収蔵資料、博物館指針策定、廃棄
 
 ## 最近の記事
 
-新しい順に20件（全3630件は `articles.html` / `articles.csv`）。
+新しい順に20件（全3659件は `articles.html` / `articles.csv`）。
 
-- [食と花の名匠、人間国宝に初認定へ 京料理「瓢亭」高橋さんら3人](https://news.google.com/rss/articles/CBMibEFVX3lxTFBDMkQxTldhTnlIenBhQU1ZUkFGbGVtbG9mYUhCRHJsdFdxbDRsVU1uXzdManRVSkgxb3RfZ01nU2RGcHRoMkNBSzZMWXItWEUzWFFuOHpsOUdOZzl3cjN3VXBYMXZ3bTdHemtFSA?oc=5)<br>　2026-10-16 / 日本経済新聞
-- [開会式前のタイ・ゾーダンスフェスティバル。](https://news.google.com/rss/articles/CBMickFVX3lxTE1JRVRPTV9PN1pLSG1TR3RuTGRtaXR3ejZnRGhHMEt0a1A3amZ2MXQ4dS1QMENmcGpFWFFKeURzU0Q4ZGxJT2d4YTNyWXRzUXlfNWl5R2N0RW0waWVGZEdlQWxPR2x2SzloYnhISTE5S2ZVdw?oc=5)<br>　2026-10-16 / Vietnam.vn
-- [約40施設が連携! 回遊型イベント『文化庁・府庁界隈まちかどミュージアム』](https://news.google.com/rss/articles/CBMiZEFVX3lxTE1sTzQ4MF92blVSNDZaT3FoNV9DYXgxT2VYdjFwQ3BsMXFvMTUyUk02RGxYVVpkb3hfQXV2dTlpaXhNM05MVWVrSUZ0TnJUNzVBSU4tUVJtdDZRVGgyRVFWYklIcUY?oc=5)<br>　2026-10-16 / KYOTO SIDE
-- [日本遺産「いざ、鎌倉」人気ゲーム「ミステリーの歩き方2人魚伝説殺人事件」とコラボ 市内5カ所を周遊〈鎌倉市〉](https://news.google.com/rss/articles/CBMie0FVX3lxTE9LY1k2empHTmJHeGZwUkFMcU4za1hKQnJYbnNoV0dmMU5wR05HODFZOVRsb3hpWVA5cWZ3Y3RPaHRmNTVaa0dubjh2TWpCX3p0UFZScW44UWRpYkd3X3RtbjRPd1kyZVRrdUxyMlNKNFNwU2hjbmU1UUR1RdIBgAFBVV95cUxNbjYyM2R4dEQ4a1A2NzlPdDJDdjhrVTNMNEdwVk1RUVdUOXNEblhOdGlocTFGamFxY3pwUnpURWl0SmkweEhpQ3BLRHh0dzhGajdJR2RnNHdOQjNNTi1pVVNuRS1CWkpJWWJZVkdQV3VEQzEtdUNDQzJhc2JKOWh4aA?oc=5)<br>　2026-10-16 / dメニューニュース
-- [日本遺産「いざ、鎌倉」 人気ゲームとコラボ 市内5カ所を周遊 鎌倉市](https://news.google.com/rss/articles/CBMibkFVX3lxTE85MkRSYWdHQ1VYU2Q5WTdiSkFrU0FaZ1d3a21kUGp3aWNybTlqdVNaX1RnSm0zMTJ3WlZyLXZSOEFlTWJLdGJUQlRHU2NlN2hNcmdaNFNtUzUydjd6bU5aMWFFN0FnRm5ja256VUNn?oc=5)<br>　2026-10-16 / au Webポータル
-- [新たに「吟醸造り」が重要無形文化財に認定。70年以上、酒造りと向き合う農口尚彦が、その保持者として、日本酒杜氏初の「人](https://news.google.com/rss/articles/CBMie0FVX3lxTFBWZFIxVmNxTmJ5a0syaklST21aVm5VZlBOMEtBZDFQLWtieVo4eDQxbENWdFpnRThBVHpoR054Q0xiZXRNeVlROUNVNC16X2pPam5zckExQjF3cTY1VzFOSnBsam5TV2JKQmZYWktRcWEtZzlBRlJ0NG9yOA?oc=5)<br>　2026-10-16 / ニコニコニュース
-- [文化芸術の価値を「測る」から「生かす」へ――文化政策におけるデータ基盤の可能性](https://news.google.com/rss/articles/CBMimAFBVV95cUxPcWF6T3JmZmFiSTgxMTdOZ19HaHVRTnkyZEh3Y0J4bnVUMVhsQWFtWFIyZUpRS3Rqblo1Z0wxcVRZVkk0N1JQVzdnaVduelpwMTl5bHNJUWduMzdnRWlqbmdKSVEyakZlOFp2UnlVNHRUY0xWWFBpekpBbDlsaUE5T0NGLXc0Y0pQMXVWV2luUjVqSHFueXdpNA?oc=5)<br>　2026-10-16 / PwC
-- [文化審議会国語分科会外来語小委員会(第5回)を開催します](https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/94451101.html)<br>　2026-10-16 / 文化庁 広報・報道・お知らせ
-- [文化審議会の答申(重要無形文化財の指定及び保持者の認定)](https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/94451701.html)<br>　2026-10-16 / 文化庁 広報・報道・お知らせ
-- [文化審議会の答申(重要文化財(建造物)の指定)](https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/94449801.html)<br>　2026-10-16 / 文化庁 広報・報道・お知らせ
-- [文化審議会の答申(重要伝統的建造物群保存地区の選定)](https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/94450101.html)<br>　2026-10-16 / 文化庁 広報・報道・お知らせ
-- [市民会館のピアノ 片瀬中に 休館期間中、預かり活用〈藤沢市〉](https://news.google.com/rss/articles/CBMigAFBVV95cUxNUzBlLWNVSktwUFFCb1FoZjV4VEtLb0Rlal9QSkZnZGxrUnF6UThieW1VNzIxRzR2SmNWTXlBTW83dnZ4cldDeWZwOHU3ZEJnb2VsOXg5ZkZ3NFNtM2RydlFzWVFoNWpOR3d5SEhkQkdUNTRhNXowRWpJVVNOMldWQdIBgAFBVV95cUxNUzBlLWNVSktwUFFCb1FoZjV4VEtLb0Rlal9QSkZnZGxrUnF6UThieW1VNzIxRzR2SmNWTXlBTW83dnZ4cldDeWZwOHU3ZEJnb2VsOXg5ZkZ3NFNtM2RydlFzWVFoNWpOR3d5SEhkQkdUNTRhNXowRWpJVVNOMldWQQ?oc=5)<br>　2026-10-16 / dメニューニュース
-- [市民会館のピアノ 片瀬中に 休館期間中、預かり活用 藤沢市](https://news.google.com/rss/articles/CBMieEFVX3lxTFBSRFRjdDNQYXVxUjU5ejJ3LTFRdVMzTDJGcFFLUWEwUTFMbjZ3ZFRERk43UnVVSl9lbkNJcTA3dl9vY0FqTFhLRS1qTllqLU9NajRnQVlmX3JLaS1jWVVYbkIwSXlGdkUyN1JqMFJ5amN0SDFCWnJfdQ?oc=5)<br>　2026-10-16 / au Webポータル
-- [大阪城天守閣、重文に 昭和建築の再現城郭で初](https://news.google.com/rss/articles/CBMiXkFVX3lxTFBsZHNadUxxeFdoWlpiUDlZajZjaEFFTm5ienlHQXRfaVRNcHByWWp6aXppcDRvWkFjd2t0WEx4WkVQcXJkanA1akpRRlV3UEhfaWxQeU1LNzVNQjAwVWc?oc=5)<br>　2026-10-16 / 福井新聞社
-- [修理工事現場を10月25日に公開、無料で参加できる!舞鶴市 国指定重要文化財「赤れんが6号棟」特別見学会](https://news.google.com/rss/articles/CBMiRkFVX3lxTE4wNkRFQk9xMzIxZTZPenZvenhWY1FrS1hld1N1aU1kaVdFSkdGVEJHZEJ4NGMya1B1OC1rMWFLenBlUVhmM0E?oc=5)<br>　2026-10-16 / Dtimes
-- [人間国宝の指定広がる?文化庁「茶道なども対象になり得る」 担い手不足で技継承課題、さらなる指定期待](https://news.google.com/rss/articles/CBMiWEFVX3lxTE0wQzBrYlh2X1ZqakE4TTJnbXhObFNhdFIwT3V3QVhaS2E1eWNIem9Udy1PalhTSEEwbU9CWnZlVEhNU2llV2l0NjdvZmJjVjRHb1VnaExCQWI?oc=5)<br>　2026-10-16 / 京都新聞デジタル
-- [京都・建仁寺法堂が重要文化財に 舞鶴市吉原地区は重要伝統的建造物群保存に指定](https://news.google.com/rss/articles/CBMidkFVX3lxTE5ZMm1Kay1yLUJ5UDI1MkJ2T0tsbGMwNzlfblhDLTdFMm4xRGhVc3JuNS1XbVZLaEZRUy1RNWJ0X214NmhKZS05SGttRzlSS2YyaDk3aUFqcnZWYjdZc0lRbEFQdkpBcVEtZmNrdXNuUnY2c1JiYXc?oc=5)<br>　2026-10-16 / 産経ニュース
-- [ラオカイ:2026年ムオンロー文化観光祭の安全と秩序を積極的に確保する。](https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVlVMTXBOZVY4NnY1NG9fNlkxXzRDUVpaMTZHN3JjYTZGb3RQaVVxNWFVcGlKZl8zUXRLU2ZHSTNWQm5mZjNHTDZwWWxHVXkxVjVKc0RwTFVnZmswRTFqTWRGOG1HVkZOZlJOa3kxX1d4ZVRySXV2anpCbjJKSmwxUXlwSy1vYXVJU1pWLXRqUktaQTF0WTYzZmFLcjVrZE9kb0plRE1CYXRhc0E?oc=5)<br>　2026-10-16 / Vietnam.vn
-- [ムオンロー文化観光祭2026開会式のハイライト](https://news.google.com/rss/articles/CBMilwFBVV95cUxQb01MaVlPUDVmTkNIdENqLXBLdEJJMHlFLThNZmlDN24zZUdtQlZ2QXVBMHZQTE9ueXFVYk1QZTJfMWI5S0lFbGZJeTEza05YcTQ5a2o2a0ZLYlRWUlJKUHFUSXp4RW5tTDdfbnYwckJZdDdnRi1Tc1pKSElOV0dJZ1gzbUxVTFRjRld2M016ZVdJaTcxdGRR?oc=5)<br>　2026-10-16 / Vietnam.vn
-- [ムオンロー文化観光フェスティバル2026:準備は万端です。](https://news.google.com/rss/articles/CBMiiAFBVV95cUxORTJPMUsyQjRPMkdJRE1uc01sRkNuQUFyaVVHVUJGSUJ6b25YeHJFdldER3dkOUF2QWV6dGJ2LVF5dFo0V243MTVqanRvTnZsNUtEektOeTFfS2hxRnExczJsTUxkOHZ0amg4bFZXRVVrM1VwOTd5ZUJFMG1pbXZYZ0tFMzB6c1lj?oc=5)<br>　2026-10-16 / Vietnam.vn
+- [特集展示「文化財保護のキセキ〜昭和から令和の担い手たち〜」](https://news.google.com/rss/articles/CBMigAFBVV95cUxNLWx2R081c2U4RWdLY09VdlVSd1VKNHNoXzY1VktfaTMxZC1Xc1Nhd2h2bXlic3BsUXl6MHRCYkZLYnppQjh3Z2ZadFRyMmJTMVk0U1lQUG8zOGNhRU5Qb19UM1hmX1hCZjloRG9pcWNHSmdsM3ZMX3UtNGQzOVdMbtIBhgFBVV95cUxNMy1oSHc0WlpLYXVGbGUzU2VfdERaenAycW8wRzQ1Q3FrRkJCWWFYekV0V2pfbjJnVGhKWVFXZjdBVzJrV1kwaG4wXzc1Q3UxRFJtUnlZSUNTRlYxODM0UjBqZ1pJaTFObVFHeHNIZm1kZ28wRWhBV0t2Y0Y1RGsyUXZQcUxpQQ?oc=5)<br>　2026-10-17 / dメニューニュース
+- [無形文化遺産の価値を保存し促進するためには、標準化された体系的な方法で行う必要がある。](https://news.google.com/rss/articles/CBMiqwFBVV95cUxOaUNLVHhoQTVsT3JPYks2X2Y2TkViSmt1NUpFSFZwenVxRjBRVGRxRmpoemtRWW5aNXZ6U0JEYTNBbW0ya0FzbVBzOFFfZWFtTVZiRERnaXJNRFh0RHZLMVIxcGNjVWFDT0RkM2lfNWZHYkhIZUg2RGRsblJYaHczN0V3V2REaGxJcVFVb3BHXzR1WTFLcm0tS0pBTDFWUEd2Z2NyY21DVWpFWjQ?oc=5)<br>　2026-10-17 / Vietnam.vn
+- [岡山の生き物の魅力伝えたい 博物館や科学館の学芸員ら 垣根を越えたグループ活動本格化](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5YQ2xZLV9hdWNqUEZUY1dpN0xxVDRNQWR3NUJwTEpORWNWNFhZTkxSMnJTZEgzSU9aMi1NUW9YclUzQ2tGUDlwcEdBLTg5Y25KWmc?oc=5)<br>　2026-10-17 / 山陽新聞
+- [小浜市の中学1年生が鯖街道の山越えに挑戦 日本遺産プレミアムに認定された歴史・文化をアピール 写真を撮ってHPで発信へ](https://news.google.com/rss/articles/CBMihwFBVV95cUxNQ0szbWhnVVZLZXdwRlJUZF9pS2xHVWFySmpFNk5wQmVSN01SQ3ZjdzNxLXhFZ1RsTHlVNnpEMWtZOC10ZW9TR1d3LTZ1UXVCb1UxYVpZMTJDWmRFeWROVDJWX3RZQVEta0JtN3BjVGlLRlhJMFVPMzBVVkNGQUN6T0ZBU2JfVzg?oc=5)<br>　2026-10-17 / 日テレNEWS NNN
+- [地震被害の文化財600点をレスキューが救出、ドクター活動も本格化 [熊本県] [2026年熊本地震]](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9yaEgxOThtOXdoOXhpcGVLVUhxMXFiam5HNHRNS09oT01xZW4yQV91QTRHWkJYUjAxXzNZbTJORjI4V3FCcXFxX3U4blFRQWlndVQySkhkZ3EtUUZNY1ZVeWZlYzROSE0?oc=5)<br>　2026-10-17 / 朝日新聞
+- [地域社会の物語を通して見る遺産 ― フンイエンの無形文化遺産を守るための道のり。](https://news.google.com/rss/articles/CBMiqwFBVV95cUxQckplbVV3MFJxSnhnM3drV0xQa09sSWI2LThVcXJXdzdxaFdOdkJ2eEVpOG9ieE9xSlVISEtvQjZNRF9jcUFqZ0Jhb3k1dmVhMWpXNlR1Q3RpTDNGcjdGWHh5cTAwaUg5ZHV0czFxNlplLVFOeWFXTDdvWlcxZTBKUDZXSmpoakptdnc2YzdfTkFpYThyRFpIOVpBLThjaG5ZeVhGel9ySVJCclU?oc=5)<br>　2026-10-17 / Vietnam.vn
+- [ヴィンロン河川地域における文化観光の可能性を解き放つ。](https://news.google.com/rss/articles/CBMijwFBVV95cUxOdHJZNFlqaVY2YkZVdWZZNmNxM1RTaHkyZmE4RE9DZEdIMTJIM20weTRVQjFOTENIUjhmbFVnclBjZFlvYzVaRXFPTERMRkV5Z25lV1NLMGFaLUFMNEtFWnBSVXJwLU44cXBBSG0xTTRDdm9xVXVuSlF1UGNnM1hGNTBDQ2RjUEQ3ZzlpTWQtWQ?oc=5)<br>　2026-10-17 / Vietnam.vn
+- [ヴィンロン:グエン・ディン・チエウ記念地区をユニークな文化観光地へと発展させる。](https://news.google.com/rss/articles/CBMirwFBVV95cUxQb2FlMm9WQzFLbUxpYmlFek1jbDQ4X1RSVHd2WVY0eTFtdmdIZmZ0a29jSnpTNExOMDhQRDNmZThwT1E5bWs0T05OWFkzMW1OdlhUV2lXZjRxc010RWZxQUo4azA0c1E4a1BlWktZWEJlTllzSmhrU1Q5MUY3NTZ1Z1YtRlVNekJKMjJfRTktZXhzZ01wUzhfbGJKWk9zTzJBWV9fbFk4bDYwVWhWMW5R?oc=5)<br>　2026-10-17 / Vietnam.vn
+- [リエンソン村が「文化観光体験プログラム」を開始。](https://news.google.com/rss/articles/CBMikAFBVV95cUxOd015cThjZ1pEYi0zYWd4N1NsQkRKMnlKZzNzOUZYQ2JSY1pIWTQ5X3d4LXJ4elR3Y1NVN25rV3NGWUdxODNueThkSFNPcXdUSmVFX1BLdV9vZ1RNRzVRLWdBa1BqbTl2MTBkVVBuRkwwNElvbWVYNzQ5YnRuUXZ6VE1MZmFGalFobGNhNm9kUlU?oc=5)<br>　2026-10-17 / Vietnam.vn
+- [ユネスコ無形文化遺産 「書道」登録可否 勧告へ 国内24件目なるか](https://news.google.com/rss/articles/CBMiXkFVX3lxTFBqNkJBa2d2N0ctd0R3T3g5LWRfWkRQNVkxWmJaWHYzOVN1Tk9GUXVCWDRoX0RCRG5ZMmthbmhVWVhyNTljb0lfWjFxSG5MSkRDRlJtbkVTOFdrS3lySVE?oc=5)<br>　2026-10-17 / 福井新聞社
+- [ユネスコの無形文化遺産への登録を申請した「書道」(文化庁提供) - 「書道」の登録可否を勧告へ ユネスコ無形文化遺産 - 写真・画像(1/1)](https://news.google.com/rss/articles/CBMiV0FVX3lxTE5wRlZySFp1NEM4amYzX2M0ZDRUdkxRRXpLajlXWWVWbnA4LXA1Tzc1ZUFHcTh1T0RpcDVLZFhEbG81Y1pxeG0yMENyclFrQXJMSFU5VXFDVQ?oc=5)<br>　2026-10-17 / 西日本新聞me
+- [ムオンロ文化観光フェスティバル2026で撮影された、ムオン族の「盛大な結婚式」のフライカム映像。](https://news.google.com/rss/articles/CBMingFBVV95cUxPdExObm9OcTdfVHc4cGdHQ3h1ZnRUdnpCaExPR243bTB2NGMtUzZvSWw1VF9IQ3F5T09YSHg3UnRKWF9PTVM3cXZ0aTNhekVvZi1UV3gzamlpTjRoa1Q5dktVUmYySHExYzRFVjN3M04xbVhzM3JYWXFFWm9TeU5RcE81UVJoQmZERUlRSlQzYVZfRXFvV0t4b2Jld1ZEZw?oc=5)<br>　2026-10-17 / Vietnam.vn
+- [フエ市は、フエの民謡に関する資料を作成し、人類の代表的な無形文化遺産としてユネスコに登録申請する予定である。](https://news.google.com/rss/articles/CBMiwAFBVV95cUxPTS0xRk43UUQ2Um9oeC1sOFd2UlI2ZmxHU0xKWk9uZWZseDFZN0UzenBJSWRvVFV4Y0NKSHJYd04zLXJsU2otd1JWTlRENUtra1JvLWJHYW5aY1hRWFF2eEtBTFBSWl9KM1NFY2RhQUI3ekY1YklxYXlWNnFoWDdjdk5pMXJCTWs5aVNhcndXWmltX0JGamhlZGNCM0pnb0NjelRKMGFRWW5ZenotN3BDWkdwU1pMYU5tWFNCcFYzWmc?oc=5)<br>　2026-10-17 / Vietnam.vn
+- [フエ市は12月22日にスマート文化観光都市の建設を開始する予定だ。](https://news.google.com/rss/articles/CBMipgFBVV95cUxPUFJtVWNOQ3J0bHdSOWdoN3BuSHhaZ2NsOGhJbTctVEdwR3p1VWNGS19WTkJkaDNVMm0yZUNyS0F4TTRJbDNlUFJGZVNGYU9vWDlOZlVlTHlKV1ZsaklmUXpXWHZETk1tSmVqUVNrUnI0VXdDTk1YOHdpOElfLURBQmdLM3E1SlRoYWpZZGM4REwxVVhoVVVhYkVIX2pIRU9XR0RENEdn?oc=5)<br>　2026-10-17 / Vietnam.vn
+- [【食の人間国宝】熟練のわざ、継承なるか 地位向上、担い手確保へ](https://news.google.com/rss/articles/CBMiTkFVX3lxTFBVYTlLWkxBa1ZxR19IbmJCeDlUcDZfajJVZTdWT2hLcGkyVEVWdzNTRFhHTE9SdXZvMEFTZm9VNnpkYlZYa0xZempNTmd0QQ?oc=5)<br>　2026-10-17 / 静岡新聞DIGITAL
+- [【熊本地震】文化財レスキュー活動を知事に報告 9月までに8か所約600点救出(2026年10月17日掲載)|KKT NEWS NNN](https://news.google.com/rss/articles/CBMihwFBVV95cUxOU1ZoZmVYTjI5aGE0YnBKRGNySlpsNi1JbFo5U1llRjFoLVY2MUQ1Y01tckl0MGQ1QWNObGIzU3VvQ2JGQXdhWHBhUEJPNTJrZ0h3bUdPZU10TEdRTUg1QU5YNEV1eklMS3N4TEs4N2JOUVQ2eGdLQXRzQ2JkNGs3NzBBcEhoWVU?oc=5)<br>　2026-10-17 / 日テレNEWS NNN
+- [「書道」ユネスコ無形文化遺産登録可否を勧告へ 国内24件目目指し政府申請](https://news.google.com/rss/articles/CBMitwFBVV95cUxPazVfT1NoUnhpUV8zNkV0dmtqQWg0cmwtcDFna215TkFpaF9UZjhBVUoyQnFYaVZRMjdXZnZxVDVzOW9aYWdFQ1hRdFpnTXEyeFZZb1g1TGtYLXVBMV95NmhYSkVqVW5pSWNwS2lfa2thLThoU1JvUnJzVTk5eDV3NlN6THpVaURoSlQ3Q2ZsU2tXOW9oWnZxaGVOWHNMRjhsRkR1WktsSEZQbU84cmtrLU01TUNLYnfSAXdBVV95cUxNUm5BVjdqTzZSZzBnVk5ST04tcDhwaDVkUUVEMkNNZEFZYzIxRER2UEtHUHg4cE4xc1FCT09lM1JMdENjbmJRcjJmeU9nQ21fSmYwM2FUVzcwZzAxa0l4OXVKeHZmSGxEVXhHa1BnYnhaUEtqTG1OVQ?oc=5)<br>　2026-10-17 / 日刊スポーツ
+- [「書道」の登録可否を勧告へ ユネスコ無形文化遺産|全国のニュース|Web東奥](https://news.google.com/rss/articles/CBMiWEFVX3lxTFBsZzJvWEk5andmYnVvWGwwOVhXY2VwUFQxWkN4YmNjQm1pU2dUWXhiSWNiNG5pZWpPSjhXQ09IOGNaR0kzZjlzX251U3dxYXhvbWNTOTNSVFA?oc=5)<br>　2026-10-17 / 東奥日報社
+- [「書道」の登録可否を勧告へ ユネスコ無形文化遺産 (共同通信)](https://news.google.com/rss/articles/CBMijgFBVV95cUxQNFRCYVVfM2lUSG1QaTlXS3hMNThxVklIajcwMVRvVnRvUmdHWld6WGNTZm8ydThzeWJxRWtsSWNzX1p0MENtT0pLUHNkN1lobV8tV1E0Y3FpSGVVckxtR19mZGdDQVdyTG0tajV2cWR1ODNkMFFXZlFCX3ozVjhsNFhKMlN3dW45T21WTUNR?oc=5)<br>　2026-10-17 / Yahoo!ニュース
+- [「書道」の登録可否を勧告へ ユネスコ無形文化遺産](https://news.google.com/rss/articles/CBMiTkFVX3lxTE5lSi1CRmY1X2tvbVNSQlJrTTI0MXJnalQyTVFJUmdtdS1fSEV2WjRKOG1BcG52ZURDUlJIbE82bmpaZlp6RjdJckJnLWV0QQ?oc=5)<br>　2026-10-17 / NEWSjp
 
 ---
 

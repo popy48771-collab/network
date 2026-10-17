@@ -1,0 +1,12 @@
+---
+title: "「書道」ユネスコ無形文化遺産登録可否を勧告へ 国内24件目目指し政府申請"
+date: 2026-10-17
+source: "日刊スポーツ"
+url: "https://news.google.com/rss/articles/CBMitwFBVV95cUxPazVfT1NoUnhpUV8zNkV0dmtqQWg0cmwtcDFna215TkFpaF9UZjhBVUoyQnFYaVZRMjdXZnZxVDVzOW9aYWdFQ1hRdFpnTXEyeFZZb1g1TGtYLXVBMV95NmhYSkVqVW5pSWNwS2lfa2thLThoU1JvUnJzVTk5eDV3NlN6THpVaURoSlQ3Q2ZsU2tXOW9oWnZxaGVOWHNMRjhsRkR1WktsSEZQbU84cmtrLU01TUNLYnfSAXdBVV95cUxNUm5BVjdqTzZSZzBnVk5ST04tcDhwaDVkUUVEMkNNZEFZYzIxRER2UEtHUHg4cE4xc1FCT09lM1JMdENjbmJRcjJmeU9nQ21fSmYwM2FUVzcwZzAxa0l4OXVKeHZmSGxEVXhHa1BnYnhaUEtqTG1OVQ?oc=5"
+collected_by: gnews_isan
+tier: secondary
+lang: ja
+country: JP
+---
+
+「書道」ユネスコ無形文化遺産登録可否を勧告へ 国内24件目目指し政府申請。
