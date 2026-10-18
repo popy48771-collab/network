@@ -1,0 +1,12 @@
+---
+title: "【躍動中国】よみがえる工業遺産 古い工場が文化・観光の拠点に"
+date: 2026-10-18
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNMmdOc195b0otMUlNaHNKMWlKYzd5dElKZTBpME04Z25zODlObHZueWRlLUdMX2NLRG5HNDE2aTNMSWVURy1TS2p0b25XWkZJcTVIWFFPWGtfb2JyNVJTOWN4WEpIa1VuSnRTTmF4amhrd2xYV0VtRkozT3c2OHk4cDg0VVRzeGt1OEVV0gGQAUFVX3lxTE5nQlpybVQ0ZTdVeXBuNFlDZktYcjFhNVNZc2syS2NQUml3NmQwT2owU0llWTJlNXN2ZXZMQnB2S1gtY1hCZGRoanl5ekFOUU16cjgxQ2pQWVhQeS1rT2x5aTVKaVJMWlI4S1h1aDEyMDY1MjgxcXBtMTVFcmJIM3FpbXlwUGY4RXRYbV9ITjVFVg?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+【躍動中国】よみがえる工業遺産 古い工場が文化・観光の拠点に。
