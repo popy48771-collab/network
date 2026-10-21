@@ -1,0 +1,12 @@
+---
+title: "「いばらきの花火」県伝統工芸品に指定 職人技を広く発信、ユネスコ無形文化遺産を目指す"
+date: 2026-10-21
+source: "Infoseek"
+url: "https://news.google.com/rss/articles/CBMijAFBVV95cUxNcE5aN3gtaVdjLW5oRU9OLUJhUzE4WE5zSm53M1hBUTcyZGw2ZW5jRG9odENfcTZKN0hPMW4wdzFmUnpyYWtRdUJXbzdvR1JZanlnQWJ6em9PaVJZZVE2WlU4YzZUdEppaURuRmZ3VGgzN0pveEhMVU5EbW1iQVRxNjc1THpnT1NEUjlmV9IBkgFBVV95cUxPZGUwWjVUSTU5T2lNTUtESjROMEdyck96b1RYTUUwb3dSb1NUSnJ4bkRybGdLMkRIU2VNc041bVJ3V1hXcVAyVS1Bczl3RGJOVFZiZkVJTTktWl9BbExpM2RBV1BRbTVTVk5iSEJxSlVabEczMTZEZzRLS2ZmVDFyeHFsOU5RYnJTUWdHWGdYR1FJZw?oc=5"
+collected_by: gnews_isan
+tier: secondary
+lang: ja
+country: JP
+---
+
+「いばらきの花火」県伝統工芸品に指定 職人技を広く発信、ユネスコ無形文化遺産を目指す。
