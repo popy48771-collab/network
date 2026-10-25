@@ -1,0 +1,12 @@
+---
+title: "サウジアラビアが目指す主要投資プログラムによる文化観光"
+date: 2026-10-23
+source: "Abdul Latif Jameel"
+url: "https://news.google.com/rss/articles/CBMi0AJBVV95cUxORkh5NnNtTm5idmE4cEVaUV9IRUo0UG5aMVJmLW5URmxWZVZfSWowYXhjajFuSWNkSlJiUEhxNTNVcnZUNF9YYmdKRUM2LXNmaTI0QnVqWU9vX1N2MWtjZzNpdmdaMTBpbEI3US1MTXY1X09PNnNSTUdZTVlpNzd2ZVQ4VmdQckhnei1nV1Z5VG9jQ2ZQNUoxME5HdE5ycEV2TmhCRTRneFVGRGRrSG81YS1OZlo5NUg1cmtJWk1ickJTdkN0OC1LMFZUQkR1Q3RKNXlldk1DMGh0a0JqdzhrWHdFSE1ZU3pfbnhrWXpHYzVWWHpCZ1RPc19QS1dGVlpyS3dOVnJqdlhEeXAyQW1DVXJhOTFxV056MVlQa0FyNkM1UFJaZGNWTmpsRHRGSlg0d2swRkQwNnU0c0dEOFVoamFfMTdzZGJfalh2V3JEY2Y?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+サウジアラビアが目指す主要投資プログラムによる文化観光。

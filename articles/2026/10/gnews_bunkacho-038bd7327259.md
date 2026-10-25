@@ -1,0 +1,12 @@
+---
+title: "幅3センチの綱渡りに児童が挑戦 文化庁の事業で大野市上庄小学校にサーカス団 22日は本公演を鑑賞"
+date: 2026-10-21
+source: "福井テレビ"
+url: "https://news.google.com/rss/articles/CBMi2gJBVV95cUxQQ3JDTkZSM1Q5d3lvUjE3MlNZREhGckV6MDVyVzU1SjNEcE1lanpBTV9oMGY0TFBSVnhpbHNXRVdwTVFiWE9ZYlBDc2V5ajFkU2c3ejdKNXlaNkZLS0U3UFphU1dtd2g3QXh3VVVWYzJ2YmZYWHhHZGxRU09RSjBfNWVOaHlETlJ3MGdCVkxiSmVyZ1B3aXRWV3kxekg2V1BxYjV2WGdKVTVTS0xDSW4xS1lQQm5ZS2t2bnhGSGFnWkNfM0RJVUJTUTRnRWdVTFloZlI0N0JwallPZFF4WC10bVNkNDVqNkswQXEzWFNSZzY1S2kyYW5oVFNOMmlWUWtKZ1dEWnM4bHp4Y3VjRmlyQ3NyWERHdlFhU2tXcHdiazFramxzRk42SVVmZUk1aC0yMkNNS0JCSHQteDJZNjZBS3hkNVFCc0swMGFIelV4aVJBRm9hU3RmTDNn?oc=5"
+collected_by: gnews_bunkacho
+tier: secondary
+lang: ja
+country: JP
+---
+
+幅3センチの綱渡りに児童が挑戦 文化庁の事業で大野市上庄小学校にサーカス団 22日は本公演を鑑賞。
