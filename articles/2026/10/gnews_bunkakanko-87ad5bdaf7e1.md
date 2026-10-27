@@ -1,0 +1,12 @@
+---
+title: "「映え」スポット人気、中国の文化・観光消費を後押し"
+date: 2026-10-19
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQX1Uyd0tMSURYVjlKVmNLTnlRWkdhOFVGZmFnNXVlQldLS2hrUFMxWlpwMDJxOU02Z1pQZHZVeVV1bFlYclFMMDlKOU1VbnR0MXIwUVNlcmdXc0FTeGl4MVl6OFNZR191b1R6MW9uckl3SHg1X0lKaGtIN2pmeXZYQm0tTmxTbTFQamg00gGQAUFVX3lxTE5YOXdOZ0NmMFpYcDM4UTZYaEhIaGladkFBS2l6a0R3RzZUUllUS2xnMWxBRVF0UnB1Y1AwQnNBRTVMSm0zQ0hYdmJQcTg3ZWhMdlJ4S3lLaW9zNGFBeU5QUDRIUmQ1T0RUeWhoS0JITUN6MHNRekRjWElEcUpYZTBrUC1vMllyTXFxMzRleUlobQ?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+「映え」スポット人気、中国の文化・観光消費を後押し。

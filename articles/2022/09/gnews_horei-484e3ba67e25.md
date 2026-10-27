@@ -1,0 +1,12 @@
+---
+title: "永平寺など拠点計画認定 文化観光推進法で"
+date: 2022-09-15
+source: "観光経済新聞"
+url: "https://news.google.com/rss/articles/CBMiswJBVV95cUxQb21vU2JERWlpRDZVdXFVVjhHdWQyWXk1Y3NsaTRFYkIwNmlOLU1OWnVSb0pmNE5oY0RiZ1BYYk1nazRQWFZzRnhkZ2FoWVlHUkNpaFhuTGpodklOMXF1T2R2eDJfQ3p4Y1VlMXRkUmJqdnVudkwxN2NzUUU4c1R1bG9Ua0I3d1ViYjc1Nzlrbl9jVzkyOW10RVM5aS1HamkwVmh1ZEJrWEJFdXNoYzNKWl9uZ2xZUTl3NTlCUjZWZVJHNGtjMDB2aFRxM05KYnNlR1hfV0RYUHF0eHQzejBheHJNcUVYeUloUURIN2FkUENiMmt4ZVZfZzU1UDRuaUZSd2p0MEp0SW9IeFNoa2o3MGFfcnJkbnBWQ0tsXy1FS1RmLTFEclExeUNpeWYxY09SM3dV?oc=5"
+collected_by: gnews_horei
+tier: secondary
+lang: ja
+country: JP
+---
+
+永平寺など拠点計画認定 文化観光推進法で。
