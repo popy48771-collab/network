@@ -1,0 +1,12 @@
+---
+title: "「飛鳥はのどかな田園風景ではなかった」 奈良芸術短大特任教授が世界遺産テーマに講演"
+date: 2026-10-27
+source: "Infoseek"
+url: "https://news.google.com/rss/articles/CBMijgFBVV95cUxOWWFic3ZPamtxMjF4aFJzSmpQVTdvZGZzLTdVMXdtZlRYUXhUT3Z1M0U5b05Ja05ES0wwWi1ESDRKaHpsUGhzNm44LWpQV0RJUjA0NEM2Qm1TWkJ6U3pMSlBRcUtacGF5Z25EQTNvemloZllHX0UzNWstUlpaUDhscDh4NlRoeWQ0WmpXNjF30gGTAUFVX3lxTE9MWTBRWnZUNVlMWWw5SmtQRUc5Ti1qQ1NTWE40Wi10Q2lNem8yM1ZlVEdYZVJqMEdtYkpBTnJ3NExyWTJLTXF4cGhNdzl4ajNBZnJySFZQdlBZdHBmelYtZ2M4UFVTazR2UUxrQlQ5X2syMmZsM0xTVzlkT3BtRkZNQ1VkS283YVhBZk1FWktCZUhGUQ?oc=5"
+collected_by: gnews_isan
+tier: secondary
+lang: ja
+country: JP
+---
+
+「飛鳥はのどかな田園風景ではなかった」 奈良芸術短大特任教授が世界遺産テーマに講演。

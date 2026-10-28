@@ -1,0 +1,12 @@
+---
+title: "韓国「『独島の日』なのに何もない...」玄関口の港で観光客から落胆の声、大型模型の文化会館も休館日で入れず"
+date: 2026-10-26
+source: "KOREA WAVE"
+url: "https://news.google.com/rss/articles/CBMitgJBVV95cUxQbVFBMm9rczhmNEYwUkdhOVJUOXUtVTBGQU1EMGw1QlNLcGVRMVBsUUZJaHViUVZYSTkxN1N2UUhTUDRjZVN3VEEybkRWeDBFdnN3elV6Z2ZlWjBoZHhQTHBfYlJSRm85UkNHd1A0OFRSN3RhVkR4UjZCVXhLNEZSWlZzbFRDT0xmV1Z2ejNXVkpPcEFSZDM4bnZZaW5scjBSelVPSEt2empnNjJORFh6OHNRazhsMmc3QXl4WUV1bnpZMGNjTDBKUFFqc0syTzZ2MXBnX0hTa2pWUHAtY3hLekUyeHk5c3ZoeWlqSUhDbHZQeU9ydjQ1TTlxUUZfWGtMOXV3OXc5UEpoUjZ0QUVibWxQSzEzM2VEMTJ4UFhUVVdOelZ4M0pFOGxMYkZxU2prNkFjcTJB?oc=5"
+collected_by: gnews_shisetsu
+tier: secondary
+lang: ja
+country: JP
+---
+
+韓国「『独島の日』なのに何もない...」玄関口の港で観光客から落胆の声、大型模型の文化会館も休館日で入れず。

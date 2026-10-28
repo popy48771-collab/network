@@ -1,0 +1,12 @@
+---
+title: "彦根城の世界遺産登録で議論"
+date: 2026-10-26
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMigAFBVV95cUxOVTZQSUlncVVSZzdVNERwcHVfa1NZM2trRC1rOHFNdU8xYU9XU0UwTGlrNTlVeThBR2d0ek5YUUF5c2h6UXZwbmRva1JwMnNqelpJTnR5VlJ2U2JxUXFJVVcwbGR2LXRRQVFGc29WUFY5ZFJUeXh2dzVsRWJrVk82btIBhgFBVV95cUxQYjEzdUFsdTRjMVlOTDlERHhaT2FpY3pyVmxJRXluNVRSSFJOb1Q2dG83RHplQTQ2c1dPZ3ljaFFuRi03cDBROW4tS01NdG5WSGQwbzIxLWYzYlpFb3VZZFlRTWgyUUtjRU5CZ1Y5TmI2Y0pvNkw3dFZZb3JFb1FqTTJZT0pyUQ?oc=5"
+collected_by: gnews_isan
+tier: secondary
+lang: ja
+country: JP
+---
+
+彦根城の世界遺産登録で議論。

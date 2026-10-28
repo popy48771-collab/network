@@ -1,0 +1,12 @@
+---
+title: "中山優馬主演 KAAT神奈川芸術劇場プロデュース 『蛙昇天』上演中 コメントも_"
+date: 2026-10-27
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMilwFBVV95cUxQOFFRYzFLaGpQd3BEUzI0blJFZ05hYi1mQnpfbFJKS0NVMjZReTNJNF8zTUhLcGJIaklBY09NVDB4dENzbjhNMFJrQ2VIS1k4Mk8zbnZqOFdpUmVfZFhYZW1xSFp3Ui15em5hYnRpaHY2eXhjQUgwZWhqWG50U3JINjdJUjdLUUpWbzI5UlJZZ2doQmVPVTVF0gGcAUFVX3lxTE5LZnN3U2JUZGN5Z0NJak1lbk5WYlAwTzI1RS1pX041NHQydEQyUGhvWUJFczFtUGEyZk5YN3QzbXd0eHY4Zk80anVIelhiNUd0bi14bmdnQ05pMy1OZHRRdGYzZldZcGdTT0MtVGh0bVRWd21OY1ItajVqbXViOVNOU2UzdTRZT0RjdU1CRGstTUJuTEFwQllLbGcyTw?oc=5"
+collected_by: gnews_gekijo
+tier: secondary
+lang: ja
+country: JP
+---
+
+中山優馬主演 KAAT神奈川芸術劇場プロデュース 『蛙昇天』上演中 コメントも_。

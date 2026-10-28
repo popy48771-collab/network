@@ -1,0 +1,12 @@
+---
+title: "文化庁が「登録博物館等マーク」作成 改正博物館法に対応"
+date: 2024-05-29
+source: "観光経済新聞"
+url: "https://news.google.com/rss/articles/CBMiywJBVV95cUxNTE5aRE9qdU5JYV9TVm5jVk9paG1Fc3AxM1pGTDhDOXY5aFJvOV9PWjZ5b240RXR5UEc3WmlKdE5DOEJDU2UtYlpQMWNpcjlHeHU3WHhFWkozdFk0YU5Hekxhb3BCbVVobWVFSEszWlNFdnZ5UWlVRWJQVVFfZ0EzTkwwTmFkd2FCUTJlMmlQR0VaeU8zRmVwNmE0OVFNOG1XSDNncGdlMF9kdGdPa3pPLTFIN29QanV6eW5lS2hPYkhIdTMxVjdReTlIUkxDUWx5NkhwUjBzQTZoZXNlRndlcE1kWlAtdFpsZzVUYWgxX2t0WHhkYnRpX1RQLUlaT1d6UzYxRGxuSnFQeFdQdEtOMGU4czRJU2hRVklaWjZrZmFXQVVsc3IzMGdnN3pESGRqR2ZBczdwY1JHM0M5R1Q2VldEX21VQk9lbWR3?oc=5"
+collected_by: gnews_horei
+tier: secondary
+lang: ja
+country: JP
+---
+
+文化庁が「登録博物館等マーク」作成 改正博物館法に対応。

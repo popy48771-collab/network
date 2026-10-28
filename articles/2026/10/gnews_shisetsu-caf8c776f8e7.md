@@ -1,0 +1,12 @@
+---
+title: "室蘭市市民会館、改修工事進む 12月から全館休館へ"
+date: 2026-10-26
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMifEFVX3lxTE9IOGsxR2NJVTVwUzcxZW9BYU9VdjFoT2JTNHc4emdJSXc4d1M0UEJtRkxyU2h3Sk52b05tLXB5QUdyc0x2RVozX2IwNEM4NjRMYTVFOXRmaU1SZW9zNERlRHhWdEFxcWoxQnFGN1dWcnpnVXdzbHcycExtekfSAYIBQVVfeXFMT1BqZGQtLWhzVTBqT1NhYklHMGQ0b2kxZlNxSzNQQXYybnpkbHZUWEhuNDVkZFF5UnA3UnVXNkp0UTM1SHl3WVh1SlhzckxkbC0ydjAtREhKUWVPZDl3TzBsbGRDNFR1cFREdk51Q2V6OXN4NDdPTUpQV0JNRHpDaTF1Zw?oc=5"
+collected_by: gnews_shisetsu
+tier: secondary
+lang: ja
+country: JP
+---
+
+室蘭市市民会館、改修工事進む 12月から全館休館へ。
