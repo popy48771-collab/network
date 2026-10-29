@@ -1,0 +1,12 @@
+---
+title: "源頼朝が源氏の最高を祈願した三嶋大社の「令和の大修理」が佳境 現代の職人技を結集し90年前の彫刻を後世へ 2027年12月まで"
+date: 2026-10-28
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMickFVX3lxTE5ma3M5el9NUTRIZFdCSTNQRDBUN1g3TGMyRVhzaW9sY1lOVm1pZ3RmeWxDdnoyVWwzM2VtUXQ2dXF1Tm14dmhTd0JwUGVIdzEwX1daSXN2d2xQTGlIQzZrblAxWnZRQnZoMDhxdGhTeFQ2QdIBd0FVX3lxTFBmdTV3SmZVRk1EYlM2RFlqT3JHeHNsYU1BSlFaOUlCOVgyQVBnRjVBUE5KZmxOVjNaYjdNLUI4b3NtWkllVE5SWG8zLWFHSHlYRWtROThEWGdxcFgwWGxoZUNkWWNqTUFvdmttR2h5VDNZVTd2SGkw?oc=5"
+collected_by: gnews_bunkazai
+tier: secondary
+lang: ja
+country: JP
+---
+
+源頼朝が源氏の最高を祈願した三嶋大社の「令和の大修理」が佳境 現代の職人技を結集し90年前の彫刻を後世へ 2027年12月まで。
