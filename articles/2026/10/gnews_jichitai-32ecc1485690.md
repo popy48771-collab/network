@@ -1,0 +1,12 @@
+---
+title: "ガイド案内の客数制限、竹富町の条例は合憲 那覇地裁 沖縄"
+date: 2026-10-28
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMigAFBVV95cUxNbnNvclY4U3pEc3YzZTNjbUxXV182UUhJUmpaVjhqaER0cFFmX2V2ZVowTGZlNk1mYTc4a2RjYk50cGhFbm1WSHRtQlJ2TlJQLURQYll2SFFWcFFabEUzZi1NTFhneVc4VTJOdUhWbHpxUlp3dG1TejV2ZXZKMnlJedIBhgFBVV95cUxOZzZOQXVval9sNzBQWTJ1MjBZaVI5VWFkWTlvZkN1cDJrcFh5TzNpem9PaEd3alFzeHMxRHlPZnVfaVowb21fOFZ5MEJKOWFHZDgydmFLQWdQNUlhV0NLRFJ1RDROZll4cWl3dVhQeEdPSTh5ZlBPcHBtSk9oSzBfck0xdk9IUQ?oc=5"
+collected_by: gnews_jichitai
+tier: secondary
+lang: ja
+country: JP
+---
+
+ガイド案内の客数制限、竹富町の条例は合憲 那覇地裁 沖縄。
