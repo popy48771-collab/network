@@ -1,0 +1,12 @@
+---
+title: "日本遺産・桃太郎伝説を知って 31日にフェス"
+date: 2026-10-27
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMifkFVX3lxTFB2dG5SeWJmQWd3YVJSUktYOUc2MjdTXzJUeW1FaUNvZlRkZDQxMUR4czc5bFZhY3prV3lCbnl5dTNEVlhfdjlhVjNWaTZSWk1fLXV2bDViSlY1b21SdjJVODltTy1UanRGX3RfOGFKYjhKd2pDNzZDOG1iY19Ed9IBgwFBVV95cUxQcGJRN0NMLVo3aGpIcG5zSEhlbVp4RTUtNzFyQXpmLXN1Zm41R1gzQ1hxQnV2eGtQQ202TmpxMjFoVHJETTlVZzZ2d3pYMjNGR0UxcmdPbnBtVjdmdW4wVXZ3cjFLcDhtRktYUjF6akJiOGo1MTltd1F0RDdNQUxjVElPaw?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+日本遺産・桃太郎伝説を知って 31日にフェス。

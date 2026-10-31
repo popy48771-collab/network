@@ -1,0 +1,12 @@
+---
+title: "【期間限定】日本遺産MONTH特別公開・「波うららかに、めおと日和」パネル展"
+date: 2026-10-29
+source: "大和ミュージアム(呉市海事歴史科学館)"
+url: "https://news.google.com/rss/articles/CBMiywJBVV95cUxQY0VDZ2pfcGhGaU9ja2ZTTUVEeXoyNVlCWWVheU96NnE5WTU5d1JNaGY1RllicUkyYUlnNVA2OW00Mkg1WHZ5R3lpY2E0RjVMa081UE1Sd0RiSEh1STFKNTNPaTZON0V2VHlzNml4c1ZUX0lEdHVyenN3WFFac0x3LS1MNWxFTHp6cl9PZHYzMzlyRnFUdmw4N2ctUGNfaVZ4OG1CRW05enYyVG01a2ZLX0E4LWJ3RTVpdWxGZHUzTk9iNnpKLWNoVzQxeVFzSzZPUEFKR2lEY3U2bFc5TFlsSkxOLTA2cEFMT1hqTkFFSFhPWWFKVDJEdVd0VVRjUmU5Z2NpSFp2LTRkcWEzS1FxMjNHWWhKZVpfUHlTS2YwbnU1cHMxRlp5R3lKdWN3VHdYTnpzY1dBcEJxYVhNaGlRa0tyRzVXXzduNWhZ?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+【期間限定】日本遺産MONTH特別公開・「波うららかに、めおと日和」パネル展。
