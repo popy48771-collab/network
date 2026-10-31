@@ -1,0 +1,12 @@
+---
+title: "廃校を文化財収蔵に活用 大和村で大島地区公民館経営研究会|子ども・教育"
+date: 2026-10-31
+source: "南海日日新聞"
+url: "https://news.google.com/rss/articles/CBMi3AJBVV95cUxOVDBjNXNodzJJc2hLdnJpdk5YRnRlblBLNDV6UzlXajZmR3Z2a2lDWldGb3pFVUdKSnptck82TUM3OEdaZi01MGVxWi1fWmkyZEZNS0JhX0NFWWprRTZ1T3ViZGlnOWxoSmp1U3hhSlVnS2JibzRMbEFhYnZmMG90OWNuSFEzUGhzMHg3VkxLMklmZ2M4NFpwbm1QakFjRlFIZnljSWlibGpleUtTaUljSTc0aVZGNmNsVWVQdkcwVFFudjNydE81M1g1SjZ0SXNLWGFucE96VGFXUmdzT0tMLTFCOUdhWng4djdpOU5uYW9PZWhjRk1RZzlSTnJzVE9sV0k0enk1R0Nma0pUV0xCMm5Uc3NxNllaeUJ5M1VfTnExQ1ZGUF9XNXdiQjVtVHY5ZUJBSE91c3FOdHNCRHJRUjMxWXAxblJTUkFfTk4tcXZSVUdxc1pabkQwejI?oc=5"
+collected_by: gnews_shakai_kyoiku
+tier: secondary
+lang: ja
+country: JP
+---
+
+廃校を文化財収蔵に活用 大和村で大島地区公民館経営研究会|子ども・教育。
