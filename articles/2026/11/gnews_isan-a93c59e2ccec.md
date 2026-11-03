@@ -1,0 +1,12 @@
+---
+title: "北朝鮮テコンドー登録勧告 韓国の共同登録は困難"
+date: 2026-11-02
+source: "Chosunbiz"
+url: "https://news.google.com/rss/articles/CBMigAFBVV95cUxPRHVicDhFZDV3TEJBNkVJRldiM01pbmxQRWhtQV9NVXE3aGF5VUlqVlk5WHMzMnJLYXo1c0dmWkliZnRJdnI4UjdpTDFPbFBfY0tYWnFsbTM4RUJqLTJlS2JsU2NoenBQVjUyaFlRSm9VNE9XU1NUby10Z0k5Tnl6d9IBlAFBVV95cUxNMlB1MVhYT0ZQMV90QVE4VUV0dkd1R1N6ZGpDY0k5MElWQ2phU2hSc1htZ3hKLXI5dnJoREVTWERUT3NaZGd1NERFTDRyckZyRGJoMnR0Z3R3UDV3cUdFRGNPSkJBY014b2RXaHFUM3FnVXpsWmF3TU9vX25CdzJMd2Ria05DVmIyejFfYjJvNldiRXhT?oc=5"
+collected_by: gnews_isan
+tier: secondary
+lang: ja
+country: JP
+---
+
+北朝鮮テコンドー登録勧告 韓国の共同登録は困難。

@@ -1,0 +1,12 @@
+---
+title: "京都鉄道博物館 西日本を走ったディーゼルカー 収蔵写真展 開催"
+date: 2026-11-02
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMifkFVX3lxTE42LWdTZkxGSHpFVjBrbFF0aE4xaExpZkxYTHlwVE5DT1JNcXJaTkM0QlRjZGU4cGpOQkdObUdGTTQ5MXJvMWgtNnNyYnlaOGpCaGMxMFg1c2RHX2ZQbXY1d1ZtMUZYWXhKWGZzRFM4c3M4Wm5FNHdURlZlVVBwUdIBgwFBVV95cUxONWpyRTZZbWwzcUotemp0cVlCRXZNZ0p0U2h2Zi1hUXItZXVBX2luNzR5RGJLbkFPakRKMXJNZmNnQzhZQ2RLTmxYRWJIdlR5ZDIxSDAyNWdqcEcwNTBLQmtnYTY0dzBtNHZYWmlRLUFaN29LTmZHcG9HSjJmWXBMb2NFTQ?oc=5"
+collected_by: gnews_hakubutsukan
+tier: secondary
+lang: ja
+country: JP
+---
+
+京都鉄道博物館 西日本を走ったディーゼルカー 収蔵写真展 開催。

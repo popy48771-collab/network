@@ -1,0 +1,12 @@
+---
+title: "農業・文化・観光融合で観光客が収穫体験 中国・浙江省寧波市"
+date: 2026-11-02
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbjBOZGpkMXRod0owc0xaSlk0NW5ta0pOaFRqa2hiRmlJMFF1NkpWWnFvck9IdmZ2QXVRSzZlNmJJZThyV3Q4YlRSNWc3bFlkclBwZFB0aE1WRUVWQklGeXgxY19vY2VPR3MzT1BSazdzRTdoSFczMDhxTkdjUXhPQTJDcnk3eTdUeDR30gGQAUFVX3lxTE5fUzUzWjF1MG9jaHZWZzZWck9Qc01BSHBpcWJjX1kxUkZJMmRpWDVWOGlOUE5wbmFjUzRmOWpGbXhkUHFEVGFYaHBqdjVjcHJheFpBaDNVVGRYbERIU3QxZ0I2NTN5alI2ZW9rRVpwVkFIUWMwdzlBZTVtSVJUdWFTYVVGZUZ0WTNYS28zVjZWTg?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+農業・文化・観光融合で観光客が収穫体験 中国・浙江省寧波市。
