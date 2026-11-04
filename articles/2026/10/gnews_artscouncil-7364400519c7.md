@@ -1,0 +1,12 @@
+---
+title: "地域の教育や文化活動に援助...「あいちFG教育文化財団」が愛知県内25の個人や団体に計940万円の助成金"
+date: 2026-10-29
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMiigFBVV95cUxQZ2pJdFNGOVBoaU0yc19xNGZzNjg3dk55WGFFZWFKbnVXMHgwaDNjam53NDNSNmtQbmpORHdIVXREaWNIWjBHZVlfYWZObTFUZmZsZ1d2MXQ1WWhkZnMtb1NfN3AxTFR1NFM2RnJucUh4VVlBcVMxaXNTMXRDTFhyeUh0NTJFNm5DdVHSAY8BQVVfeXFMUHB5OVdMVGtHMHpqYU9aVU1WTENsZTBSeUNuR0ZkV2g0cGpKTWpaVENqWEdGblY5NzhTeHZncHZGblhqNHNoNnZKdjZWUmR0Tmp6ZlVxaTE1dHBoRDdLdkE5QXM2M0QyWmdGeXFxYk9Ba3dlZS1QWllqSU43eTQxZUhra3hnXzgtd0FaRU1RMjA?oc=5"
+collected_by: gnews_artscouncil
+tier: secondary
+lang: ja
+country: JP
+---
+
+地域の教育や文化活動に援助...「あいちFG教育文化財団」が愛知県内25の個人や団体に計940万円の助成金。

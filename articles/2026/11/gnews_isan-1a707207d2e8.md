@@ -1,0 +1,12 @@
+---
+title: "韓国が手をこまねく間に...テコンドー、北朝鮮がユネスコ無形文化遺産に単独登録へ"
+date: 2026-11-02
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMikAFBVV95cUxOanF5VHV4N2lnY2RVZUM1RHNRRmV0aUVQYWg3YlV3Mm9zTWd4TG5WeEdSU1pFc2FVLWl5cXB1bE55LXZGRFg3R0R4Y2l5Z1dDUnV2S01QUE04WDFGZUJQQ2F3YUdIUlNmVzVQZVFOWmw3WFJpNHNpRnBXaFdlWWhpamt6blFSQ0g1YllFMjV6VUPSAYwBQVVfeXFMTnRHelh4dnAtWFdoR0EzcmZoWHZ4SnlXWlBwa1pEMkw3bjJvU0pzT0h5enlzMkdQU3ltSXlXc3BSSlc0RURWU0RhaHVYd3JqVW9pSURjZTdYdWl0MlRCOHdfZXZEbUdzbDdBR3lDV1VBZ3lpVmprZnk5ckxIWnVDUUMwNDhweXc2QVRHQ04?oc=5"
+collected_by: gnews_isan
+tier: secondary
+lang: ja
+country: JP
+---
+
+韓国が手をこまねく間に...テコンドー、北朝鮮がユネスコ無形文化遺産に単独登録へ。
