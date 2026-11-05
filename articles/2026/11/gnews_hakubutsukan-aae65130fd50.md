@@ -1,0 +1,12 @@
+---
+title: "省レベル科学研究プロジェクト「ホーチミン博物館におけるホーチミン主席の文化に関する文書および遺物の記録に関する研究」の承認委員会"
+date: 2026-11-04
+source: "Vietnam.vn"
+url: "https://news.google.com/rss/articles/CBMihwJBVV95cUxPN1lHbmUxcTdNVGNTQ1Z0U211UHV1NVRIX0hMaTgzRjJKeDhfaXpaQTNFZW9GeC00U1l6RDI5M3dvZ3hQNW5ZSjFmSFVxUlJkWU1PTGwwSWRQTWZWQkRGUGR1bk5VNXpCQmNMZkQxZHpybHBzVzQ1NHh1UnMtUTA1bkR5dzFVWFZXUVZSX0o5Q0RVYl9BREF0N1U2dHJPcS1RaXppZWd0c21DTXNKRG9PNWJpT1hTS2VXdm9iVVZwTm83RnpLTjlQQU95VzVGeEp0ZTcwTHhHS3R6dzdtVnZrQ2VETTN2ZGlhbXNBUGZEdEtYNVJTVnVGSmJiWlZYcHp0S0FGNkROQQ?oc=5"
+collected_by: gnews_hakubutsukan
+tier: secondary
+lang: ja
+country: JP
+---
+
+省レベル科学研究プロジェクト「ホーチミン博物館におけるホーチミン主席の文化に関する文書および遺物の記録に関する研究」の承認委員会。

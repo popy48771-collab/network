@@ -1,0 +1,12 @@
+---
+title: "視察報告 議会の合意形成で議会で条例を提案 大分市議会 : ブログ : 羽村市議会議員 いしい尚郎"
+date: 2026-10-27
+source: "公明党"
+url: "https://news.google.com/rss/articles/CBMi8gJBVV95cUxQbmJMUVJtUWMwZ2lHTldQcXhKLWxVNjJoU0xJeENoR1Z5T3g0b0VCZTlFTFZ5UEZDUk9tTEdFTDZTMHh2STNyS1hFdUtpc05TQkVOaUFIcHNCYW05Mm1aZ1lUSXB3aUVQS0ZLeGQ1VzgybF9jUHE0THYyd05ORVJVSmJISFpxNTk3LUNUemZlcEZITmVPQnFnaFJaa0ZXazFKdW9SSU12MkJvODNIRkFYV0dZd0xRQXBISXdpTEVRZDVGR3dOSndDOWxibEdTTTFUN3hYMDkyaXlfenFvN010cWwtZ0hDUzNGWWJGdGFmamM5WXJseTZPVklYbnpZbjdOX29XZ3V6UXpxNjVxbi1hcnQ1bzNvODBiQTJ0eDdhaUpHaEdZS21zcXYyUGhydE00MXk0cDdsX3FXRXE0elRaWjlqRnNDVHZ1Nmh1aXRxczd1THlEMldvdE9IdXp6bjBnVERkZmFUWnRPZ053akRnVXlB?oc=5"
+collected_by: gnews_jichitai
+tier: secondary
+lang: ja
+country: JP
+---
+
+視察報告 議会の合意形成で議会で条例を提案 大分市議会 : ブログ : 羽村市議会議員 いしい尚郎。
