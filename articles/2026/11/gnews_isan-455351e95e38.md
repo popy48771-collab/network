@@ -1,0 +1,12 @@
+---
+title: "ユネスコ無形文化遺産に「韓紙」「書道」登録へ、日韓共に24件に=韓国ネット「もっと活用を」"
+date: 2026-11-06
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPTk5hdUFxYlRldXhBYXpLYzFrMnJmZnZuazRRa00tMWVCeUU3LWxMMVFuZmxUd1JMdjJEMkZERVh6TzZfV2l3R1JmaFJLWGtaU3ZaZURJQUxELVpEa2dUQUJDQkk1U1VYeVJpOUwzSG5yMFd0VGZOUmFmWVR6RzZNVld6dEFINmEtQmN6bzNLdzNvYV9zVzJOcXdSLUZYOEQ1a08tUy1jNGRQeF9EYWZ3bVc5eEljR29jNXlGYXBKN25JZFc0X21ESGFSRWxLb1FsUDRKd2RLMTJjTzBOWUNJ0gGPAUFVX3lxTE9JRlQ1ZzRzMTd0M1otUEZXbDEyWDF2MWtGZXRLVjJaa0FVMkhFS1h5dHR4RFlLaVlCdFJrd0xXWGx3X1EwZ2hCNzU3alItd0FQNURaekhqNjExaUIyMElXdWVjWW9GUURFYk9naVZvNTd5OXMzZi1iVlpyV2lNMm5wam1YTk1ZRFJvajFYcG1v?oc=5"
+collected_by: gnews_isan
+tier: secondary
+lang: ja
+country: JP
+---
+
+ユネスコ無形文化遺産に「韓紙」「書道」登録へ、日韓共に24件に=韓国ネット「もっと活用を」。

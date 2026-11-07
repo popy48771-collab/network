@@ -1,0 +1,12 @@
+---
+title: "日本の「書道」がユネスコ無形文化遺産へ"
+date: 2026-11-06
+source: "公明党"
+url: "https://news.google.com/rss/articles/CBMiwwJBVV95cUxOWE05UzBOTmJjUXpvR2VQbEw2VExQc0FBNlkyT2lSTm13bkYyNVRXTmt6MFNFaFhxSFdXQlZZdnFuU0lvRkVLWHBiS2kwSmxsLXFLejJIUTZOZnEzeFZrdlpsXzIxNzB6dDBfYXZ4RXRiMmJoMlJ0Tk1lV1IwZkFWblpDVDhGcXlhc0xkSlpIaTV4WTNVWUZYWEE1N1dGdmtzMFdmUVlidC11dTdvR2NmRkJtV2V6VGt6d3doYVlsaTZPQjZmZ0JDMFVBRjFhLV94OHVLYWVkaE9UTTlleDRZaHZWOU5MNDUtcS1aTTRDRVQzS2Q4c3NBUGgyeGhvLXJwRXg4ZzM2VDZ1bVJnRm14RUFXMk1UbkpPM01RNmkwWnNNZ3Z2bTRiZEJYal9vSkJPQ2c0eE1FWVRnUHZDSjRiaTQwOA?oc=5"
+collected_by: gnews_isan
+tier: secondary
+lang: ja
+country: JP
+---
+
+日本の「書道」がユネスコ無形文化遺産へ。
