@@ -1,0 +1,12 @@
+---
+title: "ライブハウスや劇場に助成金交付を。署名運動「#SaveOurSpace」に20万筆、アーティストから賛同集まる"
+date: 2020-03-30
+source: "ハフポスト"
+url: "https://news.google.com/rss/articles/CBMihAFBVV95cUxQeFR2dW9KM3FhVHFRYWc5eEhqaXkwQnA4R0I5VnRnY3lpWUczdDFtQjFHVWZ4RUpXaGJsbDVHSkJlZ0YxUGhEUXo2M0wyZU1PZ1BFUmdfWWFpVTYwbkZwd1pHLWhmNVVPaWRXOUNRSjRmUGdHLVI2OEZLNk5jZmxRX1M4ZkHSAYsBQVVfeXFMTS11VzRLeWViLVJLMEJUOFdfMzd2MGhRRUR5b1VIZndDMnVmZ05zOE9YbDUyNXdTZHhmZzFheExQaF9ZN1JkdDBGQ0NfWmRqeWp2YUc4Zm5uM2toX0g1VDYxeDA3ampLdjNiMmw2WTl0dDlGT1dVS1MtUUdLbmxJSU5lM1ExU3kyUGJ6TQ?oc=5"
+collected_by: gnews_gekijo
+tier: secondary
+lang: ja
+country: JP
+---
+
+ライブハウスや劇場に助成金交付を。署名運動「#SaveOurSpace」に20万筆、アーティストから賛同集まる。
