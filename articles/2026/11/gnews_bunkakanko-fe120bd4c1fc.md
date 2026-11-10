@@ -1,0 +1,12 @@
+---
+title: "中国・湖北省嘉魚県で荊楚農村文化観光祭"
+date: 2026-11-10
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPTE8yTW55Z1h1SDJPMlYwamNudWtCaURvNTRIX2JZWXlmb3d3QUlNRDhNRng3U1NVbHl2NlBtWTBoR0lQZlJKcEFlckwwN2dhbEZ2QkpoSGVmRHdITTBXeEgyd0RueUhRS2FtXzBmSmNBWTRCQkFkR1NZNEotZUcxWnVRRFowaG9Cenkw0gGQAUFVX3lxTE5JYzlMZHlfY0lmd0tBbk85V1lGMS1zb2VvclgzbjZhMXQtdE1LNTNyQjJDRUJTZ0JTT1NKdGlHZWRNTDh6RUFlSWV5S0tIQm8zTFFldzVDV2RrNFpqVUVRU0Jod0gzeXJsRDNXdEUydldTVW0yTUpNMmFicEJTcUVZWmdXeHpzNEM4OHJPRFJDUA?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+中国・湖北省嘉魚県で荊楚農村文化観光祭。
