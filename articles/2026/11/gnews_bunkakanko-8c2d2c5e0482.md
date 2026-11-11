@@ -1,0 +1,12 @@
+---
+title: "小松の石文化が日本遺産に認定されて10周年...新たな試みとは?"
+date: 2026-11-06
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaEtobFhqUk1fcDRxSXVwZVppZ29TUDE4ZVBMQlJfOTIyUm1FWmNHdV9pLXExS1RQYy1GMDZIX0c4dHdORXdQOWoxNlhNSC13Q25JT3FPYjNBb2VZQlNQN2REVGtHMmhEenBsX0NmOHg1M1pDSEVjc1lwdEhiX05sWDlGaXM0bld1OHhpTFhWWWNlaHdQTFHSAZsBQVVfeXFMUHZLcTB3d1BqcVRFT1Fic3VWNUNlWlVmYWxoWGVjNFI0VW9FaTdWS0hjcXZmWjJzYm5URjhWX1FlUzBjSmV6ek82R0NPTWg4TmFSTXpMSXZBaFlWZU9rQXpLcFpOcFI1WkR0YnZONUpiM3hrWGVscXRfWGliSGNWUVFJTDV0Z2ZNMzNOeV9IZmZVTENvZ19hVzA0c1U?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+小松の石文化が日本遺産に認定されて10周年...新たな試みとは?。
