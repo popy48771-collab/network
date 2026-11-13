@@ -1,14 +1,14 @@
 # 共起ネットワーク 分析レポート
 
-生成: 2026-11-12T02:06:03+00:00
+生成: 2026-11-13T01:38:29+00:00
 
 | 項目 | 値 |
 |---|---|
-| 記事数 | 4753 |
-| 対象期間 | 1970-01-01 〜 2026-11-12 |
-| 共起単位数（文） | 7136 |
-| ノード数 | 582（絞り込み前 11202） |
-| エッジ数 | 905（絞り込み前 133814） |
+| 記事数 | 4789 |
+| 対象期間 | 1970-01-01 〜 2026-11-13 |
+| 共起単位数（文） | 7177 |
+| ノード数 | 582（絞り込み前 11273） |
+| エッジ数 | 905（絞り込み前 134501） |
 
 [Gephi Lite で開く](https://lite.gephi.org/?file=https://raw.githubusercontent.com/popy48771-collab/network/main/out/network.gexf)
 
@@ -18,20 +18,20 @@
 
 | # | ノード | 種別 | 出現文数 | 次数 | 媒介中心性 |
 |---:|---|---|---:|---:|---:|
-| 1 | 無形文化遺産 | 政策・制度・法令 | 289 | 2 | 0.0000 |
-| 2 | ユネスコ | 組織・地域・人物 | 237 | 2 | 0.0000 |
+| 1 | 無形文化遺産 | 政策・制度・法令 | 291 | 2 | 0.0000 |
+| 2 | ユネスコ | 組織・地域・人物 | 239 | 2 | 0.0000 |
 | 3 | 飛鳥 | 語 | 207 | 2 | 0.0000 |
 | 4 | 藤原 | 語 | 187 | 2 | 0.0000 |
-| 5 | 書道 | 語 | 144 | 3 | 0.0000 |
+| 5 | 書道 | 語 | 146 | 3 | 0.0000 |
 | 6 | 宮都 | 語 | 134 | 2 | 0.0000 |
 | 7 | 著作権法 | 政策・制度・法令 | 67 | 1 | 0.0000 |
 | 8 | 勧告 | 語 | 57 | 1 | 0.0000 |
 | 9 | 答申 | 語 | 54 | 3 | 0.0000 |
 | 10 | 職員 | 語 | 51 | 6 | 0.0000 |
 | 11 | 理由 | 語 | 50 | 6 | 0.0000 |
-| 12 | 週間 | 語 | 40 | 1 | 0.0000 |
-| 13 | 相談窓口 | 語 | 39 | 6 | 0.0000 |
-| 14 | 至宝 | 語 | 38 | 2 | 0.0000 |
+| 12 | 至宝 | 語 | 40 | 2 | 0.0000 |
+| 13 | 週間 | 語 | 40 | 1 | 0.0000 |
+| 14 | 相談窓口 | 語 | 39 | 6 | 0.0000 |
 | 15 | 障害 | 語 | 38 | 6 | 0.0000 |
 | 16 | 補助金 | 語 | 36 | 4 | 0.0000 |
 | 17 | 資質 | 語 | 36 | 2 | 0.0000 |
@@ -62,14 +62,14 @@
 | 5 | 配信 | 0.0004 | 21 |
 | 6 | 自治体職員向け | 0.0003 | 6 |
 | 7 | 取材 | 0.0003 | 17 |
-| 8 | コラボ | 0.0002 | 18 |
-| 9 | 会場内 | 0.0002 | 4 |
-| 10 | 撮る | 0.0002 | 5 |
-| 11 | アーツカウンシル東京 | 0.0002 | 29 |
-| 12 | 自律的 | 0.0002 | 9 |
-| 13 | 経る | 0.0002 | 29 |
-| 14 | 歌手 | 0.0002 | 26 |
-| 15 | 閣議決定 | 0.0002 | 17 |
+| 8 | 会場内 | 0.0002 | 4 |
+| 9 | 撮る | 0.0002 | 5 |
+| 10 | アーツカウンシル東京 | 0.0002 | 29 |
+| 11 | 自律的 | 0.0002 | 9 |
+| 12 | 経る | 0.0002 | 29 |
+| 13 | 歌手 | 0.0002 | 26 |
+| 14 | 閣議決定 | 0.0002 | 17 |
+| 15 | 派遣参加者 | 0.0002 | 5 |
 
 ## 結びつきの強いペア（NPMI 上位）
 
@@ -115,23 +115,23 @@
 | 1 | 宗教施設 — 避難所活用 | +1.000 | 1.000 | 0.000 | ★ |
 | 2 | 宗教施設 — 促す | +1.000 | 1.000 | 0.000 | ★ |
 | 3 | 避難所活用 — 促す | +1.000 | 1.000 | 0.000 | ★ |
-| 4 | 妖怪美術館 — 小豆島 | +1.000 | 1.000 | 0.000 | ★ |
-| 5 | 妖怪美術館 — 博物館登録制度 | +1.000 | 1.000 | 0.000 | ★ |
-| 6 | 小豆島 — 博物館登録制度 | +1.000 | 1.000 | 0.000 | ★ |
-| 7 | 売買 — 勧誘 | +1.000 | 1.000 | 0.000 | ★ |
-| 8 | 宗教法人 — 勧誘 | +1.000 | 1.000 | 0.000 | ★ |
-| 9 | 小松辰雄さん — 大使 | +1.000 | 1.000 | 0.000 | ★ |
-| 10 | 消費税 — 納付 | +0.949 | 0.949 | 0.000 | ★ |
-| 11 | 消費税 — 松江市 | +0.949 | 0.949 | 0.000 | ★ |
-| 12 | 宗教施設 — 通知 | +0.939 | 0.939 | 0.000 | ★ |
-| 13 | 避難所活用 — 通知 | +0.939 | 0.939 | 0.000 | ★ |
-| 14 | エース — 小松辰雄さん | +0.939 | 0.939 | 0.000 | ★ |
-| 15 | エース — 大使 | +0.939 | 0.939 | 0.000 | ★ |
-| 16 | 宗教施設 — 法人 | +0.877 | 0.877 | 0.000 | ★ |
-| 17 | 避難所活用 — 法人 | +0.877 | 0.877 | 0.000 | ★ |
-| 18 | 納付 — 松江市 | +0.877 | 0.877 | 0.000 | ★ |
-| 19 | 促す — 法人 | +0.877 | 0.877 | 0.000 | ★ |
-| 20 | 妖怪美術館 — 香川 | +0.830 | 0.830 | 0.000 | ★ |
+| 4 | 売買 — 勧誘 | +1.000 | 1.000 | 0.000 | ★ |
+| 5 | 宗教法人 — 勧誘 | +1.000 | 1.000 | 0.000 | ★ |
+| 6 | 石川県 — 能登 | +1.000 | 1.000 | 0.000 | ★ |
+| 7 | 大使 — 小松辰雄さん | +1.000 | 1.000 | 0.000 | ★ |
+| 8 | 宗教施設 — 法人 | +0.937 | 0.937 | 0.000 | ★ |
+| 9 | 宗教施設 — 通知 | +0.937 | 0.937 | 0.000 | ★ |
+| 10 | 避難所活用 — 法人 | +0.937 | 0.937 | 0.000 | ★ |
+| 11 | 避難所活用 — 通知 | +0.937 | 0.937 | 0.000 | ★ |
+| 12 | 促す — 法人 | +0.937 | 0.937 | 0.000 | ★ |
+| 13 | 消費税 — 納付 | +0.925 | 0.925 | 0.000 | ★ |
+| 14 | 消費税 — 松江市 | +0.883 | 0.883 | 0.000 | ★ |
+| 15 | 納付 — 松江市 | +0.852 | 0.852 | 0.000 | ★ |
+| 16 | 石川県 — 小松辰雄さん | +0.847 | 0.847 | 0.000 | ★ |
+| 17 | 小松辰雄さん — 能登 | +0.847 | 0.847 | 0.000 | ★ |
+| 18 | 地域振興シリーズ — アート | +0.310 | 1.000 | 0.690 |  |
+| 19 | 杉浦幹男氏 — アート | +0.310 | 1.000 | 0.690 |  |
+| 20 | 無料セミナー — アート | +0.310 | 1.000 | 0.690 |  |
 
 ## 文化施設・政策と結びついている語
 
@@ -145,7 +145,7 @@
 - **劇場法**（政策・制度・法令, 出現5文）: 公開シンポジウム(0.90), 齎す(0.78), 施行(0.75)
 - **文化資源**（政策・制度・法令, 出現28文）: 記念物課(0.88), 国際協力室(0.74), 記念物課文化遺産(0.74)
 - **アーツカウンシル**（政策・制度・法令, 出現24文）: 日付更新(0.80), 支援情報(0.78), 沖縄(0.77)
-- **無形文化遺産**（政策・制度・法令, 出現289文）: ユネスコ(0.82), 書道(0.76)
+- **無形文化遺産**（政策・制度・法令, 出現291文）: ユネスコ(0.82), 書道(0.76)
 - **著作権法**（政策・制度・法令, 出現67文）: 改正案(0.77)
 
 ## 話題のかたまり（Louvain コミュニティ）
@@ -153,38 +153,38 @@
 - **クラスタ 0**（18語）: YouTube、報道関係者、配信、方向け、ウェブ会議、模様、ライブ、講演資料、講演映像、無料配布中、tver、見逃す
 - **クラスタ 2**（13語）: 自治体職員向け、札幌、派遣参加者、文化事業、官民連携、鳥取、海外派遣プログラム、アートマネージメント人材等、公募開始、無理、パートナーシップ、民間
 - **クラスタ 1**（13語）: BGM、配分、歌手、閣議決定、改正案、BGM使用料、楽曲使用料、歌手ら、使用料、還元、権利創設、分配
-- **クラスタ 4**（12語）: 議決、克彦、同審議会文化財分科会、会長日比野、経る、文部科学大臣、審議、村野藤吾設計、再始動、記念イベント、宇部市文化会館、答申
-- **クラスタ 3**（12語）: 自律的、集団、繋がり合う、学び合い、フロンティア、運営モデル、持続的、ファンドレイジング、継続的、構築、協働、仕組み
-- **クラスタ 5**（12語）: コラボ、生態、考察、琵琶湖博物館、鎌倉、監督、ミステリー、市内、林檎娘、岩木山神社、歩く、周遊
-- **クラスタ 6**（11語）: トーク、頭突き恐竜化石、福島県立博物館学芸員、発見秘話、会津若松、九州国立博物館、面白い、開催決定、他者、深める、思考
-- **クラスタ 7**（10語）: 辞任、謝罪、年内国内公演、ピアニスト反田恭平氏、奈良県文化政策顧問、収益、寄付、反田恭平被告、ピアニスト、募る
-- **クラスタ 8**（10語）: 除籍、保育園、裏側、直面、収蔵庫不足、試み、存続、危機、博物館指針策定、収蔵資料
-- **クラスタ 9**（10語）: 共生社会、日本語教育支援総合、秩序、パッケージ、京都新聞、多様性、connect、持ち込む、作業部会、ふれる
+- **クラスタ 3**（12語）: 議決、克彦、同審議会文化財分科会、会長日比野、経る、文部科学大臣、審議、村野藤吾設計、再始動、記念イベント、宇部市文化会館、答申
+- **クラスタ 4**（12語）: 自律的、集団、繋がり合う、学び合い、フロンティア、運営モデル、持続的、ファンドレイジング、継続的、構築、協働、仕組み
+- **クラスタ 5**（11語）: トーク、頭突き恐竜化石、福島県立博物館学芸員、発見秘話、会津若松、九州国立博物館、面白い、開催決定、他者、深める、思考
+- **クラスタ 6**（10語）: 辞任、謝罪、年内国内公演、ピアニスト反田恭平氏、奈良県文化政策顧問、収益、寄付、反田恭平被告、ピアニスト、募る
+- **クラスタ 7**（10語）: 除籍、保育園、裏側、直面、収蔵庫不足、試み、存続、危機、博物館指針策定、収蔵資料
+- **クラスタ 8**（10語）: 共生社会、日本語教育支援総合、秩序、パッケージ、京都新聞、多様性、connect、持ち込む、作業部会、ふれる
+- **クラスタ 11**（9語）: 工夫、表現力等、意図、構想、思考力、判断力、発想、一体的、習得
 
 ## 最近の記事
 
-新しい順に20件（全4753件は `articles.html` / `articles.csv`）。
+新しい順に20件（全4789件は `articles.html` / `articles.csv`）。
 
+- [省人民委員会は、金蓮史跡内の文化観光地域プロジェクトにおける土地賃貸方法を調整した。](https://news.google.com/rss/articles/CBMixAFBVV95cUxQMGx2UkdHa05tQ2loVk5EcXFZZ0FENWJoQWpfTjYwd052SHhGdjg2QkR5UFJmcUVCTEE3TzdIVm91R3FiSjlmQlBBRGpDMnVQZHo2TTRBdjhyR05pVzE2bVZXb3VFYzhQWk1pU1hiem9TR3hqQzAydWIxdkpWR1JsNTFKN1pvT1ViZ2NnOTVBSzU0UXdCZ2FBVEJXNVVRMVM3ekZISXFmaHVydzd6cHJiWGRBZDhoTXBDWThfelhKOUIxbm9n?oc=5)<br>　2026-11-13 / Vietnam.vn
+- [落語家・三遊亭鳳楽さん死去 79歳 79年真打ち昇進 93年度文化庁芸術祭賞](https://news.google.com/rss/articles/CBMilgFBVV95cUxQbzRMY0hPbWRDVEwwTTVQWWRGdHBxUjUzMTI1bnY2d1NTY2paU2lQOVozbGRRZjNDMUxtSGdpbFVNUW1TamFXX2JNQ1NzVlVYeDdfdTBWeUMyUlBpSk54b1dGMVBORXlrOEdOdlA5ZEhuZ1huNGI0bWRiUjZMNFkxcml6SU9KZjVUdlVWdm5UQUJPMS02Rmc?oc=5)<br>　2026-11-12 / スポニチ Sponichi Annex
+- [福岡市長選挙に立候補 渡辺 久也(わたなべ・ひさや)氏の経歴・政策まとめ](https://news.google.com/rss/articles/CBMiY0FVX3lxTE5OR19IbkFiS3hRREl1QmRfX1R3WVAxU3VpemRaUWdXdHdkS2RqUGppa2pJYVNKdElOVWV5Qk9Samlmd0wxcVlBbzNtNm9nT21IVFZpTGtmOFNQMEVjT19oU1NOOA?oc=5)<br>　2026-11-12 / 選挙ドットコム
 - [直弼の茶の湯発信を 彦根市で彦根城の世界遺産登録に向けた講演会、井伊裕子さんら登壇](https://news.google.com/rss/articles/CBMiYkFVX3lxTE0yR05RSG9IVWVfV1o2eG55V0NwLVJWdHhfTjZOT3h6Nlc0cTU2ZXdpQ3p4cFhBUG9rZWEwM1FQQ0NVeXlkWG1RLUI5ZTVxQVlQV3lHMVU4eVFWMUI0VWVNWjJ3?oc=5)<br>　2026-11-12 / 中日新聞Web
+- [漢陽都城、世界遺産登録推進...周辺再開発住民「断固反対」](https://news.google.com/rss/articles/CBMijgFBVV95cUxQWEdOcUQydTR3RlpSUkRQUUkwcExfOTRMRGVLSU1LS09WX2tRRHY4LWxBaHNqWnhJeV9meWRCOFJZLW1JY0tOM1Rjazl4cE95cjJ6NE1WYjR1M0xnb1NIMmUxMmU4Smd1NGpSTFRhbU1uV1MtTndQWDR2NEJheGtSeWRaZEZvcnpGY3JzZFN3?oc=5)<br>　2026-11-12 / 조선일보
+- [浜田・外ノ浦の発信強化 日本遺産認定も研究啓発単発 NPO、市民参加、報告書作成へ](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1aYVRnMDk1UFE2eE1EZDlVMjJwV3JhM0RrRm5GQVVnZzhqTW1iblpwbFVRX2hmSzB1UVFEVl83ZWowTDIxY3lsclRfNklRUFZIS29GSnMwTVNSZ1E?oc=5)<br>　2026-11-12 / 山陰中央新報デジタル
+- [日本・トルコ観光業界のビジネスチャンスを促進「 GoTürkiye デスティネーションプロモーション」ワークショップを今年も大阪・東京で開催](https://news.google.com/rss/articles/CBMiakFVX3lxTE84c05LeVlJNVMyLUtmTUREd3RsRTJtSzM4M3dLWW9XSFdPYkg5a0Z2MmQwZlRydW9WVVVjbWdNUW1VVnI2Q21IeTQxS2lBNnctMnJWZHFOalJOMFdSb01RS0VHR3ZPLTNmY2c?oc=5)<br>　2026-11-12 / PR TIMES
+- [日本のマルチメディア/インターネット黎明期の資料が米コンピュータ歴史博物館(CHM)に収蔵 - ITmedia PC USER](https://news.google.com/rss/articles/CBMib0FVX3lxTE1tM1FmNkxyVDVLY3RoSVlXTEFJeUlqR2sxOGpudXBFNTNtSkRuVUxCVEdNMzl1MW52R0NuMW95dzljVlhzaGhOMlRpMHN6TjBhUERZYWpzUzVxUjZaX00yT0VISVZQckY1QlJjc0VFTdIBaEFVX3lxTE5vRHFheHJNNzhKMlJlNGp6c0hZeEZKTzBtaHhKcEtNeG9aTm10UDYwQ0V4ZnpjalBMT0xucm5KcUdjRWgzXzMtNEV2aDVSTUliNHRxU3AxUDdOdGhqRnBiQ0NXaG5WdUlW?oc=5)<br>　2026-11-12 / ITmedia
+- [市内29の公民館で消費税など未申告・未納付発覚 今後2億6000万円申告・納付へ 30年以上未申告・未納付となっていた可能性も 島根県松江市](https://news.google.com/rss/articles/CBMib0FVX3lxTE84T2lZY3EzbFhDcnVHaTBSMGRoQ284MkpDRFc0MkNmaHNhT1hIRlQ3bU1GTnNfOFh0ajk1ajF1LWhxRUp3TDN6cnNIRUUyQ3NGOU42b1V6dzFseENVV3ZMb3kzZWJyZU9MZXltSm5qQdIBdEFVX3lxTE4xRWdNcC1IR3lSTl96SjUxckdzRm50bVhVSEI4TVloVG1JZVlTQXpnVGg0UUptSS1TNUJPNkkyMnZSb2ZjNVF0TUw3dkhHQTdqMzl1LWtGcWtyeTQtSkZhYjVtZnA0cktYSTdRb2RSN2x0bk8x?oc=5)<br>　2026-11-12 / dメニューニュース
+- [市が非課税と誤認、消費税が始まった1989年から未納...過去5年分だけで2・6億円(読売新聞オンライン)](https://news.google.com/rss/articles/CBMif0FVX3lxTE1FcV9SLTkweERtTWpuZHdpSUFyQkdKWk93NUxGVHU0OC1xOTdfM2lqR29LTFY1emdfaDdlTHRkbGpna0xCSTN5Mnh5YlRldTVIcmtJQi1aSFVaTUUyeXZqQ2paQlJSVHBnWlRxblpaaDlnR2RwY2NuVjV5d0Z2b2M?oc=5)<br>　2026-11-12 / Yahoo!ニュース
 - [城下町に泊まる!津山城・城下町泊シンポジウム」11月14日開催 岡山・津山市](https://news.google.com/rss/articles/CBMiXkFVX3lxTE45RWU0dERQaWJiX3lKWFpBRXlXYkJwT2xUMklNZ2FhWmcweHFySGVBeWh4YTVjWEdTMXEtWng2UGMycm1rRkk0dWp6SXBuUXFRV1V1TF9CSHBUMU1MSUHSAWNBVV95cUxOWkw0dUJGOEtMaVpPSTUtWkZ6VWJpT1VieHhYMzBUQmQxY2hQUnJ6ay0zS0pkc2otb1ppbnB5eHJGY1pmdTF1eWRIREphenRPVVE3TnA3ZUR2Zmt4Vm9idDFLOVU?oc=5)<br>　2026-11-12 / Infoseek
+- [城下町に泊まる!「津山城・城下町泊シンポジウム」11月14日開催 岡山・津山市](https://news.google.com/rss/articles/CBMiUEFVX3lxTE5zQmxPRTRiWjh1bW1LODBZcEhTNkRxaFdOZHZaOGsyd29FU0w5TWVrR0hlN1BaVFhYQ2lKY3FjUXBUdU4xcm96eGh2MkdrZk01?oc=5)<br>　2026-11-12 / KSBニュース
+- [古村に響く蔵劇の歌声 民俗イベントで文化・観光業を後押し 西蔵・山南](https://news.google.com/rss/articles/CBMiaEFVX3lxTE93XzVKM1hEUHI4dDItQ2thT1FuNG1aZHN3NU52b3VxZloxQWFRVmwyUzJCblJSZU1Gb3h5QUl0ZnlPSVZVaTVNdC1PblVmcEFFQ2ZoMTdjdlBueVdybGdRNGU5Q3J4RlBt?oc=5)<br>　2026-11-12 / 人民網日本語版
+- [光秀の「丹波攻略」から守った仏像、京都・亀岡で公開「困難想像を」 [京都府]](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE42MUhEZENJZVVER0FQOVNjZlpmbktiaHFONmxTSjV0VWxCejlQMEJSMlBqd3A4Tmllb1BpLUxTbmY4NzRUTzJ5cUswS3NBS2pqQmZtM3ItTEtLMlZ5R0hsODNtZ2ZETkk?oc=5)<br>　2026-11-12 / 朝日新聞
 - [元プロ野球・小松辰雄さんが県文化観光大使に(HAB北陸朝日放送)](https://news.google.com/rss/articles/CBMif0FVX3lxTE82ZGZuQzhwQmVwWWdXeUpIU3drT3VKd3pSX0o4RjZ3Q2l2dGltb1hldVZhVVBIbFE3MGhsOEVzX0RMV2tVVllpZXVyM3J4cUl1SDltdzBoVmlPVVhMUUc0c0dvM1g2bDZjRl95RHFBbDJMX0pNdU1DdmNueXZMWEE?oc=5)<br>　2026-11-12 / Yahoo!ニュース
 - [メタ、TikTok、グーグル、ジャカルタの議員に訴え:ニュース支払いルールは情報アクセスを制限すると](https://news.google.com/rss/articles/CBMidEFVX3lxTE13ald1ckpuMF9BWHRjT09JVlFzZzlWX0JMQzZJa2dsOVk0VzFqMG94RGpOR1ZzcjlGOHpBUnBzTmtqb0ZFcEdQRmFEdkRTV1gxTGF1UkRVaHYtN2E4N3p6dlRkQmZYYmNOUkNTWFBiOWROZkFR?oc=5)<br>　2026-11-12 / BigGo ファイナンス
+- [ハノイ市は、多くのスマート機能を備えた文化・観光向けのデジタルプラットフォームを立ち上げた。](https://news.google.com/rss/articles/CBMingFBVV95cUxORkRTS09tbVgwQ0lPRXN0ZkpROEtQbUNWYzRZdkxFZkpVdUxYNGtSWkE3MWFCcHFENTItTmhJdk9VVE9Ga190QVpNQ3dOcnpGaGE3aHNEM19Lc1RFVHB0b2V5WENXTEJGdEtQR1hXVTVXc3hmSWZfb1NlQ0QyVzRYdmMzbjI5Rzh0dy1oWVZhTnZzemRfUFE4WlJnOFk3QQ?oc=5)<br>　2026-11-12 / Vietnam.vn
 - [イェン・トゥは年末に一連の大規模な文化・観光イベントを企画する。](https://news.google.com/rss/articles/CBMimgFBVV95cUxQb3IzM01XM0x3amJxTEoydlltWjJzTWtQU2VmaXM4NGVMZmlxNzlBbVVpb3p6S0h5WXF1Um9mWklwZGt1Q3dVejFlNWlUc3pTMWxFaWs4dTRweUJpZVMwYjFhSUc2b2tqN2Z4c05oSmZEZm9zaGtnMzI1X2QwNG5GM0YzMjM3cWZjWGVORGMwLWZFaDJZYXgyMl93?oc=5)<br>　2026-11-12 / Vietnam.vn
-- [米国市場の展望:CoreWeaveがAI投資への懸念を和らげたことを受けAI関連株が上昇 コストコ、特別配当と40億ドルの自社株買いを発表 アンソロピックIPO、最大$644億ドル調達へ](https://news.google.com/rss/articles/CBMif0FVX3lxTE95a3BWRy14dS1QZzg5aHBtWkJHRWtOS1NTZktqaTRLV3JEWjQtWVVMVXNNOXVqU3QyNFpSV0lfU0NFYUJGV0FmREt4OVdDdGFVMy1ma3F3NUpTZmxlaDJpRGJ0dFhUZG1rOWtHbkk1NUdVYndRUVVZTFVzbVU1dDQ?oc=5)<br>　2026-11-11 / Moomoo
-- [第16期国会第2会期プレスリリース第22号](https://news.google.com/rss/articles/CBMiigFBVV95cUxOM05ERzZIYl9nVzNDel9BS2pmTnZ0cnRMNlBMMjFIdVRrYTBRNkZoUUZuWnRlX183YWY4WDVsOEZyRm5UQ0RqYXFvU1NOSWRwSHRnellzcTQ3c2VoQ0U5OVpFREd4b3V2MW5VRUFLV25CQWZoeWRaZ2RFb09EVnJ4WE54NlJvTmg4dUE?oc=5)<br>　2026-11-11 / Vietnam.vn
-- [福岡市長選挙に立候補 渡辺 久也(わたなべ・ひさや)氏の経歴・政策まとめ(選挙ドットコム)](https://news.google.com/rss/articles/CBMif0FVX3lxTE14TDJMRHV2ek5GS2gzalQ1WFBuM25adXUtOWdSUDhLRl9kd2drTGZ5VFJpdTg4cnoxbE1nYkpEU0ZHTUU2bldZOVRWUDN4d3ZGMllNc3JPZmtWLUh6UWRDMzlaMHI0WFI1OEt2UlIwU2o1RnRRNWpVUTdZc190NVU?oc=5)<br>　2026-11-11 / Yahoo!ニュース
-- [消費税を35年に渡り未納付か...2億6000万円超を納付へ 松江市の公民館「法令認識が不十分」(島根)](https://news.google.com/rss/articles/CBMiTkFVX3lxTE03RGdGN1NSMHVrSlluaGZqTzBLS3Rwd1l2VlQ3SGItX1RVMmFPMHplRGV5Nzk5bWFHMlZINWM3NjN0WGpYdkowaUYyS0k4UQ?oc=5)<br>　2026-11-11 / FNNプライムオンライン
-- [消費税を1989年から未納付か...市が非課税と誤認、時効前の5年度分などで2.6億円](https://news.google.com/rss/articles/CBMickFVX3lxTE0xTzRqNG9sOE5TZ01aMW1iQWhOcXUwMkMyNlFGVzNuWUlOdXZETVdMYXVZNkNvczJZYW9CLXFjNjZMaThkSHgyWjJKbXhnOUhJYWg2RFRUT2xxMDg5VEN1bjR2OWhjdzdHbXVNa1hyODgxUQ?oc=5)<br>　2026-11-11 / 読売新聞
-- [横浜の中心地・関内のまちなかで育まれる“子どもたちの創造性”とは?11/27(金)無料セミナー「杉浦幹男氏が聞く、アート・コンテンツと地域振興シリーズ vol.26」開催](https://news.google.com/rss/articles/CBMiVkFVX3lxTE43WmV0MHpwV2VuaXlCLWpZWXozZnd5MGludGhzQ1RYMVA2Tm95d1R2aGxYVC03R0tNT092Rzl3THBZdGl2U0diZmpZcFZjTEg2ZXpITGx3?oc=5)<br>　2026-11-11 / 川崎経済新聞
-- [桑使った「大福」新土産に 世界遺産・伊勢崎「田島弥平旧宅」12周年 15日から販売へ 地域活性と来訪者増へ大学生が考案](https://news.google.com/rss/articles/CBMihgFBVV95cUxNTzNyNUpWMkR2TnFtakd6YjF5aGctajA3OWJ0WnNQcDFEbUpOWlNUeG9ONlNMNzNHWHc2YktPVlNXTnBGOFMxMDh0cllBdVRtUXRyV2txUU01RmVfS3VPbkp5TC1OYzlTZVo3bnhVQ3VXaExXMTNHX1c3R3NILVM2Qm1JLTZLd9IBeEFVX3lxTFBCQ0hyeF85YmI0aGdHampiTzF2cWtTT2VYVlo2aW40XzlvakV1OFBXdTV4cjcyOE5naHlCTG1oTklmX0hWeWpXX25KWHNjcEdsd2JDM3NDX3E3MlhVNGxiblBUczh1RmdHYS16Q0YzbkFCVUU3RnRpOQ?oc=5)<br>　2026-11-11 / dメニューニュース
-- [松江市教育委員会が消費税約2億6千万円を納付へ 公民館の管理に伴う未申告、未納付が判明 21~25年度分](https://news.google.com/rss/articles/CBMiW0FVX3lxTFBYbXdQYWJUMVJQQWRCYk5WNDNDQ3JlUXI5SHFaT1dKN3FDTGU3bjN0NWhDQlpHQjVUc2FWMkM4SWs5dGg4QS1DdUR6WjFmaXVMdDU5Z1FPcktzcGc?oc=5)<br>　2026-11-11 / 山陰中央新報デジタル
-- [松江市教委 公民館運営で消費税2億6000万円余を未納付](https://news.google.com/rss/articles/CBMiX0FVX3lxTE5KSkdEMmFzcnZmbVJNNmV0STM4RmpwNU8yR0tZdkxXdnpPXzJIVk5lVWVNSFBIbVNVMjJZMmlFeXZvNVNsdG1JbFFvbXBhODVNUXNtQ285NnhUZ1lpOHZJ?oc=5)<br>　2026-11-11 / NHKニュース
-- [松江市が3.4億円を追加負担へ 公民館指定管理料で算定ミス 職員が誤認、消費税加算せず](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9XQ2daX0huRHg2Q1B3TTNvbHV1NVpQdjlTZ3U2SHQxUFpseUUtVEZMX3BxaVlsamlwakgwLWNSNFJIYVBhM01QbENzYkNidXZpWWw1RUplenp6Y28?oc=5)<br>　2026-11-11 / 山陰中央新報デジタル
-- [日本遺産認定10周年!和歌山県で「日本遺産ウォークin太地町・ナイトミュージアム」を開催](https://news.google.com/rss/articles/CBMie0FVX3lxTE15RTlGVzBWeEg5WmhZOHRra2pNVzFLNUFjemp4U2duTnpYSW90ZlVFelpkZklIU1RNRlJuSFY4eDNGVHlWcE9hekQ2VUtOaEtTSHRJbVVMMjRQRW0yalBFQmkwX1RUWUl1ZzR1R3VhNk9tX3dQTnZ2bzRFbw?oc=5)<br>　2026-11-11 / ニコニコニュース
-- [新商品「遺産地域上空飛行」が、2026年クアンチ文化観光週間中に観光客を待っています。](https://news.google.com/rss/articles/CBMiugFBVV95cUxQQWJ2XzlQYUJwU1E4OXFkOW4wVjNzaU1BSmkzdjJzX3puYjVoTG9BdlROSVYyNENoejAzTFNkb0Nub3Z6Q2hTWjlhUWROek9VOVdQYkxZcWs2d2VXTVRlS3pwWlRUMVRJNUFqYm5WdGlqcXZiTUFybFBiYVdpd2Rmd0tYdy15cWI1S3VDelNOcmFIdURtaFZxeTZfdzluLUEycFJ6M01wVl9mX2ZNeXgwZGdjR01FdDRremc?oc=5)<br>　2026-11-11 / Vietnam.vn
-- [新千歳空港で文化庁メディア芸術クリエイター育成支援事業の特別企画「PASSING BY」が開催へ](https://news.google.com/rss/articles/CBMiZkFVX3lxTE9aMDRDekN0cmZMSVZBMUV3RVNTME1Ock82elhfMzZqZkhaVEkxaUFRVFRTVHVEZzlXNTBQS3BpY25UUVBVVXhLallGdW9nWWI5dksxWFNkcHlCbWMyZklLemd5S3Y1Zw?oc=5)<br>　2026-11-11 / 美術手帖
-- [文化庁、初の「食の至宝」に料理人、職人ら8人](https://news.google.com/rss/articles/CBMiSkFVX3lxTE9SR1JuOE1HMTdnbV9BWkQtaU5mYlRIMVRHY1dqTlZZVkd0OUh3MU5sVHF1dkx0dnJVSEpzLW1LMHhMNjJQZUdPME1R?oc=5)<br>　2026-11-11 / ツーリズムメディアサービス
-- [文化庁、「食の至宝」顕彰を創設 初回受賞者に料理人ら8名](https://news.google.com/rss/articles/CBMihgFBVV95cUxQNDFXMkFPV2ZSSlZ3dTZKbzF0aHphTi1WTHBMeE92Q3NIVE9tVW44XzVEN1NOcjJJcGlhZTRfYmhxbTlMR1F3VW91UzgyOEV1NlIwTEtOdEg2ckpoUk9GTWptWlNpUEU5RkthUjB0bWJzbTloSkRwV2g4REV0RThrV2wzeDJUdw?oc=5)<br>　2026-11-11 / 月刊「事業構想」オンライン
+- [くまもと人めぐり(206)=御船町恐竜博物館主任学芸員の池上直樹さん(46) 恐竜の町、盛り上げたい [連載]](https://news.google.com/rss/articles/CBMiT0FVX3lxTE8xTlZoZVB0Q1N0S2dUT1l3ang3Skgza3B6VF9xaER1aHlWdXhublpUUUk4MXh5YlduNTRiSF9XeGNyNVlVSl9RMVlzeWVhaVk?oc=5)<br>　2026-11-12 / 熊本日日新聞社
+- [【入場無料】「伝統芸能を守りたい」中学生も参加!豊橋の指定無形民俗文化財「飽海人形浄瑠璃」の第35回定期公演を11/22に開催](https://news.google.com/rss/articles/CBMiakFVX3lxTFBudnVSQ3BSbV93Yi1tdTNHNkhFVVNveXJfNDJ1LU1WYl81d2dxYm55NTNENlVDcy13dVNaNDc2UnVXRTA2cXMxTmpWTkwwaWJGWF92OVpZQlNweFZDalZJNFgwSVlUSzRodnc?oc=5)<br>　2026-11-12 / PR TIMES
 
 ---
 

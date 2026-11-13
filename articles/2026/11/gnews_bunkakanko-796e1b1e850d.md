@@ -1,0 +1,12 @@
+---
+title: "宮崎の文化財を次世代に 県内4市町で日本遺産フェスティバル開幕"
+date: 2026-11-08
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMigAFBVV95cUxOR1hxUWgxZFozcXRjRUw3dF9kcmx1a3lRaFRjVEMwaW1jS1oyTi1DUWMxS0hyU2lnY3FtTHE2bG44WE1vakZWaTdXaWJzck9DVk1RNTg4M2RLTzJMN2pya05jTDRvUmVfb2Q1VkUyaWNrdGNQV0NaSThINU9qYi1ud9IBhgFBVV95cUxObi16MnkxWnZObm5RaTVka0xzRmVxYkRTVS1DaXRuUFlwdTVCVkYwMVdrQ3FjOFBQczVVTW5OOWR1Y25jY3JzbU16SW9MVi1OblVXZ1dBZUZLWTg3THpHaUNxc3hWRUltLWFLT2JreDFEamUtcUFnaGV0ZWdLaTdoUldadkkwQQ?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+宮崎の文化財を次世代に 県内4市町で日本遺産フェスティバル開幕。
