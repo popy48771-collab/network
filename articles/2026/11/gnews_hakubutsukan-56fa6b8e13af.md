@@ -1,0 +1,12 @@
+---
+title: "日本のマルチメディア/インターネット黎明期の資料が米コンピュータ歴史博物館(CHM)に収蔵"
+date: 2026-11-12
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMikgFBVV95cUxOUlRITGNZcWNnTkdCR1laa2MwdmtUVmRlc2U0OHhIUm9rbjhLNU5CcXpmYWRtY29kdEljY2FUOElZSTNnZ2RVSTFmOThhbWF1TG1LWVlQWjBzbjVSXzdrS2FDVGgxMTFha05xS0diTENyMGhZYTJrZDc3ZndINU5pblBHMldnaWJwT1JIekpsLVhad9IBlwFBVV95cUxOcVBRZ3R2Y0s5MTRUZlUtVVVYUkpjVU5LNXZ3Z3JTR1I2cDRtQ0U1cnFPejdUQ2dTb0pvY05FSF90OHgtOUtJTnh4a1RWLXlfR3ZwelNoc2o1a2N5VDBPcW5oTFlwcEsycUppd1l2OExNejZhclVaUXk5ZUlGdmNNems3VzgwU2plNXRzTTNkbUhkMGlGS2xr?oc=5"
+collected_by: gnews_hakubutsukan
+tier: secondary
+lang: ja
+country: JP
+---
+
+日本のマルチメディア/インターネット黎明期の資料が米コンピュータ歴史博物館(CHM)に収蔵。
