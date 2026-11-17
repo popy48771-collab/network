@@ -1,0 +1,12 @@
+---
+title: "企画展 莫高窟世界遺産登録40周年記念「敦煌・シルクロードの風が立つー平山郁夫と江上波夫の足跡(あしあと)」開催のお知らせ【横浜ユーラシア文化館】"
+date: 2026-11-16
+source: "ラブすぽ"
+url: "https://news.google.com/rss/articles/CBMizwJBVV95cUxNVm0zdkVrYW14cVJ1SE9NYUZIUkVIaGNTNDAtaE52c3BLUmVpOVhiNHFxdEpFRUMzWnFjVUVKVC1JMmhabktsbGh0YnZBQS1CRGhiVm92ekFjcmMteHBwMHBaRTdrVlBMWldfZkdPMnQ1MldLLUVoM0VWVW1PRHhQVG9yQ2hjb1pTSDltZ3doUTFLOUszRzdXN1VhWDI4V205OFZXUTktY3RjNkU4NXo5VThOX0g5a3FYeWNXSmZiVFcyNnVTUW04LXJSUzVMWDFzV2JOZE5JdUM3VVhiOFNGWmRGWGlJR0MyLW9LaE1rN0c0NUF4VlcxbFBjUlhfaTZRNXpESjduRy0tMGdfOF9UVk1kcVNpYjZDVjEzeUxGajZZcWtfZlowVmRyRUVUVWtJTTRfY25rbXhvS1p0NmhDc0dYalNDd2xWNkFkTm5YUQ?oc=5"
+collected_by: gnews_isan
+tier: secondary
+lang: ja
+country: JP
+---
+
+企画展 莫高窟世界遺産登録40周年記念「敦煌・シルクロードの風が立つー平山郁夫と江上波夫の足跡(あしあと)」開催のお知らせ【横浜ユーラシア文化館】。

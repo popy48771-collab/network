@@ -1,0 +1,12 @@
+---
+title: "きらり ひと巡り>県立考古博物館学芸員・篠宮正さん(64) 地域の歴史、深く掘り下げ|東播"
+date: 2026-11-15
+source: "神戸新聞"
+url: "https://news.google.com/rss/articles/CBMibEFVX3lxTE5Fck9RUmhFQ3NxR2w4MEFrdjhvRGZhV0hOdFlCeWNETnZ2bE1DUHBuZ1lmRFhWTlZ2OTZIcWJNbWp1aWtjZkZOQXVMNTlpUEJzYkstMVVqZ2tDTjNlXzRsVFl4dWJDN2tMbndLSQ?oc=5"
+collected_by: gnews_hakubutsukan
+tier: secondary
+lang: ja
+country: JP
+---
+
+きらり ひと巡り>県立考古博物館学芸員・篠宮正さん(64) 地域の歴史、深く掘り下げ|東播。
