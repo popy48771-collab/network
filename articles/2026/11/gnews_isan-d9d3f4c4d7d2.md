@@ -1,0 +1,12 @@
+---
+title: "「飛鳥・藤原の宮都」の世界遺産登録記念に、切手シート限定販売"
+date: 2026-11-18
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMimAFBVV95cUxNOUJlM1RSM09KTE5UVUZTVWdlWm5XTWdVQUZWUllnQWxBY0VnNlBQc1h0S1FEY044aVBNaVZPR1FfcF9qaGx4SnlLSGhRUU5ZYWx5UWhKTnNXRnhzaTBxX2tSWVNjMlhnUkRNN0hrRW9vbHpUeGF5VmNWSHBWdVJqbllraWVYLVhTSG1FTDBVN0s0cXpPaTdWZtIBngFBVV95cUxPRTdua3NYMGtvbktvTG9iS2lhMWE4NHRUTFhMODIyS2tickFRQlhqQ2trUUxRd1RUV2JSaEN5a3NLRVlMVVktcHMweWxya19fYUNmYVBWVlU3THZVUHFmekRVVXFKOVNtSXVabmpuV3ZWZTV3VEl0VzladTdOcXFDd1Z5U3ZrOVFrcy1VNmVfaThaRDFRZnJHZml2MmhEdw?oc=5"
+collected_by: gnews_isan
+tier: secondary
+lang: ja
+country: JP
+---
+
+「飛鳥・藤原の宮都」の世界遺産登録記念に、切手シート限定販売。

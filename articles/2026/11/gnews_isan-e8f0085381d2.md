@@ -1,0 +1,12 @@
+---
+title: "世界遺産の歴史を感じながら「宮島手づくり工房」で世界にひとつだけのしゃもじづくり"
+date: 2026-11-17
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZUpiYm5tZ3k4d2pMYng0TDkxbVNTVVdKbFhwdmNpODBrSTAwNTNBd1JNYlpoOTZ0WnlSSFBXZl8xQzBGX1BSaXZVZ21GN2ZycE5CN3pGTTZ3UEkyb19RM2hlRWdBTkgwblV3NmxvRjRaNUhJdW9hTE43eUdtQVFnbUJwSkRXa2fSAYwBQVVfeXFMUEY1ejhpM29FYWw4NmUzUncwaTg0QnBRV21QNEFaYTJNeTFTU1lYX0Z2NFlyM1otWmJzaHNrb0RFV2R5NC1UTjJTV3Nlcm1LYmg0U0pmaDEtVkZiNnF0MUNtTDBVMGt2b3lwTDRnT1FqMDZPcTJaTEtZMWxJa0tsVXYta1R6NEVNejZ5R0M?oc=5"
+collected_by: gnews_isan
+tier: secondary
+lang: ja
+country: JP
+---
+
+世界遺産の歴史を感じながら「宮島手づくり工房」で世界にひとつだけのしゃもじづくり。
