@@ -1,0 +1,12 @@
+---
+title: "「鯨とともに生きる」日本遺産ウォーク in太地町・ナイトミュージアム"
+date: 2026-11-20
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMikwFBVV95cUxQTFZNWlNPN05KbjltNkpYcmIxOVlfU2dyRDQyLXVLcWlVeHFHY0xZbTNQV21taXo3UUJiV042WkNCcU80Ym5NcC1RSU9Bbk1FdXJ4alZlcFNSWmlTYW5xVXF5NS1ldWw0ak5rNGlKRjJXcVhyS0o2SmFJUl9ndTZwX3ZGc21aa2tIb0F3VkYwRmlYNlnSAYYBQVVfeXFMTlVDRXRiaXlNaFlfckVOdE5NRGN5QVNLTXpsb1ZTWjROb3lqQUI2enFiYkZwMlpwLXM4MXZUeThxMV9NUGIwM2VEWmNSVnZiWWdHTUZ6cjdXb1B2V1RfRDJzRTAyc0RKUmExdnZqYWVVRGVodWo0V3ZnUmphNmpWZkJnYzE4VXc?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+「鯨とともに生きる」日本遺産ウォーク in太地町・ナイトミュージアム。

@@ -1,0 +1,12 @@
+---
+title: "ロンコック村文化観光週間2026開会式:お茶の香りを広げ、ムオン族の文化的アイデンティティを称える - フートー州観光局公式情報ページ"
+date: 2026-11-19
+source: "Vietnam.vn"
+url: "https://news.google.com/rss/articles/CBMiggJBVV95cUxQYzkyYWt6d1Q5ZUtuYW1EV2RfSDlKdkVTNk5Iel9BMTlLVVNFTk9HZkh5eHdNbXZ3cGQ1ajZrcUhDcmYxU2dKc1JUUXdEMzdkVG1KcU9lbFQ1MXYzUkF5WVRvczNlbFZFS3NmZGpxQUczdU1VZVJuOVRON2dTUUVsT1ZYNVc2WE1kOGNlZzhvclotTll5bmZvOERXdUlKd3paNEhZNVNQV2Q1NmRRM2NibkhtbXJwbnVVeFAzM1M3dm9Wc2lvM09mVTRoNmpla25fR0NmZlVtRDFpZGpYd1dBYzloTm93cHlOa21RVi1XUUt5ZUdvSTlaSzNCMGFlVWEzS3c?oc=5"
+collected_by: gnews_bunkakanko
+tier: secondary
+lang: ja
+country: JP
+---
+
+ロンコック村文化観光週間2026開会式:お茶の香りを広げ、ムオン族の文化的アイデンティティを称える - フートー州観光局公式情報ページ。
