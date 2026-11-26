@@ -1,0 +1,12 @@
+---
+title: "皇學館大・神道博物館で学芸員課程卒業展示 有職文様や京都博覧会テーマに"
+date: 2026-09-16
+source: "伊勢志摩経済新聞"
+url: "https://news.google.com/rss/articles/CBMi-AJBVV95cUxPaFNxNVVBMjRRMWVldGpIcFpSQWk5TEl5UUkya1NGTlBpUmVneWZibnJXMktwMHBnVzg1dk9rcmhncEE0aDBvWllWVy1KUjgzZ1JhR2VGaEc3OTNCYzJBUlJqNjNuTm1aZnV0LUJpM1c5czg1MVppR2oyUnA2WGt3WXU5T1g3Q2NGYkdtTmpNRmdtejY3aVB0ZllQMnE1ZmpFUnA2Y2Y3RzdQbml2cWdoc21hWnBDNkx4ZEVuazNZYi1zXzBtU09VUFJtRjdYOW9CSGVCMGU1Um1ucWhMQTNCQ1hGaFpYVnZ4dHRhRElOSGQwRWtMbElDNW1wak9VcVhNNkhFWTFxbFd2UkpSa2EzLXVrcjVLTHNibzJYZzlBeU1vX1lqVnNSWWp6U0VRek1IYXZRU1IzTHJ3UHNLY2FPS1A3YW1jT3BHWnNtdDVmZk9Ca3BaOTVkNGlBbVh5Q2pvOHFrajZHN2g1NmxpMHdVRFo0OVV5RlI3?oc=5"
+collected_by: gnews_hakubutsukan
+tier: secondary
+lang: ja
+country: JP
+---
+
+皇學館大・神道博物館で学芸員課程卒業展示 有職文様や京都博覧会テーマに。

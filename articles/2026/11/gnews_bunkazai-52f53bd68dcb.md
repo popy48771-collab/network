@@ -1,0 +1,12 @@
+---
+title: "相次ぐ災害、文化財どう守るか"
+date: 2026-11-03
+source: "公明党"
+url: "https://news.google.com/rss/articles/CBMinAJBVV95cUxQM1FwQ0ZuY0FJODNOeEEwaHZFMkU5czhnSWJKc1JTNnpnSWFHSFB1VU4xQ1JKNWp4MW95NVZOcFZVbmoxeGJyZUNOSkczZFlhMGs3ZDF5ZHBVcU9MSm4xSWFReGtkVjdpN0ltemN5LTVFWnRrMTJickpMN2h6NXNiSHJGRFBwRjZzX01QMEJGbW42RWI3NkM4TjZKa1IzZ0pCdWU2VWZuZEFyRXFWQWxXTHM0eUFWRy1ValFha3FCTE5hbzFqWTFiR3Y5N0JGTlFJQTlMbGcxNThYa0pQeGxUR3dUU3k5MlFuaTU3d3d0WG5UdlFNUjdqdTU3OFNCU2dtSXRuT2VGcGpKNHdSdDRpbWpKVFdPdVhtV0RXNg?oc=5"
+collected_by: gnews_bunkazai
+tier: secondary
+lang: ja
+country: JP
+---
+
+相次ぐ災害、文化財どう守るか。
