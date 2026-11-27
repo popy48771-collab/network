@@ -1,0 +1,12 @@
+---
+title: "休館中の習志野文化ホール、雨漏りで客席にカビ 暫定利用の計画断念"
+date: 2026-11-18
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdFV3cXlkajF6cmlZQUtpalBveWFJanA3Ml9aVGNwZVpxNXVvRHlDeWdIV3EweXJOT3pGbld5ejM3bDc1Q0Q5MTFaSnlRbGZFcUVJNmZSM1VLUVJNeHduM3BHRG5TRXFrdzZPdDZLVzlGdzAtTnRHbEZGX1ptc3JCUVFpTER5aHpha0phYVhfNUx2VlFEVHBpU9IBngFBVV95cUxQR085RU80cHNMdDdnMTYzSkFHRlJVTnNBcFIzblNYVm5yaThWRy1qcnVDRDFFLWF0amdWRmJCdGRhVXlMNlktSHhueTBTUUR2clFuSEtlQ2dQVTdlcXhJU2FqTnpEenFPekVTOGJQVks0bFAwSllMbzJWRkZ2MHo4c2U0T05ZQVBiUDhIajBxemU0WkxvRXhMX0xFUVlOQQ?oc=5"
+collected_by: gnews_shisetsu
+tier: secondary
+lang: ja
+country: JP
+---
+
+休館中の習志野文化ホール、雨漏りで客席にカビ 暫定利用の計画断念。
