@@ -1,0 +1,12 @@
+---
+title: "日本の書道が国内24件目の無形文化遺産へ AI時代に再評価される手書きの魅力 530万人から3分の1に減った愛好者と「書く楽しさ」の現在地"
+date: 2026-11-28
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMib0FVX3lxTE5JOFFwdV94aFpfX19ONnp4d0ZSYmN2eUxKdzBpVEoyRjZ1Z3ZfRUUxMVR1S0pMSHhuY1ZJeFplRW8tSDBwaml4VVVRMGJ4dGdpcmNTaTRrZUoxOEFlWmhGOUQwUDgwVVRsMXd5SE9RUdIBdEFVX3lxTFB2Rzgwa3VVaDZUM0pBUWwzTHZKMkpHcEc0QkRzdXRSQy1POFI1bXVpcHE0VFc3Q0ItRkdjajJQWVhPMk1yZjZsLXlBdFVGSWQxa2ZLSVZjOE9vVi1WS3RHR3lFdk5GMi12N3hhOVdGVmVOYVNa?oc=5"
+collected_by: gnews_isan
+tier: secondary
+lang: ja
+country: JP
+---
+
+日本の書道が国内24件目の無形文化遺産へ AI時代に再評価される手書きの魅力 530万人から3分の1に減った愛好者と「書く楽しさ」の現在地。

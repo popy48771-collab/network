@@ -1,0 +1,12 @@
+---
+title: "高性能AIに安全確保義務、命令違反には罰則 AI法改正案概要"
+date: 2026-11-27
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMilgFBVV95cUxObjF6Qy1lVE0yTzNQYlo2bjVwdHBMcmdKbC1INVpXbjlYUi0xOFVzZW1PUHZVRzV0NlFhak0wYjN4VnRnQV9mRnphbWF2WUpzTzJ1ZWVBZ2NJMERTTU96eXZXSzFFZ0doOVVQcXN4QTBaNEpuZlVoUnBYTUdxU05VWnpKLXdPeF9EbnpRUUhUQ0Rxdlo1blHSAZsBQVVfeXFMTVl0UDFhM05vNG9tU1QzdFI3cWoyYkEyUFF1NDJ2U3U2UHQzQlphcGtBNGJDQTI5WnItTGhyb1BtdlpuYkNNWDFrVEtfN0lDZG9rY0c3cVU0Y29Lel9COUxTZlRJYWJDamE4UlhxZWJoRTZBbHloYUpNVFg1WTlfeVlaVjFqZV93aEo0NlB4MjhjeGg3U004S2hNMG8?oc=5"
+collected_by: gnews_chosakuken
+tier: secondary
+lang: ja
+country: JP
+---
+
+高性能AIに安全確保義務、命令違反には罰則 AI法改正案概要。

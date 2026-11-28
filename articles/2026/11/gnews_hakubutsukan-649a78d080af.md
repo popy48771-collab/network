@@ -1,0 +1,12 @@
+---
+title: "野球殿堂博物館 12月12日から「2026年度 新収蔵品展」開催 イチロー氏銅像のレプリカ像など展示"
+date: 2026-11-27
+source: "dメニューニュース"
+url: "https://news.google.com/rss/articles/CBMijgFBVV95cUxNWTRxTUVOaXZSQUpPc1ZVS0FJVXBCZmdLOHNTQVhVWEd1MmF6aWtpYVNTMTVPSmc0bm1UeUZwOUlJcGwwRVE5NzRFVHlrWWdvakVjNGctSFZwUjlsTFFtUXV5OVlzdjZQT0pkOVA5VzVVbVdZaktHX2lOdGkyWVJ3RXRZU2hHbXdzQlY1LW5B0gGTAUFVX3lxTE5PMHNpQWZucV83QjdDQi1uT3Q3M2hCNEI5Z0JGUURCTjk3Q2FFVnBDM1JlbWFnX1VFMWJNX3NVRXVjTW03S1kydFJ2VmhzbjI5UTRkSHRvRVNHNEVsLTRsSTBmeUVaa1UyeDU0aE9VcUtvVXVBQmtKbVA4ZEFfVDUzbEhnWVB4MlJZN1NjcWx0RnY0Yw?oc=5"
+collected_by: gnews_hakubutsukan
+tier: secondary
+lang: ja
+country: JP
+---
+
+野球殿堂博物館 12月12日から「2026年度 新収蔵品展」開催 イチロー氏銅像のレプリカ像など展示。
